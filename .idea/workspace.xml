@@ -25,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BobsReversingObfuscator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="376">
+              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -85,6 +85,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RunDashboard">
@@ -112,16 +113,15 @@
       <workItem from="1582810792649" duration="2634000" />
       <workItem from="1582815955947" duration="634000" />
       <workItem from="1582835148262" duration="3015000" />
-      <workItem from="1582884996260" duration="4074000" />
+      <workItem from="1582884996260" duration="4443000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10357000" />
+    <option name="totallyTimeSpent" value="10726000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15103339" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -155,8 +155,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BobsReversingObfuscator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="376">
+          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
         </state>
       </provider>
     </entry>
