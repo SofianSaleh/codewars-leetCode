@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15f0efea-6667-4062-af0b-018ef869bff6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/matrixDeterminant.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elementEqualsItsIndex.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -16,11 +16,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/matrixDeterminant.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="695">
-              <caret line="73" column="28" lean-forward="true" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
+            <state relative-caret-position="-87">
+              <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/elementEqualsItsIndex.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -47,6 +59,7 @@
         <option value="$PROJECT_DIR$/BobsReversingObfuscator.js" />
         <option value="$PROJECT_DIR$/splitStrings" />
         <option value="$PROJECT_DIR$/matrixDeterminant.js" />
+        <option value="$PROJECT_DIR$/elementEqualsItsIndex.js" />
       </list>
     </option>
   </component>
@@ -63,7 +76,17 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Codewars" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Codewars" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -98,12 +121,12 @@
       <workItem from="1582835148262" duration="3015000" />
       <workItem from="1582884996260" duration="10514000" />
       <workItem from="1582939445498" duration="1000" />
-      <workItem from="1582954779954" duration="4382000" />
+      <workItem from="1582954779954" duration="6108000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21180000" />
+    <option name="totallyTimeSpent" value="22906000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
@@ -155,8 +178,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/matrixDeterminant.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="695">
-          <caret line="73" column="28" lean-forward="true" selection-start-line="73" selection-start-column="28" selection-end-line="73" selection-end-column="28" />
+        <state relative-caret-position="-87">
+          <caret line="30" column="25" lean-forward="true" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elementEqualsItsIndex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
