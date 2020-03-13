@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15f0efea-6667-4062-af0b-018ef869bff6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/extractRanges.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/objectifyAURLQueryString.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/splitStrings" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,20 +15,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/extractRanges.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -51,6 +37,7 @@
         <option value="$PROJECT_DIR$/elementEqualsItsIndex.js" />
         <option value="$PROJECT_DIR$/mergedStringChecker.js" />
         <option value="$PROJECT_DIR$/extractRanges.js" />
+        <option value="$PROJECT_DIR$/objectifyAURLQueryString.js" />
       </list>
     </option>
   </component>
@@ -66,7 +53,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -78,13 +64,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -116,17 +103,21 @@
       <workItem from="1582954779954" duration="6164000" />
       <workItem from="1583100248885" duration="1318000" />
       <workItem from="1583150559892" duration="2161000" />
-      <workItem from="1583152904044" duration="636000" />
+      <workItem from="1583152904044" duration="1361000" />
+      <workItem from="1583178624090" duration="914000" />
+      <workItem from="1583183940450" duration="810000" />
+      <workItem from="1583247451901" duration="1467000" />
+      <workItem from="1583376911912" duration="404000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27077000" />
+    <option name="totallyTimeSpent" value="31397000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.145469" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.145469" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -138,7 +129,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49920508" visible="true" weight="0.2641292" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49920508" visible="true" weight="0.2641292" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007949" side_tool="true" weight="0.27995393" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -182,10 +173,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/objectifyAURLQueryString.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="51" column="15" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/extractRanges.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        <state relative-caret-position="556">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
