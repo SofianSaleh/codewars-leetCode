@@ -51,7 +51,7 @@ function differentiate(equation, point) {
     let result1 = ''
     for (let k = 0; k < result.length; k++) {
         if(result[k] === 'x'){
-            result1+= `*${point}`
+            result1+= `*(${point})`
             console.log(result[k])
         }else if(result[k] === "^"){
             result1+= `**`
