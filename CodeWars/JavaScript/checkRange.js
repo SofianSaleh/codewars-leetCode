@@ -15,7 +15,7 @@
 
 // elements 2, 5, 6, 7, 1, 3, 4 should be counted.
 
-checkRange = (a, x, y) => a.filter((i) => i >= x && i <= y).length;
+checkRange = (a, x, y) => a.map(v => i += x > v == v > y, i = 0) | i;
 //coding and coding.. shorter and more shorter..  good luck! ;-)
 console.log(checkRange([2, 5, 6, 7, 1, 3, 4, 11, 56, 49], 1, 7), 7);
-//coding and coding.. shorter and more shorter..  good luck! ;-)
+)
