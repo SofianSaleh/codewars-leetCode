@@ -17,34 +17,34 @@
 
 // NOTE 2: The 0x0 (empty matrix) is represented as en empty array inside an array [[]].
 
-let actions = ["forward", "downward", "backwards", "upwards"];
+let actions = ['forward', 'downward', 'backwards', 'upwards'];
 
-const snail = function(array) {
+const snail = function (array) {
   let loopCount = array.length + (array.length - 1);
   let num = 0;
   let arr = [];
   let leftAt = 0;
   for (let i = 0; i < loopCount; i++) {
     let act = actions[num];
-    if (act === "forward") {
+    if (act === 'forward') {
       for (let j = 0; j < array[i].length; j++) {
         arr.push(array[i][j]);
       }
       leftAt = array[i].length - 1;
       num++;
-    } else if (act === "downward") {
+    } else if (act === 'downward') {
       for (let k = 1; k < array.length; k++) {
         arr.push(array[k][leftAt]);
       }
       leftAt = array.length - 1;
       num++;
-    } else if (act === "backwards") {
+    } else if (act === 'backwards') {
       for (let l = leftAt - 1; l >= 0; l--) {
         arr.push(array[leftAt][l]);
       }
       leftAt = 0;
       num++;
-    } else if (act === "upwards") {
+    } else if (act === 'upwards') {
       for (let m = leftAt - 1; m >= arr.length; m--) {
         console.log(m, leftAt);
         arr.push(array[m][leftAt]);
@@ -60,9 +60,18 @@ console.log(
   snail([
     [1, 2, 3],
     [20, 21, 22],
-    [19, 32, 33]
+    [19, 32, 33],
     // [18, 31, 36, 35, 26, 9],
     // [17, 30, 29, 28, 27, 10],
     // [16, 15, 14, 13, 12, 11]
+  ])
+);
+console.log(
+  snail([
+    [1, 2, 3],
+    [20, 21, 22],
+    [19, 32, 33][(18, 31, 36, 35, 26, 9)],
+    [17, 30, 29, 28, 27, 10],
+    [16, 15, 14, 13, 12, 11],
   ])
 );
