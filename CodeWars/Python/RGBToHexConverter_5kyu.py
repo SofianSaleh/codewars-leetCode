@@ -12,11 +12,8 @@ def rgb(r, g, b):
         else:
             og = x / 16
             first = int(og)
-#         if first < 0:
-#             first *=-1
+
             second = int((og - first) * 16)
-#         if(second < 0):
-#             second *= -1
 
             if str(first) in words:
 
