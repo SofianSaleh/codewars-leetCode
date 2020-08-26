@@ -11,3 +11,10 @@ def find_uniq(arr):
             return k
 
     return None   # n: unique integer in the array
+
+
+# Optimal solution
+
+def find_uniq1(arr):
+    a, b = set(arr)
+    return a if arr.count(a) == 1 else b
