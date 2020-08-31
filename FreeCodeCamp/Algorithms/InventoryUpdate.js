@@ -22,7 +22,7 @@ function updateInventory(arr1, arr2) {
     // sort the array alphebatically
 
     arr1.sort((item1, item2) => item1[1] < item2[1] ? -1 : 1)
-    console.log(arr1)s
+    console.log(arr1)
     return arr1
 }
 
