@@ -17,5 +17,3 @@ const containsNearbyAlmostDuplicate = (
 
 console.log(containsNearbyAlmostDuplicate([1, 5, 9, 1, 5, 9], 2, 3));
 console.log(containsNearbyAlmostDuplicate([1, 2, 3, 1], 3, 0));
-console.log(containsNearbyAlmostDuplicate([1, 5, 9, 1, 5, 9], 2, 3));
-console.log(containsNearbyAlmostDuplicate([1, 2, 3, 1], 3, 0));
