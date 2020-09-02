@@ -33,12 +33,15 @@ function largestTimeFromDigits(A: number[]): string {
     }
 
     permutate(A, 0)
+    console.log(maxTime)
     if (maxTime == -1) {
         return ""
+    } else if (maxTime === 0) {
+        return '00:00'
     } else {
         return `${Math.floor(maxTime / 60)}:${maxTime % 60}`
     }
 
 };
 
-console.log(largestTimeFromDigits([1, 2, 3, 4]))
+console.log(largestTimeFromDigits([0, 1, 0, 0]))
