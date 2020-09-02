@@ -61,7 +61,7 @@ function getPINs(observed) {
     console.log(answer)
 }
 
-console.log(getPINs("8"))
+console.log(getPINs("369"))
 
 // "8": ["5", "7", "8", "9", "0"],
 // "11": ["11", "22", "44", "12", "21", "14", "41", "24", "42"],
