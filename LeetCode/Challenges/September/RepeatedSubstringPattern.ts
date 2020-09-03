@@ -17,7 +17,7 @@ function repeatedSubstringPattern(s: string): boolean {
     return false
 };
 
-// console.log(repeatedSubstringPattern("abab"))   // true
-// console.log(repeatedSubstringPattern("aba"))    // false
-// console.log(repeatedSubstringPattern("abcabcabcabc"))   // true
+console.log(repeatedSubstringPattern("abab"))   // true
+console.log(repeatedSubstringPattern("aba"))    // false
+console.log(repeatedSubstringPattern("abcabcabcabc"))   // true
 console.log(repeatedSubstringPattern("babbabbabbabbab"))   // true
