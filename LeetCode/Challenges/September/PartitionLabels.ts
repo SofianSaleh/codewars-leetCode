@@ -21,3 +21,4 @@ function partitionLabels(S: string): number[] {
 };
 
 console.log(partitionLabels("ababcbacadefegdehijhklij"))
+console.log(partitionLabels("ababcbacadefegdehijhklija"))
