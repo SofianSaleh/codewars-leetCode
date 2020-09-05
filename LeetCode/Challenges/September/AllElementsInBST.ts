@@ -23,6 +23,9 @@ function getAllElements(root1: TreeNode | null, root2: TreeNode | null): number[
         return traverse(node.left) + " " + [node.val] + " " + traverse(node.right)
     }
 
+    let res: any = traverse(root1) + " " + traverse(root2)
+    res = res.split(' ')
+
 
     return result.sort((a, b) => a - b)
 };
