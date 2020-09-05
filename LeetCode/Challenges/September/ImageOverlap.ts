@@ -15,10 +15,12 @@ var largestOverlap = function (A: number[][], B: number[][]) {
 
     for (let j: number = 0; j < LA.length; j++) {
         for (let k: number = 0; k < LB.length; k++) {
-            count[i - j]++
+            count[j - k]++
         }
     }
     console.log(count, LA, LB)
 
 
 };
+
+console.log(largestOverlap([[1, 1, 0], [0, 1, 0], [0, 1, 0]], [[0, 0, 0], [0, 1, 1], [0, 0, 1]]))
