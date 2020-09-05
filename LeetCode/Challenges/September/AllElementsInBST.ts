@@ -16,6 +16,12 @@ class TreeNode {
 function getAllElements(root1: TreeNode | null, root2: TreeNode | null): number[] {
     let result: number[] = []
 
+    function traverse(node: TreeNode): any {
+        if (!node) {
+            return []
+        }
+        return traverse(node.left) + " " + [node.val] + " " + traverse(node.right)
+    }
 
 
     return result.sort((a, b) => a - b)
