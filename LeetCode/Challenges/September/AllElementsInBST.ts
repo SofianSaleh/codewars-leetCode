@@ -16,24 +16,7 @@ class TreeNode {
 function getAllElements(root1: TreeNode | null, root2: TreeNode | null): number[] {
     let result: number[] = []
 
-    function traverse(node: TreeNode): any {
-        if (!node) {
-            return []
-        }
-        return traverse(node.left) + " " + [node.val] + " " + traverse(node.right)
-    }
 
-    let res: any = traverse(root1) + " " + traverse(root2)
-    res = res.split(' ')
-
-    for (let i = 0; i < res.length; i++) {
-        console.log(res[i] !== 'NaN', res[i] === '', res[i])
-        if (res[i] !== 'NaN') {
-            if (res[i] !== '') {
-                result.push(parseInt(res[i]))
-            }
-        }
-    }
 
     return result.sort((a, b) => a - b)
 };
