@@ -22,7 +22,8 @@ x.left.right = new TreeNode(1);
 // console.log(x.left);
 
 function sumRootToLeaf(root: TreeNode | null): number {
-  let result: nmber = 0;
+  let result: number = 0;
+  let currentSum: number = 0;
 
   if (!root) return 0;
   function recursive(tree: TreeNode, currentSum: number) {
@@ -30,11 +31,14 @@ function sumRootToLeaf(root: TreeNode | null): number {
       return;
     }
 
-    currentSum = currentSum * 2 + root.val;
-    if (root.left === null || root.right === null) {
+    currentSum = currentSum * 2 + tree.val;
+    if (tree.left === null || tree.right === null) {
+      result += currentSum;
     }
+    recursive(tree.left, currentSum);
+    recursive(tree.right, currentSum);
   }
-
-  return 0;
+  recursive(root, currentSum);
+  return result;
 }
 console.log(sumRootToLeaf(x));
