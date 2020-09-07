@@ -4,6 +4,10 @@ var wordPattern = function (pattern: string, str: string): boolean {
 
     for (let i: number = 0; i < pattern.length; i++) {
         if (!patternObj[pattern[i]]) {
+            let values: any = Object.keys(patternObj).map(key => patternObj[key]);
+            if (values.includes(pattern[i])) {
+                return false
+            }
             patternObj[pattern[i]] = splittedArr[i]
         } else {
             if (patternObj[pattern[i]] !== splittedArr[i]) {
