@@ -15,3 +15,9 @@ var wordPattern = function (pattern: string, str: string): boolean {
 };
 
 console.log(wordPattern("abba", "dog cat cat dog"))
+console.log(wordPattern("abba", "dog cat cat fish"))
+console.log(wordPattern("aaaa", "dog cat cat dog"))
+console.log(wordPattern("abba", "dog dog dog dog"))
+
+
+
