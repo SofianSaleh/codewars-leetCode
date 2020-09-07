@@ -1,8 +1,8 @@
-var wordPattern = function (pattern, str) {
+var wordPattern = function (pattern: string, str: string): boolean {
     let patternObj = {}
-    let splittedArr = str.split(' ')
+    let splittedArr: string[] = str.split(' ')
 
-    for (let i = 0; i < pattern.length; i++) {
+    for (let i: number = 0; i < pattern.length; i++) {
         if (!patternObj[pattern[i]]) {
             patternObj[pattern[i]] = splittedArr[i]
         } else {
@@ -14,4 +14,4 @@ var wordPattern = function (pattern, str) {
     return true
 };
 
-c
+console.log(wordPattern("abba", "dog cat cat dog"))
