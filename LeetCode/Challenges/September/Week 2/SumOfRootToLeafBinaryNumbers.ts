@@ -11,6 +11,7 @@ class TreeNode {
 }
 
 let x = new TreeNode();
+let y = new TreeNode();
 x.val = 1;
 x.left = new TreeNode(0);
 x.right = new TreeNode(1);
@@ -19,11 +20,12 @@ x.right.left = new TreeNode(0);
 x.left.left = new TreeNode(0);
 x.left.right = new TreeNode(1);
 
+y.val = 1;
+y.left = new TreeNode(1);
 // console.log(x.left);
 
 function sumRootToLeaf(root: TreeNode | null): number {
   let result: number = 0;
-  let currentSum: number = 0;
 
   if (!root) return 0;
   function recursive(tree: TreeNode, currentSum: number) {
@@ -32,13 +34,15 @@ function sumRootToLeaf(root: TreeNode | null): number {
     }
 
     currentSum = currentSum * 2 + tree.val;
-    if (tree.left === null || tree.right === null) {
+    if (tree.left === null && tree.right === null) {
       result += currentSum;
     }
     recursive(tree.left, currentSum);
     recursive(tree.right, currentSum);
   }
+  let currentSum: number = 0;
   recursive(root, currentSum);
   return result;
 }
 console.log(sumRootToLeaf(x));
+console.log(sumRootToLeaf(y));
