@@ -2,6 +2,9 @@ var wordPattern = function (pattern: string, str: string): boolean {
     let patternObj = {}
     let splittedArr: string[] = str.split(' ')
 
+    if (pattern.length !== splittedArr.length) return false
+
+
     for (let i: number = 0; i < pattern.length; i++) {
         if (!patternObj[pattern[i]]) {
             let values: any = Object.keys(patternObj).map(key => patternObj[key]);
