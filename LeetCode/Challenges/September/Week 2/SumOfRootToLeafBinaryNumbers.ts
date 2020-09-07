@@ -26,12 +26,12 @@ function sumRootToLeaf(root: TreeNode | null): number {
   let subArr: number[] = [];
 
   if (!root) return 0;
-  function recursive(tree: TreeNode) {
+  function recursive(tree: TreeNode, currentSum: number) {
     if (!tree) {
-      return subArr;
+      return;
     }
 
-    subArr.push(tree.val);
+    currentSum = currentSum * 2 + root.val;
     recursive(tree.left);
     recursive(tree.right);
   }
