@@ -46,3 +46,4 @@ function sumRootToLeaf(root: TreeNode | null): number {
 }
 console.log(sumRootToLeaf(x));
 console.log(sumRootToLeaf(y));
+console.log(sumRootToLeaf(y));
