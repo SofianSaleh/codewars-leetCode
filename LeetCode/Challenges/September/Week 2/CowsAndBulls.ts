@@ -49,6 +49,28 @@ function getHint(secret: string, guess: string): string {
 
     }
     console.log(hashTable)
-    return ''
+
+    for (let i = 0; i < secret.length; i++) {
+        if (secret[i] === guess[i]) {
+            bulls += 1
+            hashTable[guess[i]] -= 1
+            if (hashTable[guess[i]] < 0) {
+                hashTable[guess[i]] += 1
+                cows -= 1
+            }
+        } else if (secret[i] !== guess[i]) {
+            console.log(secret.indexOf(guess[i]) !== -1 && hashTable[guess[i]] > 0, guess[i])
+            if (secret.indexOf(guess[i]) !== -1 && hashTable[guess[i]] > 0) {
+
+                cows += 1
+                hashTable[guess[i]] -= 1
+
+            }
+        }
+    }
+    //       if secret[i] != guess[i]:
+
+    return `${bulls}A${cows}B`
 };
-console.log(getHint("1123", "0111"))
+// console.log(getHint("1123", "0111"))
+console.log(getHint("1122", "1222"))
