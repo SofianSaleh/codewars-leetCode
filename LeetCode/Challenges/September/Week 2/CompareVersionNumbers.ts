@@ -33,7 +33,7 @@ function compareVersion(version1: string, version2: string): number {
 };
 
 console.log(compareVersion("0.1", "1.1")) // -1
-console.log(compareVersion("1.0.1", "1")) // 1
-console.log(compareVersion("7.5.2.4", "7.5.3")) // -1
+// console.log(compareVersion("1.0.1", "1")) // 1
+// console.log(compareVersion("7.5.2.4", "7.5.3")) // -1
 // console.log(compareVersion("1.01", "1.001")) // 0
 // console.log(compareVersion("1.0", "1.0.0")) // 0
