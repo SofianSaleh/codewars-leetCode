@@ -16,6 +16,18 @@ function compareVersion(version1: string, version2: string): number {
 
     let v1: string[] = version1.split('.')
     let v2: string[] = version2.split('.')
+    let len: number = v1.length > v2.length ? v1.length : v2.length
+    console.log(len)
+    for (let i = 0; i < len; i++) {
+        // console.log(parseInt(v1[i]) > parseInt(v2[i]))
+        if (parseInt(v1[i]) > parseInt(v2[i])) return 1
+        if (parseInt(v1[i]) < parseInt(v2[i])) return -1
+    }
 
     return res
 };
+
+console.log(compareVersion("0.1", "1.1"))
+// console.log(compareVersion("1.0.1", "1"))
+// console.log(compareVersion("7.5.2.4", "7.5.3"))
+// console.log(compareVersion("1.01", "1.001"))
