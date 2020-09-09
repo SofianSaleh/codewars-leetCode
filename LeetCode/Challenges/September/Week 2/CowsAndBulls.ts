@@ -38,6 +38,8 @@
 // # print(x.getHint("1123", "0111"))    # "1A1B"
 // # # print(x.getHint("1807", "7810"))    # "1A3B"
 
+// #########################    TYPESCRIPT  #########################
+
 function getHint(secret: string, guess: string): string {
     let bulls: number = 0
     let cows: number = 0
