@@ -8,36 +8,6 @@
 // # Explanation: The 1st 1 in friend's guess is a bull, the 2nd or 3rd 1 is a cow.
 // # Note: You may assume that the secret number and your friend's guess only contain digits, and their lengths are always equal.
 
-
-// # class Solution:
-// #     def getHint(self, secret: str, guess: str) -> str:
-// #         bulls = 0
-// #         cows = 0
-// #         hashTable = {}
-
-// #         for x in secret:
-// #             print(x)
-// #             print(hashTable,  hashTable[x])
-
-// #             if not hashTable[x]:
-// #                 hashTable[x] = 1
-// #             else:
-// #                 hashTable[x] += 1
-// #         print(hashTable)
-// #         for i in range(0, len(secret)):
-// #             if secret[i] != guess[i]:
-// #                 if guess[i] in secret:
-// #                     cows += 1
-// #             else:
-// #                 bulls += 1
-
-// #         return '{0}A{1}B'.format(bulls, cows)
-
-
-// # x = Solution()
-// # print(x.getHint("1123", "0111"))    # "1A1B"
-// # # print(x.getHint("1807", "7810"))    # "1A3B"
-
 // #########################    TYPESCRIPT  #########################
 
 function getHint(secret: string, guess: string): string {
@@ -76,3 +46,74 @@ function getHint(secret: string, guess: string): string {
 };
 // console.log(getHint("1123", "0111"))
 console.log(getHint("1122", "1222"))
+
+
+// #########################    JAVASCRIPT  #########################
+
+/**
+ * @param {string} secret
+ * @param {string} guess
+ * @return {string}
+ */
+// var getHint = function(secret, guess) {
+
+    //     let bulls = 0
+//     let cows = 0
+//     let hashTable = {}
+
+//     for (const x of secret) {
+    //         if (!hashTable[x]) hashTable[x] = 1
+    //         else hashTable[x] += 1
+
+    //     }
+
+    //     for (let i = 0; i < secret.length; i++) {
+//         if (secret[i] === guess[i]) {
+    //             bulls += 1
+    //             hashTable[guess[i]] -= 1
+    //              if (hashTable[guess[i]] < 0) {
+        //                 hashTable[guess[i]] += 1
+        //                 cows -= 1
+        //             }
+        //         } else if (secret[i] !== guess[i]) {
+            //             if (secret.includes(guess[i]) && hashTable[guess[i]] > 0) {
+
+                //                 cows += 1
+//                 hashTable[guess[i]] -= 1
+
+//             }
+//         }
+//     }
+//     return `${bulls}A${cows}B`
+// };
+
+// #########################    PYTHON  #########################
+
+// class Solution:
+
+//     def getHint(self, secret: str, guess: str) -> str:
+//         bulls = 0
+//         cows = 0
+//         hashTable = {}
+
+//         for x in secret:
+
+//             if not hashTable.get(x):
+//                 hashTable[x] = 1
+//             else:
+//                 hashTable[x] += 1
+
+//         for i in range(0, len(secret)):
+//             if secret[i] == guess[i]:
+
+//                 bulls += 1
+//                 hashTable[guess[i]] -= 1
+//                 if hashTable[guess[i]] < 0:
+//                     hashTable[guess[i]] += 1
+//                     cows -= 1
+//             elif secret[i] != guess[i]:
+//                 if guess[i] in secret and hashTable[guess[i]] > 0:
+//                     cows += 1
+//                     hashTable[guess[i]] -= 1
+
+//         return '{0}A{1}B'.format(bulls,cows)
