@@ -56,4 +56,5 @@ function maxProduct(nums: number[]): number {
 //             prevMax = max(nums[i], minimum, maximum)
 //             product = max(product, prevMax)
 
+//         return product   
 
