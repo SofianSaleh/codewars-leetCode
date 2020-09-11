@@ -38,7 +38,7 @@ function maxProduct(nums: number[]): number {
 // };
 
 
-// ######################## JAVASCRIPT ########################
+// ######################## PYTHON ########################
 
 // class Solution:
 //     def maxProduct(self, nums: List[int]) -> int:
