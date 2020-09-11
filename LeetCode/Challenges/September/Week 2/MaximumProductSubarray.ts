@@ -52,5 +52,8 @@ function maxProduct(nums: number[]): number {
 //             minimum = prevMin * nums[i]
 //             maximum = prevMax * nums[i]
 
-//            
+//             prevMin = min(nums[i], minimum, maximum)
+//             prevMax = max(nums[i], minimum, maximum)
+//             product = max(product, prevMax)
+
 
