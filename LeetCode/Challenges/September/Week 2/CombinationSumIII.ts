@@ -1,4 +1,31 @@
+// ######################## TYPESCRIPT ########################
 
+function combinationSum3(k: number, n: number): number[][] {
+    function dfs(k: number, n: number, count: number, path: number[]): void {
+        if (k == 0 && n == 0) {
+            //             let y = []
+            // for (let j = 0; j < path.length; j++) {
+            //     const element = array[j];
+
+            // }                y.push(parseInt(x))
+            //             }
+            answer.push(path)
+            return
+        }
+        if (k === 0 || n < 0) {
+            return
+        }
+        for (let i = count; i < 10; i++) {
+            dfs(k - 1, n - i, i + 1, path.push[i])
+        }
+    }
+
+    let answer = []
+
+    dfs(k, n, 1, [])
+    return answer
+};
+console.log(combinationSum3(3, 7))
 
 // ######################## JAVASCRIPT ########################
 /**
@@ -6,31 +33,31 @@
  * @param {number} n
  * @return {number[][]}
  */
-var combinationSum3 = function (k, n) {
-    var dfs = function (k, n, count, path) {
-        if (k == 0 && n == 0) {
-            let y = []
-            for (const x of path) {
-                y.push(parseInt(x))
-            }
-            answer.push(y)
-            return
-        }
-        if (k === 0 || n < 0) {
-            return
-        }
-        for (let i = count; i < 10; i++) {
-            dfs(k - 1, n - i, i + 1, path + [i])
-        }
-    }
+// var combinationSum3 = function (k, n) {
+    // var dfs = function (k, n, count, path) {
+    //     if (k == 0 && n == 0) {
+    //         let y = []
+    //         for (const x of path) {
+    //             y.push(parseInt(x))
+    //         }
+    //         answer.push(y)
+    //         return
+    //     }
+    //     if (k === 0 || n < 0) {
+    //         return
+    //     }
+    //     for (let i = count; i < 10; i++) {
+    //         dfs(k - 1, n - i, i + 1, path + [i])
+    //     }
+    // }
 
-    let answer = []
+    // let answer = []
 
-    dfs(k, n, 1, [])
-    console.log(answer)
-    return answer
-}
-console.log(combinationSum3(3, 7))
+    // dfs(k, n, 1, [])
+    // console.log(answer)
+    // return answer
+// }
+// console.log(combinationSum3(3, 7))
 
 
 // #########################    PYTHON  #########################
