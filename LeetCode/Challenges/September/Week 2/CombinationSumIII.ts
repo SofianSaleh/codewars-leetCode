@@ -1,22 +1,20 @@
 // ######################## TYPESCRIPT ########################
 
 function combinationSum3(k: number, n: number): number[][] {
-    function dfs(k: number, n: number, count: number, path: number[]): void {
+    function dfs(k: number, n: number, count: number, path: any): void {
         if (k == 0 && n == 0) {
-            //             let y = []
-            // for (let j = 0; j < path.length; j++) {
-            //     const element = array[j];
-
-            // }                y.push(parseInt(x))
-            //             }
-            answer.push(path)
+            let temp: number[] = []
+            for (let j = 0; j < path.length; j++) {
+                temp.push(parseInt(path[j]))
+            }
+            answer.push(temp)
             return
         }
         if (k === 0 || n < 0) {
             return
         }
         for (let i = count; i < 10; i++) {
-            dfs(k - 1, n - i, i + 1, path.push[i])
+            dfs(k - 1, n - i, i + 1, path + [i])
         }
     }
 
