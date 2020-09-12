@@ -9,6 +9,9 @@
 var combinationSum3 = function (k, n) {
     var dfs = function (k, n, count, path) {
 
+        for (let i = count; i < 10; i++) {
+            dfs(k - 1, n - i, i + 1, path + [i])
+        }
     }
 
     let answer = []
