@@ -7,7 +7,14 @@
  * @return {number[][]}
  */
 var combinationSum3 = function (k, n) {
+    var dfs = function (k, n, count, path) {
 
+    }
+
+    let answer = []
+
+    dfs(k, n, 1, [])
+    console.log(answer)
     return answer
 }
 console.log(combinationSum3(3, 7))
