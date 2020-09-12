@@ -8,7 +8,14 @@
  */
 var combinationSum3 = function (k, n) {
     var dfs = function (k, n, count, path) {
-
+        if (k == 0 && n == 0) {
+            let y = []
+            for (const x of path) {
+                y.push(parseInt(x))
+            }
+            answer.push(y)
+            return
+        }
         if (k === 0 || n < 0) {
             return
         }
