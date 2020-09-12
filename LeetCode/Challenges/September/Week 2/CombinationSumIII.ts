@@ -1,6 +1,7 @@
 // ######################## TYPESCRIPT ########################
 
 function combinationSum3(k: number, n: number): number[][] {
+    if (k > n) return [[]]
     function dfs(k: number, n: number, count: number, path: any): void {
         if (k == 0 && n == 0) {
             let temp: number[] = []
@@ -25,6 +26,7 @@ function combinationSum3(k: number, n: number): number[][] {
     return answer
 };
 console.log(combinationSum3(3, 7))
+console.log(combinationSum3(10, 7))
 
 // ######################## JAVASCRIPT ########################
 /**
