@@ -7,8 +7,8 @@ function insert(intervals: number[][], newInterval: number[]): number[][] {
             index = i
             break
         }
-
     }
+    intervals.splice(index, 0, newInterval)
 };
 
 console.log(insert([[1, 3], [6, 9]], [2, 5]))
