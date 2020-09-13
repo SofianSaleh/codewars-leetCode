@@ -1,6 +1,7 @@
 function insert(intervals: number[][], newInterval: number[]): number[][] {
-    let ans = []
-    let index: number = intervals.length
+    let ans: any = []
+    let len: number = intervals.length
+    let index: number = intervals.length - 1
 
     for (let i = 0; i < intervals.length; i++) {
         if (intervals[i][0] >= newInterval[0]) {
@@ -9,15 +10,17 @@ function insert(intervals: number[][], newInterval: number[]): number[][] {
         }
     }
     intervals.splice(index, 0, newInterval)
-
+    console.log(intervals)
     for (const interval of intervals) {
-        if (!ans || ans[-1][1] < interval[0]) {
+        console.log(!ans |, ans[len][1], interval[0])
+        if (!ans || ans[len][1] < interval[0]) {
             ans.push(interval)
         } else {
-            ans[-1][1] = Math.max(ans[-1][1], interval[1])
+            ans[len][1] = Math.max(ans[len][1], interval[1])
         }
     }
+    return ans
 };
 
 console.log(insert([[1, 3], [6, 9]], [2, 5]))
-console.log(insert([[1, 2], [3, 5], [6, 7], [8, 10], [12, 16]], [4, 8]))
+// console.log(insert([[1, 2], [3, 5], [6, 7], [8, 10], [12, 16]], [4, 8]))
