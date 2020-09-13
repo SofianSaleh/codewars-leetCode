@@ -50,5 +50,5 @@ var firstMissingPositive = function (nums) {
 };
 
 console.log(firstMissingPositive([3, 4, -1, 1]))
-// console.log(firstMissingPositive([1, 2, 0]))
-// console.log(firstMissingPositive([3, 4, -1, 16, 77]))
+console.log(firstMissingPositive([1, 2, 0]))
+console.log(firstMissingPositive([3, 4, -1, 16, 77]))
