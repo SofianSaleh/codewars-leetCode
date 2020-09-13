@@ -9,6 +9,14 @@ function insert(intervals: number[][], newInterval: number[]): number[][] {
         }
     }
     intervals.splice(index, 0, newInterval)
+
+    for (const interval of intervals) {
+        if (!ans || ans[-1][1] < interval[0]) {
+            ans.push(interval)
+        } else {
+            ans[-1][1] = Math.max(ans[-1][1], interval[1])
+        }
+    }
 };
 
 console.log(insert([[1, 3], [6, 9]], [2, 5]))
