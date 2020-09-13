@@ -13,10 +13,11 @@ var firstMissingPositive = function (nums) {
 
     for (let i = 0; i < n; i++) {
         if (nums[i] === 1) oneExists = true
-        if (nums[i] <= 0 || nums[i] > n) {
+        else if (nums[i] <= 0 || nums[i] > n) {
             nums[i] = 1
         }
     }
+    if (!oneExists) return 1
     console.log(nums)
     /**
      * If we see the number change it to negative number
@@ -25,7 +26,7 @@ var firstMissingPositive = function (nums) {
      */
 
     for (let j = 0; j < n; j++) {
-        let index = Math.abs(nums[j] - 1)
+        let index = Math.abs(nums[j]) - 1
 
         if (nums[index] > 0) nums[index] *= -1
     }
@@ -35,18 +36,17 @@ var firstMissingPositive = function (nums) {
      * check if there wasn't a number one 
      */
 
-    if (!oneExists) return 1
 
     /**
      * Check the first positive number and return it + 1
      */
 
     for (let k = 0; k < n; k++) {
-        if (nums[k] > 1 && oneExists) return nums[k] + 1
+        if (nums[k] > 0) return k + 1
     }
     console.log(nums)
 
-    return n
+    return n + 1
 };
 
 console.log(firstMissingPositive([3, 4, -1, 1]))
