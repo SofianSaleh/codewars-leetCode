@@ -6,6 +6,13 @@ var firstMissingPositive = function (nums) {
     let n = nums.length
     let oneExists = false
 
+    for (let i = 0; i < n; i++) {
+
+        if (nums[i] === 1) oneExists = true
+        if (nums[i] <= 0 || nums[i] >= n) {
+            nums[i] = 1
+        }
+    }
 
 };
 
