@@ -13,7 +13,13 @@ var firstMissingPositive = function (nums) {
             nums[i] = 1
         }
     }
+    for (let j = 0; j < n; j++) {
+        let index = Math.abs(nums[j] - 1)
 
+        if (nums[index] > 0) nums[index] *= -1
+    }
+
+    return n + 1
 };
 
 console.log(firstMissingPositive([3, 4, -1, 16, 77]))
