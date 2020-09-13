@@ -9,19 +9,18 @@ function insert(intervals: number[][], newInterval: number[]): number[][] {
         }
     }
     intervals.splice(index, 0, newInterval)
+    console.log(intervals)
     for (const interval of intervals) {
 
-        if (ans.length === 0) {
+        if (ans.length === 0 || ans[ans.length - 1][1] < interval[0]) {
             ans.push(interval)
-            console.log(ans)
-        } else if (ans[ans.length - 1][1] < interval[0]) {
 
         } else {
-            ans[len][1] = Math.max(ans[len][1], interval[1])
+            ans[ans.length - 1][1] = Math.max(ans[ans.length - 1][1], interval[1])
         }
     }
     return ans
 };
 
 console.log(insert([[1, 3], [6, 9]], [2, 5]))
-// console.log(insert([[1, 2], [3, 5], [6, 7], [8, 10], [12, 16]], [4, 8]))
+console.log(insert([[1, 2], [3, 5], [6, 7], [8, 10], [12, 16]], [4, 8]))
