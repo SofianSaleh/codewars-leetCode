@@ -19,6 +19,11 @@ var firstMissingPositive = function (nums) {
         if (nums[index] > 0) nums[index] *= -1
     }
 
+    if (!oneExists) return 1
+
+    for (let k = 0; k < n; k++) {
+        if (nums[k] > 0 && oneExists) return nums[k] + 1
+    }
     return n + 1
 };
 
