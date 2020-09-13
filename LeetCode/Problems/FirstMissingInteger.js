@@ -6,13 +6,14 @@ var firstMissingPositive = function (nums) {
     let n = nums.length
     let oneExists = false
 
+    if (nums.length === 0) return 1
     /**
      * Change the numbers tat are 0 or down or more than the length to one
      */
 
     for (let i = 0; i < n; i++) {
         if (nums[i] === 1) oneExists = true
-        if (nums[i] <= 0 || nums[i] >= n) {
+        if (nums[i] <= 0 || nums[i] > n) {
             nums[i] = 1
         }
     }
@@ -48,5 +49,6 @@ var firstMissingPositive = function (nums) {
     return n
 };
 
-console.log(firstMissingPositive([1, 2, 0]))
+console.log(firstMissingPositive([3, 4, -1, 1]))
+// console.log(firstMissingPositive([1, 2, 0]))
 // console.log(firstMissingPositive([3, 4, -1, 16, 77]))
