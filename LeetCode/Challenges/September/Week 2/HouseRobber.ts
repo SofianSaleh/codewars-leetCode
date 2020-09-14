@@ -8,6 +8,5 @@ function rob(nums: number[]): number {
         prev2 = prev1
         prev1 = dp
     }
-    return prev1
 };
 console.log(rob([2, 7, 9, 3, 1])) // 12
