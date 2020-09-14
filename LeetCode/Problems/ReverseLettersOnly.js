@@ -29,6 +29,9 @@ var reverseOnlyLetters = function (S) {
         while (i < j && !isAlpha(S[i])) {
             i += 1
         }
+        while (i < j) {
+            j -= 1
+        }
     }
 };
 
