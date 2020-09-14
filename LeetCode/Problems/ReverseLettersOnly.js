@@ -24,6 +24,10 @@
 var reverseOnlyLetters = function (S) {
     let i = 0;
     let j = S.length - 1;
+
+    while (i < j) {
+
+    }
 };
 
 // To check if its a letter or not
