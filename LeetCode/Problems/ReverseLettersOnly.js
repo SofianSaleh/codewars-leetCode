@@ -25,6 +25,6 @@ var reverseOnlyLetters = function (S) {
 
 };
 
-// function isAlpha(ch: string): boolean{
-//   return /^[A-Z]$/i.test(ch);
-// }
+var isAlpha = (ch) => {
+    return /^[A-Z]$/i.test(ch);
+}
