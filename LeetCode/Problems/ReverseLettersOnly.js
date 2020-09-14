@@ -32,6 +32,9 @@ var reverseOnlyLetters = function (S) {
         while (i < j) {
             j -= 1
         }
+        S[i], S[j] = S[j], S[i]
+        i += 1
+        j -= 1
     }
 };
 
