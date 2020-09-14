@@ -22,20 +22,21 @@
 // S doesn't contain \ or "
 
 var reverseOnlyLetters = function (S) {
+    console.log(S)
     let i = 0;
     let j = S.length - 1;
     let arr = S.split('')
 
     while (i < j) {
-        console.log(i, j)
         while (i < j && !isAlpha(arr[i])) {
             i += 1
-            console.log(i)
         }
-        while (i < j && !isAlpha(arr[i])) {
+        console.log(j)
+        while (i < j && !isAlpha(arr[j])) {
             j -= 1
         }
         [arr[i], arr[j]] = [arr[j], arr[i]]
+        console.log(arr[i], arr[j], j, i)
         i += 1
         j -= 1
     }
@@ -47,4 +48,6 @@ var isAlpha = (ch) => {
     return /^[A-Z]$/i.test(ch);
 }
 
-console.log(reverseOnlyLetters('ab-cd'))
+// console.log(reverseOnlyLetters('ab-cd'))
+console.log(reverseOnlyLetters("a-bC-dEf-ghIj"))
+// j-Ih-g    -dCba
