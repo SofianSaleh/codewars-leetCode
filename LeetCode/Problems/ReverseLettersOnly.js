@@ -24,21 +24,27 @@
 var reverseOnlyLetters = function (S) {
     let i = 0;
     let j = S.length - 1;
+    let arr = S.split('')
 
     while (i < j) {
-        while (i < j && !isAlpha(S[i])) {
+        console.log(i < j)
+        while (i < j && !isAlpha(arr[i])) {
             i += 1
         }
-        while (i < j) {
+        while (i < j && !isAlpha(arr[i])) {
             j -= 1
         }
-        S[i], S[j] = S[j], S[i]
+        [arr[i], arr[j]] = [arr[j], arr[i]]
+        console.log(arr)
         i += 1
         j -= 1
     }
+    console.log(arr)
 };
 
 // To check if its a letter or not
 var isAlpha = (ch) => {
     return /^[A-Z]$/i.test(ch);
 }
+
+console.log(reverseOnlyLetters('ab-cd'))
