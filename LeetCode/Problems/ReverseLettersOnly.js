@@ -22,9 +22,11 @@
 // S doesn't contain \ or "
 
 var reverseOnlyLetters = function (S) {
-
+    let i = 0;
+    let j = S.length - 1;
 };
 
+// To check if its a letter or not
 var isAlpha = (ch) => {
     return /^[A-Z]$/i.test(ch);
 }
