@@ -27,19 +27,19 @@ var reverseOnlyLetters = function (S) {
     let arr = S.split('')
 
     while (i < j) {
-        console.log(i < j)
+        console.log(i, j)
         while (i < j && !isAlpha(arr[i])) {
             i += 1
+            console.log(i)
         }
         while (i < j && !isAlpha(arr[i])) {
             j -= 1
         }
         [arr[i], arr[j]] = [arr[j], arr[i]]
-        console.log(arr)
         i += 1
         j -= 1
     }
-    console.log(arr)
+    return arr.join('')
 };
 
 // To check if its a letter or not
