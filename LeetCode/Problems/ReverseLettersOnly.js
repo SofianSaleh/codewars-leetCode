@@ -22,7 +22,6 @@
 // S doesn't contain \ or "
 
 var reverseOnlyLetters = function (S) {
-    console.log(S)
     let i = 0;
     let j = S.length - 1;
     let arr = S.split('')
@@ -31,12 +30,10 @@ var reverseOnlyLetters = function (S) {
         while (i < j && !isAlpha(arr[i])) {
             i += 1
         }
-        console.log(j)
         while (i < j && !isAlpha(arr[j])) {
             j -= 1
         }
         [arr[i], arr[j]] = [arr[j], arr[i]]
-        console.log(arr[i], arr[j], j, i)
         i += 1
         j -= 1
     }
