@@ -6,6 +6,7 @@ function rob(nums: number[]): number {
         let dp = Math.max(prev1, prev2 + num)
         console.log(dp, prev2, prev1)
         prev2 = prev1
+        prev1 = dp
     }
     return prev1
 };
