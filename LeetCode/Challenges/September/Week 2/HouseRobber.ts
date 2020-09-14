@@ -11,3 +11,6 @@ function rob(nums: number[]): number {
     return prev1
 };
 console.log(rob([2, 7, 9, 3, 1])) // 12
+console.log(rob([2, 7, 9, 3, 1, 7, 8, 5, 3, 5, 6, 8, 6]))
+console.log(rob([2, 7, 9]))
+console.log(rob([9, 1, 2, 3, 7, 8 3, 1])) 
