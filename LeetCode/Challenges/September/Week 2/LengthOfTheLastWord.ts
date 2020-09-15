@@ -1,16 +1,17 @@
 
 // ######################## TYPESCRIPT ########################
-function lengthOfLastWord(s: string) {
-    let str: string[] = s.split(' ')
+function lengthOfLastWord(s: string): number {
+    // let str: string[] = s.split(' ')
+    let ans: number = 0
     let i: number = str.length - 1
-    while (i >= 0) {
-        if (str[i] !== '') {
-            return str[i].length
-        } else {
-            i -= 1
-        }
+    while (i >= 0 && s[i] === ' ') {
+        i -= 1
     }
-    return str[str.length - 1].length
+    while (i >= 0 && s[i] !== ' ') {
+        i -= 1
+        ans += 1
+    }
+    return ans
 
 }
 // ######################## JAVASCRIPT ########################
