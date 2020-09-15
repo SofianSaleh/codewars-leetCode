@@ -3,7 +3,7 @@
 function lengthOfLastWord(s: string): number {
     // let str: string[] = s.split(' ')
     let ans: number = 0
-    let i: number = str.length - 1
+    let i: number = s.length - 1
     while (i >= 0 && s[i] === ' ') {
         i -= 1
     }
@@ -14,6 +14,8 @@ function lengthOfLastWord(s: string): number {
     return ans
 
 }
+console.log(lengthOfLastWord('a '))
+
 // ######################## JAVASCRIPT ########################
 // var lengthOfLastWord = function (s) {
 //     let str = s.split(' ')
@@ -29,5 +31,16 @@ function lengthOfLastWord(s: string): number {
 //     return str[str.length - 1].length
 
 // };
-// console.log(lengthOfLastWord('a '))
 // ######################## PYTHON ########################
+
+// class Solution:
+//     def lengthOfLastWord(self, s: str) -> int:
+//         ans = 0
+//         i = len(s) - 1
+//     while i >= 0 and s[i] == ' '): 
+//         i -= 1
+//     while i >= 0 and s[i] !== ' ':
+//         i -= 1
+//         ans += 1
+//     return ans
+
