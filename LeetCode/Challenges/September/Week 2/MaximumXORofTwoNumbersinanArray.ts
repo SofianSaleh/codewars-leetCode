@@ -25,15 +25,13 @@
 // ######################## TYPESCRIPT ########################
 
 function findMaximumXOR(nums: number[]): number {
-    let binaryArr = []
+    let ans = []
+    let n = nums.length
 
-    for (let i = 0; i < nums.length; i++) {
-        binaryArr.push(convertDecimalToBinary(nums[i]))
-    }
-    console.log(binaryArr)
-    for (let i = 30; i >= 0; i--) {
+    for (let i = 0; i < n; i++) {
+        for (let j = i + 1; j < n; j++) {
 
-
+        }
     }
     return 0
 };
