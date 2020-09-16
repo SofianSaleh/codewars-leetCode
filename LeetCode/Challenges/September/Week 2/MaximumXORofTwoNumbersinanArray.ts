@@ -24,9 +24,20 @@
 
 // ######################## TYPESCRIPT ########################
 
-// function findMaximumXOR(nums: number[]): number {
+function findMaximumXOR(nums: number[]): number {
+    let binaryArr = []
 
-// };
+    for (let i = 0; i < nums.length; i++) {
+        binaryArr.push(convertDecimalToBinary(nums[i]))
+    }
+    console.log(binaryArr)
+    for (let i = 30; i >= 0; i--) {
+
+
+    }
+    return 0
+};
+console.log(findMaximumXOR([3, 10, 5, 25, 2, 8]))
 
 function convertDecimalToBinary(number: number) {
     var binary = "";
@@ -45,7 +56,6 @@ function convertDecimalToBinary(number: number) {
 
     return binary;
 }
-console.log(convertDecimalToBinary(5))
 
 // ######################## JAVASCRIPT ########################
 
