@@ -37,8 +37,6 @@ function findMaximumXOR(nums: number[]): number {
 };
 console.log(findMaximumXOR([3, 10, 5, 25, 2, 8]))
 
-
-
 // ######################## JAVASCRIPT ########################
 
 
