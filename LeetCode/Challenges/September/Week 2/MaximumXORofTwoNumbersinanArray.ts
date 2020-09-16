@@ -39,7 +39,21 @@ console.log(findMaximumXOR([3, 10, 5, 25, 2, 8]))
 
 // ######################## JAVASCRIPT ########################
 
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+// var findMaximumXOR = function (nums) {
+//     let ans = 0
+//     let n = nums.length
 
+//     for (let i = 0; i < n; i++) {
+//         for (let j = i + 1; j < n; j++) {
+//             ans = Math.max(ans, nums[i] ^ nums[j])
+//         }
+//     }
+//     return ans
+// };
 
 // ######################## PYTHON ########################
 
@@ -47,5 +61,13 @@ console.log(findMaximumXOR([3, 10, 5, 25, 2, 8]))
 
 // ######################## PYTHON3 ########################
 
+// class Solution:
+//     def findMaximumXOR(self, nums: List[int]) -> int:
+//         ans: int = 0
+//         n: int = len(nums)
 
+//         for i in range(n):
+//             for j in range(i + 1, n):
+//                 ans = max(ans, nums[i] ^ nums[j])
+//         return ans
 
