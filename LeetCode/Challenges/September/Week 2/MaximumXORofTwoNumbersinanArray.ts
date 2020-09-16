@@ -25,15 +25,15 @@
 // ######################## TYPESCRIPT ########################
 
 function findMaximumXOR(nums: number[]): number {
-    let ans = []
+    let ans = 0
     let n = nums.length
 
     for (let i = 0; i < n; i++) {
         for (let j = i + 1; j < n; j++) {
-
+            ans = Math.max(ans, nums[i] ^ nums[j])
         }
     }
-    return 0
+    return ans
 };
 console.log(findMaximumXOR([3, 10, 5, 25, 2, 8]))
 
