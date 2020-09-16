@@ -23,12 +23,12 @@
 
 
 // ######################## TYPESCRIPT ########################
-
+// Time Complexity Object(n^2)
 function findMaximumXOR(nums: number[]): number {
-    let ans = 0
-    let n = nums.length
+    let ans: number = 0
+    let n: number = nums.length
 
-    for (let i = 0; i < n; i++) {
+    for (let i: number = 0; i < n; i++) {
         for (let j = i + 1; j < n; j++) {
             ans = Math.max(ans, nums[i] ^ nums[j])
         }
@@ -37,23 +37,7 @@ function findMaximumXOR(nums: number[]): number {
 };
 console.log(findMaximumXOR([3, 10, 5, 25, 2, 8]))
 
-function convertDecimalToBinary(number: number) {
-    var binary = "";
-    var temp = number;
 
-    while (temp > 0) {
-        if (temp % 2 == 0) {
-            binary = "0" + binary;
-        }
-        else {
-            binary = "1" + binary;
-        }
-
-        temp = Math.floor(temp / 2);
-    }
-
-    return binary;
-}
 
 // ######################## JAVASCRIPT ########################
 
