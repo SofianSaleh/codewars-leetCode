@@ -1,7 +1,7 @@
 // ######################## TYPESCRIPT ########################
 
 function isRobotBounded(instructions: string): boolean {
-    let
+    let x: number = 0
 };
 
 // ######################## JAVASCRIPT ########################
