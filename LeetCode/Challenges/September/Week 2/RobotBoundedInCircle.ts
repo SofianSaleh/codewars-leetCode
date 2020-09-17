@@ -1,15 +1,16 @@
 // ######################## TYPESCRIPT ########################
 
 function isRobotBounded(instructions: string): boolean {
-    let x: number = 0
-    let y: number = 0
+    let x: any = 0
+    let y: any = 0
     let d: number = 0
     //                              up    down 
     let directions: number[][] = [[0, 1], [1, 0], [0, -1], [-1, 0]]
 
     for (const instruction of instructions) {
         if (instruction === 'G') {
-
+            x += instructions[d][0]
+            y += instructions[d][1]
         } else if (instruction === 'L') {
             d = (d + 3) % 4
 
@@ -18,8 +19,10 @@ function isRobotBounded(instructions: string): boolean {
         }
 
     }
+    return x === 0 && y === 0 || d > 0 ? true : false
 };
 
+console.log(isRobotBounded("GGLLGG"))
 // ######################## JAVASCRIPT ########################
 
 /**
