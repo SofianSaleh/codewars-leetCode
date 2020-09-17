@@ -2,6 +2,10 @@
 
 function isRobotBounded(instructions: string): boolean {
     let x: number = 0
+    let y: number = 0
+    let d: number = 0
+    //                              up    down 
+    let directions: number[][] = [[0, 1], [1, 0], [0, -1], [-1, 0]]
 };
 
 // ######################## JAVASCRIPT ########################
