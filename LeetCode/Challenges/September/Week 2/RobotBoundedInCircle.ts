@@ -9,8 +9,8 @@ function isRobotBounded(instructions: string): boolean {
 
     for (const instruction of instructions) {
         if (instruction === 'G') {
-            x += instructions[d][0]
-            y += instructions[d][1]
+            x += directions[d][0]
+            y += directions[d][1]
         } else if (instruction === 'L') {
             d = (d + 3) % 4
 
@@ -19,10 +19,11 @@ function isRobotBounded(instructions: string): boolean {
         }
 
     }
-    return x === 0 && y === 0 || d > 0 ? true : false
+    return (x === 0 && y === 0) || d > 0 ? true : false
 };
 
-console.log(isRobotBounded("GGLLGG"))
+console.log(isRobotBounded("GG"))
+console.log(isRobotBounded("GGLLGGL"))
 // ######################## JAVASCRIPT ########################
 
 /**
