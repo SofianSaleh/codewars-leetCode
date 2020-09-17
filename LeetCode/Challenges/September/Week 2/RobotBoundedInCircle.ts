@@ -13,6 +13,8 @@ function isRobotBounded(instructions: string): boolean {
         } else if (instruction === 'L') {
             d = (d + 3) % 4
 
+        } else {
+            d = (d + 1) % 4
         }
 
     }
