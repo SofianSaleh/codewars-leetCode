@@ -21,9 +21,10 @@ function sequentialDigits(low: number, high: number): number[] {
   let result: number[] = [];
   let nums: string = '123456789';
 
-  for (let i: number = 2; i < nums.lenght; i++) {
-    for (let j: number = 0; j < nums.lenght; j++) {
+  for (let i: number = 2; i < nums.length; i++) {
+    for (let j: number = 0; j < nums.length; j++) {
       let num: number = parseInt(nums.substring(j, j + i));
+      console.log(nums);
 
       if (num > high) return result;
       if (num >= low) result.push(num);
@@ -31,6 +32,9 @@ function sequentialDigits(low: number, high: number): number[] {
   }
   return result;
 }
+
+console.log(sequentialDigits(100, 300));
+// console.log(sequentialDigits(1000, 13000));
 
 // ######################## JAVASCRIPT ########################
 
