@@ -45,3 +45,11 @@ function uniquePathsIII(grid: number[][]): number {
   dfs(grid, empty, sx, sy, ans);
   return ans;
 }
+
+console.log(
+  uniquePathsIII([
+    [1, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 2, -1],
+  ])
+);
