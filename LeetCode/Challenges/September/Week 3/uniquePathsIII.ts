@@ -56,3 +56,10 @@ function uniquePathsIII(grid: number[][]): number {
 
   return path_count;
 }
+console.log(
+  uniquePathsIII([
+    [1, 0, 0, 0],
+    [0, 0, 0, 0],
+    [0, 0, 2, -1],
+  ])
+);
