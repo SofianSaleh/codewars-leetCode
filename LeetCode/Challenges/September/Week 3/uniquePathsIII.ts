@@ -23,6 +23,7 @@ function uniquePathsIII(grid: number[][]): number {
       }
     }
     function dfs(grid: any, empty: any, i: any, j: any, ans: any) {
+      console.log(ans);
       if (
         i < 0 ||
         i >= grid.length ||
@@ -54,13 +55,13 @@ console.log(
     [0, 0, 2, -1],
   ])
 );
-console.log(
-  uniquePathsIII([
-    [1, 0, 0, 0],
-    [0, 0, 0, 0],
-    [0, 0, 0, 2],
-  ])
-);
+// console.log(
+//   uniquePathsIII([
+//     [1, 0, 0, 0],
+//     [0, 0, 0, 0],
+//     [0, 0, 0, 2],
+//   ])
+// );
 
 // class Solution {
 //     public:
