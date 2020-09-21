@@ -34,12 +34,16 @@
 // 1 <= capacity <= 100000
 
 function carPooling(trips: number[][], capacity: number): boolean {
-  let sorted: number[][] = trips.sort((a, b) => a[1] - b[1]);
-  let passengers: number;
-  for (let i = 0; i < sorted.length; i++) {
-    // if (passengers + sorted[i][0] <= capacity)
-    passengers += sorted[i][0];
+  let map = {};
+
+  for (const [p, s, f] of trips) {
+    map[s] = map[s] || 0;
+    map[s] += p;
+    map[f] += map[f] || 0;
+    map[f] -= p;
   }
+  console.log(map);
+
   return true;
 }
 console.log(
