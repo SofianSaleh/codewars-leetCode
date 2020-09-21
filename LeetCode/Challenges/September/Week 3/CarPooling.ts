@@ -37,13 +37,12 @@ function carPooling(trips: number[][], capacity: number): boolean {
   let map = {};
 
   for (const [p, s, f] of trips) {
-    console.log(s);
+    console.log(p, s, f, map);
     map[s] = map[s] || 0;
     map[s] += p;
     map[f] = map[f] || 0;
     map[f] -= p;
   }
-  console.log(map);
 
   for (let i = 0; i <= 1000; i++) {
     if (!map[i]) continue;
