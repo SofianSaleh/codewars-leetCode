@@ -34,4 +34,9 @@ function majorityElement(nums: number[]): number[] {
       countSoFar2 -= 1;
     }
   }
+
+  let count1: number = 0;
+  let count2: number = 0;
+  return [];
 }
+console.log(majorityElement([3, 2, 3]));
