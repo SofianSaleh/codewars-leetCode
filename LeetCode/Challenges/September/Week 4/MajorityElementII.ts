@@ -12,5 +12,9 @@
 // Output: [1,2]
 
 function majorityElement(nums: number[]): number[] {
-  let len: number = nums.length;
+  let candidate1: number = 0;
+  let candidate2: number = 0;
+
+  let countSoFar1: number = 0;
+  let countSoFar2: number = 0;
 }
