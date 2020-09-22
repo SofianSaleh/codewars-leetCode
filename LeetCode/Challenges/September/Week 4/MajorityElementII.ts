@@ -12,6 +12,7 @@
 // Output: [1,2]
 
 function majorityElement(nums: number[]): number[] {
+  let ans: number[] = [];
   let candidate1: number = 0;
   let candidate2: number = 0;
 
@@ -37,6 +38,15 @@ function majorityElement(nums: number[]): number[] {
 
   let count1: number = 0;
   let count2: number = 0;
-  return [];
+
+  for (const num of nums) {
+    if (num == candidate1) ++count1;
+    else if (num == candidate2) ++count2;
+  }
+
+  if (count1 > nums.length / 3) ans.push(candidate1);
+  if (count2 > nums.length / 3) ans.push(candidate2);
+
+  return ans;
 }
 console.log(majorityElement([3, 2, 3]));
