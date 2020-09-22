@@ -17,4 +17,21 @@ function majorityElement(nums: number[]): number[] {
 
   let countSoFar1: number = 0;
   let countSoFar2: number = 0;
+
+  for (const num of nums) {
+    if (num === candidate1) {
+      countSoFar1 += 1;
+    } else if (num === candidate2) {
+      countSoFar1 += 1;
+    } else if (countSoFar1 === 0) {
+      candidate1 = num;
+      countSoFar1 += 1;
+    } else if (countSoFar2 === 0) {
+      candidate2 = num;
+      countSoFar2 += 1;
+    } else {
+      countSoFar1 -= 1;
+      countSoFar2 -= 1;
+    }
+  }
 }
