@@ -14,7 +14,7 @@
 function majorityElement(nums: number[]): number[] {
   let ans: number[] = [];
   let candidate1: number = 0;
-  let candidate2: number = 0;
+  let candidate2: number = 1;
 
   let countSoFar1: number = 0;
   let countSoFar2: number = 0;
@@ -43,10 +43,17 @@ function majorityElement(nums: number[]): number[] {
     if (num == candidate1) ++count1;
     else if (num == candidate2) ++count2;
   }
-
+  console.log(
+    count1,
+    count2,
+    candidate1,
+    candidate2,
+    count1 > nums.length / 3,
+    count2 > nums.length / 3
+  );
   if (count1 > nums.length / 3) ans.push(candidate1);
   if (count2 > nums.length / 3) ans.push(candidate2);
 
   return ans;
 }
-console.log(majorityElement([3, 2, 3]));
+console.log(majorityElement([-1, 100, 2, 100, 100, 4, 100]));
