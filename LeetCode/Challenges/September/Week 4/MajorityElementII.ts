@@ -20,10 +20,11 @@ function majorityElement(nums: number[]): number[] {
   let countSoFar2: number = 0;
 
   for (const num of nums) {
+    console.log(candidate1, candidate2, countSoFar1, countSoFar2);
     if (num === candidate1) {
       countSoFar1 += 1;
     } else if (num === candidate2) {
-      countSoFar1 += 1;
+      countSoFar2 += 1;
     } else if (countSoFar1 === 0) {
       candidate1 = num;
       countSoFar1 += 1;
@@ -43,14 +44,7 @@ function majorityElement(nums: number[]): number[] {
     if (num == candidate1) ++count1;
     else if (num == candidate2) ++count2;
   }
-  console.log(
-    count1,
-    count2,
-    candidate1,
-    candidate2,
-    count1 > nums.length / 3,
-    count2 > nums.length / 3
-  );
+
   if (count1 > nums.length / 3) ans.push(candidate1);
   if (count2 > nums.length / 3) ans.push(candidate2);
 
