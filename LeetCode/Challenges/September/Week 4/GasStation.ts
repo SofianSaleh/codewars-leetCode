@@ -49,7 +49,7 @@ function canCompleteCircuit(gas: number[], cost: number[]): number {
 
   for (let i = 0; i < gas.length; i++) {
     net += gas[i] - cost[i];
-    fuel += gas[i] - cost[i];
+    sum += gas[i] - cost[i];
 
     if (sum < 0) {
       sum = 0;
@@ -59,4 +59,4 @@ function canCompleteCircuit(gas: number[], cost: number[]): number {
 
   return net < 0 ? -1 : fuel;
 }
-console.log(canCompleteCircuit);
+console.log(canCompleteCircuit([1, 2, 3, 4, 5], [3, 4, 5, 1, 2]));
