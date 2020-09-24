@@ -13,6 +13,9 @@
 // Output:
 // e
 
+// Explanation:
+// 'e' is the letter that was added.
+
 function findTheDifference(s: string, t: string): string {
   let arr = t.split('');
   for (let i = 0; i < t.length; i++) {
