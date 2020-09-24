@@ -7,3 +7,4 @@ function findTheDifference(s: string, t: string): string {
   return arr.join('');
 }
 console.log(findTheDifference('abcd', 'abcde'));
+console.log(findTheDifference('abcde', 'abcde'));
