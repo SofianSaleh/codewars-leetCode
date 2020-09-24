@@ -4,6 +4,13 @@
 
 // Find the letter that was added in t.
 
+// Example:
+
+.
+
+
+
+
 function findTheDifference(s: string, t: string): string {
   let arr = t.split('');
   for (let i = 0; i < t.length; i++) {
