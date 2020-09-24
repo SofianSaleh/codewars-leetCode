@@ -6,10 +6,9 @@
 
 // Example:
 
-.
-
-
-
+// Input:
+// s = "abcd"
+// t = "abcde"
 
 function findTheDifference(s: string, t: string): string {
   let arr = t.split('');
