@@ -11,11 +11,12 @@
 // Note: The result may be very large, so you need to return a string instead of an integer.
 
 function largestNumber(nums: number[]): string {
-  var res = nums
-    .sort(function (a, b) {
-      var str1 = '' + a + b;
-      var str2 = '' + b + a;
-      
+  var res = nums.sort(function (a, b) {
+    var str1 = '' + a + b;
+    var str2 = '' + b + a;
+    if (str1 === str2) return 0;
+    return str1 > str2 ? -1 : 1;
+  });
 }
 
 console.log(largestNumber([1, 2, 3, 3]));
