@@ -10,4 +10,27 @@
 // Output: "9534330"
 // Note: The result may be very large, so you need to return a string instead of an integer.
 
-function largestNumber(nums: number[]): string {}
+function largestNumber(nums: number[]): string {
+  const len = nums.length;
+  let max = nums[0];
+  let min = 0;
+  let sum = 0;
+  for (let i = 0; i < len; i++) {
+    sum += nums[i];
+    if (sum - min > max) max = sum - min;
+    if (sum < min) {
+      min = sum;
+    }
+  }
+  console.log(max);
+  return 'max;';
+}
+console.log(largestNumber([1, 2, 3, 3]));
+/**
+ * 1 2 3
+ * 1 3 2
+ * 2 1 3
+ * 2 3 1
+ * 3 1 2
+ * 3 2 1
+ */
