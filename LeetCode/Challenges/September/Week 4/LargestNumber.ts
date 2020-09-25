@@ -23,6 +23,8 @@ function largestNumber(nums: number[]): string {
 }
 
 console.log(largestNumber([1, 2, 3, 3]));
+console.log(largestNumber([3, 30, 34, 5, 9]));
+console.log(largestNumber([10, 2]));
 /**
  * 1 2 3
  * 1 3 2
