@@ -12,7 +12,10 @@
 
 function largestNumber(nums: number[]): string {
   var res = nums
-    .sort(
+    .sort(function (a, b) {
+      var str1 = '' + a + b;
+      var str2 = '' + b + a;
+      
 }
 
 console.log(largestNumber([1, 2, 3, 3]));
