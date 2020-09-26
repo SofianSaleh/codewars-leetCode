@@ -52,14 +52,14 @@ function findPoisonedDuration(timeSeries: number[], duration: number): number {
 //         return ans + duration
 
 // #######################  JavaScript #######################
-var findPoisonedDuration = (timeSeries, duration) => {
-  if (timeSeries.length === 0 || duration === 0) return 0;
+// var findPoisonedDuration = (timeSeries, duration) => {
+//   if (timeSeries.length === 0 || duration === 0) return 0;
 
-  let ans = 0;
+//   let ans = 0;
 
-  for (let i = 0; i < timeSeries.length - 1; i++) {
-    ans += Math.min(timeSeries[i + 1] - timeSeries[i], duration);
-  }
+//   for (let i = 0; i < timeSeries.length - 1; i++) {
+//     ans += Math.min(timeSeries[i + 1] - timeSeries[i], duration);
+//   }
 
-  return ans + duration;
-};
+//   return ans + duration;
+// };
