@@ -37,3 +37,16 @@ function findPoisonedDuration(timeSeries: number[], duration: number): number {
 
   return ans + duration;
 }
+
+// #######################  Python #######################
+// class Solution:
+//     def findPoisonedDuration(self, timeSeries: List[int], duration: int) -> int:
+//         if timeSeries == [] or duration == 0:
+//             return 0
+
+//         ans = 0
+
+//         for i in range(0, len(timeSeries) - 1):
+//             ans += min(timeSeries[i + 1] - timeSeries[i], duration)
+
+//         return ans + duration
