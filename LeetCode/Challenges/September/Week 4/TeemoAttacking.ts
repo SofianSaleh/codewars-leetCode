@@ -26,4 +26,6 @@
 // You may assume the length of given time series array won't exceed 10000.
 // You may assume the numbers in the Teemo's attacking time series and his poisoning time duration per attacking are non-negative integers, which won't exceed 10,000,000.
 
-function findPoisonedDuration(timeSeries: number[], duration: number): number {}
+function findPoisonedDuration(timeSeries: number[], duration: number): number {
+  if (timeSeries === [] || duration === 0) return 0;
+}
