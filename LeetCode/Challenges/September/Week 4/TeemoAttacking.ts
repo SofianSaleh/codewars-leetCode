@@ -31,7 +31,9 @@ function findPoisonedDuration(timeSeries: number[], duration: number): number {
 
   let ans: number = 0;
 
-  for (let i = 0; i < timeSeries.length - 1; i++) {}
+  for (let i = 0; i < timeSeries.length - 1; i++) {
+    ans += Math.min(timeSeries[i + 1] - timeSeries[i], duration);
+  }
 
   return ans + duration;
 }
