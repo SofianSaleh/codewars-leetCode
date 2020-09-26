@@ -28,4 +28,6 @@
 
 function findPoisonedDuration(timeSeries: number[], duration: number): number {
   if (timeSeries === [] || duration === 0) return 0;
+
+  let ans: number = 0;
 }
