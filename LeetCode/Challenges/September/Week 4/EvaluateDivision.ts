@@ -48,14 +48,7 @@ function calcEquation(
     if (graph[y]) graph[y][x] = 1 / v;
     else graph[y] = { x: 1 / v };
   }
-  //
-
-  //             else:
-  //
-  //             if y in graph:
-  //
-  //             else:
-  //
+  console.log(graph);
   return [];
 }
 
