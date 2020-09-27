@@ -35,4 +35,31 @@ function calcEquation(
   equations: string[][],
   values: number[],
   queries: string[][]
-): number[] {}
+): number[] {
+  let graph: any = {};
+  let tuple = [];
+
+  for (let i = 0; i < equations.length; i++) {
+    tuple.push([equations[i], values[i]]);
+  }
+  console.log(tuple);
+
+  return [];
+}
+
+console.log(
+  calcEquation(
+    [
+      ['a', 'b'],
+      ['b', 'c'],
+    ],
+    [2.0, 3.0],
+    [
+      ['a', 'c'],
+      ['b', 'a'],
+      ['a', 'e'],
+      ['a', 'a'],
+      ['x', 'x'],
+    ]
+  )
+);
