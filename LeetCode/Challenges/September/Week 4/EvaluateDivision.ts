@@ -49,6 +49,7 @@ function calcEquation(
     else graph[y] = { [x]: 1 / v };
   }
   function dfs(s: string, t: string): number {
+    console.log(!graph['a']);
     if (!graph[s]) return -1;
     // console.log(t === s);
     if (t === s) return 1;
@@ -57,17 +58,17 @@ function calcEquation(
     for (const node of Object.keys(graph[s])) {
       //   console.log(!visited[node]);
       if (node === t) return graph[s][node];
-      else if (!visited[node]) {
-        visited[node] = node;
+      else if (!visited.has(node)) {
+        visited.add(node);
         let v = dfs(node, t);
-        console.log(node, t);
+        // console.log(node, t);
         if (v !== -1) return graph[s][node] * v;
       }
       return -1;
     }
   }
   let res: number[] = [];
-  let visited = {};
+  let visited = new Set();
   for (const [qs, qt] of queries) {
     // console.log(qs, qt);
     res.push(dfs(qs, qt));
