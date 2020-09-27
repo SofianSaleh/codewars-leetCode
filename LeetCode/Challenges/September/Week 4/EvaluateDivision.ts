@@ -42,7 +42,9 @@ function calcEquation(
   for (let i = 0; i < equations.length; i++) {
     tuple.push([equations[i], values[i]]);
   }
-  console.log(tuple);
+  for (const [[x, y], v] of tuple) {
+  }
+  //
 
   return [];
 }
