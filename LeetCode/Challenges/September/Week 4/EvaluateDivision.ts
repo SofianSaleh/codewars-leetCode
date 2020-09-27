@@ -76,19 +76,6 @@ function calcEquation(
   }
   return res;
 }
-// if s not in graph:
-// return -1
-// if t == s:
-// return 1
-// for node in graph[s].keys():
-// if node == t:
-//     return graph[s][node]
-// elif node not in visited:
-//     visited.add(node)  # Add to visited to avoid repeated traversal
-//     v = dfs(node, t)
-//     if v != -1:
-//         return graph[s][node]*v
-// return -1
 
 console.log(
   calcEquation(
