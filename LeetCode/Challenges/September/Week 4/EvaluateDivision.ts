@@ -43,10 +43,21 @@ function calcEquation(
     tuple.push([equations[i], values[i]]);
   }
   for (const [[x, y], v] of tuple) {
-    if (graph[x]) graph[x][y] = v;
-    else graph[x] = { y: v };
-    if (graph[y]) graph[y][x] = 1 / v;
-    else graph[y] = { x: 1 / v };
+    if (graph[x]) {
+      graph[x] = null;
+      graph[x][y] = v;
+    } else {
+      graph[x] = null;
+      console.log(y);
+      graph[x][y] = v;
+    }
+    if (graph[y]) {
+      graph[y] = null;
+      graph[y][x] = 1 / v;
+    } else {
+      graph[y] = null;
+      graph[y][x] = 1 / v;
+    }
   }
   console.log(graph);
   return [];
