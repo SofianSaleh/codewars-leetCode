@@ -69,8 +69,8 @@ function calcEquation(
     }
   }
   let res: number[] = [];
-  let visited = {};
   for (const [qs, qt] of queries) {
+    var visited = {};
     // console.log(qs, qt);
     res.push(dfs(qs, qt));
   }
