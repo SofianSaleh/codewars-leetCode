@@ -35,7 +35,7 @@ function calcEquation(
   equations: string[][],
   values: number[],
   queries: string[][]
-): number[] {
+) {
   let graph: any = {};
   let tuple = [];
 
@@ -54,9 +54,20 @@ function calcEquation(
 
     for (const node of Object.keys(graph)) {
       if (node === t) return graph[s][node];
+      else if (!!visited[node]) {
+        visited.add(node);
+        let v = dfs(node, t);
+        if (v != -1) return graph[s][node] * v;
+      }
+      return -1;
     }
   }
-  return [];
+  let res: number[] = [];
+  let visited = new Set();
+  for (const [qs, qt] of queries) {
+    res.push(dfs(qs, qt));
+  }
+  return res;
 }
 // if s not in graph:
 // return -1
