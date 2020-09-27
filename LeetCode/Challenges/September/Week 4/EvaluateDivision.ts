@@ -50,6 +50,11 @@ function calcEquation(
   }
   function dfs(s, t): number {
     if (!!graph[s]) return -1;
+    if (t === s) return 1;
+
+    for (const node of Object.keys(graph)) {
+      if (node === t) return graph[s][node];
+    }
   }
   return [];
 }
