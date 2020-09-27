@@ -45,13 +45,14 @@ function calcEquation(
   for (const [[x, y], v] of tuple) {
     if (graph[x]) graph[x][y] = v;
     else graph[x] = { y: v };
+    if (graph[y]) graph[y][x] = 1 / v;
   }
   //
 
   //             else:
   //
   //             if y in graph:
-  //                 graph[y][x] = 1/v
+  //
   //             else:
   //                 graph[y] = {x: 1/v}
   return [];
