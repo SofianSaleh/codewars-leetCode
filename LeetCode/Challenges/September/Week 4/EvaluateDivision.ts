@@ -46,6 +46,7 @@ function calcEquation(
     if (graph[x]) graph[x][y] = v;
     else graph[x] = { y: v };
     if (graph[y]) graph[y][x] = 1 / v;
+    else graph[y] = { x: 1 / v };
   }
   //
 
@@ -54,7 +55,7 @@ function calcEquation(
   //             if y in graph:
   //
   //             else:
-  //                 graph[y] = {x: 1/v}
+  //
   return [];
 }
 
