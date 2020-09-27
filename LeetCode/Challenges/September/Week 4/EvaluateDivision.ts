@@ -48,9 +48,24 @@ function calcEquation(
     if (graph[y]) graph[y][x] = 1 / v;
     else graph[y] = { [x]: 1 / v };
   }
-  function dfs(s, t): number {}
+  function dfs(s, t): number {
+    if (!!graph[s]) return -1;
+  }
   return [];
 }
+// if s not in graph:
+// return -1
+// if t == s:
+// return 1
+// for node in graph[s].keys():
+// if node == t:
+//     return graph[s][node]
+// elif node not in visited:
+//     visited.add(node)  # Add to visited to avoid repeated traversal
+//     v = dfs(node, t)
+//     if v != -1:
+//         return graph[s][node]*v
+// return -1
 
 console.log(
   calcEquation(
