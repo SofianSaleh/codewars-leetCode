@@ -43,6 +43,7 @@ function calcEquation(
     tuple.push([equations[i], values[i]]);
   }
   for (const [[x, y], v] of tuple) {
+    if (graph[x]) graph[x][y] = v;
   }
   //
 
