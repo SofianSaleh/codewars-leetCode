@@ -55,7 +55,7 @@ function calcEquation(
     for (const node of Object.keys(graph)) {
       if (node === t) return graph[s][node];
       else if (!!visited[node]) {
-        visited.add(node);
+        visited[node] = node;
         let v = dfs(node, t);
         if (v != -1) return graph[s][node] * v;
       }
@@ -63,7 +63,7 @@ function calcEquation(
     }
   }
   let res: number[] = [];
-  let visited = new Set();
+  let visited = {};
   for (const [qs, qt] of queries) {
     res.push(dfs(qs, qt));
   }
