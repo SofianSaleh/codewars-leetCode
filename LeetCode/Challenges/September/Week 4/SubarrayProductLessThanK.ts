@@ -17,12 +17,3 @@ function numSubarrayProductLessThanK(nums: number[], k: number): number {
 
   return ans;
 }
-
-// for i, num in enumerate(nums):
-// prod *= num
-// while prod >= k:
-//     prod /= nums[j]
-//     j += 1
-// ans += i - j + 1
-
-// return ans
