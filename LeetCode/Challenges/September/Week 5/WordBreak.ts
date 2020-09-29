@@ -21,13 +21,25 @@
 // Output: false
 
 function wordBreak(s: string, wordDict: string[]): boolean {
-  for (const word of wordDict) {
-    let index = s.indexOf(word);
-    if (index !== -1) {
-      s = s.slice(word.length);
-    } else return false;
+  function breaker(s: string) {
+    if (s in memo) return memo[s];
+    if (s in word) {
+      memo[s] = true;
+      return true;
+    }
+    for (let i = 0; i < s.length; i++) {
+      const element = s.length;
+      if (word[s.slice(0, i)] && breaker(s.slice(i))) {
+        memo[s] = true;
+        return true;
+      }
+    }
+    memo[s] = false;
+    return false;
   }
-  return true;
+
+  let memo = {};
+  let word = new Set(wordDict);
 }
 
 console.log(wordBreak('leetcode', ['leet', 'code']));
