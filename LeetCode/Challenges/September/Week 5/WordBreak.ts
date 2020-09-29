@@ -20,4 +20,11 @@
 // Input: s = "catsandog", wordDict = ["cats", "dog", "sand", "and", "cat"]
 // Output: false
 
-function wordBreak(s: string, wordDict: string[]): boolean {}
+function wordBreak(s: string, wordDict: string[]): boolean {
+  for (const word of wordDict) {
+    if (!s.includes(word)) {
+      return false;
+    }
+  }
+  return true;
+}
