@@ -21,7 +21,6 @@
 // Output: false
 
 function wordBreak(s: string, wordDict: string[]): boolean {
-  let strings = s;
   for (const word of wordDict) {
     let index = s.indexOf(word);
     if (index !== -1) {
