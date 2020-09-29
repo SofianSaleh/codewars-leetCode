@@ -40,6 +40,7 @@ function wordBreak(s: string, wordDict: string[]): boolean {
 
   let memo = {};
   let word = new Set(wordDict);
+  return breaker(s);
 }
 
 console.log(wordBreak('leetcode', ['leet', 'code']));
