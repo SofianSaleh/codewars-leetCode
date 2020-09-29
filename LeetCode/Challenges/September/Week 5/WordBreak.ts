@@ -21,10 +21,16 @@
 // Output: false
 
 function wordBreak(s: string, wordDict: string[]): boolean {
+  let strings = s;
   for (const word of wordDict) {
-    if (!s.includes(word)) {
-      return false;
-    }
+    let index = s.indexOf(word);
+    if (index !== -1) {
+      s = s.slice(word.length);
+    } else return false;
   }
   return true;
 }
+
+console.log(wordBreak('leetcode', ['leet', 'code']));
+console.log(wordBreak('applepenapple', ['apple', 'pen']));
+console.log(wordBreak('catsandog', ['cats', 'dog', 'sand', 'and', 'cat']));
