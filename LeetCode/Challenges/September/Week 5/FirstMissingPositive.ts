@@ -21,6 +21,7 @@ function firstMissing(nums: number[]): number {
   let n: number = nums.length;
   let oneExists: boolean = false;
 
+  //   ? Change all the negative or the numbers who are length bigger than the array length to 1
   for (let i = 0; i < n; i++) {
     if (nums[i] === 1) oneExists = true;
     else if (nums[i] <= 0 || nums[i] > n) {
@@ -28,7 +29,7 @@ function firstMissing(nums: number[]): number {
     }
   }
   if (!oneExists) return 1;
-
+  // ? Any number that we are going through we change the index to  -1 so we know that we saw it
   for (let j = 0; j < n; j++) {
     let index = Math.abs(nums[j]) - 1;
 
