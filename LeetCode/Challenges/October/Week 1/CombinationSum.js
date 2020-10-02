@@ -55,3 +55,5 @@ var combinationSum = function (candidates, target) {
   dfs(target, 0, []);
   return ans;
 };
+
+console.log(combinationSum([2, 3, 6, 7], 7));
