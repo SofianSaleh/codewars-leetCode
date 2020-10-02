@@ -36,6 +36,7 @@
 
 var combinationSum = function (candidates, target) {
   var dfs = (target, s, path) => {
+    console.log(target);
     if (target < 0) return;
 
     if (target === 0) {
@@ -44,7 +45,7 @@ var combinationSum = function (candidates, target) {
     }
 
     for (let i = s; i < candidates.length; i++) {
-      path.push(candidates[i]);
+      path += candidates[i];
       dfs(target - candidates[i], i, path);
     }
   };
@@ -57,3 +58,20 @@ var combinationSum = function (candidates, target) {
 };
 
 console.log(combinationSum([2, 3, 6, 7], 7));
+// def combinationSum(candidates: List[int], target: int) -> List[List[int]]:
+//         def dfs(target: int, s: int, path: List[int]) -> None:
+//             if target < 0:
+//                 return
+//             if target == 0:
+//                 ans.append(path)
+//                 return
+
+//             for i in range(s, len(candidates)):
+//                 dfs(target - candidates[i], i, path + [candidates[i]])
+
+//         ans = []
+
+//         candidates.sort()
+//         dfs(target, 0, [])
+
+//         return ans
