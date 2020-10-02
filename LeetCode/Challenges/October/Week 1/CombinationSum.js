@@ -36,7 +36,6 @@
 
 var combinationSum = function (candidates, target) {
   var dfs = (target, s, path) => {
-    console.log(target);
     if (target < 0) return;
 
     if (target === 0) {
@@ -54,6 +53,11 @@ var combinationSum = function (candidates, target) {
 
   candidates.sort();
   dfs(target, 0, []);
+  if (ans.length > 1) {
+    var x = ans[0].split('');
+    var y = ans[1].split('')[ans[1].length];
+    console.log(x, y);
+  }
   return ans;
 };
 
