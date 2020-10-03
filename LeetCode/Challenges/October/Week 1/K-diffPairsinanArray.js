@@ -67,3 +67,23 @@ var findPairs = function (nums, k) {
 };
 
 console.log(findPairs([3, 1, 4, 1, 5], 2));
+
+// #################################### Python  ####################################
+
+// def findPairs( nums, k: int) -> int:
+//         if k < 0:
+//             return 0
+
+//         ans = 0
+//         dict = {num: i for i, num in enumerate(nums)}
+//         print(nums,enumerate(nums)
+
+//         for i, num in enumerate(nums):
+//             target = num + k
+//             print(dict[target], i)
+//             if target in dict and dict[target] != i:
+//                 ans += 1
+//                 del dict[target]
+
+//         return ans
+// print(findPairs([3,1,4,1,5], 2))
