@@ -22,12 +22,3 @@ var findPairs = function (nums, k) {
   }
   return ans;
 };
-
-// def findPairs(self, nums: List[int], k: int) -> int:
-//         for i, num in enumerate(nums):
-//             target = num + k
-//             if target in dict and dict[target] != i:
-//                 ans += 1
-//                 del dict[target]
-
-//         return ans
