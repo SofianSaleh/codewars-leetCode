@@ -32,3 +32,9 @@
 // intervals[i].length == 2
 // 0 <= intervals[i][0] < intervals[i][1] <= 10^5
 // All the intervals are unique.
+
+/**
+ * @param {number[][]} intervals
+ * @return {number}
+ */
+var removeCoveredIntervals = function (intervals) {};
