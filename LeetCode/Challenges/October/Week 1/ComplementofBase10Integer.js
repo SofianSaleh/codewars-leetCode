@@ -24,3 +24,9 @@
 
 // 0 <= N < 10^9
 // This question is the same as 476: https://leetcode.com/problems/number-complement/
+
+/**
+ * @param {number} N
+ * @return {number}
+ */
+var bitwiseComplement = function (N) {};
