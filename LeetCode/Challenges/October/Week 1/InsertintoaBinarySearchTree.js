@@ -25,6 +25,7 @@
 // -108 <= val <= 108
 // It's guaranteed that val does not exist in the original BST.
 
+
 /**
  * Definition for a binary tree node.
  * function TreeNode(val, left, right) {
@@ -38,6 +39,9 @@
  * @param {number} val
  * @return {TreeNode}
  */
-var insertIntoBST = function (root, val) {
-  if (!root) return new TreeNode(val);
+var insertIntoBST = function(root, val) {
+    if (!root) return new TreeNode(val);
+    if (root.val < val)
+     
+  
 };
