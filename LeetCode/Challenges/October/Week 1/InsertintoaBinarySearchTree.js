@@ -38,4 +38,6 @@
  * @param {number} val
  * @return {TreeNode}
  */
-var insertIntoBST = function (root, val) {};
+var insertIntoBST = function (root, val) {
+  if (!root) return new TreeNode(val);
+};
