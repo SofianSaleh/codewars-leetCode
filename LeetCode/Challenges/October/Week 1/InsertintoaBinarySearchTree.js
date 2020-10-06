@@ -49,6 +49,6 @@ console.log(
   insertIntoBST([4, 2, 7, 1, 3, null, null, null, null, null, null], 5)
 );
 console.log(insertIntoBST([4, 2, 7, 1, 3], 5));
-console.log(
-  insertIntoBST([4, 2, 7, 1, 3, null, null, null, null, null, null], 5)
-);
+// console.log(
+//   insertIntoBST([4, 2, 7, 1, 3, null, null, null, null, null, null], 5)
+// );
