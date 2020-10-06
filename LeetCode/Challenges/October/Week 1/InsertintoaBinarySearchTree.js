@@ -44,3 +44,11 @@ var insertIntoBST = function (root, val) {
   else root.left = insertIntoBST(root.left, val);
   return root;
 };
+
+console.log(
+  insertIntoBST([4, 2, 7, 1, 3, null, null, null, null, null, null], 5)
+);
+// console.log(insertIntoBST([4, 2, 7, 1, 3], 5));
+// console.log(
+//   insertIntoBST([4, 2, 7, 1, 3, null, null, null, null, null, null], 5)
+// );
