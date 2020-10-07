@@ -12,11 +12,11 @@ class ListNode {
     this.next = next === undefined ? null : next;
   }
 }
-let list = new ListNode(1, 2);
-list.next(3);
-list.next(4);
-list.next(5);
-console.log(list);
+let list = new ListNode(
+  1,
+  new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5))))
+);
+
 var rotateRight = function (head, k) {
   // Check the given parameters
   if (!head || !head.next || k === 0) return head;
@@ -26,11 +26,12 @@ var rotateRight = function (head, k) {
     len += 1;
     current = current.next;
   }
+	k %= len;
+	if(k === 0) reutn head
+  console.log(k);
 };
-// console.log(rotateRight());
-//         k %= length
-//         if k == 0:
-//             return head
+console.log(rotateRight(list, 2));
+
 
 //         slow = head
 //         fast = head
