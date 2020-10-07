@@ -39,6 +39,7 @@ let list = new ListNode(
   1,
   new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5))))
 );
+let list2 = new ListNode(1, new ListNode(2, new ListNode(3)));
 
 var rotateRight = function (head, k) {
   // Check the given parameters
@@ -69,4 +70,5 @@ var rotateRight = function (head, k) {
   fast.next = head;
   return ans;
 };
+console.log(rotateRight(list, 2));
 console.log(rotateRight(list, 2));
