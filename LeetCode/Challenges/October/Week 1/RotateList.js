@@ -11,11 +11,9 @@
  * @return {ListNode}
  */
 var rotateRight = function (head, k) {
+  // Check the given parameters
   if (!head || !head.next || k === 0) return head;
 };
-
-//         if not head or not head.next or k == 0:
-//             return head
 
 //         length = 0
 //         curr = head
