@@ -71,4 +71,4 @@ var rotateRight = function (head, k) {
   return ans;
 };
 console.log(rotateRight(list, 2));
-console.log(rotateRight(list, 2));
+console.log(rotateRight(list1, 2));
