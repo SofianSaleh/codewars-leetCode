@@ -26,12 +26,11 @@ var rotateRight = function (head, k) {
     len += 1;
     current = current.next;
   }
-	k %= len;
-	if(k === 0) reutn head
+  k %= len;
+  if (k === 0) return head;
   console.log(k);
 };
 console.log(rotateRight(list, 2));
-
 
 //         slow = head
 //         fast = head
