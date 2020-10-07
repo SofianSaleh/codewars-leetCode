@@ -28,20 +28,24 @@ var rotateRight = function (head, k) {
   }
   k %= len;
   if (k === 0) return head;
-  console.log(k);
+
+  let slow = head;
+  let fast = head;
+  for (let i = 0; i < k; i++) {
+    fast = fast.next;
+  }
+  // make the slow start from where we want to shift
+  while (fast && fast.next) {
+    slow = slow.next;
+    fast = fast.next;
+  }
+
+  let ans = slow.next;
+  slow.next = null;
+  fast.next = head;
+  return ans;
 };
 console.log(rotateRight(list, 2));
-
-//         slow = head
-//         fast = head
-
-//         for _ in range(k):
-//             fast = fast.next
-
-//         while fast and fast.next:
-//             slow = slow.next
-//             fast = fast.next
-
 //         ans = slow.next
 //         slow.next = None
 //         fast.next = head
