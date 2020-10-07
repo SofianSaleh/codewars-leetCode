@@ -1,3 +1,17 @@
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+/**
+ * @param {ListNode} head
+ * @param {number} k
+ * @return {ListNode}
+ */
+var rotateRight = function (head, k) {};
+
 // def rotateRight(self, head: ListNode, k: int) -> ListNode:
 //         if not head or not head.next or k == 0:
 //             return head
