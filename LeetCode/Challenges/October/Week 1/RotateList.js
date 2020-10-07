@@ -24,17 +24,20 @@
  *     this.next = (next===undefined ? null : next)
  * }
  */
+
 /**
  * @param {ListNode} head
  * @param {number} k
  * @return {ListNode}
  */
+// ListNode Start
 class ListNode {
   constructor(val, next) {
     this.val = val === undefined ? 0 : val;
     this.next = next === undefined ? null : next;
   }
 }
+
 let list = new ListNode(
   1,
   new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5))))
@@ -70,5 +73,6 @@ var rotateRight = function (head, k) {
   fast.next = head;
   return ans;
 };
+
 console.log(rotateRight(list, 2));
 console.log(rotateRight(list1, 4));
