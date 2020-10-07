@@ -12,7 +12,6 @@
  */
 var rotateRight = function (head, k) {};
 
-// def rotateRight(self, head: ListNode, k: int) -> ListNode:
 //         if not head or not head.next or k == 0:
 //             return head
 
