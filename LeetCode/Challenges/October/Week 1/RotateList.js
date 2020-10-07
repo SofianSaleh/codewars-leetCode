@@ -20,12 +20,14 @@ let list = new ListNode(
 var rotateRight = function (head, k) {
   // Check the given parameters
   if (!head || !head.next || k === 0) return head;
+
   let len = 0;
   let current = head;
   while (current) {
     len += 1;
     current = current.next;
   }
+
   k %= len;
   if (k === 0) return head;
 
@@ -39,9 +41,9 @@ var rotateRight = function (head, k) {
     slow = slow.next;
     fast = fast.next;
   }
-
   let ans = slow.next;
   slow.next = null;
+  console.log(head);
   fast.next = head;
   return ans;
 };
