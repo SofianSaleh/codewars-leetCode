@@ -66,8 +66,3 @@ var rotateRight = function (head, k) {
   return ans;
 };
 console.log(rotateRight(list, 2));
-//         ans = slow.next
-//         slow.next = None
-//         fast.next = head
-
-//         return ans
