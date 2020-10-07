@@ -30,7 +30,9 @@
  * @param {number} k
  * @return {ListNode}
  */
+
 // ListNode Start
+
 class ListNode {
   constructor(val, next) {
     this.val = val === undefined ? 0 : val;
@@ -43,6 +45,7 @@ let list = new ListNode(
   new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5))))
 );
 let list2 = new ListNode(1, new ListNode(2, new ListNode(3)));
+
 // ListNode Finish
 
 var rotateRight = function (head, k) {
@@ -69,6 +72,7 @@ var rotateRight = function (head, k) {
     slow = slow.next;
     fast = fast.next;
   }
+  // Assign
   let ans = slow.next;
   slow.next = null;
   fast.next = head;
