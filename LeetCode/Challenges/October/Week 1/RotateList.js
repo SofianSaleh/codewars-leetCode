@@ -1,26 +1,33 @@
 /**
  * Definition for singly-linked list.
- * function ListNode(val, next) {
- *     this.val = (val===undefined ? 0 : val)
- *     this.next = (next===undefined ? null : next)
- * }
  */
 /**
  * @param {ListNode} head
  * @param {number} k
  * @return {ListNode}
  */
+class ListNode {
+  constructor(val, next) {
+    this.val = val === undefined ? 0 : val;
+    this.next = next === undefined ? null : next;
+  }
+}
+let list = new ListNode(1, 2);
+list.next(3);
+list.next(4);
+list.next(5);
+console.log(list);
 var rotateRight = function (head, k) {
   // Check the given parameters
   if (!head || !head.next || k === 0) return head;
+  let len = 0;
+  let current = head;
+  while (current) {
+    len += 1;
+    current = current.next;
+  }
 };
-
-//         length = 0
-//         curr = head
-//         while curr:
-//             length += 1
-//             curr = curr.next
-
+// console.log(rotateRight());
 //         k %= length
 //         if k == 0:
 //             return head
