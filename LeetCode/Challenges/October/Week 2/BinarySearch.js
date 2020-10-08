@@ -27,6 +27,8 @@ var search = function (nums, target) {
   var recurse = function (arr, start, end) {
     if (start > end) return -1;
     let middle = Math.floor((start + end) / 2);
+
+    if (arr[middle] === target) return middle;
   };
   return recurse(nums, 0, nums.length - 1);
 };
