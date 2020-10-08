@@ -24,17 +24,8 @@
  * @return {number}
  */
 var search = function (nums, target) {
-  let index = -1;
-
-  var recurse = function (arr, start, end) {
-    if (start > end) return false;
-    let middle = Math.floor((start + end) / 2);
-
-    if (arr[middle] === target) return middle;
-    if (arr[middle] > target) return recurse(arr, start, middle - 1);
-    else return recurse(arr, middle + 1, end);
-  };
   return recurse(nums, 0, nums.length - 1);
 };
 
 console.log(search([-1, 0, 3, 5, 9, 12], 9));
+console.log(search([-1, 0, 3, 5, 9, 12], 2));
