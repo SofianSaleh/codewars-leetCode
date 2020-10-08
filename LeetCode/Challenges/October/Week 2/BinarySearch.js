@@ -30,7 +30,7 @@ var search = function (nums, target) {
     if (start > end) return false;
     let middle = Math.floor((start + end) / 2);
 
-    if (arr[middle] === target) return true;
+    if (arr[middle] === target) return middle;
     if (arr[middle] > target) return recurse(arr, start, middle - 1);
     else return recurse(arr, middle + 1, end);
   };
