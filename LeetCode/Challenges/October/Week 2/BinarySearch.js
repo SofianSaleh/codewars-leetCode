@@ -24,6 +24,9 @@
  * @return {number}
  */
 var search = function (nums, target) {
+  var recurse = function (arr, start, end) {
+    if (start > end) return -1;
+    
   return recurse(nums, 0, nums.length - 1);
 };
 
