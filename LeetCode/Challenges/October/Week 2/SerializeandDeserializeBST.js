@@ -55,7 +55,10 @@ var serializer = function (node, output) {
  * @param {string} data
  * @return {TreeNode}
  */
-var deserialize = function (data) {};
+var deserialize = function (data) {
+  data = data.split(',');
+  var index = 0;
+};
 
 /**
  * Your functions will be called as such:
