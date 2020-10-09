@@ -67,7 +67,7 @@ var deserialize = function (data) {
     index++;
     node.left = deserializer(data, index);
     index++;
-    //    node.right = deserializer(data, index);
+    node.right = deserializer(data, index);
     //    return node;
   }
 
