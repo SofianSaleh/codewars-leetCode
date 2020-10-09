@@ -58,6 +58,9 @@ var serializer = function (node, output) {
 var deserialize = function (data) {
   data = data.split(',');
   var index = 0;
+  function deserializer(data) {}
+
+  return deserializer(data);
 };
 
 /**
