@@ -58,7 +58,11 @@ var serializer = function (node, output) {
 var deserialize = function (data) {
   data = data.split(',');
   var index = 0;
-  function deserializer(data) {}
+  function deserializer(data) {
+    if (index > data.length || data[index] === '#') {
+      return null;
+    }
+  }
 
   return deserializer(data);
 };
