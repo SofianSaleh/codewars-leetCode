@@ -33,7 +33,12 @@
  * @param {TreeNode} root
  * @return {string}
  */
-var serialize = function (root) {};
+var serialize = function (root) {
+  var result = [];
+  serializer(root, result);
+
+  return result.join(',');
+};
 
 var serializer = function (node, output) {
   if (!node) {
