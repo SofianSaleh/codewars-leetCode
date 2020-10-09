@@ -35,6 +35,7 @@
  */
 var serialize = function (root) {};
 
+var serializer = function (node, output) {};
 /**
  * Decodes your encoded data to tree.
  *
