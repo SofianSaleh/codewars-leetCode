@@ -62,6 +62,13 @@ var deserialize = function (data) {
     if (index > data.length || data[index] === '#') {
       return null;
     }
+
+    var node = new TreeNode(parseInt(data[index]));
+    index++;
+    //    node.left = deserializer(data,index);
+    //    index++;
+    //    node.right = deserializer(data, index);
+    //    return node;
   }
 
   return deserializer(data);
