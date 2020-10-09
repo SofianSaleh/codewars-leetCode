@@ -41,8 +41,8 @@ var serializer = function (node, output) {
     return;
   }
   output.push(node.val);
-  // serializer(node.left, output);
-  // serializer(node.right, output);
+  serializer(node.left, output);
+  serializer(node.right, output);
 };
 /**
  * Decodes your encoded data to tree.
