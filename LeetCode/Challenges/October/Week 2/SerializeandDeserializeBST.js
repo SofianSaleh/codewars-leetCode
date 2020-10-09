@@ -65,7 +65,7 @@ var deserialize = function (data) {
 
     var node = new TreeNode(parseInt(data[index]));
     index++;
-    //    node.left = deserializer(data,index);
+    node.left = deserializer(data, index);
     //    index++;
     //    node.right = deserializer(data, index);
     //    return node;
