@@ -36,4 +36,22 @@
  * @param {number[][]} points
  * @return {number}
  */
-var findMinArrowShots = function (points) {};
+var findMinArrowShots = function (points) {
+  let ans = 0;
+  let arrowX = -Infinity;
+
+  for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+  }
+};
+
+// def findMinArrowShots(self, points: List[List[int]]) -> int:
+//         ans = 0
+//         arrowX = float('-inf')
+
+//         for point in sorted(points, key=lambda x: x[1]):
+//             if point[0] > arrowX:
+//                 ans += 1
+//                 arrowX = point[1]
+
+//         return ans
