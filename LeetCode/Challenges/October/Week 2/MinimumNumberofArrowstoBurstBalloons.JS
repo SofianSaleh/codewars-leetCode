@@ -37,6 +37,7 @@
  * @return {number}
  */
 var findMinArrowShots = function (points) {
+  if (points.length == 0) return 0;
   let ans = 0;
   let arrowX = -Infinity;
 
