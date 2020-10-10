@@ -49,6 +49,7 @@ var findMinArrowShots = function (points) {
       ++ans;
     }
   }
+  return ans;
 };
 
 //         for point in sorted(points, key=lambda x: x[1]):
