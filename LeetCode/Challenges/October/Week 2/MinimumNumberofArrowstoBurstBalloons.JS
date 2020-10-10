@@ -51,6 +51,3 @@ var findMinArrowShots = function (points) {
   }
   return ans;
 };
-
-//         for point in sorted(points, key=lambda x: x[1]):
-//             if point[0] > arrowX:
