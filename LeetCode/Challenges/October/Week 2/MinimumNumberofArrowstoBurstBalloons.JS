@@ -31,3 +31,9 @@
 // 0 <= points.length <= 104
 // points.length == 2
 // -231 <= xstart < xend <= 231 - 1
+
+/**
+ * @param {number[][]} points
+ * @return {number}
+ */
+var findMinArrowShots = function (points) {};
