@@ -45,7 +45,7 @@ var findMinArrowShots = function (points) {
 
   for (let i = 1; i < points.length; ++i) {
     if (points[i][0] > arrowX) {
-      // arrowX = points[i][1];
+      arrowX = points[i][1];
       // ++ans;
     }
   }
