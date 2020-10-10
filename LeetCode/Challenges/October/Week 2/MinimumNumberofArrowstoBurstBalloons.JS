@@ -43,7 +43,7 @@ var findMinArrowShots = function (points) {
 
   points = points.sort((a, b) => a[1] - b[1]);
 
-  for (let i = 0; i < array.length; i++) {
+  for (let i = 1; i < points.length; ++i) {
     const element = array[i];
   }
 };
