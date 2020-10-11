@@ -24,4 +24,4 @@ var removeDuplicateLetters = function (s) {};
 
 console.log(removeDuplicateLetters('bcabc'));
 console.log(removeDuplicateLetters('cbacdcbc"))
-// console.log(removeDuplicateLetters('cbaa'))
+console.log(removeDuplicateLetters('cbaa'))
