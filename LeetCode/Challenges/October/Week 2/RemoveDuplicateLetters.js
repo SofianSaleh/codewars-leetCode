@@ -20,7 +20,15 @@
  * @param {string} s
  * @return {string}
  */
-var removeDuplicateLetters = function (s) {};
+var removeDuplicateLetters = function (s) {
+  let dup = {};
+  let x = s.split('').entries();
+  //   console.log(x);
+  for (const [i, v] of x) {
+    dup[v] = i;
+  }
+  console.log(dup);
+};
 
 // console.log(removeDuplicateLetters('bcabc'));
 console.log(removeDuplicateLetters('cbacdcbc'));
