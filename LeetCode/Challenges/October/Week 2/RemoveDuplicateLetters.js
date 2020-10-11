@@ -31,17 +31,20 @@ var removeDuplicateLetters = function (s) {
       dub[s[i]] += 1;
     }
   }
-
-  for (let i = 0; i < s.length; i++) {
-    if (dub[s[i]] > 1) {
-      for (let j = 0; j < dub[s[i]] - 1; j++) {
-        s.splice(s.indexOf(dub[s[i]]), 1);
+  let keys = Object.keys(dub);
+  let values = Object.values(dub);
+  for (let i = 0; i < keys.length; i++) {
+    // console.log(Object.keys(dub).length, Object.values(dub)[i]);
+    if (values[i] > 1) {
+      for (let j = 0; j < values[i] - 1; j++) {
+        s.splice(s.indexOf(keys[i]), 1);
       }
     }
+    // console.log(s);
   }
   return s.sort().join('');
 };
 
-console.log(removeDuplicateLetters('bcabc'));
-// console.log(removeDuplicateLetters('cbacdcbc'));
+// console.log(removeDuplicateLetters('bcabc'));
+console.log(removeDuplicateLetters('cbacdcbc'));
 // console.log(removeDuplicateLetters('cbaa'));
