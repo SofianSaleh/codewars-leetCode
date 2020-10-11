@@ -20,31 +20,7 @@
  * @param {string} s
  * @return {string}
  */
-var removeDuplicateLetters = function (s) {
-  let dub = {};
-  s = s.split('');
-
-  for (let i = 0; i < s.length; i++) {
-    if (!dub[s[i]]) {
-      dub[s[i]] = 1;
-    } else {
-      dub[s[i]] += 1;
-    }
-  }
-  let keys = Object.keys(dub);
-  let values = Object.values(dub);
-  console.log(s);
-  for (let i = 0; i < keys.length; i++) {
-    // console.log(Object.keys(dub).length, Object.values(dub)[i]);
-    if (values[i] > 1) {
-      for (let j = 0; j < values[i] - 1; j++) {
-        s.splice(s.indexOf(keys[i]), 1);
-      }
-    }
-    // console.log(s);
-  }
-  return s.sort().join('');
-};
+var removeDuplicateLetters = function (s) {};
 
 // console.log(removeDuplicateLetters('bcabc'));
 console.log(removeDuplicateLetters('cbacdcbc'));
