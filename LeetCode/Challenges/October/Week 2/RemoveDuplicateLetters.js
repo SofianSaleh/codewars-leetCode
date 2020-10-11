@@ -20,8 +20,28 @@
  * @param {string} s
  * @return {string}
  */
-var removeDuplicateLetters = function (s) {};
+var removeDuplicateLetters = function (s) {
+  let dub = {};
+  s = s.split('');
+
+  for (let i = 0; i < s.length; i++) {
+    if (!dub[s[i]]) {
+      dub[s[i]] = 1;
+    } else {
+      dub[s[i]] += 1;
+    }
+  }
+
+  for (let i = 0; i < s.length; i++) {
+    if (dub[s[i]] > 1) {
+      for (let j = 0; j < dub[s[i]] - 1; j++) {
+        s.splice(s.indexOf(dub[s[i]]), 1);
+      }
+    }
+  }
+  return s.sort().join('');
+};
 
 console.log(removeDuplicateLetters('bcabc'));
-console.log(removeDuplicateLetters('cbacdcbc"))
-console.log(removeDuplicateLetters('cbaa'))
+console.log(removeDuplicateLetters('cbacdcbc'));
+console.log(removeDuplicateLetters('cbaa'));
