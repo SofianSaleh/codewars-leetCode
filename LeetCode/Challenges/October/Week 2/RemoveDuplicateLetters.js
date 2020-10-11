@@ -22,13 +22,33 @@
  */
 var removeDuplicateLetters = function (s) {
   let dup = {};
-  let x = s.split('').entries();
-  //   console.log(x);
-  for (const [i, v] of x) {
+  let result = [];
+
+  for (const [i, v] of s.split('').entries()) {
     dup[v] = i;
   }
-  console.log(dup);
+  for (const [index, value] of s.split('').entries()) {
+    if (result.indexOf(value) === -1) {
+      while (
+        result &&
+        value < result[result.length - 1] &&
+        index < dup[result[result.length - 1]]
+      ) {
+        result.pop();
+      }
+      result.push(value);
+    }
+  }
+
+  return result.join('');
 };
+
+// for i, c in enumerate(s):
+//         if c not in result:
+//             while result and c < result[-1] and i < rindex[result[-1]]:
+//                 result.pop()
+//             result.append(c)
+//     return ''.join(result)
 
 // console.log(removeDuplicateLetters('bcabc'));
 console.log(removeDuplicateLetters('cbacdcbc'));
