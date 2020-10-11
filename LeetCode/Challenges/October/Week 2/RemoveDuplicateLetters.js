@@ -33,6 +33,7 @@ var removeDuplicateLetters = function (s) {
   }
   let keys = Object.keys(dub);
   let values = Object.values(dub);
+  console.log(s);
   for (let i = 0; i < keys.length; i++) {
     // console.log(Object.keys(dub).length, Object.values(dub)[i]);
     if (values[i] > 1) {
