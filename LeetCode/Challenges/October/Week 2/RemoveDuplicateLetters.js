@@ -27,6 +27,7 @@ var removeDuplicateLetters = function (s) {
   for (const [i, v] of s.split('').entries()) {
     dup[v] = i;
   }
+
   for (const [index, value] of s.split('').entries()) {
     if (result.indexOf(value) === -1) {
       while (
@@ -44,11 +45,7 @@ var removeDuplicateLetters = function (s) {
 };
 
 // for i, c in enumerate(s):
-//         if c not in result:
-//             while result and c < result[-1] and i < rindex[result[-1]]:
-//                 result.pop()
-//             result.append(c)
-//     return ''.join(result)
+//
 
 // console.log(removeDuplicateLetters('bcabc'));
 console.log(removeDuplicateLetters('cbacdcbc'));
