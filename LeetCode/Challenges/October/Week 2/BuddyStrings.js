@@ -41,12 +41,15 @@ var buddyStrings = function (A, B) {
   if (A.length !== B.length) return false;
   if (A === B) {
     let newSet = new Set();
+    for (const c of A) {
+      newSet.add(c);
+    }
+    return newSet.length < A.length;
   }
-  for (const c of A) {
-    console.log(c);
-  }
+
+  let diff = [];
 };
 
 console.log(buddyStrings('ab', 'ba'));
-console.log(buddyStrings('aa', 'aa'));
-console.log(buddyStrings('aaaaaaabc', 'aaaaaaacb'));
+// console.log(buddyStrings('aa', 'aa'));
+// console.log(buddyStrings('aaaaaaabc', 'aaaaaaacb'));
