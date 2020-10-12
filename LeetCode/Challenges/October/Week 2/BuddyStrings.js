@@ -39,4 +39,4 @@
  */
 var buddyStrings = function (A, B) {};
 
-console.log(buddyStrings());
+console.log(buddyStrings('ab', 'ba'));
