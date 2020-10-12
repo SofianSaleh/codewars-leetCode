@@ -38,3 +38,5 @@
  * @return {boolean}
  */
 var buddyStrings = function (A, B) {};
+
+console.log(buddyStrings());
