@@ -37,7 +37,15 @@
  * @param {string} B
  * @return {boolean}
  */
-var buddyStrings = function (A, B) {};
+var buddyStrings = function (A, B) {
+  if (A.length !== B.length) return false;
+  if (A === B) {
+    let newSet = new Set();
+  }
+  for (const c of A) {
+    console.log(c);
+  }
+};
 
 console.log(buddyStrings('ab', 'ba'));
 console.log(buddyStrings('aa', 'aa'));
