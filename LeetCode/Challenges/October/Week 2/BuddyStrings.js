@@ -31,3 +31,10 @@
 // 0 <= A.length <= 20000
 // 0 <= B.length <= 20000
 // A and B consist of lowercase letters.
+
+/**
+ * @param {string} A
+ * @param {string} B
+ * @return {boolean}
+ */
+var buddyStrings = function (A, B) {};
