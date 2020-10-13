@@ -105,4 +105,4 @@ var sortList = function (head) {
 };
 
 console.log(sortList(x));
-// console.log(sortList(y));
+console.log(sortList(y));
