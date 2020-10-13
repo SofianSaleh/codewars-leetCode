@@ -76,16 +76,17 @@ var sortList = function (head) {
     return dummy.next, tail;
   };
 
-  length = 0
-  curr = head
-  while curr:
-      length += 1
-      curr = curr.next
+  let length = 0;
+  let curr = head;
+  while (curr) {
+    length += 1;
+    curr = curr.next;
+  }
 
-  dummy = ListNode(0)
-  dummy.next = head
+  let dummy = ListNode(0);
+  dummy.next = head;
 
-  k = 1
+  k = 1;
 };
 
 console.log(sortList(x));
