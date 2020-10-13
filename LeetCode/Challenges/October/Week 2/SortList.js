@@ -66,9 +66,16 @@ var sortList = function (head) {
     while (L1 && L2) {
       if (l1.val > l2.val) l1, (l2 = l2), l1;
     }
+    tail.next = l1;
+    l1 = l1.next;
+    tail = tail.next;
+    tail.next = L1 ? l1 : l2;
+    while (tail.next) {
+      tail = tail.next;
+    }
+    return dummy.next, tail;
   };
 };
 
-// return dummy.next, tail
 console.log(sortList(x));
 // console.log(sortList(y));
