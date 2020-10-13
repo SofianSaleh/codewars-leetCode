@@ -47,3 +47,5 @@ let y = new ListNode(
  * @return {ListNode}
  */
 var sortList = function (head) {};
+
+console.log(sortList(x));
