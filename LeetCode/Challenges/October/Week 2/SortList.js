@@ -86,7 +86,20 @@ var sortList = function (head) {
   let dummy = ListNode(0);
   dummy.next = head;
 
-  k = 1;
+  let k = 1
+  while k < length:
+      curr = dummy.next
+      tail = dummy
+      while curr:
+          l = curr
+          r = split(l, k)
+          curr = split(r, k)
+          mergedHead, mergedTail = merge(l, r)
+          tail.next = mergedHead
+          tail = mergedTail
+      k *= 2
+
+  return dummy.next
 };
 
 console.log(sortList(x));
