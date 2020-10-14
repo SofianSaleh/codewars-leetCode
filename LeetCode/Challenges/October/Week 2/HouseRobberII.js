@@ -32,7 +32,6 @@ var rob = function (nums) {
     let dp1 = 0;
     let dp2 = 0;
     for (let i = l; i < r + 1; i++) {
-      const element = array[i];
       let temp = dp1;
       let dp1 = Math.max(dp1, dp2 + nums[i]);
       let dp2 = temp;
