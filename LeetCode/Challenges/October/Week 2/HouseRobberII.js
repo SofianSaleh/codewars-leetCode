@@ -38,11 +38,8 @@ var rob = function (nums) {
     }
     return dp1;
   };
-  if(!nums)
-            return 0
-        if len(nums) < 2:
-            return nums[0]
+  if (!nums) return 0;
+  if (nums.length < 2) return nums[0];
 
-        return max(rob(0, len(nums) - 2), rob(1, len(nums) - 1))
+  return Math.max(rob(0, nums.length - 2), rob(1, nums.length - 1));
 };
-
