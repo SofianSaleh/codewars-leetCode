@@ -38,15 +38,11 @@ var rob = function (nums) {
     }
     return dp1;
   };
+  if(!nums)
+            return 0
+        if len(nums) < 2:
+            return nums[0]
+
+        return max(rob(0, len(nums) - 2), rob(1, len(nums) - 1))
 };
 
-// class Solution:
-//     def rob(self, nums: List[int]) -> int:
-//         def rob(l: int, r: int) -> int:
-
-//         if not nums:
-//             return 0
-//         if len(nums) < 2:
-//             return nums[0]
-
-//         return max(rob(0, len(nums) - 2), rob(1, len(nums) - 1))
