@@ -41,6 +41,6 @@ var rob = function (nums) {
   if (!nums) return 0;
   if (nums.length < 2) return nums[0];
 
-  return Math.max(rob(0, nums.length - 2), rob(1, nums.length - 1));
+  return Math.max(rob1(0, nums.length - 2), rob1(1, nums.length - 1));
 };
 console.log();
