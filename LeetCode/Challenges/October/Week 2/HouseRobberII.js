@@ -37,7 +37,7 @@ var rob = function (nums) {
       dp1 = max(dp1, dp2 + nums[i]);
       dp2 = temp;
     }
-    //             return dp1
+    return dp1;
   };
 };
 
