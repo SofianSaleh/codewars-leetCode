@@ -31,10 +31,12 @@ var rob = function (nums) {
   var rob1 = function (l, r) {
     let dp1 = 0;
     let dp2 = 0;
-    //             for i in range(l, r + 1):
-    //                 temp = dp1
-    //                 dp1 = max(dp1, dp2 + nums[i])
-    //                 dp2 = temp
+    for (let i = l; i < r + 1; i++) {
+      const element = array[i];
+      temp = dp1;
+      dp1 = max(dp1, dp2 + nums[i]);
+      dp2 = temp;
+    }
     //             return dp1
   };
 };
