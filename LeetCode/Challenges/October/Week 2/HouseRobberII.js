@@ -22,3 +22,9 @@
 
 // 1 <= nums.length <= 100
 // 0 <= nums[i] <= 1000
+
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var rob = function (nums) {};
