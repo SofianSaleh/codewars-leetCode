@@ -43,3 +43,4 @@ var rob = function (nums) {
 
   return Math.max(rob(0, nums.length - 2), rob(1, nums.length - 1));
 };
+console.log();
