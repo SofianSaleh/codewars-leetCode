@@ -32,11 +32,12 @@
  * @param {number} k
  * @return {void} Do not return anything, modify nums in-place instead.
  */
-var rotate = function (nums, k) {};
+var rotate = function (nums, k) {
+  k %= len(nums);
+};
 
 // class Solution:
 //     def rotate(self, nums: List[int], k: int) -> None:
-//         k %= len(nums)
 //         self.reverse(nums, 0, len(nums) - 1)
 //         self.reverse(nums, 0, k - 1)
 //         self.reverse(nums, k, len(nums) - 1)
