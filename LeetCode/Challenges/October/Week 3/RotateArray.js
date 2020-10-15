@@ -33,10 +33,10 @@
  * @return {void} Do not return anything, modify nums in-place instead.
  */
 var rotate = function (nums, k) {
-  k %= len(nums);
-  reverse(nums, 0, len(nums) - 1);
+  k %= nums.length;
+  reverse(nums, 0, nums.length - 1);
   reverse(nums, 0, k - 1);
-  reverse(nums, k, len(nums) - 1);
+  reverse(nums, k, nums.length - 1);
 };
 
 var reverse = function (nums, l, r) {
