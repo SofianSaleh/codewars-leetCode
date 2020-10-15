@@ -39,11 +39,14 @@ var rotate = function (nums, k) {
   reverse(nums, k, len(nums) - 1);
 };
 
+var reverse = function (nums, l, r) {
+  //         while l < r:
+  //             nums[l], nums[r] = nums[r], nums[l]
+  //             l += 1
+  //             r -= 1
+};
+
 // class Solution:
 //     def rotate(self, nums: List[int], k: int) -> None:
 
 //     def reverse(self, nums: List[int], l: int, r: int) -> None:
-//         while l < r:
-//             nums[l], nums[r] = nums[r], nums[l]
-//             l += 1
-//             r -= 1
