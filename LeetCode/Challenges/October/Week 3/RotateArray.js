@@ -42,8 +42,8 @@ var rotate = function (nums, k) {
 var reverse = function (nums, l, r) {
   while (l < r) {
     nums[l], (nums[r] = nums[r]), nums[l];
+    l += 1;
   }
-  //             l += 1
   //             r -= 1
 };
 
