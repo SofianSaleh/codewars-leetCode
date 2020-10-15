@@ -34,9 +34,9 @@
  */
 var rotate = function (nums, k) {
   k %= len(nums);
-  self.reverse(nums, 0, len(nums) - 1);
-  self.reverse(nums, 0, k - 1);
-  self.reverse(nums, k, len(nums) - 1);
+  reverse(nums, 0, len(nums) - 1);
+  reverse(nums, 0, k - 1);
+  reverse(nums, k, len(nums) - 1);
 };
 
 // class Solution:
