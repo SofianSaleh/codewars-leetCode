@@ -27,5 +27,12 @@
  * @param {number[][]} matrix
  * @param {number} target
  * @return {boolean}
+ *
+ * O Boolean
+ * I Array of array and a number
+ * C Must be efficiant
+ * E
  */
-var searchMatrix = function (matrix, target) {};
+var searchMatrix = function (matrix, target) {
+  if (matrix.length === 0) return false;
+};
