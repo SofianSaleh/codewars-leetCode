@@ -44,3 +44,7 @@ var searchMatrix = function (matrix, target) {
   }
   return false;
 };
+
+console.log(searchMatrix());
+console.log(searchMatrix());
+console.log(searchMatrix());
