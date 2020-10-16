@@ -33,7 +33,14 @@
  * C Must be efficiant
  * E
  */
-// Brute force O(n^2)
+//! Brute force O(n^2)
+
+/**
+ * ACCORDING TO LEETCODE
+ *  Runtime: 72 ms
+ *  Memory Usage: 38.7 MB
+ */
+
 var searchMatrix = function (matrix, target) {
   if (matrix.length === 0) return false;
 
@@ -45,7 +52,13 @@ var searchMatrix = function (matrix, target) {
   return false;
 };
 
-// Using binary search tree
+//! Using binary search tree
+
+/**
+ * ACCORDING TO LEETCODE
+ *  Runtime: 76 ms
+ *  Memory Usage: 38.7 MB
+ */
 
 var searchMatrix1 = function (matrix, target) {
   if (matrix.length === 0) return false;
