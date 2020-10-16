@@ -33,6 +33,14 @@
  * C Must be efficiant
  * E
  */
+// Brute force O(n^2)
 var searchMatrix = function (matrix, target) {
   if (matrix.length === 0) return false;
+
+  for (let i = 0; i < matrix.length; i++) {
+    for (let j = 0; j < matrix[i].length; j++) {
+      if (matrix[i][j] === target) return true;
+    }
+  }
+  return false;
 };
