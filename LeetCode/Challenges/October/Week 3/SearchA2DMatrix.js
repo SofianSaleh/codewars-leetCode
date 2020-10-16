@@ -52,13 +52,22 @@ var searchMatrix1 = function (matrix, target) {
   let arr = matrix.flat();
 
   var recurse = function (arr1, start, end) {
-    if (start > end) return false;
+    if (start > end) return -1;
     let middle = Math.floor((start + end) / 2);
-    console.log(arr1[middle]);
-    if (arr1[middle] === target) return true;
+    if (arr1[middle] === target) return middle;
     if (arr1[middle] > target) recurse(arr1, start, middle - 1);
     else recurse(arr1, middle + 1, end);
   };
+
+  var recurse = function (arr, start, end) {
+    if (start > end) return -1;
+    let middle = Math.floor((start + end) / 2);
+
+    if (arr[middle] === target) return middle;
+    if (arr[middle] > target) return recurse(arr, start, middle - 1);
+    else return recurse(arr, middle + 1, end);
+  };
+  console.log(recurse(arr, 0, arr.length - 1));
   return recurse(arr, 0, arr.length - 1);
 };
 
