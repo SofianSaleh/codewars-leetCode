@@ -52,7 +52,7 @@ var searchMatrix1 = function (matrix, target) {
   let arr = matrix.flat();
 
   var recurse = function (arr1, start, end) {
-    if (start > end) return -1;
+    if (start > end) return false;
     let middle = Math.floor((start + end) / 2);
     if (arr1[middle] === target) return middle;
     if (arr1[middle] > target) return recurse(arr1, start, middle - 1);
