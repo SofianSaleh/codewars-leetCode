@@ -57,7 +57,7 @@ var searchMatrix = function (matrix, target) {
 /**
  * ACCORDING TO LEETCODE
  *  Runtime: 76 ms
- *  Memory Usage: 38.7 MB
+ *  Memory Usage: 39.1 MB
  */
 
 var searchMatrix1 = function (matrix, target) {
