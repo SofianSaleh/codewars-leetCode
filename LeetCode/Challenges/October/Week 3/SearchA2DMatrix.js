@@ -45,8 +45,17 @@ var searchMatrix = function (matrix, target) {
   return false;
 };
 
+// Using binary search tree
+
+var searchMatrix1 = function (matrix, target) {
+  if (matrix.length === 0) return false;
+  let arr = matrix.flat();
+
+  var recurse = function (arr1, start, end) {};
+};
+
 console.log(
-  searchMatrix(
+  searchMatrix1(
     [
       [1, 3, 5, 7],
       [10, 11, 16, 20],
@@ -56,7 +65,7 @@ console.log(
   )
 ); // True
 console.log(
-  searchMatrix(
+  searchMatrix1(
     [
       [1, 3, 5, 7],
       [10, 11, 16, 20],
@@ -65,4 +74,25 @@ console.log(
     13
   )
 ); // false
-console.log(searchMatrix([], 0)); // false
+console.log(searchMatrix1([], 0)); // false
+// console.log(
+//   searchMatrix(
+//     [
+//       [1, 3, 5, 7],
+//       [10, 11, 16, 20],
+//       [23, 30, 34, 50],
+//     ],
+//     3
+//   )
+// ); // True
+// console.log(
+//   searchMatrix(
+//     [
+//       [1, 3, 5, 7],
+//       [10, 11, 16, 20],
+//       [23, 30, 34, 50],
+//     ],
+//     13
+//   )
+// ); // false
+// console.log(searchMatrix([], 0)); // false
