@@ -2,8 +2,6 @@
 
 // Write a function to find all the 10-letter-long sequences (substrings) that occur more than once in a DNA molecule.
 
- 
-
 // Example 1:
 
 // Input: s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT"
@@ -12,9 +10,14 @@
 
 // Input: s = "AAAAAAAAAAAAA"
 // Output: ["AAAAAAAAAA"]
- 
 
 // Constraints:
 
 // 0 <= s.length <= 105
 // s[i] is 'A', 'C', 'G', or 'T'
+
+/**
+ * @param {string} s
+ * @return {string[]}
+ */
+var findRepeatedDnaSequences = function (s) {};
