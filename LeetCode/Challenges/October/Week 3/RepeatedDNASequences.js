@@ -34,3 +34,4 @@ var findRepeatedDnaSequences = function (s) {
   return ans;
 };
 console.log(findRepeatedDnaSequences());
+console.log(findRepeatedDnaSequences());
