@@ -25,8 +25,11 @@ var findRepeatedDnaSequences = function (s) {
   let ans = new Set();
 
   for (let i = 0; i < s.length - 9; i++) {
-      let seq = s.slice(i,i+10)
-      if(s)
-      
+    let seq = s.slice(i, i + 10);
+    if (seen.has(seq)) {
+      ans.add(seq);
+    }
+    seen.add(seq);
   }
+  return ans;
 };
