@@ -31,7 +31,11 @@ var findRepeatedDnaSequences = function (s) {
     }
     seen.add(seq);
   }
-  return ans;
+  let arr = [];
+  for (const ent of ans.entries()) {
+    arr.push(ent[0]);
+  }
+  return arr;
 };
 console.log(findRepeatedDnaSequences('AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT'));
-console.log(findRepeatedDnaSequences('AAAAAAAAAAAAA'));
+// console.log(findRepeatedDnaSequences('AAAAAAAAAAAAA'));
