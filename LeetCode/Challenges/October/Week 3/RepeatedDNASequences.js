@@ -20,4 +20,13 @@
  * @param {string} s
  * @return {string[]}
  */
-var findRepeatedDnaSequences = function (s) {};
+var findRepeatedDnaSequences = function (s) {
+  let seen = new Set();
+  let ans = new Set();
+
+  for (let i = 0; i < s.length - 9; i++) {
+      let seq = s.slice(i,i+10)
+      if(s)
+      
+  }
+};
