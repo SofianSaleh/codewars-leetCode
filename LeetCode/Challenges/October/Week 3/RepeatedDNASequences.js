@@ -20,6 +20,13 @@
  * @param {string} s
  * @return {string[]}
  */
+
+/**
+ *
+ * Runtime: 100 ms
+ * Memory Usage: 47 MB
+ *
+ */
 var findRepeatedDnaSequences = function (s) {
   let seen = new Set();
   let ans = new Set();
