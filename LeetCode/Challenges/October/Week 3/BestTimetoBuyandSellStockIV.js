@@ -30,11 +30,11 @@ var maxProfit = function (k, prices) {
   if (k >= prices.length / 2) {
     sell = 0;
     hold = -Infinity;
-  }
 
-  for (let i = 0; i < prices.length; i++) {
-    sell = Math.max(sell, hold + prices[i]);
-    hold = Math.max(sell, hold - prices[i]);
+    for (let i = 0; i < prices.length; i++) {
+      sell = Math.max(sell, hold + prices[i]);
+      hold = Math.max(sell, hold - prices[i]);
+    }
+    return sell;
   }
-  return sell;
 };
