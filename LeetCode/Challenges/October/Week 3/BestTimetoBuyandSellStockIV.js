@@ -18,3 +18,10 @@
 // Constraints: 0 <= k <= 109;
 // 0 <= prices.length <= 104;
 // 0 <= prices[i] <= 1000;
+
+/**
+ * @param {number} k
+ * @param {number[]} prices
+ * @return {number}
+ */
+var maxProfit = function (k, prices) {};
