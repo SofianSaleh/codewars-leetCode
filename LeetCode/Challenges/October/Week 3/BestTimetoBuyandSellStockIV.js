@@ -31,4 +31,8 @@ var maxProfit = function (k, prices) {
     sell = 0;
     hold = -Infinity;
   }
+
+  for (let i = 0; i < prices.length; i++) {
+    sell = Math.max(sell, hold + prices[i]);
+  }
 };
