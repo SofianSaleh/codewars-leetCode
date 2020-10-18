@@ -43,7 +43,11 @@ var maxProfit = function (k, prices) {
     sell.push(0);
     hold.push(-Infinity);
   }
-  console.log(sell, hold);
+  for (const price of prices) {
+    for (let i = k; i >= 0; i--) {
+      const element = array[i];
+    }
+  }
 };
 
 // console.log(maxProfit(5, [3, 2, 6, 5, 0, 3, 2, 6, 5, 0, 3, 2, 6, 5, 0, 3]));
