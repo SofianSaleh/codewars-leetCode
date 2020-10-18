@@ -15,6 +15,6 @@
 // Output: 7
 // Explanation: Buy on day 2 (price = 2) and sell on day 3 (price = 6), profit = 6-2 = 4. Then buy on day 5 (price = 0) and sell on day 6 (price = 3), profit = 3-0 = 3.
 
-Constraints: 0 <= k <= 109;
-0 <= prices.length <= 104;
-0 <= prices[i] <= 1000;
+// Constraints: 0 <= k <= 109;
+// 0 <= prices.length <= 104;
+// 0 <= prices[i] <= 1000;
