@@ -49,6 +49,7 @@ var maxProfit = function (k, prices) {
       hold[i] = Math.max(hold[i], sell[i - 1] - price);
     }
   }
+  return sell[k];
 };
 
 // console.log(maxProfit(5, [3, 2, 6, 5, 0, 3, 2, 6, 5, 0, 3, 2, 6, 5, 0, 3]));
