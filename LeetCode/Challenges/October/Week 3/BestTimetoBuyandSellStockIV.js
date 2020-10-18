@@ -24,4 +24,11 @@
  * @param {number[]} prices
  * @return {number}
  */
-var maxProfit = function (k, prices) {};
+var maxProfit = function (k, prices) {
+  let sell;
+  let hold;
+  if (k >= prices.length / 2) {
+    sell = 0;
+    hold = -Infinity;
+  }
+};
