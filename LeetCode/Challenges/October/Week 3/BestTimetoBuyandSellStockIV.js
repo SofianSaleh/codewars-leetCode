@@ -54,4 +54,4 @@ var maxProfit = function (k, prices) {
   return sell[k];
 };
 
-console.log(maxProfit(5, [3, 2, 6, 5, 0, 3]));
+console.log(maxProfit(5, [2, 4, 1]));
