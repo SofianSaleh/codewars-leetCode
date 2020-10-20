@@ -61,8 +61,8 @@
  * @param {Node} node
  * @return {Node}
  */
+let lookup = {};
 var cloneGraph = function (node) {
-  let lookup = {};
   if (!node) return null;
   if (lookup[node]) return lookup[node];
 
@@ -71,6 +71,7 @@ var cloneGraph = function (node) {
   for (const neighbor of node.neighbor) {
     lookup[node].neighbor.push(cloneGraph(neighbor));
   }
+  return lookup[node];
 };
 
 // class Solution:
