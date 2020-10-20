@@ -61,21 +61,26 @@
  * @param {Node} node
  * @return {Node}
  */
-let lookup = {};
-var cloneGraph = function (node) {
-  if (!node) return null;
-  if (lookup[node]) return lookup[node];
+// let lookup = {};
+// var cloneGraph = function (node) {
+//   if (!node) return null;
+//   if (lookup[node]) return lookup[node];
 
-  lookup[node] = Node(node.nodeValue, []);
+//   lookup[node] = Node(node.nodeValue, []);
 
-  for (const neighbor of node.neighbors) {
-    lookup[node].neighbors.push(cloneGraph(neighbor));
-  }
-  return lookup[node];
-};
+//   for (const neighbor of node.neighbors) {
+//     lookup[node].neighbors.push(cloneGraph(neighbor));
+//   }
+//   return lookup[node];
+// };
 
-// class Solution:
-//     def cloneGraph(self, node: 'Node') -> 'Node':
+
+//  ######################## PYTHON ##########################
+
+
+
+class Solution:
+    def cloneGraph(self, node: 'Node') -> 'Node':
 //         if not node:
 //             return None
 //         if node in self.lookup:
