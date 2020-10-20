@@ -92,4 +92,4 @@ class Solution:
 
         return self.lookup[node]
 
-//     lookup = {}
+    lookup = {}
