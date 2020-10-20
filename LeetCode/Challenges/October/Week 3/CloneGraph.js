@@ -69,7 +69,7 @@ var cloneGraph = function (node) {
   lookup[node] = Node(node.nodeValue, []);
 
   for (const neighbor of node.neighbor) {
-    lookup[node];
+    lookup[node].neighbor.push(cloneGraph(neighbor));
   }
 };
 
