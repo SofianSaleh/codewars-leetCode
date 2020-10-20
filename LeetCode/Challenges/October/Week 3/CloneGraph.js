@@ -50,7 +50,7 @@
 // The Graph is connected and all nodes can be visited starting from the given node.
 
 /**
- * // Definition for a Node.
+ *  Definition for a Node.
  * function Node(val, neighbors) {
  *    this.val = val === undefined ? 0 : val;
  *    this.neighbors = neighbors === undefined ? [] : neighbors;
@@ -61,7 +61,17 @@
  * @param {Node} node
  * @return {Node}
  */
-var cloneGraph = function (node) {};
+var cloneGraph = function (node) {
+  let lookup = {};
+  if (!node) return null;
+  if (lookup[node]) return lookup[node];
+
+  lookup[node] = Node(node.nodeValue, []);
+
+  for (const neighbor of node.neighbor) {
+    lookup[node];
+  }
+};
 
 // class Solution:
 //     def cloneGraph(self, node: 'Node') -> 'Node':
