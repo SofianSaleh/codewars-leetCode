@@ -38,4 +38,14 @@
 var asteroidCollision = function (asteroids) {
   if (asteroids.length === 0) return [];
   let arr = [];
+  for (let i = 0; i < asteroids.length; i++) {
+    for (let j = i + 1; j < asteroids.length; j++) {
+      if (asteroids[j] < 0) {
+        if (asteroids[i] > Math.abs(asteroids[j])) {
+          arr.push(asteroids[i]);
+        }
+      }
+    }
+  }
+  return arr;
 };
