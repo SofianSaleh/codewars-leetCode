@@ -37,15 +37,21 @@
  */
 var asteroidCollision = function (asteroids) {
   if (asteroids.length === 0) return [];
-  let arr = [];
+  let arr = asteroids.sort((a, b) => b - a);
+
   for (let i = 0; i < asteroids.length; i++) {
     for (let j = i + 1; j < asteroids.length; j++) {
       if (asteroids[j] < 0) {
         if (asteroids[i] > Math.abs(asteroids[j])) {
-          arr.push(asteroids[i]);
+          arr.splice(j, 1);
+        } else if (asteroids[i] + asteroids[j] === 0) {
+          arr.splice(j, 1);
+          arr.splice(i, 1);
         }
       }
     }
   }
-  return arr;
+  return arr.sort((a, b) => a - b);
 };
+console.log(asteroidCollision([5, 10, -5]));
+console.log(asteroidCollision([8, -8]));
