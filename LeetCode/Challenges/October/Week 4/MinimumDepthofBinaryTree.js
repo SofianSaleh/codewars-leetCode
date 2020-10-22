@@ -34,11 +34,11 @@ function TreeNode(val, left, right) {
   this.right = right === undefined ? null : right;
 }
 
-let root = new (TreeNode(
+let root = new TreeNode(
   3,
   new TreeNode(9, null, null),
-  new TreeNode(20, new TreeNode(15), new TreeNode()(7))
-))();
+  new TreeNode(20, new TreeNode(15, null, null), new TreeNode(7, null, null))
+);
 
 /**
  * @param {TreeNode} root
