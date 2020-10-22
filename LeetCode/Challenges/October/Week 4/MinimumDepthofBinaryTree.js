@@ -48,8 +48,8 @@ var minDepth = function (root) {
   var minimum = function (curr) {
     if (curr === null) return 0;
     if (curr.left === null && curr.rigth === null) return 1;
-//     if (!curr.left) {
-//       return 1 + minimum(curr.right);
+    if (!curr.left) {
+      return 1 + minimum(curr.right);
 //     } else if (!curr.right) {
 //       return 1 + minimum(curr.left);
 //     }
