@@ -57,7 +57,7 @@ var minDepth = function (root) {
   };
   return minimum(root);
 };
-console.log(minDepth(root));
+// console.log(minDepth(root));
 // ###################### PYTHON ####################### //
 // # Definition for a binary tree node.
 // # class TreeNode:
