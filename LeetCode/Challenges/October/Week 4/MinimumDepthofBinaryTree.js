@@ -53,7 +53,7 @@ var minDepth = function (root) {
     } else if (!curr.right) {
       return 1 + minimum(curr.left);
     }
-//     return 1 + Math.min(minimum(curr.left), minimum(curr.right));
+    return 1 + Math.min(minimum(curr.left), minimum(curr.right));
 //   };
 //   return minimum(root);
 };
