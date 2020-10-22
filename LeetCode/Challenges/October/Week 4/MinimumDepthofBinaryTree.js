@@ -48,14 +48,14 @@ var minDepth = function (root) {
   var minimum = function (curr) {
     if (curr === null) return 0;
     if (curr.left === null && curr.rigth === null) return 1;
-    if (!curr.left) {
-      return 1 + minimum(curr.right);
-    } else if (!curr.right) {
-      return 1 + minimum(curr.left);
-    }
-    return 1 + Math.min(minimum(curr.left), minimum(curr.right));
-  };
-  return minimum(root);
+//     if (!curr.left) {
+//       return 1 + minimum(curr.right);
+//     } else if (!curr.right) {
+//       return 1 + minimum(curr.left);
+//     }
+//     return 1 + Math.min(minimum(curr.left), minimum(curr.right));
+//   };
+//   return minimum(root);
 };
 console.log(minDepth(root));
 // ###################### PYTHON ####################### //
