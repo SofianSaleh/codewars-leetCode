@@ -54,8 +54,8 @@ var minDepth = function (root) {
       return 1 + minimum(curr.left);
     }
     return 1 + Math.min(minimum(curr.left), minimum(curr.right));
-//   };
-//   return minimum(root);
+  };
+  return minimum(root);
 };
 console.log(minDepth(root));
 // ###################### PYTHON ####################### //
