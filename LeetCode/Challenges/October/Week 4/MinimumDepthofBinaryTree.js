@@ -26,12 +26,38 @@
  *     this.right = (right===undefined ? null : right)
  * }
  */
+
+// Definition for a binary tree node.
+function TreeNode(val, left, right) {
+  this.val = val === undefined ? 0 : val;
+  this.left = left === undefined ? null : left;
+  this.right = right === undefined ? null : right;
+}
+
+let root = new (TreeNode(
+  3,
+  new TreeNode(9, null, null),
+  new TreeNode(20, new TreeNode(15), new TreeNode()(7))
+))();
+
 /**
  * @param {TreeNode} root
  * @return {number}
  */
-var minDepth = function (root) {};
-
+var minDepth = function (root) {
+  var minimum = function (curr) {
+    if (curr === null) return 0;
+    if (curr.left === null && curr.rigth === null) return 1;
+    if (!curr.left) {
+      return 1 + minimum(curr.right);
+    } else if (!curr.right) {
+      return 1 + minimum(curr.left);
+    }
+    return 1 + Math.min(minimum(curr.left), minimum(curr.right));
+  };
+  return minimum(root);
+};
+console.log(minDepth(root));
 // ###################### PYTHON ####################### //
 // # Definition for a binary tree node.
 // # class TreeNode:
