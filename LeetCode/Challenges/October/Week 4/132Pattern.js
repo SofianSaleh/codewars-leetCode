@@ -46,5 +46,6 @@ var find132pattern = function (nums) {
   return false;
 };
 
-console.log(find132pattern([3, 1, 4, 2, 2]));
+// console.log(find132pattern([3, 1, 4, 2, 2]));
+console.log(find132pattern([-1, 3, 2, 0]));
 // console.log(5 / 3);
