@@ -32,22 +32,35 @@
  */
 var find132pattern = function (nums) {
   if (nums.length < 3) return false;
-  let len = 1;
-  if (nums.length === 3) len = 1;
-  else {
-    len += nums.length - 3;
-  }
+  // let len = 1;
+  // if (nums.length === 3) len = 1;
+  // else {
+  //   len += nums.length - 3;
+  // }
+  // for (let i = 0; i < nums.length; i++) {
+  //   if (
+  //     nums[i + 1] > nums[i + 2] &&
+  //     nums[i + 1] > nums[i] &&
+  //     nums[i + 2] > nums[i]
+  //   ) {
+  //     // console.log(nums[i], nums[i + 1], nums[i + 2]);
+  //     return true;
+  //   }
+  // }
+  // return false;
   for (let i = 0; i < nums.length; i++) {
-    if (
-      nums[i + 1] > nums[i + 2] &&
-      nums[i + 1] > nums[i] &&
-      nums[i + 2] > nums[i]
-    ) {
-      // console.log(nums[i], nums[i + 1], nums[i + 2]);
-      return true;
+    if (nums[i] < nums[i + 1]) {
+      for (let j = i + 1; j < nums.length; j++) {
+        if (nums[i] < nums[j]) {
+          for (let k = j + 1; k < nums.length; k++) {
+            if (nums[k] < nums[j] && nums[k] > nums[i]) {
+              return true;
+            }
+          }
+        }
+      }
     }
   }
-  return false;
 };
 
 // console.log(find132pattern([3, 1, 4, 2, 2]));
