@@ -65,8 +65,8 @@ var find132pattern = function (nums) {
   for (let i = nums.length - 1; i >= 0; --i) {
     console.log(stack, i);
     if (nums[i] < ak) return true;
-    while (!stack.length === 0 && stack[stack.length - 1] < nums[i]) {
-      ak = stack.pop();
+    while (!stack.isEmpty() && stack.peek < nums[i]) {
+      ak = stack.remove();
     }
     stack.push(nums[i]);
   }
