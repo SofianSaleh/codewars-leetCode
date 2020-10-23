@@ -25,3 +25,9 @@
 // n == nums.length
 // 1 <= n <= 104
 // -109 <= nums[i] <= 109
+
+/**
+ * @param {number[]} nums
+ * @return {boolean}
+ */
+var find132pattern = function (nums) {};
