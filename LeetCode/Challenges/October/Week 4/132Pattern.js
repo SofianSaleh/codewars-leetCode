@@ -48,22 +48,36 @@ var find132pattern = function (nums) {
   //   }
   // }
   // return false;
-  for (let i = 0; i < nums.length; i++) {
-    if (nums[i] < nums[i + 1]) {
-      for (let j = i + 1; j < nums.length; j++) {
-        if (nums[i] < nums[j]) {
-          for (let k = j + 1; k < nums.length; k++) {
-            if (nums[k] < nums[j] && nums[k] > nums[i]) {
-              return true;
-            }
-          }
-        }
-      }
-    }
-  }
-  return false;
+  // for (let i = 0; i < nums.length; i++) {
+  //   if (nums[i] < nums[i + 1]) {
+  //     for (let j = i + 1; j < nums.length; j++) {
+  //       if (nums[i] < nums[j]) {
+  //         for (let k = j + 1; k < nums.length; k++) {
+  //           if (nums[k] < nums[j] && nums[k] > nums[i]) {
+  //             return true;
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+  // return false;
 };
 
+//     Stack<Integer> stack = new Stack<>(); // max stack
+//     int ak = Integer.MIN_VALUE; // we want to find a seq ai < ak < aj
+
+//     for (int i = nums.length - 1; i >= 0; --i) {
+//       if (nums[i] < ak) // ai < ak, we're done because ai must also smaller than aj
+//         return true;
+//       while (!stack.isEmpty() && stack.peek() < nums[i])
+//         ak = stack.pop();
+//       stack.push(nums[i]); // nums[i] is a candidate of aj
+//     }
+
+//     return false;
+//   }
+// }
 // console.log(find132pattern([3, 1, 4, 2, 2]));
 console.log(find132pattern([-1, 3, 2, 0]));
 // console.log(5 / 3);
