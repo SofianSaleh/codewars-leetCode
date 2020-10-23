@@ -40,7 +40,7 @@ var find132pattern = function (nums) {
   for (let i = 0; i < nums.length; i++) {
     if (nums[i + 1] > nums[i + 2] && nums[i + 1] > nums[i]) {
       console.log(nums[i], nums[i + 1], nums[i + 2]);
-      return true;
+      // return true;
     }
   }
   return false;
