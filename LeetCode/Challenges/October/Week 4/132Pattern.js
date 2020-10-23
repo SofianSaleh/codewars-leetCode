@@ -30,10 +30,36 @@
  * @param {number[]} nums
  * @return {boolean}
  */
+
+class Stack {
+  constructor() {
+    (this.arr = []), (this.i = 0);
+  }
+
+  add(elem) {
+    this.arr[this.i] = elem;
+    this.i += 1;
+  }
+  remove() {
+    this.arr.pop();
+    this.i--;
+  }
+  peek() {
+    return this.arr[this.i];
+  }
+  isEmpty() {
+    if (this.arr.length === 0) return true;
+    else return false;
+  }
+  get() {
+    return { c: this.arr, f: this.i };
+  }
+}
+
 var find132pattern = function (nums) {
   if (nums.length < 3) return false;
 
-  let stack = [];
+  let stack = new Stack();
   let ak = -2147483648;
 
   for (let i = nums.length - 1; i >= 0; --i) {
@@ -62,5 +88,5 @@ var find132pattern = function (nums) {
 //   }
 // }
 // console.log(find132pattern([3, 1, 4, 2, 2]));
-console.log(find132pattern([-1, 3, 2, 0]));
+// console.log(find132pattern([-1, 3, 2, 0]));
 // console.log(5 / 3);
