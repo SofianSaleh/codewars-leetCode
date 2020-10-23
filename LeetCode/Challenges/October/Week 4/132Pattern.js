@@ -41,11 +41,14 @@ class Stack {
     this.i += 1;
   }
   remove() {
+    let last = this.arr[this.i - 1];
+    console.log(last);
     this.arr.pop();
-    this.i--;
+    this.i -= 1;
+    return last;
   }
   peek() {
-    return this.arr[this.i];
+    return this.arr[this.i - 1];
   }
   isEmpty() {
     if (this.arr.length === 0) return true;
@@ -55,6 +58,12 @@ class Stack {
     return { c: this.arr, f: this.i };
   }
 }
+// let stack = new Stack();
+// stack.add(5);
+// stack.add(6);
+// stack.add(7);
+// stack.remove();
+// console.log(stack.peek());
 
 var find132pattern = function (nums) {
   if (nums.length < 3) return false;
@@ -63,30 +72,18 @@ var find132pattern = function (nums) {
   let ak = -2147483648;
 
   for (let i = nums.length - 1; i >= 0; --i) {
-    console.log(stack, i);
+    // console.log(stack, nums[i], ak);
     if (nums[i] < ak) return true;
-    while (!stack.isEmpty() && stack.peek < nums[i]) {
+    // console.log(!stack.isEmpty(), stack.peek(), nums[i]);
+    while (!stack.isEmpty() && stack.peek() < nums[i]) {
       ak = stack.remove();
     }
-    stack.push(nums[i]);
+    stack.add(nums[i]);
+    // console.log(stack.peek());
   }
   return false;
 };
 
-//     Stack<Integer> stack = new Stack<>(); // max stack
-//     int ak = Integer.MIN_VALUE; // we want to find a seq ai < ak < aj
-
-//     for (int i = nums.length - 1; i >= 0; --i) {
-//       if (nums[i] < ak) // ai < ak, we're done because ai must also smaller than aj
-//         return true;
-//       while (!stack.isEmpty() && stack.peek() < nums[i])
-//         ak = stack.pop();
-//       stack.push(nums[i]); // nums[i] is a candidate of aj
-//     }
-
-//     return false;
-//   }
-// }
 // console.log(find132pattern([3, 1, 4, 2, 2]));
-// console.log(find132pattern([-1, 3, 2, 0]));
-// console.log(5 / 3);
+console.log(find132pattern([-1, 3, 2, 0]));
+// console.log(find132pattern([1, 2, 3, 4]));
