@@ -32,40 +32,12 @@
  */
 var find132pattern = function (nums) {
   if (nums.length < 3) return false;
-  // let len = 1;
-  // if (nums.length === 3) len = 1;
-  // else {
-  //   len += nums.length - 3;
-  // }
-  // for (let i = 0; i < nums.length; i++) {
-  //   if (
-  //     nums[i + 1] > nums[i + 2] &&
-  //     nums[i + 1] > nums[i] &&
-  //     nums[i + 2] > nums[i]
-  //   ) {
-  //     // console.log(nums[i], nums[i + 1], nums[i + 2]);
-  //     return true;
-  //   }
-  // }
-  // return false;
-  // for (let i = 0; i < nums.length; i++) {
-  //   if (nums[i] < nums[i + 1]) {
-  //     for (let j = i + 1; j < nums.length; j++) {
-  //       if (nums[i] < nums[j]) {
-  //         for (let k = j + 1; k < nums.length; k++) {
-  //           if (nums[k] < nums[j] && nums[k] > nums[i]) {
-  //             return true;
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
-  // return false;
+
   let stack = [];
-  let ak = -Infinity;
+  let ak = -2147483648;
 
   for (let i = nums.length - 1; i >= 0; --i) {
+    console.log(stack, i);
     if (nums[i] < ak) return true;
     while (!stack.length === 0 && stack[stack.length - 1] < nums[i]) {
       ak = stack.pop();
