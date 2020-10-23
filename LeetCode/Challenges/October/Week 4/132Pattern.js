@@ -61,7 +61,9 @@ var find132pattern = function (nums) {
   //     }
   //   }
   // }
-  // return false;
+	// return false;
+	let stack = []
+	let ak = 
 };
 
 //     Stack<Integer> stack = new Stack<>(); // max stack
