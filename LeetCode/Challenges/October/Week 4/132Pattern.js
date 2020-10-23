@@ -37,7 +37,7 @@ class Stack {
   }
 
   add(elem) {
-    this.arr[this.i] = elem;
+    this.arr.push(elem);
     this.i += 1;
   }
   remove() {
@@ -72,14 +72,11 @@ var find132pattern = function (nums) {
   let ak = -2147483648;
 
   for (let i = nums.length - 1; i >= 0; --i) {
-    // console.log(stack, nums[i], ak);
     if (nums[i] < ak) return true;
-    // console.log(!stack.isEmpty(), stack.peek(), nums[i]);
     while (!stack.isEmpty() && stack.peek() < nums[i]) {
       ak = stack.remove();
     }
     stack.add(nums[i]);
-    // console.log(stack.peek());
   }
   return false;
 };
