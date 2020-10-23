@@ -30,4 +30,21 @@
  * @param {number[]} nums
  * @return {boolean}
  */
-var find132pattern = function (nums) {};
+var find132pattern = function (nums) {
+  if (nums.length < 3) return false;
+  let len = 1;
+  if (nums.length === 3) len = 1;
+  else {
+    len += nums.length - 3;
+  }
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i + 1] > nums[i + 2] && nums[i + 1] > nums[i]) {
+      console.log(nums[i], nums[i + 1], nums[i + 2]);
+      return true;
+    }
+  }
+  return false;
+};
+
+console.log(find132pattern([3, 1, 4, 2, 2]));
+// console.log(5 / 3);
