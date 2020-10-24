@@ -40,3 +40,23 @@
  * @return {number}
  */
 var bagOfTokensScore = function (tokens, P) {};
+
+console.log(bagOfTokensScore([100], 50));
+
+// class Solution {
+//     public:
+//         int bagOfTokensScore(vector<int>& tokens, int P) {
+//             int res = 0, cur = 0, n = tokens.size(), i = 0, j = n - 1;
+//             sort(tokens.begin(), tokens.end());
+//             while (i <= j) {
+//                 while (i <= j && tokens[i] <= P) {
+//                     P -= tokens[i++];
+//                     res = max(res, ++cur);
+//                 }
+//                 if (i > j || cur == 0) break;
+//                 --cur;
+//                 P += tokens[j--];
+//             }
+//             return res;
+//         }
+//     };
