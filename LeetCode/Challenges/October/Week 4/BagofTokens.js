@@ -33,3 +33,10 @@
 
 // 0 <= tokens.length <= 1000
 // 0 <= tokens[i], P < 104
+
+/**
+ * @param {number[]} tokens
+ * @param {number} P
+ * @return {number}
+ */
+var bagOfTokensScore = function (tokens, P) {};
