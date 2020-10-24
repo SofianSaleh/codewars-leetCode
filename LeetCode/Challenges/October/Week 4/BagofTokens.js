@@ -42,9 +42,9 @@
 var bagOfTokensScore = function (tokens, P) {
   let res = 0;
   let cur = 0;
-  let n = 0;
+  let n = tokens.length;
   let i = 0;
-  let j = 0;
+  let j = n - 1;
 };
 
 console.log(bagOfTokensScore([100], 50));
