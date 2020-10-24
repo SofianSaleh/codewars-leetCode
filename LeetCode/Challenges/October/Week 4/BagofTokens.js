@@ -45,6 +45,7 @@ var bagOfTokensScore = function (tokens, P) {
   let n = tokens.length;
   let i = 0;
   let j = n - 1;
+  tokens = tokens.sort((a, b) => a - b);
   while (i <= j) {
     while (i <= j && tokens[i] <= P) {
       P -= tokens[i++];
@@ -57,6 +58,24 @@ var bagOfTokensScore = function (tokens, P) {
   return res;
 };
 
-console.log(bagOfTokensScore([100], 50));
+// console.log(bagOfTokensScore([100], 50));
+console.log(bagOfTokensScore([81, 91, 31], 73));
 // console.log(bagOfTokensScore([100, 200], 150));
 // console.log(bagOfTokensScore([100, 200, 300, 400], 200));
+// class Solution {
+//     public:
+//         int bagOfTokensScore(vector<int>& tokens, int P) {
+//             int res = 0, cur = 0, n = tokens.size(), i = 0, j = n - 1;
+//             sort(tokens.begin(), tokens.end());
+//             while (i <= j) {
+//                 while (i <= j && tokens[i] <= P) {
+//                     P -= tokens[i++];
+//                     res = max(res, ++cur);
+//                 }
+//                 if (i > j || cur == 0) break;
+//                 --cur;
+//                 P += tokens[j--];
+//             }
+//             return res;
+//         }
+//     };
