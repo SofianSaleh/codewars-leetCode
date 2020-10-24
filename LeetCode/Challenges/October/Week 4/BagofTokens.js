@@ -45,7 +45,14 @@ var bagOfTokensScore = function (tokens, P) {
   let n = tokens.length;
   let i = 0;
   let j = n - 1;
-  while (i <= j && tokens[i] <= P) {}
+  while (i <= j) {
+      while (i <= j && tokens[i] <= P) {
+          
+      }
+      if (i > j || cur == 0) break;
+                --cur
+                let P += tokens[j--];
+  }
 };
 
 console.log(bagOfTokensScore([100], 50));
