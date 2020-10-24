@@ -54,6 +54,7 @@ var bagOfTokensScore = function (tokens, P) {
     --cur;
     P += tokens[j--];
   }
+  return res;
 };
 
 console.log(bagOfTokensScore([100], 50));
