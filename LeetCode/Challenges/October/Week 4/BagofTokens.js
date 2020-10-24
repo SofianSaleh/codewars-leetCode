@@ -58,7 +58,7 @@ var bagOfTokensScore = function (tokens, P) {
 };
 
 console.log(bagOfTokensScore([100], 50));
-console.log(bagOfTokensScore([100, 200], 150));
+// console.log(bagOfTokensScore([100, 200], 150));
 // console.log(bagOfTokensScore([100, 200, 300, 400], 200));
 // class Solution {
 //     public:
