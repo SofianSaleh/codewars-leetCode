@@ -48,7 +48,7 @@ var bagOfTokensScore = function (tokens, P) {
   while (i <= j) {
     while (i <= j && tokens[i] <= P) {
       P -= tokens[i++];
-      res = max(res, ++cur);
+      res = Math.max(res, ++cur);
     }
     if (i > j || cur == 0) break;
     --cur;
@@ -58,7 +58,8 @@ var bagOfTokensScore = function (tokens, P) {
 };
 
 console.log(bagOfTokensScore([100], 50));
-
+console.log(bagOfTokensScore([100, 200], 150));
+console.log(bagOfTokensScore([100, 200, 300, 400], 200));
 // class Solution {
 //     public:
 //         int bagOfTokensScore(vector<int>& tokens, int P) {
