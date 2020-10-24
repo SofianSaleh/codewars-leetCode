@@ -46,7 +46,10 @@ var bagOfTokensScore = function (tokens, P) {
   let i = 0;
   let j = n - 1;
   while (i <= j) {
-    while (i <= j && tokens[i] <= P) {}
+    while (i <= j && tokens[i] <= P) {
+      P -= tokens[i++];
+      res = max(res, ++cur);
+    }
     if (i > j || cur == 0) break;
     --cur;
     P += tokens[j--];
