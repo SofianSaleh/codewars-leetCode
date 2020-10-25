@@ -59,16 +59,6 @@ var winnerSquareGame = function (n) {
   }
   console.log(dp);
   return !!dp[n];
-  //   var helper = function () {
-  //     if (n <= 0) return 0;
-  //     for (let i = 0; i * i <= n; i++) {
-  //       if (helper(n - i * i) == 0) {
-  //         return 1;
-  //       }
-  //       return 0;
-  //     }
-  //   };
-  //   return helper();
 };
 
 console.log(winnerSquareGame(2));
