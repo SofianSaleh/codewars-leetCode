@@ -50,18 +50,18 @@ var winnerSquareGame = function (n) {
   console.log(dp);
   dp[0] = false;
 
-  for (let j = 0; j < n; j++) {
-    if (dp[j]) continue;
-    for (let k = 0; k < n; k++) {
-      if (j + k * k > n) break;
-      dp[j + k * k] = true;
+  for (let i = 0; i < n; i++) {
+    if (!!dp[i]) continue;
+    for (let j = 1; j < n + 1; j++) {
+      if (i + j * j > n) break;
+      dp[i + j * j] = true;
     }
   }
   console.log(dp);
   return !!dp[n];
 };
 
-console.log(winnerSquareGame(2));
+console.log(winnerSquareGame(4));
 
 // class Solution:
 //   def winnerSquareGame(self, n: int) -> bool:
