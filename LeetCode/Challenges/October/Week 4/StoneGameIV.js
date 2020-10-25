@@ -43,16 +43,16 @@
  * @return {boolean}
  */
 var winnerSquareGame = function (n) {
-  var helper = function (n) {
+  var helper = function () {
     if (n <= 0) return 0;
     for (let i = 0; i * i <= n; i++) {
-      if (helpr(n - i * i) == 0) {
+      if (helper(n - i * i) == 0) {
         return 1;
       }
       return 0;
     }
   };
-  return helper(n);
+  return helper();
 };
 
 console.log(winnerSquareGame(1));
