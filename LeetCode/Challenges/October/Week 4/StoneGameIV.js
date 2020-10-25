@@ -37,3 +37,9 @@
 // Constraints:
 
 // 1 <= n <= 10^5
+
+/**
+ * @param {number} n
+ * @return {boolean}
+ */
+var winnerSquareGame = function (n) {};
