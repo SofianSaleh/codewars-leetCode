@@ -44,6 +44,7 @@
  */
 var winnerSquareGame = function (n) {
   let dp = [];
+
   for (let i = 0; i < n + 1; i++) {
     dp.push(null);
   }
@@ -52,12 +53,13 @@ var winnerSquareGame = function (n) {
 
   for (let i = 0; i < n; i++) {
     if (!!dp[i]) continue;
+
     for (let j = 1; j < n + 1; j++) {
       if (i + j * j > n) break;
+
       dp[i + j * j] = true;
     }
   }
-
   return !!dp[n];
 };
 
