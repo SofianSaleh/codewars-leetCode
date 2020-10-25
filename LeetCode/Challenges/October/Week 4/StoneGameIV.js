@@ -47,6 +47,7 @@ var winnerSquareGame = function (n) {
   for (let i = 0; i < n + 1; i++) {
     dp.push(null);
   }
+  console.log(dp);
   dp[0] = false;
 
   for (let j = 0; j < n; j++) {
@@ -57,7 +58,7 @@ var winnerSquareGame = function (n) {
     }
   }
   console.log(dp);
-  return dp[n];
+  return !!dp[n];
   //   var helper = function () {
   //     if (n <= 0) return 0;
   //     for (let i = 0; i * i <= n; i++) {
@@ -70,9 +71,12 @@ var winnerSquareGame = function (n) {
   //   return helper();
 };
 
-console.log(winnerSquareGame(1));
+console.log(winnerSquareGame(2));
 
+// class Solution:
 //   def winnerSquareGame(self, n: int) -> bool:
+//     dp = [None] * (n + 1)
+//     dp[0] = False
 //     for i in range(0, n):
 //       if dp[i]: continue
 //       for j in range(1, n + 1):
