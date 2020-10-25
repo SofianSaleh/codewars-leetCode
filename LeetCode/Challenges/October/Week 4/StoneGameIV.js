@@ -51,6 +51,8 @@ var winnerSquareGame = function (n) {
       }
       return 0;
     }
-    return helper(n);
   };
+  return helper(n);
 };
+
+console.log(winnerSquareGame(1));
