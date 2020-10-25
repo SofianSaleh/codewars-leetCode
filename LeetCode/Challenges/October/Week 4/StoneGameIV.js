@@ -71,7 +71,7 @@ var winnerSquareGame = function (n) {
   //   return helper();
 };
 
-console.log(winnerSquareGame(1));
+console.log(winnerSquareGame(2));
 
 // class Solution:
 //   def winnerSquareGame(self, n: int) -> bool:
