@@ -47,7 +47,7 @@ var winnerSquareGame = function (n) {
   for (let i = 0; i < n + 1; i++) {
     dp.push(null);
   }
-  console.log(dp);
+
   dp[0] = false;
 
   for (let i = 0; i < n; i++) {
@@ -57,7 +57,7 @@ var winnerSquareGame = function (n) {
       dp[i + j * j] = true;
     }
   }
-  console.log(dp);
+
   return !!dp[n];
 };
 
