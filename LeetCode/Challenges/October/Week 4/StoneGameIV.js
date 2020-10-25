@@ -42,4 +42,12 @@
  * @param {number} n
  * @return {boolean}
  */
-var winnerSquareGame = function (n) {};
+var winnerSquareGame = function (n) {
+  var helper = function (n) {
+    if (n <= 0) return 0;
+    for (let i = 0; i * i <= n; i++) {
+      if (condition) {
+      }
+    }
+  };
+};
