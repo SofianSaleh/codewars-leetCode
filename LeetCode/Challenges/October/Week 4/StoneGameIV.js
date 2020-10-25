@@ -55,8 +55,9 @@ var winnerSquareGame = function (n) {
       if (j + k * k > n) break;
       dp[j + k * k] = true;
     }
-    return dp[n];
   }
+  console.log(dp);
+  return dp[n];
   //   var helper = function () {
   //     if (n <= 0) return 0;
   //     for (let i = 0; i * i <= n; i++) {
