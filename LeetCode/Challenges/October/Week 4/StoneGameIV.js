@@ -46,8 +46,11 @@ var winnerSquareGame = function (n) {
   var helper = function (n) {
     if (n <= 0) return 0;
     for (let i = 0; i * i <= n; i++) {
-      if (condition) {
+      if (helpr(n - i * i) == 0) {
+        return 1;
       }
+      return 0;
     }
+    return helper(n);
   };
 };
