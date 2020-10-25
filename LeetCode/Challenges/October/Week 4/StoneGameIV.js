@@ -49,7 +49,14 @@ var winnerSquareGame = function (n) {
   }
   dp[0] = false;
 
-  for (let j = 0; j < n; j++) {}
+  for (let j = 0; j < n; j++) {
+    if (dp[j]) continue;
+    for (let k = 0; k < n; k++) {
+      if (j + k * k > n) break;
+      dp[j + k * k] = true;
+    }
+    return dp[n];
+  }
   //   var helper = function () {
   //     if (n <= 0) return 0;
   //     for (let i = 0; i * i <= n; i++) {
