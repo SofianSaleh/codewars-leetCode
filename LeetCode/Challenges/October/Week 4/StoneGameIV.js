@@ -56,3 +56,13 @@ var winnerSquareGame = function (n) {
 };
 
 console.log(winnerSquareGame(1));
+// class Solution:
+//   def winnerSquareGame(self, n: int) -> bool:
+//     dp = [None] * (n + 1)
+//     dp[0] = False
+//     for i in range(0, n):
+//       if dp[i]: continue
+//       for j in range(1, n + 1):
+//         if i + j * j > n: break
+//         dp[i + j * j] = True
+//     return dp[n]
