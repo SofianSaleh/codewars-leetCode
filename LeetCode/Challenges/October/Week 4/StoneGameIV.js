@@ -43,6 +43,11 @@
  * @return {boolean}
  */
 var winnerSquareGame = function (n) {
+  let dp = [];
+  for (let i = 0; i < n + 1; i++) {
+    dp.push(null);
+  }
+  dp[0] = false;
   //   var helper = function () {
   //     if (n <= 0) return 0;
   //     for (let i = 0; i * i <= n; i++) {
