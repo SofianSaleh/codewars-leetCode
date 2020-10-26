@@ -43,5 +43,13 @@ var champagneTower = function (poured, query_row, query_glass) {
       dp[i].push(0);
     }
   }
-  console.log(dp);
+  dp[0][0] = poured;
+  for (let i = 0; i < query_row; i++) {
+    for (let j = 0; j < i + 1; j++) {
+      const element = array[j];
+    }
+  }
+  //   console.log(dp);
 };
+
+console.log(champagneTower(1, 1, 1));
