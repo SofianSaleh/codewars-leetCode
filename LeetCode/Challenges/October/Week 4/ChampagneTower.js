@@ -39,7 +39,7 @@ var champagneTower = function (poured, query_row, query_glass) {
   for (let i = 0; i < n; i++) {
     dp.push([]);
     for (let j = 0; j < n; j++) {
-      //       dp[i].push(0);
+      dp[i].push(0);
     }
   }
   dp[0][0] = poured;
