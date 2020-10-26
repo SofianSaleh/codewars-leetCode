@@ -47,7 +47,7 @@ var champagneTower = function (poured, query_row, query_glass) {
   for (let i = 0; i < query_row; i++) {
     for (let j = 0; j < i + 1; j++) {
       if (dp[i][j] > 1) {
-        //         dp[i + 1][j] += (dp[i][j] - 1) / 2.0;
+        dp[i + 1][j] += (dp[i][j] - 1) / 2.0;
         //         dp[i + 1][j + 1] += (dp[i][j] - 1) / 2.0;
       }
     }
