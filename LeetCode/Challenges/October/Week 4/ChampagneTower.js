@@ -32,4 +32,16 @@
  * @param {number} query_glass
  * @return {number}
  */
-var champagneTower = function (poured, query_row, query_glass) {};
+var champagneTower = function (poured, query_row, query_glass) {
+  let n = 100;
+  let dp = [];
+
+  for (let i = 0; i < n; i++) {
+    dp.push([]);
+
+    for (let j = 0; j < n; j++) {
+      dp[i].push(0);
+    }
+  }
+  console.log(dp);
+};
