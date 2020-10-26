@@ -57,4 +57,4 @@ var champagneTower = function (poured, query_row, query_glass) {
 
 console.log(champagneTower(1, 1, 1));
 console.log(champagneTower(2, 1, 1));
-console.log(champagneTower(100000009, 33, 17));
+// console.log(champagneTower(100000009, 33, 17));
