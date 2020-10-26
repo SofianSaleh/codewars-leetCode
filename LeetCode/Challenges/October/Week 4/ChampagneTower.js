@@ -55,4 +55,5 @@ var champagneTower = function (poured, query_row, query_glass) {
   return Math.min(1, dp[query_row][query_glass]);
 };
 
+console.log(champagneTower(1, 1, 1));
 console.log(champagneTower(2, 1, 1));
