@@ -60,4 +60,5 @@ var detectCycle = function (head) {
       return slow;
     }
   }
+  return null;
 };
