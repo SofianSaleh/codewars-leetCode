@@ -62,3 +62,5 @@ var detectCycle = function (head) {
   }
   return null;
 };
+
+console.log(detectCycle([3, 2, 0, -4]));
