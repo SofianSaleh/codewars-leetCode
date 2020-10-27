@@ -65,3 +65,4 @@ var detectCycle = function (head) {
 
 console.log(detectCycle([3, 2, 0, -4]));
 console.log(detectCycle([1, 2]));
+console.log(detectCycle([1]));
