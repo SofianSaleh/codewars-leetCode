@@ -53,10 +53,15 @@ var summaryRanges = function (nums) {
   if (nums.length === 1) {
     nums.push(`${nums[0]}`);
   }
-  for (let i = 0; i < nums.length; i++) {
+  let i = 0;
+  while (i < nums.length) {
     let start = nums[0];
-    for (let j = 0; j < nums.length - 1 && nums[i] === nums[i + 1] - 1; j++) {
-      var end = nums[i];
+    while (j < nums.length - 1 && nums[i] === nums[i + 1] - 1) {
+      i += 1;
+    }
+    let end = nums[i];
+    if (start === end) {
+      ans.push(`${start}`);
     }
   }
 };
