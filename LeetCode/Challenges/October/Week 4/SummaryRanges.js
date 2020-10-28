@@ -63,6 +63,7 @@ var summaryRanges = function (nums) {
     if (start === end) {
       ans.push(`${start}`);
     } else {
+      ans.push(`${begin}->${end}`);
     }
     i += 1;
   }
