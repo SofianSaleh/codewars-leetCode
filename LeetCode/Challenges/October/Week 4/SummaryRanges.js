@@ -68,3 +68,4 @@ var summaryRanges = function (nums) {
     i += 1;
   }
 };
+console.log(summaryRanges());
