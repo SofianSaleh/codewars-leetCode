@@ -51,11 +51,12 @@ var summaryRanges = function (nums) {
   let ans = [];
   if (nums.length === 0) return ans;
   if (nums.length === 1) {
-    nums.push(`${nums[0]}`);
+    ans.push(`${nums[0]}`);
+    return ans;
   }
   let i = 0;
   while (i < nums.length) {
-    let start = nums[0];
+    let start = nums[i];
     while (i < nums.length - 1 && nums[i] === nums[i + 1] - 1) {
       i += 1;
     }
