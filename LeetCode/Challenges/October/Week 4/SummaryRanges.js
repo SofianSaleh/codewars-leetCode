@@ -72,3 +72,4 @@ console.log(summaryRanges());
 console.log(summaryRanges());
 console.log(summaryRanges());
 console.log(summaryRanges());
+console.log(summaryRanges());
