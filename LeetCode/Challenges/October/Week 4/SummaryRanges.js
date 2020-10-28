@@ -63,13 +63,14 @@ var summaryRanges = function (nums) {
     if (start === end) {
       ans.push(`${start}`);
     } else {
-      ans.push(`${begin}->${end}`);
+      ans.push(`${start}->${end}`);
     }
     i += 1;
   }
+  return ans;
 };
-console.log(summaryRanges());
-console.log(summaryRanges());
-console.log(summaryRanges());
-console.log(summaryRanges());
-console.log(summaryRanges());
+console.log(summaryRanges([0, 1, 2, 4, 5, 7]));
+console.log(summaryRanges([0, 2, 3, 4, 6, 8, 9]));
+console.log(summaryRanges([]));
+console.log(summaryRanges([-1]));
+console.log(summaryRanges([0]));
