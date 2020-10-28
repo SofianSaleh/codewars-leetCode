@@ -70,3 +70,4 @@ var summaryRanges = function (nums) {
 };
 console.log(summaryRanges());
 console.log(summaryRanges());
+console.log(summaryRanges());
