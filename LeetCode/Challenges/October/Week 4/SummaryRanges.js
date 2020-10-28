@@ -62,6 +62,8 @@ var summaryRanges = function (nums) {
     let end = nums[i];
     if (start === end) {
       ans.push(`${start}`);
+    } else {
     }
+    i += 1;
   }
 };
