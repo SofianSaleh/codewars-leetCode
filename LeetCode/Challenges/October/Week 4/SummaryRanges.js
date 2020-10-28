@@ -42,3 +42,21 @@
 // 0 <= nums.length <= 20
 // -231 <= nums[i] <= 231 - 1
 // All the values of nums are unique.
+
+/**
+ * @param {number[]} nums
+ * @return {string[]}
+ */
+var summaryRanges = function (nums) {
+  let ans = [];
+  if (nums.length === 0) return ans;
+  if (nums.length === 1) {
+    nums.push(`${nums[0]}`);
+  }
+  for (let i = 0; i < nums.length; i++) {
+    let start = nums[0];
+    for (let j = 0; j < nums.length - 1 && nums[i] === nums[i + 1] - 1; j++) {
+      var end = nums[i];
+    }
+  }
+};
