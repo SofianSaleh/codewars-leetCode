@@ -56,7 +56,7 @@ var summaryRanges = function (nums) {
   let i = 0;
   while (i < nums.length) {
     let start = nums[0];
-    while (j < nums.length - 1 && nums[i] === nums[i + 1] - 1) {
+    while (i < nums.length - 1 && nums[i] === nums[i + 1] - 1) {
       i += 1;
     }
     let end = nums[i];
