@@ -34,8 +34,13 @@
 
 var maxDistToClosest = function (seats) {
   let people = 0;
+  let j = 0;
+  let ans = [];
   for (let i = 0; i < seats.length; i++) {
-    if (seats[i] === 1) people += 1;
+    if (seats[i] === 1) {
+      j = 0;
+      ans.push(j);
+    } else if (seats[i] === 0) j += 1;
   }
   //   if (people === 1) return seats.length - 1;
   //   return (seats.length - people) / (people - 1);
