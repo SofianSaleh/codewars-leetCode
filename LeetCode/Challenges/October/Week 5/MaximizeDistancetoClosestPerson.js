@@ -32,4 +32,10 @@
 // At least one seat is empty.
 // At least one seat is occupied.
 
-var maxDistToClosest = function (seats) {};
+var maxDistToClosest = function (seats) {
+  let people = 0;
+  for (let i = 0; i < seats.length; i++) {
+    if (seat[i] === 1) people += 1;
+  }
+  if (people === 1) return seats.length - 1;
+};
