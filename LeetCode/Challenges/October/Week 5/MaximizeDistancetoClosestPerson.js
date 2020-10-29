@@ -25,3 +25,10 @@
 
 // Input: seats = [0,1]
 // Output: 1
+
+Constraints:
+
+// 2 <= seats.length <= 2 * 104
+// seats[i] is 0 or 1.
+// At least one seat is empty.
+// At least one seat is occupied.
