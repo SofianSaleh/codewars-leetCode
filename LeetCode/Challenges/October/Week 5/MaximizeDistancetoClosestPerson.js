@@ -33,7 +33,6 @@
 // At least one seat is occupied.
 
 var maxDistToClosest = function (seats) {
-  let people = 0;
   let j = 0;
   let ans;
   for (let i = 0; i < seats.length; i++) {
@@ -42,7 +41,7 @@ var maxDistToClosest = function (seats) {
       j = i;
     }
   }
-  return Math.max(ans, n - j - 1);
+  return Math.max(ans, seats.length - j - 1);
   //   if (people === 1) return seats.length - 1;
   //   return (seats.length - people) / (people - 1);
 };
