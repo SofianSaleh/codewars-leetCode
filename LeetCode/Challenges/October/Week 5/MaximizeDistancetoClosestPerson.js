@@ -42,7 +42,7 @@ var maxDistToClosest = function (seats) {
       j = i;
     }
   }
-  return Math.max(...ans);
+  return Math.max(ans, n - j - 1);
   //   if (people === 1) return seats.length - 1;
   //   return (seats.length - people) / (people - 1);
 };
