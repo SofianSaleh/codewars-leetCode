@@ -42,4 +42,4 @@ var maxDistToClosest = function (seats) {
 };
 
 console.log(maxDistToClosest([0, 1]));
-console.log(maxDistToClosest([0, 1]));
+console.log(maxDistToClosest([1, 0, 0, 0, 1, 0, 1]));
