@@ -42,8 +42,6 @@ var maxDistToClosest = function (seats) {
     }
   }
   return Math.max(ans, seats.length - j - 1);
-  //   if (people === 1) return seats.length - 1;
-  //   return (seats.length - people) / (people - 1);
 };
 
 console.log(maxDistToClosest([0, 1]));
