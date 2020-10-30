@@ -33,7 +33,12 @@ var findNumberOfLIS = function (nums) {
 
   for (let i = 0; i < nums.length; i++) {
     for (let j = 0; j < i; j++) {
-      if(nums[j] < nums[i])
+      if (nums[j] < nums[i]) {
+        if (len[i] === len[j] + 1) {
+          count[i] += count[j];
+        } else if (length[i] < length[j] + 1) {
+        }
+      }
     }
   }
 };
