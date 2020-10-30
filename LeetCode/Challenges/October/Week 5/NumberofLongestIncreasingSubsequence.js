@@ -62,10 +62,3 @@ console.log(findNumberOfLIS([1, 3, 5, 4, 7]));
 //                     elif length[i] < length[j] + 1:
 //                         length[i] = length[j] + 1
 //                         count[i] = count[j]
-//             if maxLength == length[i]:
-//                 ans += count[i]
-//             elif maxLength < length[i]:
-//                 maxLength = length[i]
-//                 ans = count[i]
-
-//         return ans
