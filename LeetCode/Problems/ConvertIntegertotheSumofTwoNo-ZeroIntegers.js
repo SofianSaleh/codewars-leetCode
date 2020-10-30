@@ -36,4 +36,13 @@
  * @param {number} n
  * @return {number[]}
  */
-var getNoZeroIntegers = function (n) {};
+var getNoZeroIntegers = function (n) {
+  let numOne;
+  let numTwo;
+  let ans = [];
+  for (let i = 1; i < n; i++) {
+    numOne = n - i;
+    numTwo = i;
+  }
+  return ans;
+};
