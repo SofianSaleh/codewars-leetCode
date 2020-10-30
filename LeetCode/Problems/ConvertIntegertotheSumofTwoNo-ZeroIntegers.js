@@ -43,6 +43,8 @@ var getNoZeroIntegers = function (n) {
   for (let i = 1; i < n; i++) {
     numOne = n - i;
     numTwo = i;
+    if (!`${numOne}`.includes('0') && !`${numTwo}`.includes('0')) {
+    }
   }
   return ans;
 };
