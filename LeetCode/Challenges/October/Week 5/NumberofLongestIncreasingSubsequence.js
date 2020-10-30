@@ -22,6 +22,8 @@
  */
 var findNumberOfLIS = function (nums) {};
 
+console.log(findNumberOfLIS([1, 3, 5, 4, 7]));
+
 // class Solution:
 //     def findNumberOfLIS(self, nums: List[int]) -> int:
 //         ans = 0
