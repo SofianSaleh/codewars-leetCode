@@ -30,6 +30,10 @@ var findNumberOfLIS = function (nums) {
     len.push(1);
     count.push(1);
   }
+
+  for (let i = 0; i < nums.length; i++) {
+    const element = array[i];
+  }
 };
 
 console.log(findNumberOfLIS([1, 3, 5, 4, 7]));
