@@ -22,8 +22,10 @@
  */
 
 /**
- *
- *
+ * 225 / 225 test cases passed.
+ * Status: Accepted
+ * Runtime: 108 ms
+ * Memory Usage: 40.8 MB
  */
 
 var findNumberOfLIS = function (nums) {
