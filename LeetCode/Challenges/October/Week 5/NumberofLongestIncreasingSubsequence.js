@@ -20,16 +20,19 @@
  * @param {number[]} nums
  * @return {number}
  */
-var findNumberOfLIS = function (nums) {};
+var findNumberOfLIS = function (nums) {
+  let ans = 0;
+  let maxLangth = 0;
+  let len;
+  let count;
+
+  for (let i = 0; i < nums.length; i++) {
+    len.push(1);
+    count.push(1);
+  }
+};
 
 console.log(findNumberOfLIS([1, 3, 5, 4, 7]));
-
-// class Solution:
-//     def findNumberOfLIS(self, nums: List[int]) -> int:
-//         ans = 0
-//         maxLength = 0
-//         length = [1] * len(nums)
-//         count = [1] * len(nums)
 
 //         for i, num in enumerate(nums):
 //             for j in range(i):
