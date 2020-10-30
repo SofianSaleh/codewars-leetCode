@@ -36,7 +36,7 @@ var findNumberOfLIS = function (nums) {
       if (nums[j] < nums[i]) {
         if (len[i] === len[j] + 1) {
           count[i] += count[j];
-        } else if (length[i] < length[j] + 1) {
+        } else if (len[i] < len[j] + 1) {
           len[i] = len[j] + 1;
           count[i] = count[j];
         }
