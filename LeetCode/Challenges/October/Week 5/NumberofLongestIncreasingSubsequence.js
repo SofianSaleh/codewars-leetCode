@@ -55,10 +55,3 @@ var findNumberOfLIS = function (nums) {
 console.log(findNumberOfLIS([1, 3, 5, 4, 7]));
 
 //         for i, num in enumerate(nums):
-//             for j in range(i):
-//                 if nums[j] < num:
-//                     if length[i] == length[j] + 1:
-//                         count[i] += count[j]
-//                     elif length[i] < length[j] + 1:
-//                         length[i] = length[j] + 1
-//                         count[i] = count[j]
