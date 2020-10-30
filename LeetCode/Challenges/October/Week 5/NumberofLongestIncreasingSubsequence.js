@@ -32,7 +32,9 @@ var findNumberOfLIS = function (nums) {
   }
 
   for (let i = 0; i < nums.length; i++) {
-    const element = array[i];
+    for (let j = 0; j < i; j++) {
+      if(nums[j] < nums[i])
+    }
   }
 };
 
