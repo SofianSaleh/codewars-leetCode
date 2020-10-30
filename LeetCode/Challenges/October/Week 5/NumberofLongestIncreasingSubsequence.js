@@ -23,8 +23,8 @@
 var findNumberOfLIS = function (nums) {
   let ans = 0;
   let maxLangth = 0;
-  let len;
-  let count;
+  let len = [];
+  let count = [];
 
   for (let i = 0; i < nums.length; i++) {
     len.push(1);
