@@ -53,4 +53,4 @@ var findNumberOfLIS = function (nums) {
 };
 
 console.log(findNumberOfLIS([1, 3, 5, 4, 7]));
-console.log(findNumberOfLIS([2, 2, 2, 2, 2]));
+// console.log(findNumberOfLIS([2, 2, 2, 2, 2]));
