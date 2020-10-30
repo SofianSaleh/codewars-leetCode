@@ -31,3 +31,9 @@
 // Constraints:
 
 // 2 <= n <= 10^4
+
+/**
+ * @param {number} n
+ * @return {number[]}
+ */
+var getNoZeroIntegers = function (n) {};
