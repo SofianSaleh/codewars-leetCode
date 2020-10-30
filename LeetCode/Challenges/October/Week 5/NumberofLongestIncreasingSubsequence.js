@@ -15,3 +15,9 @@
 
 // 0 <= nums.length <= 2000
 // -106 <= nums[i] <= 106
+
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var findNumberOfLIS = function (nums) {};
