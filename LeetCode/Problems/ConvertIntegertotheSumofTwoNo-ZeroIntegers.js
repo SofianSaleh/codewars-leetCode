@@ -44,6 +44,9 @@ var getNoZeroIntegers = function (n) {
     numOne = n - i;
     numTwo = i;
     if (!`${numOne}`.includes('0') && !`${numTwo}`.includes('0')) {
+      ans.push(numTwo);
+      ans.push(numOne);
+      break;
     }
   }
   return ans;
