@@ -46,8 +46,10 @@ var findNumberOfLIS = function (nums) {
       ans += count[i];
     } else if (maxLangth < len[i]) {
       maxLangth = len[i];
+      ans = count[i];
     }
   }
+  return ans;
 };
 
 console.log(findNumberOfLIS([1, 3, 5, 4, 7]));
