@@ -43,8 +43,8 @@ var recoverTree = function (root) {
 
 var inorder = function (root, vals, list) {
   if (!root) return;
+  inorder(root.left, vals, list);
 };
-//     inorder(root.left,vals,list);
 //     list.push(root);
 //     vals.push(root.val);
 //     inorder(root.right,vals,list);
