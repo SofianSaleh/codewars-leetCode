@@ -31,6 +31,8 @@
  * @return {void} Do not return anything, modify root in-place instead.
  */
 
+var recoverTree = function (root) {};
+
 // var recoverTree = function(root) {
 //     let list=[];
 //     let vals=[];
