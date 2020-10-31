@@ -42,8 +42,6 @@ var recoverTree = function (root) {
 };
 
 var inorder = function (root, vals, list) {};
-// var recoverTree = function(root) {
-// };
 //     if(!root) return ;
 //     inorder(root.left,vals,list);
 //     list.push(root);
