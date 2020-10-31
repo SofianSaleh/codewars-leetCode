@@ -36,6 +36,7 @@ var recoverTree = function (root) {
   let vals = [];
 };
 
+var inorder = function (root, vals, list) {};
 // var recoverTree = function(root) {
 //     inorder(root,vals,list);
 //     vals.sort((a,b)=>a-b);
@@ -43,10 +44,8 @@ var recoverTree = function (root) {
 //         list[i].val=vals[i];
 //     }
 // };
-// var inorder=function(root,vals,list){
 //     if(!root) return ;
 //     inorder(root.left,vals,list);
 //     list.push(root);
 //     vals.push(root.val);
 //     inorder(root.right,vals,list);
-// }
