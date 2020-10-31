@@ -30,3 +30,20 @@
  * @param {TreeNode} root
  * @return {void} Do not return anything, modify root in-place instead.
  */
+
+// var recoverTree = function(root) {
+//     let list=[];
+//     let vals=[];
+//     inorder(root,vals,list);
+//     vals.sort((a,b)=>a-b);
+//     for(let i=0;i<list.length;i++){
+//         list[i].val=vals[i];
+//     }
+// };
+// var inorder=function(root,vals,list){
+//     if(!root) return ;
+//     inorder(root.left,vals,list);
+//     list.push(root);
+//     vals.push(root.val);
+//     inorder(root.right,vals,list);
+// }
