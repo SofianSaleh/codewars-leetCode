@@ -46,5 +46,5 @@ var inorder = function (root, vals, list) {
   inorder(root.left, vals, list);
   list.push(root);
   vals.push(root.val);
+  inorder(root.right, vals, list);
 };
-//     inorder(root.right,vals,list);
