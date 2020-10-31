@@ -34,11 +34,11 @@
 var recoverTree = function (root) {
   let list = [];
   let vals = [];
+  inorder(root, vals, list);
 };
 
 var inorder = function (root, vals, list) {};
 // var recoverTree = function(root) {
-//     inorder(root,vals,list);
 //     vals.sort((a,b)=>a-b);
 //     for(let i=0;i<list.length;i++){
 //         list[i].val=vals[i];
