@@ -42,12 +42,12 @@
  * @return {number}
  */
 
-class ListNode {
-  constructor(val, next) {
-    this.val = val === undefined ? 0 : val;
-    this.next = next === undefined ? null : next;
-  }
-}
+// class ListNode {
+//   constructor(val, next) {
+//     this.val = val === undefined ? 0 : val;
+//     this.next = next === undefined ? null : next;
+//   }
+// }
 
 // let root = new ListNode(1, new ListNode(0, new ListNode(1, null)));
 
