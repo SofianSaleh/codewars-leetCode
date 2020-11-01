@@ -49,7 +49,7 @@ class ListNode {
   }
 }
 
-let root = new ListNode(1, new ListNode(0, new ListNode(1, null)));
+// let root = new ListNode(1, new ListNode(0, new ListNode(1, null)));
 
 var getDecimalValue = function (head) {
   let ans = 0;
