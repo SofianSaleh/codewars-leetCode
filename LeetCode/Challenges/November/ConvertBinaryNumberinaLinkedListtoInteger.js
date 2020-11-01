@@ -41,4 +41,23 @@
  * @param {ListNode} head
  * @return {number}
  */
-var getDecimalValue = function (head) {};
+
+class ListNode {
+  constructor(val, next) {
+    this.val = val === undefined ? 0 : val;
+    this.next = next === undefined ? null : next;
+  }
+}
+
+let root = new ListNode(1, new ListNode(0, new ListNode(1, null)));
+
+var getDecimalValue = function (head) {
+  let arr = [];
+  let ans = 0;
+
+  while (head.next !== null) {
+    arr.push(head.value);
+    head = head.next;
+  }
+  console.log(arr);
+};
