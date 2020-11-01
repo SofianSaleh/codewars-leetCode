@@ -56,11 +56,10 @@ var getDecimalValue = function (head) {
   let ans = 0;
 
   while (head) {
-    console.log(head);
-    arr.push(head.val);
+    ans = ans * 2 + head.val;
     head = head.next;
   }
-  console.log(arr);
+  return ans;
 };
 
 console.log(getDecimalValue(root));
