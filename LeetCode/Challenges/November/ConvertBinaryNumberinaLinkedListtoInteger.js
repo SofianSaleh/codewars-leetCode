@@ -61,3 +61,5 @@ var getDecimalValue = function (head) {
   }
   console.log(arr);
 };
+
+console.log(getDecimalValue(root));
