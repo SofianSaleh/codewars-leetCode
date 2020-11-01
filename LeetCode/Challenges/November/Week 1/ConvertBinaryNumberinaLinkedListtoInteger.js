@@ -52,7 +52,6 @@ class ListNode {
 let root = new ListNode(1, new ListNode(0, new ListNode(1, null)));
 // console.log(root);
 var getDecimalValue = function (head) {
-  let arr = [];
   let ans = 0;
 
   while (head) {
