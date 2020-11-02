@@ -18,6 +18,27 @@
 // Input: -1->5->3->4->0
 // Output: -1->0->3->4->5
 
+/**
+ * Definition for singly-linked list.
+ * function ListNode(val, next) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.next = (next===undefined ? null : next)
+ * }
+ */
+
+class ListNode {
+  constructor(val, next) {
+    this.val = val === undefined ? 0 : val;
+    this.next = next === undefined ? null : next;
+  }
+}
+
+/**
+ * @param {ListNode} head
+ * @return {ListNode}
+ */
+var insertionSortList = function (head) {};
+
 // class Solution:
 //     def insertionSortList(self, head: ListNode) -> ListNode:
 //         dummy = ListNode(0)
