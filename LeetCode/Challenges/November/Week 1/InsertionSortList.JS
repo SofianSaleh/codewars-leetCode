@@ -50,6 +50,7 @@ var insertionSortList = function (head) {
     curr.next = prev.next;
     prev.next = curr;
   }
+  return dummy.next;
 };
 
 // class Solution:
