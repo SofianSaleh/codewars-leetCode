@@ -52,8 +52,3 @@ var insertionSortList = function (head) {
   }
   return dummy.next;
 };
-
-//         while curr:
-//             prev = dummy
-
-//         return dummy.next
