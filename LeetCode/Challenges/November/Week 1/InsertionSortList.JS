@@ -40,6 +40,13 @@ class ListNode {
 var insertionSortList = function (head) {
   let dummy = new ListNode(0);
   let curr = head;
+
+  while (curr) {
+    let prev = dummy;
+    while (prev.next && prev.next.val < curr.val) {
+      prev = prev.next;
+    }
+  }
 };
 
 // class Solution:
