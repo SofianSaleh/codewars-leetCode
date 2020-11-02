@@ -48,6 +48,7 @@ var insertionSortList = function (head) {
     }
     next = curr.next;
     curr.next = prev.next;
+    prev.next = curr;
   }
 };
 
