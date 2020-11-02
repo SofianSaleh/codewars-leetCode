@@ -37,7 +37,10 @@ class ListNode {
  * @param {ListNode} head
  * @return {ListNode}
  */
-var insertionSortList = function (head) {};
+var insertionSortList = function (head) {
+  let dummy = new ListNode(0);
+  let curr = head;
+};
 
 // class Solution:
 //     def insertionSortList(self, head: ListNode) -> ListNode:
