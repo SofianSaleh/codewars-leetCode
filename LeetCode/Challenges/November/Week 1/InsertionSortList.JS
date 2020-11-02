@@ -53,11 +53,6 @@ var insertionSortList = function (head) {
   return dummy.next;
 };
 
-// class Solution:
-//     def insertionSortList(self, head: ListNode) -> ListNode:
-//         dummy = ListNode(0)
-//         curr = head
-
 //         while curr:
 //             prev = dummy
 //             while prev.next and prev.next.val < curr.val:
