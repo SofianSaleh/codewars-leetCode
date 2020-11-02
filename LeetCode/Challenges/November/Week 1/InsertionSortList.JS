@@ -46,6 +46,8 @@ var insertionSortList = function (head) {
     while (prev.next && prev.next.val < curr.val) {
       prev = prev.next;
     }
+    next = curr.next;
+    curr.next = prev.next;
   }
 };
 
