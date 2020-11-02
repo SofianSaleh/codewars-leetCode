@@ -55,4 +55,4 @@ var insertionSortList = function (head) {
   return dummy.next;
 };
 
-console.log(insertionSortList(root));
+// console.log(insertionSortList(root));
