@@ -48,3 +48,4 @@ console.log(maxPower('leetcode'));
 console.log(maxPower('abbcccddddeeeeedcba'));
 console.log(maxPower('triplepillooooow'));
 console.log(maxPower('hooraaaaaaaaaaay'));
+console.log(maxPower('tourist'));
