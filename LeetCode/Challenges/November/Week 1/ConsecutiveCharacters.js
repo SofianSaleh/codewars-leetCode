@@ -35,6 +35,11 @@ var maxPower = function (s) {
   let ans = [];
 
   for (let i = 0; i < s.length; i++) {
-    const element = s[i];
+    if (s[i] === s[i - 1]) {
+      counter += 1;
+    } else {
+      ans.push(counter);
+      counter = 0;
+    }
   }
 };
