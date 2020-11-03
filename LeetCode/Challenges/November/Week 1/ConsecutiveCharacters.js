@@ -44,8 +44,9 @@ var maxPower = function (s) {
   }
   return Math.max(...ans);
 };
-console.log(maxPower('leetcode'));
-console.log(maxPower('abbcccddddeeeeedcba'));
-console.log(maxPower('triplepillooooow'));
-console.log(maxPower('hooraaaaaaaaaaay'));
-console.log(maxPower('tourist'));
+console.log(maxPower('"cc"'));
+// console.log(maxPower('leetcode'));
+// console.log(maxPower('abbcccddddeeeeedcba'));
+// console.log(maxPower('triplepillooooow'));
+// console.log(maxPower('hooraaaaaaaaaaay'));
+// console.log(maxPower('tourist'));
