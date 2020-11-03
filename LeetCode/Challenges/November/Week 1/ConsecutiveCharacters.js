@@ -30,4 +30,7 @@
 // 1 <= s.length <= 500
 // s contains only lowercase English letters.
 
-var maxPower = function (s) {};
+var maxPower = function (s) {
+  let counter = 0;
+  let ans = [];
+};
