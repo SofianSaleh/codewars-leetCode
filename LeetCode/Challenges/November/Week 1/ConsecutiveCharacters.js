@@ -42,4 +42,5 @@ var maxPower = function (s) {
       counter = 0;
     }
   }
+  console.log(ans);
 };
