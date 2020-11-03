@@ -31,18 +31,18 @@
 // s contains only lowercase English letters.
 
 var maxPower = function (s) {
-  let counter = 0;
+  let counter = 1;
   let ans = [];
 
   for (let i = 0; i < s.length; i++) {
-    console.log(s[i], s[i - 1]);
     if (s[i] === s[i - 1]) {
       counter += 1;
     } else {
       ans.push(counter);
-      counter = 0;
+      counter = 1;
     }
   }
-  console.log(ans);
+  return Math.max(...ans);
 };
 console.log(maxPower('leetcode'));
+console.log(maxPower('abbcccddddeeeeedcba'));
