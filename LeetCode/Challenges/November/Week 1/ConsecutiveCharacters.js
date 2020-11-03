@@ -36,7 +36,6 @@ var maxPower = function (s) {
 
   for (let i = 0; i < s.length; i++) {
     if (s[i] === s[i - 1]) {
-      console.log(s[i], s[i - 1], counter);
       counter += 1;
     } else {
       ans.push(counter);
@@ -44,10 +43,9 @@ var maxPower = function (s) {
     }
   }
   ans.push(counter);
-  console.log(ans);
   return Math.max(...ans);
 };
-console.log(maxPower('cc'));
+// console.log(maxPower('cc'));
 // console.log(maxPower('leetcode'));
 // console.log(maxPower('abbcccddddeeeeedcba'));
 // console.log(maxPower('triplepillooooow'));
