@@ -34,7 +34,8 @@ var maxPower = function (s) {
   let counter = 0;
   let ans = [];
 
-  for (let i = 0; i < s.length; i++) {
+  for (let i = 1; i < s.length; i++) {
+    console.log(s[i], s[i - 1]);
     if (s[i] === s[i - 1]) {
       counter += 1;
     } else {
@@ -44,3 +45,4 @@ var maxPower = function (s) {
   }
   console.log(ans);
 };
+console.log(maxPower('leetcode'));
