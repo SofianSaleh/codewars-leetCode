@@ -29,3 +29,5 @@
 
 // 1 <= s.length <= 500
 // s contains only lowercase English letters.
+
+var maxPower = function (s) {};
