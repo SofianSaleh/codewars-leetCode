@@ -46,5 +46,5 @@ var maxPower = function (s) {
 };
 console.log(maxPower('leetcode'));
 console.log(maxPower('abbcccddddeeeeedcba'));
-console.log(maxPower('abbcccddddeeeeedcba'));
-console.log(maxPower('abbcccddddeeeeedcba'));
+console.log(maxPower('triplepillooooow'));
+console.log(maxPower('hooraaaaaaaaaaay'));
