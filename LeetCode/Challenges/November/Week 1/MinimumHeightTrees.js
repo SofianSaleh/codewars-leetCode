@@ -35,6 +35,13 @@
 
 var findMinHeightTrees = function (n, edges) {
   if (n === 1) return [0];
+  var result = [],
+    tree = {},
+    list = [],
+    i,
+    j,
+    curr,
+    visited = 0;
 
   function Node(val) {}
   function bfs(list) {}
