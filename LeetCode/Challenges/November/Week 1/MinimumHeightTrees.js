@@ -90,4 +90,9 @@ var findMinHeightTrees = function (n, edges) {
       list.push(tree[i].val);
     }
   }
+  bfs(list);
+  for (i = 0; i < list.length; i++) {
+    result.push(list[i]);
+  }
+  return result;
 };
