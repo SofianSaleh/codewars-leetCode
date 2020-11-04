@@ -33,4 +33,10 @@
 // All the pairs (ai, bi) are distinct.
 // The given input is guaranteed to be a tree and there will be no repeated edges.
 
-var findMinHeightTrees = function (n, edges) {};
+var findMinHeightTrees = function (n, edges) {
+  if (n === 1) return [0];
+
+  function Node(val) {}
+  function bfs(list) {}
+  function deleteNode(arr, val) {}
+};
