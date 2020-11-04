@@ -95,3 +95,8 @@ var findMinHeightTrees = function (n, edges) {
     }
   }
 };
+
+console.log(findMinHeightTrees());
+console.log(findMinHeightTrees());
+console.log(findMinHeightTrees());
+console.log(findMinHeightTrees());
