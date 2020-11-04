@@ -38,34 +38,6 @@ class Node {
     this.val = val;
     this.neighbor = [];
   }
-  bfs(list) {
-    var len = list.length,
-      top,
-      topNeighbor;
-    if (visited >= n - 2) return;
-    while (len--) {
-      visited++;
-      top = tree[list.shift()];
-      topNeighbor = top.neighbor[0];
-      deleteNode(topNeighbor.neighbor, top.val);
-      if (
-        topNeighbor.neighbor.length <= 1 &&
-        list.indexOf(topNeighbor.val) === -1
-      ) {
-        list.push(topNeighbor.val);
-      }
-      delete tree[top.val];
-    }
-    bfs(list);
-  }
-  deleteNode(arr, val) {
-    for (var i = 0; i < arr.length; i++) {
-      if (arr[i].val === val) {
-        arr.splice(i, 1);
-        return;
-      }
-    }
-  }
 }
 
 var findMinHeightTrees = function (n, edges) {
@@ -95,4 +67,33 @@ var findMinHeightTrees = function (n, edges) {
     result.push(list[i]);
   }
   return result;
+
+  function bfs(list) {
+    var len = list.length,
+      top,
+      topNeighbor;
+    if (visited >= n - 2) return;
+    while (len--) {
+      visited++;
+      top = tree[list.shift()];
+      topNeighbor = top.neighbor[0];
+      deleteNode(topNeighbor.neighbor, top.val);
+      if (
+        topNeighbor.neighbor.length <= 1 &&
+        list.indexOf(topNeighbor.val) === -1
+      ) {
+        list.push(topNeighbor.val);
+      }
+      delete tree[top.val];
+    }
+    bfs(list);
+  }
+  function deleteNode(arr, val) {
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i].val === val) {
+        arr.splice(i, 1);
+        return;
+      }
+    }
+  }
 };
