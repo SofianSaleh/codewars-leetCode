@@ -96,7 +96,21 @@ var findMinHeightTrees = function (n, edges) {
   }
 };
 
-console.log(findMinHeightTrees());
-console.log(findMinHeightTrees());
-console.log(findMinHeightTrees());
-console.log(findMinHeightTrees());
+console.log(
+  findMinHeightTrees(4, [
+    [1, 0],
+    [1, 2],
+    [1, 3],
+  ])
+);
+console.log(
+  findMinHeightTrees(6, [
+    [3, 0],
+    [3, 1],
+    [3, 2],
+    [3, 4],
+    [5, 4],
+  ])
+);
+console.log(findMinHeightTrees(1, []));
+console.log(findMinHeightTrees(2, [[0, 1]]));
