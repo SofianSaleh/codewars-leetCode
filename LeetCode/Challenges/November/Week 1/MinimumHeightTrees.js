@@ -32,3 +32,5 @@
 // ai != bi
 // All the pairs (ai, bi) are distinct.
 // The given input is guaranteed to be a tree and there will be no repeated edges.
+
+var findMinHeightTrees = function (n, edges) {};
