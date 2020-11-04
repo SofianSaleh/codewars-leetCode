@@ -34,14 +34,14 @@
 // The given input is guaranteed to be a tree and there will be no repeated edges.
 
 class Node {
-      constructor(val) {
-          this.val = val;
-          this.neighbor = [];
-      }
-      function bfs(list) {}
-      function deleteNode(arr, val) {}
+  constructor(val) {
+    this.val = val;
+    this.neighbor = [];
   }
-  
+  bfs(list) {}
+  deleteNode(arr, val) {}
+}
+
 var findMinHeightTrees = function (n, edges) {
   if (n === 1) return [0];
   var result = [],
@@ -51,5 +51,4 @@ var findMinHeightTrees = function (n, edges) {
     j,
     curr,
     visited = 0;
-
 };
