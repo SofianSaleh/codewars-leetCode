@@ -58,7 +58,14 @@ class Node {
     }
     bfs(list);
   }
-  deleteNode(arr, val) {}
+  deleteNode(arr, val) {
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i].val === val) {
+        arr.splice(i, 1);
+        return;
+      }
+    }
+  }
 }
 
 var findMinHeightTrees = function (n, edges) {
