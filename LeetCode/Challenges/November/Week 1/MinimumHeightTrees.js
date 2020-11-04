@@ -77,4 +77,12 @@ var findMinHeightTrees = function (n, edges) {
     j,
     curr,
     visited = 0;
+
+  for (i = 0; i < edges.length; i++) {
+    curr = edges[i];
+    if (!tree[curr[0]]) tree[curr[0]] = new Node(curr[0]);
+    if (!tree[curr[1]]) tree[curr[1]] = new Node(curr[1]);
+    tree[curr[0]].neighbor.push(tree[curr[1]]);
+    tree[curr[1]].neighbor.push(tree[curr[0]]);
+  }
 };
