@@ -34,6 +34,9 @@
  */
 var minCostToMoveChips = function (position) {
   let count = [0, 0];
+
+  for (const chip of chips) {
+  }
 };
 
 console.log(minCostToMoveChips([1, 2, 3]));
