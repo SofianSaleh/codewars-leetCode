@@ -32,6 +32,12 @@
  * @param {number[]} position
  * @return {number}
  */
+
+/**
+ * Runtime: 80 ms
+ * Memory Usage: 38.8 MB
+ */
+
 var minCostToMoveChips = function (chips) {
   let count = [0, 0];
 
