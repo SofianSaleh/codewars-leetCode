@@ -28,6 +28,12 @@
 // 1 <= position.length <= 100
 // 1 <= position[i] <= 10^9
 
+/**
+ * @param {number[]} position
+ * @return {number}
+ */
+var minCostToMoveChips = function (position) {};
+
 // class Solution:
 //     def minCostToMoveChips(self, chips: List[int]) -> int:
 //         count = [0] * 2
