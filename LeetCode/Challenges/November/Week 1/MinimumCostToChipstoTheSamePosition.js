@@ -36,6 +36,7 @@ var minCostToMoveChips = function (position) {
   let count = [0, 0];
 
   for (const chip of chips) {
+    count[chip % 2] += 1;
   }
 };
 
