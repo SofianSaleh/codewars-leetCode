@@ -32,7 +32,9 @@
  * @param {number[]} position
  * @return {number}
  */
-var minCostToMoveChips = function (position) {};
+var minCostToMoveChips = function (position) {
+  let count = [0, 0];
+};
 
 console.log(minCostToMoveChips([1, 2, 3]));
 console.log(minCostToMoveChips([2, 2, 2, 3, 3]));
