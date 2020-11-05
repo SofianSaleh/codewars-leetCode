@@ -42,7 +42,7 @@ var minCostToMoveChips = function (position) {
   return Math.min(count[0], count[1]);
 };
 
-console.log(minCostToMoveChips([1, 2, 3]));
+// console.log(minCostToMoveChips([1, 2, 3]));
 // console.log(minCostToMoveChips([2, 2, 2, 3, 3]));
 // console.log(minCostToMoveChips([1, 1000000000]));
 
