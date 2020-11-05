@@ -32,7 +32,7 @@
  * @param {number[]} position
  * @return {number}
  */
-var minCostToMoveChips = function (position) {
+var minCostToMoveChips = function (chips) {
   let count = [0, 0];
 
   for (const chip of chips) {
