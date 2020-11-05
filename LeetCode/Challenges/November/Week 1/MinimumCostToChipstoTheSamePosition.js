@@ -34,6 +34,8 @@
  */
 var minCostToMoveChips = function (position) {};
 
+console.log(minCostToMoveChips());
+
 // class Solution:
 //     def minCostToMoveChips(self, chips: List[int]) -> int:
 //         count = [0] * 2
