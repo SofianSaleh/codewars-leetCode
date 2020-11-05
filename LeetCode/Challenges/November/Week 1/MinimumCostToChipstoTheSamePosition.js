@@ -44,7 +44,7 @@ var minCostToMoveChips = function (position) {
 
 console.log(minCostToMoveChips([1, 2, 3]));
 console.log(minCostToMoveChips([2, 2, 2, 3, 3]));
-console.log(minCostToMoveChips([1, 1000000000]));
+// console.log(minCostToMoveChips([1, 1000000000]));
 
 // class Solution:
 //     def minCostToMoveChips(self, chips: List[int]) -> int:
