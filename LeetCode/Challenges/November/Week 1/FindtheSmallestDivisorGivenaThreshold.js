@@ -41,6 +41,7 @@ var smallestDivisor = function (nums, threshold) {
     for (const a of nums) {
       t += Math.ceil(a / mid);
     }
+    console.log(t);
     if (t < threshold) {
       res = Math.min(res, mid);
     } else {
