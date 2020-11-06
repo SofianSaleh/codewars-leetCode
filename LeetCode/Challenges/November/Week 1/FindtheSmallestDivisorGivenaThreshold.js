@@ -24,3 +24,10 @@
 // 1 <= nums.length <= 5 * 10^4
 // 1 <= nums[i] <= 10^6
 // nums.length <= threshold <= 10^6
+
+/**
+ * @param {number[]} nums
+ * @param {number} threshold
+ * @return {number}
+ */
+var smallestDivisor = function (nums, threshold) {};
