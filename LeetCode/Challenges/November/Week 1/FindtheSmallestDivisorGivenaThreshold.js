@@ -52,4 +52,4 @@ var smallestDivisor = function (nums, threshold) {
   }
   return res;
 };
-console.log(smallestDivisor([1, 2, 5, 9], 6));
+// console.log(smallestDivisor([1, 2, 5, 9], 6));
