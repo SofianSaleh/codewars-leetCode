@@ -44,11 +44,11 @@ var smallestDivisor = function (nums, threshold) {
     console.log(t);
     if (t < threshold) {
       res = Math.min(res, mid);
+      hi = mid - 1;
     } else {
       lo = mid + 1;
     }
     console.log(lo, t, hi, mid, threshold);
-    break;
   }
   return res;
 };
