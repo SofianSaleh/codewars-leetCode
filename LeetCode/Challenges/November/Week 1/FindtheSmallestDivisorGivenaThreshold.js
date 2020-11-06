@@ -59,7 +59,3 @@ var smallestDivisor = function (nums, threshold) {
 //             if t<=threshold:
 //                 res=min(res,mid)
 //                 hi = mid - 1
-//             else:
-//                 lo = mid + 1
-
-//         return res
