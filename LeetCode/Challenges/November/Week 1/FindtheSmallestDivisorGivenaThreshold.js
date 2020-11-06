@@ -30,7 +30,11 @@
  * @param {number} threshold
  * @return {number}
  */
-var smallestDivisor = function (nums, threshold) {};
+var smallestDivisor = function (nums, threshold) {
+  let lo = 1;
+  let hi = Math.max(...nums);
+  let res = 99999999999;
+};
 
 // class Solution(object):
 //     def smallestDivisor(self, nums, threshold):
