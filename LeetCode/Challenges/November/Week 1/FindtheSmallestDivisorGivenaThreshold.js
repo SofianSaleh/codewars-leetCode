@@ -47,4 +47,5 @@ var smallestDivisor = function (nums, threshold) {
       lo = mid + 1;
     }
   }
+  return res;
 };
