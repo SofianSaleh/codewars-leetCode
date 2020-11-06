@@ -34,6 +34,10 @@ var smallestDivisor = function (nums, threshold) {
   let lo = 1;
   let hi = Math.max(...nums);
   let res = 99999999999;
+
+  while (lo <= hi) {
+    mid = Math.floor((lo + hi) / 2);
+  }
 };
 
 // class Solution(object):
