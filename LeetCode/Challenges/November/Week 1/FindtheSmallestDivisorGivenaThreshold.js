@@ -47,6 +47,9 @@ var smallestDivisor = function (nums, threshold) {
     } else {
       lo = mid + 1;
     }
+    console.log(lo, t, hi, mid, threshold);
+    break;
   }
   return res;
 };
+console.log(smallestDivisor([1, 2, 5, 9], 6));
