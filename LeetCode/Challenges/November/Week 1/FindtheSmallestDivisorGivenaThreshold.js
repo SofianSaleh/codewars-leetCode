@@ -53,9 +53,3 @@ var smallestDivisor = function (nums, threshold) {
 //     def smallestDivisor(self, nums, threshold):
 //         lo,hi=1,max(nums)
 //         res = 99999999999
-//         while lo<=hi:
-//             mid=(lo+hi)//2
-//             t = sum(math.ceil(a/mid) for a in nums)
-//             if t<=threshold:
-//                 res=min(res,mid)
-//                 hi = mid - 1
