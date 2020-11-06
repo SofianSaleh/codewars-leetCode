@@ -31,3 +31,18 @@
  * @return {number}
  */
 var smallestDivisor = function (nums, threshold) {};
+
+// class Solution(object):
+//     def smallestDivisor(self, nums, threshold):
+//         lo,hi=1,max(nums)
+//         res = 99999999999
+//         while lo<=hi:
+//             mid=(lo+hi)//2
+//             t = sum(math.ceil(a/mid) for a in nums)
+//             if t<=threshold:
+//                 res=min(res,mid)
+//                 hi = mid - 1
+//             else:
+//                 lo = mid + 1
+
+//         return res
