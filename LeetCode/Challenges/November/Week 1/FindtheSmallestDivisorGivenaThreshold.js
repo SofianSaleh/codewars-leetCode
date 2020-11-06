@@ -48,8 +48,3 @@ var smallestDivisor = function (nums, threshold) {
     }
   }
 };
-
-// class Solution(object):
-//     def smallestDivisor(self, nums, threshold):
-//         lo,hi=1,max(nums)
-//         res = 99999999999
