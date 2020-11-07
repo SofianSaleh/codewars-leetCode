@@ -57,11 +57,12 @@ var addTwoNumbers = function (l1, l2) {
     if (stack2) {
       carry += stack2.pop();
     }
+    console.log(carry);
     let node = new ListNode(carry % 10, null);
     node.next = head;
     head = node;
     carry = Math.floor(carry / 10);
-    console.log(carry);
+    break;
   }
   return head;
 };
