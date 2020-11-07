@@ -47,6 +47,7 @@ var addTwoNumbers = function (l1, l2) {
 
   while (carry || stack1 || stack2) {
     if (stack1) {
+      carry += stack1.pop().val;
     }
     if (stack2) {
     }
