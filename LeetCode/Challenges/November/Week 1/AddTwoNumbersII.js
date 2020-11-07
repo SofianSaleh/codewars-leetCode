@@ -55,6 +55,7 @@ var addTwoNumbers = function (l1, l2) {
     let node = new ListNode(carry % 10);
     node.next = head;
     head = node;
+    carry = Math.floor(carry / 10);
   }
 };
 
