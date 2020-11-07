@@ -65,12 +65,3 @@ var addTwoNumbers = function (l1, l2) {
 
 //         while carry or stack1 or stack2:
 //             if stack1:
-//                 carry += stack1.pop().val
-//             if stack2:
-//                 carry += stack2.pop().val
-//             node = ListNode(carry % 10)
-//             node.next = head
-//             head = node
-//             carry //= 10
-
-//         return head
