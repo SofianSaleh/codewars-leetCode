@@ -24,6 +24,11 @@ class ListNode {
     this.next = next === undefined ? null : next;
   }
 }
+let one = new ListNode(
+  7,
+  new ListNode(2, new ListNode(4, new ListNode(3, null)))
+);
+let two = new ListNode(5, new ListNode(6, new ListNode(4, null)));
 
 /**
  * @param {ListNode} l1
@@ -47,6 +52,7 @@ var addTwoNumbers = function (l1, l2) {
 
   while (carry || stack1 || stack2) {
     if (stack1) {
+      console.log(stack1.pop().val);
       carry += stack1.pop().val;
     }
     if (stack2) {
