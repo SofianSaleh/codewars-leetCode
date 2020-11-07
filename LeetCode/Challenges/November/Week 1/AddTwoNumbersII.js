@@ -65,3 +65,5 @@ var addTwoNumbers = function (l1, l2) {
   }
   return head;
 };
+
+console.log(addTwoNumbers(one, two));
