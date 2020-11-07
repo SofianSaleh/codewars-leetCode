@@ -45,7 +45,12 @@ var addTwoNumbers = function (l1, l2) {
   let head = null;
   let carry = 0;
 
-  while (carry || stack1 || stack2) {}
+  while (carry || stack1 || stack2) {
+    if (stack1) {
+    }
+    if (stack2) {
+    }
+  }
 };
 
 //         head = None
