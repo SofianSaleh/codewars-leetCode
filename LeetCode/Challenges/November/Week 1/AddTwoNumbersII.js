@@ -42,6 +42,8 @@ var addTwoNumbers = function (l1, l2) {
     stack2.push(l2);
     l2 = l2.next;
   }
+  let head = null;
+  let carry = 0;
 };
 
 //         head = None
