@@ -50,19 +50,19 @@ var addTwoNumbers = function (l1, l2) {
   let head = null;
   let carry = 0;
 
-  while (carry || stack1 || stack2) {
-    if (stack1) {
-      carry += stack1.pop();
+  while (carry || stack1.length !== 0 || stack2.length !== 0) {
+    console.log(stack2);
+    if (stack1.length !== 0) {
+      carry += stack1.pop().val;
     }
-    if (stack2) {
-      carry += stack2.pop();
+    if (stack2.length !== 0) {
+      carry += stack2.pop().val;
     }
-    console.log(carry);
     let node = new ListNode(carry % 10, null);
     node.next = head;
     head = node;
     carry = Math.floor(carry / 10);
-    break;
+    // break;
   }
   return head;
 };
