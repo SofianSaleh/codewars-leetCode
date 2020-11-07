@@ -50,6 +50,7 @@ var addTwoNumbers = function (l1, l2) {
       carry += stack1.pop().val;
     }
     if (stack2) {
+      carry += stack2.pop().val;
     }
   }
 };
