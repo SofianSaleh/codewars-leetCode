@@ -53,4 +53,4 @@ var smallestDivisor = function (nums, threshold) {
   return res;
 };
 // console.log(smallestDivisor([1, 2, 5, 9], 6));
-console.log(smallestDivisor([2, 3, 5, 7, 11], 11));
+// console.log(smallestDivisor([2, 3, 5, 7, 11], 11));
