@@ -53,6 +53,7 @@ var addTwoNumbers = function (l1, l2) {
       carry += stack2.pop().val;
     }
     let node = new ListNode(carry % 10);
+    node.next = head;
   }
 };
 
