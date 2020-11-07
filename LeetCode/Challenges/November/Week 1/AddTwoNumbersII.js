@@ -51,6 +51,7 @@ var addTwoNumbers = function (l1, l2) {
   let carry = 0;
 
   while (carry || stack1 || stack2) {
+    console.log(stack1.length);
     if (stack1) {
       carry += stack1.pop();
     }
