@@ -51,15 +51,11 @@ var addTwoNumbers = function (l1, l2) {
   let carry = 0;
 
   while (carry || stack1 || stack2) {
-    let temp;
     if (stack1) {
-      temp = stack1.pop();
-      carry += temp.val;
+      carry += stack1.pop();
     }
     if (stack2) {
-      console.log(stack2);
-      temp = stack2.pop();
-      carry += temp.val;
+      carry += stack2.pop();
     }
     let node = new ListNode(carry % 10);
     node.next = head;
