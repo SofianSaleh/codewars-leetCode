@@ -59,9 +59,3 @@ var addTwoNumbers = function (l1, l2) {
   }
   return head;
 };
-
-//         head = None
-//         carry = 0
-
-//         while carry or stack1 or stack2:
-//             if stack1:
