@@ -57,6 +57,7 @@ var addTwoNumbers = function (l1, l2) {
     head = node;
     carry = Math.floor(carry / 10);
   }
+  return head;
 };
 
 //         head = None
