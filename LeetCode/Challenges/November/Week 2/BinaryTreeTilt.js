@@ -82,10 +82,3 @@ lass Solution {
     if (root == null)
       return 0;
 
-    final int l = sum(root.left);
-    final int r = sum(root.right);
-    ans += Math.abs(l - r);
-
-    return root.val + l + r;
-  }
-}
