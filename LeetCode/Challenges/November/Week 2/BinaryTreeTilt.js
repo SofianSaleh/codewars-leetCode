@@ -58,34 +58,34 @@ var findTilt = function (root) {
   let ans = 0;
 
   var sum = function (root1) {
-    if (root === null) return 0;
+    if (root1 === null) return 0;
 
-    let l = sum(root.left);
-    let r = sum(root.right);
+    let l = sum(root1.left);
+    let r = sum(root1.right);
     ans = Math.abs(l - r);
-    return root.val + l + r;
+    return root1.val + l + r;
   };
 
   sum();
   return ans;
 };
 
-// lass Solution {
-//   public int findTilt(TreeNode root) {
-//     sum(root);
-//     return ans;
-//   }
+lass Solution {
+  public int findTilt(TreeNode root) {
+    sum(root);
+    return ans;
+  }
 
-//   private int ans = 0;
+  private int ans = 0;
 
-//   private int sum(TreeNode root) {
-//     if (root == null)
-//       return 0;
+  private int sum(TreeNode root) {
+    if (root == null)
+      return 0;
 
-//     final int l = sum(root.left);
-//     final int r = sum(root.right);
-//     ans += Math.abs(l - r);
+    final int l = sum(root.left);
+    final int r = sum(root.right);
+    ans += Math.abs(l - r);
 
-//     return root.val + l + r;
-//   }
-// }
+    return root.val + l + r;
+  }
+}
