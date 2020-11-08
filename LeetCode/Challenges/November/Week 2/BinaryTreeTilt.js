@@ -69,9 +69,3 @@ var findTilt = function (root) {
   sum();
   return ans;
 };
-
-lass Solution {
-  public int findTilt(TreeNode root) {
-    sum(root);
-    return ans;
-  }
