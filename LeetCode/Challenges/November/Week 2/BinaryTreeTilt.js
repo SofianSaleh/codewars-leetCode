@@ -63,6 +63,7 @@ var findTilt = function (root) {
     let l = sum(root.left);
     let r = sum(root.right);
     ans = Math.abs(l - r);
+    return root.val + l + r;
   };
 
   sum();
