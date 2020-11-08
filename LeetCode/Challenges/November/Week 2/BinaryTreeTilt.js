@@ -59,6 +59,9 @@ var findTilt = function (root) {
 
   var sum = function (root1) {
     if (root === null) return 0;
+
+    let l = sum(root.left);
+    let r = sum(root.right);
   };
 
   sum();
