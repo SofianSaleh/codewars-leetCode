@@ -57,6 +57,8 @@ class TreeNode {
 var findTilt = function (root) {
   let ans = 0;
 
+  var sum = function(root1)
+
   Sum();
   return ans;
 };
