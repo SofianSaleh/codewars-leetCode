@@ -79,12 +79,3 @@ var maxAncestorDiff = function (root) {
 //     def maxAncestorDiff(self, root: TreeNode) -> int:
 //         def dfs(node, mn=math.inf, mx=-math.inf):
 //             if node:
-//                 mn = min(mn, node.val)
-//                 mx = max(mx, node.val)
-//                 dfs(node.left, mn, mx)
-//                 dfs(node.right, mn, mx)
-//             else:
-//                 self.ans = max(self.ans, mx - mn)
-//         self.ans = 0
-//         dfs(root)
-//         return self.ans
