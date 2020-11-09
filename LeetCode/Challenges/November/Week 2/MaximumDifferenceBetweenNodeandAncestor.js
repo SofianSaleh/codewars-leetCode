@@ -48,7 +48,7 @@ var maxAncestorDiff = function (root) {
 
   var f = function (node, a, b) {
     if (!node) return;
-    r[0] = Mat.max(r[0], abs(node.val - a), abs(node.val - b));
+    r[0] = Math.max(r[0], abs(node.val - a), abs(node.val - b));
     a = Math.min(a, node.val);
     b = Math.min(b, node.val);
     f(node.left, a, b);
