@@ -43,7 +43,7 @@ class TreeNode {
  * @param {TreeNode} root
  * @return {number}
  */
-var maxAncestorDiff = function (root) {
+var maxAncestorDiff1 = function (root) {
   let r = [0];
 
   var f = function (node, a, b) {
@@ -58,19 +58,33 @@ var maxAncestorDiff = function (root) {
   return r[0];
 };
 
-// class Solution(object):
-//     def maxAncestorDiff(self, root):
-//         """
-//         :type root: TreeNode
-//         :rtype: int
-//         """
-//         r = [0]
-//         def f(node, a, b):
-//             if not node: return
-//             r[0] = max(r[0], abs(node.val-a), abs(node.val-b))
-//             a = min(a, node.val)
-//             b = max(b, node.val)
-//             f(node.left, a, b)
-//             f(node.right, a, b)
-//         f(root, root.val, root.val)
-//         return r[0]
+var maxAncestorDiff = function (root) {
+  var dfs = function (node, mn = Infinity, mx = -Infinity) {
+    let ans = 0;
+    if (node) {
+      mn = Math.min(mn, node.val);
+      mx = Math.max(mx, node.val);
+      dfs(node.left, mn, mx);
+      dfs(node.right, mn, mx);
+    } else {
+      ans = Math.max(ans, mx - mn);
+    }
+  };
+  ans = 0;
+  dfs(root);
+  return ans;
+};
+
+// class Solution:
+//     def maxAncestorDiff(self, root: TreeNode) -> int:
+//         def dfs(node, mn=math.inf, mx=-math.inf):
+//             if node:
+//                 mn = min(mn, node.val)
+//                 mx = max(mx, node.val)
+//                 dfs(node.left, mn, mx)
+//                 dfs(node.right, mn, mx)
+//             else:
+//                 self.ans = max(self.ans, mx - mn)
+//         self.ans = 0
+//         dfs(root)
+//         return self.ans
