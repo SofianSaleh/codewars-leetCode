@@ -45,6 +45,8 @@ class TreeNode {
  */
 var maxAncestorDiff = function (root) {
   let r = [0];
+
+  var f = function (node, a, b) {};
 };
 
 // class Solution(object):
