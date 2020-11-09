@@ -43,7 +43,9 @@ class TreeNode {
  * @param {TreeNode} root
  * @return {number}
  */
-var maxAncestorDiff = function (root) {};
+var maxAncestorDiff = function (root) {
+  let r = [0];
+};
 
 // class Solution(object):
 //     def maxAncestorDiff(self, root):
