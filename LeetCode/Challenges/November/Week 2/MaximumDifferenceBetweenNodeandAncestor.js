@@ -59,8 +59,8 @@ var maxAncestorDiff1 = function (root) {
 };
 
 var maxAncestorDiff = function (root) {
+  let ans = 0;
   var dfs = function (node, mn = Infinity, mx = -Infinity) {
-    let ans = 0;
     if (node) {
       mn = Math.min(mn, node.val);
       mx = Math.max(mx, node.val);
