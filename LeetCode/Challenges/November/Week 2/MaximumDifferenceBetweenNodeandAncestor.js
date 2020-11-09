@@ -43,20 +43,20 @@ class TreeNode {
  * @param {TreeNode} root
  * @return {number}
  */
-var maxAncestorDiff1 = function (root) {
-  let r = [0];
+// var maxAncestorDiff1 = function (root) {
+//   let r = [0];
 
-  var f = function (node, a, b) {
-    if (!node) return;
-    r[0] = Math.max(r[0], Math.abs(node.val - a), Math.abs(node.val - b));
-    a = Math.min(a, node.val);
-    b = Math.min(b, node.val);
-    f(node.left, a, b);
-    f(node.right, a, b);
-  };
-  f(root, root.val, root.val);
-  return r[0];
-};
+//   var f = function (node, a, b) {
+//     if (!node) return;
+//     r[0] = Math.max(r[0], Math.abs(node.val - a), Math.abs(node.val - b));
+//     a = Math.min(a, node.val);
+//     b = Math.min(b, node.val);
+//     f(node.left, a, b);
+//     f(node.right, a, b);
+//   };
+//   f(root, root.val, root.val);
+//   return r[0];
+// };
 
 var maxAncestorDiff = function (root) {
   let ans = 0;
