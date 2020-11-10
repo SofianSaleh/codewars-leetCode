@@ -32,6 +32,7 @@ var flipAndInvertImage = function (A) {
       row[~i] = row[i] ^ 1;
     }
   }
+  return A;
 };
 
 // class Solution:
