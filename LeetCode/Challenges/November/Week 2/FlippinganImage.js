@@ -21,6 +21,12 @@
 // 1 <= A.length = A[0].length <= 20
 // 0 <= A[i][j] <= 1
 
+/**
+ * @param {number[][]} A
+ * @return {number[][]}
+ */
+var flipAndInvertImage = function (A) {};
+
 // class Solution:
 //     def flipAndInvertImage(self, A: List[List[int]]) -> List[List[int]]:
 //         for row in A:
