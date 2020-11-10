@@ -25,7 +25,14 @@
  * @param {number[][]} A
  * @return {number[][]}
  */
-var flipAndInvertImage = function (A) {};
+var flipAndInvertImage = function (A) {
+  for (const row of A) {
+    for (let i = 0; i < row.length + 1; i++) {
+      row[i] = row[~i] ^ 1;
+      row[~i] = row[i] ^ 1;
+    }
+  }
+};
 
 // class Solution:
 //     def flipAndInvertImage(self, A: List[List[int]]) -> List[List[int]]:
