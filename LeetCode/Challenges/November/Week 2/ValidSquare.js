@@ -20,4 +20,8 @@
  * @param {number[]} p4
  * @return {boolean}
  */
-var validSquare = function (p1, p2, p3, p4) {};
+var validSquare = function (p1, p2, p3, p4) {
+  if (p1[0] === p1[1] && p3[0] === p3[1] && p2[0] === p4[1] && p2[1] === p4[0])
+    return true;
+  else return false;
+};
