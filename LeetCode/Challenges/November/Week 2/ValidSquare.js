@@ -24,13 +24,12 @@ var validSquare = function (p1, p2, p3, p4) {
   var dist = function (p1, p2) {
     return (p1[0] - p2[0]) ** 2 + (p1[1] - p2[1]) ** 2;
   };
+  let distSet = new Set();
 };
 
 console.log(validSquare([0, 0], [1, 1], [1, 0], [0, 1]));
-// def dist(p1: List[int], p2: List[int]) -> int:
-//             return (p1[0] - p2[0])**2 + (p1[1] - p2[1])**2
 
-//         distSet = set()
+// distSet = set()
 //         points = [p1, p2, p3, p4]
 
 //         for i in range(4):
