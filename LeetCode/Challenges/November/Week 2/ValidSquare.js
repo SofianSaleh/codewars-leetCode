@@ -32,8 +32,7 @@ var validSquare = function (p1, p2, p3, p4) {
       distSet.add(dist(points[i], points[j]));
     }
   }
-  return distSet[0] && distSet.length == 2;
-  //   return 0 not in distSet and len(distSet) == 2
+  return !distSet.has(0) && distSet.size === 2;
 };
 
 console.log(validSquare([0, 0], [1, 1], [1, 0], [0, 1]));
