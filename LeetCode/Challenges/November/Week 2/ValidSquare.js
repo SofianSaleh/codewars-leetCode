@@ -25,3 +25,5 @@ var validSquare = function (p1, p2, p3, p4) {
     return true;
   else return false;
 };
+
+console.log(validSquare());
