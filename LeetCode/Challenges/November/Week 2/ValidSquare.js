@@ -12,3 +12,12 @@
 // All the input integers are in the range [-10000, 10000].
 // A valid square has four equal sides with positive length and four equal angles (90-degree angles).
 // Input points have no order.
+
+/**
+ * @param {number[]} p1
+ * @param {number[]} p2
+ * @param {number[]} p3
+ * @param {number[]} p4
+ * @return {boolean}
+ */
+var validSquare = function (p1, p2, p3, p4) {};
