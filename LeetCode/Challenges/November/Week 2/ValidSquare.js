@@ -26,4 +26,4 @@ var validSquare = function (p1, p2, p3, p4) {
   else return false;
 };
 
-console.log(validSquare());
+console.log(validSquare([0, 0], [1, 1], [1, 0], [0, 1]));
