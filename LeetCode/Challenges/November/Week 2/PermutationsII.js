@@ -34,6 +34,10 @@ var permuteUnique = function(nums) {
     for(const x in nums.length){
         used.push(false)
     }
+
+    nums.sort()
+    dfs([])
+    return ans
 };
 
 // class Solution:
@@ -52,10 +56,3 @@ var permuteUnique = function(nums) {
 //                 dfs(path + [num])
 //                 used[i] = False
 
-//         ans = []
-//         used = [False] * len(nums)
-
-//         nums.sort()
-//         dfs([])
-
-//         return ans
