@@ -22,7 +22,12 @@
  * @return {number[][]}
  */
 var permuteUnique = function (nums) {
-  var dfs = function (path) {};
+  var dfs = function (path) {
+    if (path.length === nums.length) {
+      ans.push(path);
+      return;
+    }
+  };
   let ans = [];
   let used = [];
 
