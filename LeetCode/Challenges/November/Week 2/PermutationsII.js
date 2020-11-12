@@ -24,11 +24,19 @@
 var permuteUnique = function (nums) {
   var dfs = function (path) {
     if (path.length === nums.length) {
-      let tempArr = [];
-      for (let i = 0; i < path.length; i++) {
-        tempArr.push(parseInt(path[i]));
-      }
-      ans.push(tempArr);
+      console.log(path);
+      return;
+      // let tempArr = [];
+      // for (let i = 0; i < path.length; i++) {
+      //   if (path[i] === '-') {
+      //     tempArr.push(parseInt(`${path[i]}${path[i + 1]}`));
+      //     i++;
+      //   } else {
+      //     tempArr.push(parseInt(path[i]));
+      //   }
+      // }
+      // ans.push(tempArr);
+      ans.push(path);
       return;
     }
     for (const [i, num] of nums.entries()) {
@@ -52,5 +60,6 @@ var permuteUnique = function (nums) {
   return ans;
 };
 
-console.log(permuteUnique([1, 1, 2]));
-console.log(permuteUnique([1, 2, 3]));
+// console.log(permuteUnique([1, 1, 2]));
+// console.log(permuteUnique([1, 2, 3]));
+console.log(permuteUnique([-1, 2, -1, 2, 1, -1, 2, 1]));
