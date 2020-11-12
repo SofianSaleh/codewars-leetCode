@@ -27,6 +27,9 @@ var permuteUnique = function (nums) {
       ans.push(path);
       return;
     }
+    for (const [num, i] of nums) {
+      if (used[i]) continue;
+    }
   };
   let ans = [];
   let used = [];
@@ -39,11 +42,6 @@ var permuteUnique = function (nums) {
   dfs([]);
   return ans;
 };
-
-//         def dfs(path: List[int]) -> None:
-//             if len(path) == len(nums):
-//                 ans.append(path)
-//                 return
 
 //             for i, num in enumerate(nums):
 //                 if used[i]:
