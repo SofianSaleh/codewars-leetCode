@@ -1,7 +1,5 @@
 // Given a collection of numbers, nums, that might contain duplicates, return all possible unique permutations in any order.
 
- 
-
 // Example 1:
 
 // Input: nums = [1,1,2]
@@ -13,7 +11,6 @@
 
 // Input: nums = [1,2,3]
 // Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
- 
 
 // Constraints:
 
@@ -24,24 +21,20 @@
  * @param {number[]} nums
  * @return {number[][]}
  */
-var permuteUnique = function(nums) {
-    var dfs = funcrion(path) {
+var permuteUnique = function (nums) {
+  var dfs = function (path) {};
+  let ans = [];
+  let used = [];
 
-    }
-    let ans = []
-    let used = []
-    
-    for(const x in nums.length){
-        used.push(false)
-    }
+  for (const x in nums.length) {
+    used.push(false);
+  }
 
-    nums.sort()
-    dfs([])
-    return ans
+  nums.sort();
+  dfs([]);
+  return ans;
 };
 
-// class Solution:
-//     def permuteUnique(self, nums: List[int]) -> List[List[int]]:
 //         def dfs(path: List[int]) -> None:
 //             if len(path) == len(nums):
 //                 ans.append(path)
@@ -55,4 +48,3 @@ var permuteUnique = function(nums) {
 //                 used[i] = True
 //                 dfs(path + [num])
 //                 used[i] = False
-
