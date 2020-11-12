@@ -33,6 +33,8 @@ var permuteUnique = function (nums) {
     if (i > 0 && nums[i] === nums[i - 1] && !used[i - 1]) continue;
 
     used[i] = true;
+    dfs(path + [num]);
+    used[i] = false;
   };
   let ans = [];
   let used = [];
