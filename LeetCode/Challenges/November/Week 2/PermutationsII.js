@@ -32,7 +32,6 @@ var permuteUnique = function (nums) {
       return;
     }
     for (const [i, num] of nums.entries()) {
-      console.log(num, i, used[i]);
       if (used[i]) continue;
       if (i > 0 && nums[i] === nums[i - 1] && !used[i - 1]) continue;
 
@@ -54,3 +53,4 @@ var permuteUnique = function (nums) {
 };
 
 console.log(permuteUnique([1, 1, 2]));
+console.log(permuteUnique([1, 2, 3]));
