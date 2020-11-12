@@ -27,7 +27,7 @@ var permuteUnique = function (nums) {
       ans.push(path);
       return;
     }
-    for (const [num, i] of nums) {
+    for (const [num, i] of nums.entries()) {
       if (used[i]) continue;
     }
     if (i > 0 && nums[i] === nums[i - 1] && !used[i - 1]) continue;
@@ -47,12 +47,3 @@ var permuteUnique = function (nums) {
   dfs([]);
   return ans;
 };
-
-//             for i, num in enumerate(nums):
-//                 if used[i]:
-//                     continue
-//                 if i > 0 and nums[i] == nums[i - 1] and not used[i - 1]:
-//                     continue
-//                 used[i] = True
-//                 dfs(path + [num])
-//                 used[i] = False
