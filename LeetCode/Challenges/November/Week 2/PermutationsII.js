@@ -30,6 +30,7 @@ var permuteUnique = function (nums) {
     for (const [num, i] of nums) {
       if (used[i]) continue;
     }
+    if(i > 0 && nums[i] === nums[i-1] && !used[i-1])
   };
   let ans = [];
   let used = [];
