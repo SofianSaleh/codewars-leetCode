@@ -61,8 +61,5 @@ var connect = function (root) {
     }
     node = cached;
   }
+  return root;
 };
-
-//             node = cached
-
-//         return root
