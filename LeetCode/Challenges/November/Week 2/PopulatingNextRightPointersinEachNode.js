@@ -52,7 +52,10 @@ class Node {
 var connect = function (root) {
   let node = root;
 
-  while (node && node.left) {}
+  while (node && node.left) {
+    let cached = node.left;
+    while (node) {}
+  }
 };
 
 // class Solution:
