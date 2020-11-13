@@ -56,6 +56,7 @@ var connect = function (root) {
     let cached = node.left;
     while (node) {
       node.left.next = node.right;
+      node.right.next = node.next ? node.next.left : null;
     }
   }
 };
