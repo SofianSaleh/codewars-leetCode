@@ -57,13 +57,12 @@ var connect = function (root) {
     while (node) {
       node.left.next = node.right;
       node.right.next = node.next ? node.next.left : null;
+      node = node.next;
     }
+    node = cached;
   }
 };
 
-//                 node.left.next = node.right
-//                 node.right.next = node.next.left if node.next else None
-//                 node = node.next
 //             node = cached
 
 //         return root
