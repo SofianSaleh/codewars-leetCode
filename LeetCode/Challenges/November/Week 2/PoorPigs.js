@@ -23,5 +23,3 @@ var poorPigs = function (buckets, minutesToDie, minutesToTest) {
     Math.log(buckets) / Math.log(Math.floor(minutesToTest / minutesToDie + 1))
   );
 };
-
-// class Solution:
