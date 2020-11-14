@@ -18,7 +18,11 @@
  * @param {number} minutesToTest
  * @return {number}
  */
-var poorPigs = function (buckets, minutesToDie, minutesToTest) {};
+var poorPigs = function (buckets, minutesToDie, minutesToTest) {
+  return Math.ceil(
+    Math.log(buckets) / Math.log(Math.floor(minutesToTest / minutesToDie + 1))
+  );
+};
 
 // class Solution:
 //     def poorPigs(self, buckets: int, minutesToDie: int, minutesToTest: int) -> int:
