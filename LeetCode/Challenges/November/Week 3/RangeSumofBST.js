@@ -17,6 +17,8 @@
 // 1 <= low <= high <= 105
 // All Node.val are unique.
 
+var rangeSumBST = function (root, low, high) {};
+
 // class Solution {
 //     public int rangeSumBST(TreeNode root, int L, int R) {
 //       if (root == null)
