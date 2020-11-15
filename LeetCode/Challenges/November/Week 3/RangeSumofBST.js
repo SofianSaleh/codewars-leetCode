@@ -40,7 +40,9 @@ class TreeNode {
   }
 }
 
-var rangeSumBST = function (root, low, high) {};
+var rangeSumBST = function (root, low, high) {
+  if (root === null) return 0;
+};
 
 // class Solution {
 //     public int rangeSumBST(TreeNode root, int L, int R) {
