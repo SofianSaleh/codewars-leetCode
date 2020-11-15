@@ -32,13 +32,13 @@
  * @return {number}
  */
 
-class TreeNode {
-  constructor(val, left, right) {
-    this.val = val === undefined ? 0 : val;
-    this.left = left === undefined ? null : left;
-    this.right = right === undefined ? null : right;
-  }
-}
+// class TreeNode {
+//   constructor(val, left, right) {
+//     this.val = val === undefined ? 0 : val;
+//     this.left = left === undefined ? null : left;
+//     this.right = right === undefined ? null : right;
+//   }
+// }
 
 var rangeSumBST = function (root, low, high) {
   if (root === null) return 0;
@@ -50,3 +50,5 @@ var rangeSumBST = function (root, low, high) {
     rangeSumBST(root.right, low, high)
   );
 };
+
+// console.log(rangeSumBST());
