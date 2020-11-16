@@ -35,7 +35,9 @@ var longestMountain = function (A) {
   let ans = 0;
   let i = 0;
 
-  while (i + 1 < A.length) {}
+  while (i + 1 < A.length) {
+    while (i + 1 < A.length && A[i] == A[i + 1]) {}
+  }
 };
 
 // class Solution:
