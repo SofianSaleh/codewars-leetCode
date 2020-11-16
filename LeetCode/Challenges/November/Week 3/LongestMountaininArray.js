@@ -39,6 +39,8 @@ var longestMountain = function (A) {
     while (i + 1 < A.length && A[i] == A[i + 1]) {
       i += 1;
     }
+    let increasing = 0;
+    let decreasing = 0;
   }
 };
 
