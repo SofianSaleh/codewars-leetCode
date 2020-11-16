@@ -41,29 +41,23 @@ var longestMountain = function (A) {
     }
     let increasing = 0;
     let decreasing = 0;
+    while (i + 1 < A.length && A[i] < A[i + 1]) {
+      increasing += 1;
+      i += 1;
+    }
+    while (i + 1 < A.length && A[i] > A[i + 1]) {
+      decreasing += 1;
+      i += 1;
+    }
+    if (increasing > 0 && decreasing > 0) {
+      ans = Math.max(ans, increasing + decreasing + 1);
+    }
   }
-  while (i + 1 < A.length && A[i] < A[i + 1]) {
-    increasing += 1;
-    i += 1;
-  }
+  return ans;
 };
 
 // class Solution:
 //     def longestMountain(self, A: List[int]) -> int:
-//         while i + 1 < len(A):
-//             while i + 1 < len(A) and A[i] == A[i + 1]:
-//                 i += 1
-
-//             increasing = 0
-//             decreasing = 0
-
-//             while i + 1 < len(A) and A[i] < A[i + 1]:
-//                 increasing += 1
-//                 i += 1
-
-//             while i + 1 < len(A) and A[i] > A[i + 1]:
-//                 decreasing += 1
-//                 i += 1
 
 //             if increasing > 0 and decreasing > 0:
 //                 ans = max(ans, increasing + decreasing + 1)
