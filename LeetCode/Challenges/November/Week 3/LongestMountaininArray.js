@@ -26,3 +26,9 @@
 
 // Can you solve it using only one pass?
 // Can you solve it in O(1) space?
+
+/**
+ * @param {number[]} A
+ * @return {number}
+ */
+var longestMountain = function (A) {};
