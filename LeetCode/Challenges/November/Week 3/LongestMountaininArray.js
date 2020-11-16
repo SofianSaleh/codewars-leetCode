@@ -57,3 +57,4 @@ var longestMountain = function (A) {
 };
 
 console.log(longestMountain());
+console.log(longestMountain());
