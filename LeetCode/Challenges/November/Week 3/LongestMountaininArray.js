@@ -56,5 +56,5 @@ var longestMountain = function (A) {
   return ans;
 };
 
-console.log(longestMountain());
-console.log(longestMountain());
+console.log(longestMountain([2, 1, 4, 7, 3, 2, 5]));
+console.log(longestMountain([2, 2, 2]));
