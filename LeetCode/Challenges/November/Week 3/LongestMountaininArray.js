@@ -56,10 +56,4 @@ var longestMountain = function (A) {
   return ans;
 };
 
-// class Solution:
-//     def longestMountain(self, A: List[int]) -> int:
-
-//             if increasing > 0 and decreasing > 0:
-//                 ans = max(ans, increasing + decreasing + 1)
-
-//         return ans
+console.log(longestMountain());
