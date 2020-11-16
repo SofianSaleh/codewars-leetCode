@@ -34,13 +34,12 @@
 var longestMountain = function (A) {
   let ans = 0;
   let i = 0;
+
+  while (i + 1 < A.length) {}
 };
 
 // class Solution:
 //     def longestMountain(self, A: List[int]) -> int:
-//         ans = 0
-//         i = 0
-
 //         while i + 1 < len(A):
 //             while i + 1 < len(A) and A[i] == A[i + 1]:
 //                 i += 1
