@@ -34,3 +34,5 @@ var mirrorReflection = function (p, q) {
     if (m % 2 == 1 && n % 2 == 0) return 2;
   }
 };
+
+console.log(mirrorReflection());
