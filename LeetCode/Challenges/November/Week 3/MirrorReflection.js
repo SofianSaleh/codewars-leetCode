@@ -17,6 +17,13 @@
 // 1 <= p <= 1000
 // 0 <= q <= p
 
+/**
+ * @param {number} p
+ * @param {number} q
+ * @return {number}
+ */
+var mirrorReflection = function (p, q) {};
+
 // class Solution:
 //     def mirrorReflection(self, p: int, q: int) -> int:
 //         m = 1
