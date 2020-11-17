@@ -39,7 +39,3 @@ var mirrorReflection = function (p, q) {
 //     def mirrorReflection(self, p: int, q: int) -> int:
 //         m = 1
 //         n = 1
-
-//         while m * p != n * q:
-//             n += 1
-//             m = n * q // p
