@@ -26,7 +26,10 @@ var mirrorReflection = function (p, q) {
   let m = 1;
   let n = 1;
 
-  while (m * p !== n * p) {}
+  while (m * p !== n * p) {
+    n += 1;
+    m = Math.floor((n * q) / p);
+  }
 };
 
 // class Solution:
