@@ -36,6 +36,3 @@ var mirrorReflection = function (p, q) {
 };
 
 // class Solution:
-//     def mirrorReflection(self, p: int, q: int) -> int:
-//         m = 1
-//         n = 1
