@@ -35,4 +35,4 @@ var mirrorReflection = function (p, q) {
   }
 };
 
-console.log(mirrorReflection());
+console.log(mirrorReflection(2, 1));
