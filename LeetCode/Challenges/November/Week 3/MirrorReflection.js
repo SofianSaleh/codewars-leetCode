@@ -22,7 +22,10 @@
  * @param {number} q
  * @return {number}
  */
-var mirrorReflection = function (p, q) {};
+var mirrorReflection = function (p, q) {
+  let m = 1;
+  let n = 1;
+};
 
 // class Solution:
 //     def mirrorReflection(self, p: int, q: int) -> int:
