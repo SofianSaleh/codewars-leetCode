@@ -24,14 +24,14 @@
  */
 var merge = function (intervals) {
   let ans = [];
-  for (const interval of intervals.sort()) {
-    if (!ans || ans[intervals.length - 1][1] < interval[0]) {
+  intervals = intervals.sort();
+  for (const interval of intervals) {
+    console.log(!!ans);
+    if (!ans || ans[ans.length - 1][1] < interval[0]) {
+      console.log(interval);
       ans.push(interval);
     } else {
-      ans[intervals.length - 1][1] = Math.max(
-        ans[intervals.length - 1][1],
-        interval[1]
-      );
+      ans[ans.length - 1][1] = Math.max(ans[ans.length - 1][1], interval[1]);
     }
   }
   return ans;
