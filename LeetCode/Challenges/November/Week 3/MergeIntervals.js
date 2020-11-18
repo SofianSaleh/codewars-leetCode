@@ -24,10 +24,10 @@
  */
 var merge = function (intervals) {
   let ans = [];
-  intervals = intervals.sort();
+  intervals = intervals.sort((a, b) => a[0] - b[0]);
   for (const interval of intervals) {
-    console.log(!!ans);
-    if (!ans || ans[ans.length - 1][1] < interval[0]) {
+    console.log(!);
+    if (ans.length === 0 || ans[ans.length - 1][1] < interval[0]) {
       console.log(interval);
       ans.push(interval);
     } else {
