@@ -28,6 +28,10 @@ var merge = function (intervals) {
     if (!ans || ans[intervals.length - 1][1] < interval[0]) {
       ans.push(interval);
     } else {
+      ans[intervals.length - 1][1] = Math.max(
+        ans[intervals.length - 1][1],
+        interval[1]
+      );
     }
   }
 };
