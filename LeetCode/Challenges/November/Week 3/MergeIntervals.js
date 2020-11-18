@@ -23,8 +23,17 @@
  * @return {number[][]}
  */
 var merge = function (intervals) {
-  let start;
-  let finish;
+  let start = intervals[0][0];
+  let finish = intervals[0][1];
+  let startTemp;
+  let finishTemp;
 
-  for (let i = 0; i < intervals.length; i++) {}
+  for (let i = 1; i < intervals.length; i++) {
+    if (intervals[i][0] > start && intervals[i][1] < finish) {
+      continue;
+    } else if (intervals[i][0] > start && intervals[i][1] > finish) {
+      finish = intervals[i][1];
+    }
+  }
 };
+// [[1,3],[2,6],[8,10],[15,18]]
