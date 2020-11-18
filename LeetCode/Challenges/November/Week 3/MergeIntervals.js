@@ -34,6 +34,7 @@ var merge = function (intervals) {
       );
     }
   }
+  return ans;
 };
 // [[1,3],[2,6],[8,10],[15,18]]
 // if not ans or ans[-1][1] < interval[0]:
