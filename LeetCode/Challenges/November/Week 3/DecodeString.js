@@ -43,13 +43,16 @@ var decodeString = function (s) {
     if (/^\d+$/.test(c)) {
       currNum = currNum * 10 + parseInt(c);
     } else if (c == '[') {
+      console.log(c);
       stack.push(currStr);
       stack.push(currNum);
       currStr = '';
       currNum = 0;
     } else if (c == ']') {
-      num = stack.pop();
-      prevStr = stack.pop();
+      console.log(stack);
+      let num = stack.pop();
+
+      let prevStr = stack.pop();
       currStr = prevStr + num * currStr;
     } else {
       currStr += c;
@@ -57,3 +60,5 @@ var decodeString = function (s) {
   }
   return currStr;
 };
+
+console.log(decodeString('3[a]'));
