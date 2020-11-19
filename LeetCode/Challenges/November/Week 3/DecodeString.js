@@ -40,6 +40,9 @@ var decodeString = function (s) {
   let stack = [];
 
   for (const c of s) {
+    if (/^\d+$/.test(c)) {
+      currNum = currNum * 10 + int(c);
+    }
   }
 };
 
