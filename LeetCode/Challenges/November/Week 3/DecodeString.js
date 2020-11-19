@@ -58,7 +58,4 @@ var decodeString = function (s) {
   return currStr;
 };
 
-//             else:
-//                 currStr += c
-
 //         return currStr
