@@ -38,6 +38,9 @@ var decodeString = function (s) {
   let currNum = 0;
   let currStr = '';
   let stack = [];
+
+  for (const c of s) {
+  }
 };
 
 // class Solution:
