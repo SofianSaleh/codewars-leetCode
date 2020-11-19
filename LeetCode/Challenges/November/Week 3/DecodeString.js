@@ -58,12 +58,6 @@ var decodeString = function (s) {
   return currStr;
 };
 
-//                 currStr = ''
-//                 currNum = 0
-//             elif c == ']':
-//                 num = stack.pop()
-//                 prevStr = stack.pop()
-//                 currStr = prevStr + num * currStr
 //             else:
 //                 currStr += c
 
