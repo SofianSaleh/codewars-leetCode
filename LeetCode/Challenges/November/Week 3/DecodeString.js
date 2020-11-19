@@ -58,12 +58,6 @@ var decodeString = function (s) {
   return currStr;
 };
 
-//         for c in s:
-//             if c.isdigit():
-//                 currNum = currNum * 10 + int(c)
-//             elif c == '[':
-//                 stack.append(currStr)
-//                 stack.append(currNum)
 //                 currStr = ''
 //                 currNum = 0
 //             elif c == ']':
