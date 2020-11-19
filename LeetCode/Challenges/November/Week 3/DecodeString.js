@@ -55,6 +55,7 @@ var decodeString = function (s) {
       currStr += c;
     }
   }
+  return currStr;
 };
 
 // class Solution:
