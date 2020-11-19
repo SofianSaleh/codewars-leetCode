@@ -58,12 +58,6 @@ var decodeString = function (s) {
   return currStr;
 };
 
-// class Solution:
-//     def decodeString(self, s: str) -> str:
-// currNum = 0
-// currStr = ''
-// stack = []
-
 //         for c in s:
 //             if c.isdigit():
 //                 currNum = currNum * 10 + int(c)
