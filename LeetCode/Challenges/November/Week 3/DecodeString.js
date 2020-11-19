@@ -57,5 +57,3 @@ var decodeString = function (s) {
   }
   return currStr;
 };
-
-//         return currStr
