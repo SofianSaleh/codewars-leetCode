@@ -51,9 +51,9 @@ var decodeString = function (s) {
       num = stack.pop();
       prevStr = stack.pop();
       currStr = prevStr + num * currStr;
+    } else {
+      currStr += c;
     }
-    //             else:
-    //                 currStr += c
   }
 };
 
