@@ -47,7 +47,13 @@ var decodeString = function (s) {
       stack.push(currNum);
       currStr = '';
       currNum = 0;
+    } else if (c == ']') {
+      num = stack.pop();
+      prevStr = stack.pop();
+      currStr = prevStr + num * currStr;
     }
+    //             else:
+    //                 currStr += c
   }
 };
 
