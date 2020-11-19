@@ -41,7 +41,12 @@ var decodeString = function (s) {
 
   for (const c of s) {
     if (/^\d+$/.test(c)) {
-      currNum = currNum * 10 + int(c);
+      currNum = currNum * 10 + parseInt(c);
+    } else if (c == '[') {
+      stack.push(currStr);
+      stack.push(currNum);
+      currStr = '';
+      currNum = 0;
     }
   }
 };
