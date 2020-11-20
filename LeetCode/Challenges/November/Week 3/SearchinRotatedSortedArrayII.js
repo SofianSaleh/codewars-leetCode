@@ -49,5 +49,5 @@ var search = function (nums, target) {
   }
   return false;
 };
-console.log(search());
-console.log(search());
+console.log(search([2, 5, 6, 0, 0, 1, 2], 0));
+console.log(search([2, 5, 6, 0, 0, 1, 2], 3));
