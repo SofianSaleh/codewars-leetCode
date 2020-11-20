@@ -38,8 +38,15 @@ var search = function (nums, target) {
       } else {
         l = m + 1;
       }
+    } else {
+      if (nums[m] < target <= nums[r]) {
+        l = m + 1;
+      } else {
+        r = m - 1;
+      }
     }
   }
+  return false;
 };
 
 // class Solution:
