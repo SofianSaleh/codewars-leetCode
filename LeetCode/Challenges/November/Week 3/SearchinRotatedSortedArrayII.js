@@ -22,7 +22,10 @@
  * @param {number} target
  * @return {boolean}
  */
-var search = function (nums, target) {};
+var search = function (nums, target) {
+  let l = 0;
+  let n = nums.length - 1;
+};
 
 // class Solution:
 //     def search(self, nums: List[int], target: int) -> bool:
