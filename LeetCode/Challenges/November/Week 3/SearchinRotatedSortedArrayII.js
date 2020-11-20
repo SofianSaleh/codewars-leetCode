@@ -25,6 +25,8 @@
 var search = function (nums, target) {
   let l = 0;
   let n = nums.length - 1;
+
+  while (l <= r) {}
 };
 
 // class Solution:
