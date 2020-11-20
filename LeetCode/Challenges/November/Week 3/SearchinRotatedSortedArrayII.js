@@ -26,7 +26,10 @@ var search = function (nums, target) {
   let l = 0;
   let n = nums.length - 1;
 
-  while (l <= r) {}
+  while (l <= r) {
+    let m = Math.floor(l + (r - l) / 2);
+    if (nums[m] == target) return true;
+  }
 };
 
 // class Solution:
