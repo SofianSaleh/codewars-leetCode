@@ -54,8 +54,3 @@ var search = function (nums, target) {
 //     def search(self, nums: List[int], target: int) -> bool:
 //         l = 0
 //         r = len(nums) - 1
-
-//         while l <= r:
-//             m = l + (r - l) // 2
-//             if nums[m] == target:
-//                 return True
