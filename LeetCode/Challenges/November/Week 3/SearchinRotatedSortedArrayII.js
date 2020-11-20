@@ -49,3 +49,5 @@ var search = function (nums, target) {
   }
   return false;
 };
+console.log(search());
+console.log(search());
