@@ -17,6 +17,13 @@
 // This is a follow up problem to Search in Rotated Sorted Array, where nums may contain duplicates.
 // Would this affect the run-time complexity? How and why?
 
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {boolean}
+ */
+var search = function (nums, target) {};
+
 // class Solution:
 //     def search(self, nums: List[int], target: int) -> bool:
 //         l = 0
