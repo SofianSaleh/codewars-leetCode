@@ -49,8 +49,3 @@ var search = function (nums, target) {
   }
   return false;
 };
-
-// class Solution:
-//     def search(self, nums: List[int], target: int) -> bool:
-//         l = 0
-//         r = len(nums) - 1
