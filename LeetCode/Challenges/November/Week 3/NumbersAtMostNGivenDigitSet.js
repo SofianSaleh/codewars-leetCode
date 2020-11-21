@@ -39,11 +39,12 @@
 var atMostNGivenDigitSet = function (digits, n) {
   let ans = 0;
   let num = `${n}`;
+  console.log(n, num);
 
   for (let i = 1; i < num.length; i++) {
-    ans += digits.lengt ** i;
+    ans += digits.length ** i;
   }
-
+  console.log(ans, num);
   for (const [i, c] of num.entries()) {
     let dHasSameNum = false;
 
