@@ -70,12 +70,3 @@ console.log(atMostNGivenDigitSet(['1', '3', '5', '7'], 100));
 
 //         for i, c in enumerate(num):
 //             dHasSameNum = False
-//             for digit in D:
-//                 if digit < c:
-//                     ans += len(D)**(len(num) - i - 1)
-//                 elif digit == c:
-//                     dHasSameNum = True
-//             if not dHasSameNum:
-//                 return ans
-
-//         return ans + 1
