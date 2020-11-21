@@ -64,9 +64,3 @@ console.log(atMostNGivenDigitSet(['1', '3', '5', '7'], 100));
 //     def atMostNGivenDigitSet(self, D: List[str], N: int) -> int:
 //         ans = 0
 //         num = str(N)
-
-//         for i in range(1, len(num)):
-//             ans += len(D)**i
-
-//         for i, c in enumerate(num):
-//             dHasSameNum = False
