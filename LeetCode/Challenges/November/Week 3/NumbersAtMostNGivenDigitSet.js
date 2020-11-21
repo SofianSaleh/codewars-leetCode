@@ -30,3 +30,10 @@
 // digits[i] is a digit from '1' to '9'.
 // All the values in digits are unique.
 // 1 <= n <= 109
+
+/**
+ * @param {string[]} digits
+ * @param {number} n
+ * @return {number}
+ */
+var atMostNGivenDigitSet = function (digits, n) {};
