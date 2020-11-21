@@ -59,6 +59,8 @@ var atMostNGivenDigitSet = function (digits, n) {
   return ans + 1;
 };
 
+console.log(atMostNGivenDigitSet(['1', '3', '5', '7'], 100));
+
 // class Solution:
 //     def atMostNGivenDigitSet(self, D: List[str], N: int) -> int:
 //         ans = 0
