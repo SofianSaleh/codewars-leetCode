@@ -44,8 +44,7 @@ var atMostNGivenDigitSet = function (digits, n) {
   for (let i = 1; i < num.length; i++) {
     ans += digits.length ** i;
   }
-  console.log(ans, num);
-  for (const [i, c] of num.entries()) {
+  for (const [i, c] of num.split('').entries()) {
     let dHasSameNum = false;
 
     for (const d of digits) {
