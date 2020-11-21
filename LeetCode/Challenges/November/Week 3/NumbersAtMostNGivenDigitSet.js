@@ -39,7 +39,6 @@
 var atMostNGivenDigitSet = function (digits, n) {
   let ans = 0;
   let num = `${n}`;
-  console.log(n, num);
 
   for (let i = 1; i < num.length; i++) {
     ans += digits.length ** i;
