@@ -36,7 +36,18 @@
  * @param {number} n
  * @return {number}
  */
-var atMostNGivenDigitSet = function (digits, n) {};
+var atMostNGivenDigitSet = function (digits, n) {
+  let ans = 0;
+  let num = `${n}`;
+
+  for (let i = 1; i < num.length; i++) {
+    ans += digits.lengt ** i;
+  }
+
+  for (const [i, c] of num.entries()) {
+    let dHasSameNum = false;
+  }
+};
 
 // class Solution:
 //     def atMostNGivenDigitSet(self, D: List[str], N: int) -> int:
