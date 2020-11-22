@@ -61,20 +61,20 @@ var uniqueMorseRepresentations = function (words) {
   let translatedWords = {};
   let ans = 0;
 
-  //   for (let i = 0; i < words.length; i++) {
-  //     let word = '';
-  //     for (const c of words[i]) {
-  //       word += morseCode[c];
-  //     }
-  //     console.log(translatedWords);
-  //     if (!translatedWords[word]) {
-  //       ans += 1;
-  //       translatedWords[word] = 1;
-  //     } else if (!!translatedWords[word] && translatedWords[word] > 1) {
-  //       ans -= 1;
-  //     }
-  //     word = '';
-  //   }
+  for (let i = 0; i < words.length; i++) {
+    //     let word = '';
+    //     for (const c of words[i]) {
+    //       word += morseCode[c];
+    //     }
+    //     console.log(translatedWords);
+    //     if (!translatedWords[word]) {
+    //       ans += 1;
+    //       translatedWords[word] = 1;
+    //     } else if (!!translatedWords[word] && translatedWords[word] > 1) {
+    //       ans -= 1;
+    //     }
+    //     word = '';
+  }
   return ans;
 };
 
