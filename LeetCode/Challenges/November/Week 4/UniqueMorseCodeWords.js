@@ -58,3 +58,5 @@ const morseCode = {
  * @return {number}
  */
 var uniqueMorseRepresentations = function (words) {};
+
+console.log(uniqueMorseRepresentations(['gin', 'zen', 'gig', 'msg']));
