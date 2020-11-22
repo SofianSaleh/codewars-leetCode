@@ -77,4 +77,4 @@ var uniqueMorseRepresentations = function (words) {
   return ans;
 };
 
-console.log(uniqueMorseRepresentations(['gin', 'zen', 'gig', 'msg']));
+// console.log(uniqueMorseRepresentations(['gin', 'zen', 'gig', 'msg']));
