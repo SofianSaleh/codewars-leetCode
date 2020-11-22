@@ -52,3 +52,9 @@ const morseCode = {
   y: '-.--',
   z: '--..',
 };
+
+/**
+ * @param {string[]} words
+ * @return {number}
+ */
+var uniqueMorseRepresentations = function (words) {};
