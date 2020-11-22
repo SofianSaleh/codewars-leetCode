@@ -66,7 +66,6 @@ var uniqueMorseRepresentations = function (words) {
     for (const c of words[i]) {
       word += morseCode[c];
     }
-    //     console.log(translatedWords);
     if (!translatedWords[word]) {
       ans += 1;
       translatedWords[word] = 1;
