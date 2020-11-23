@@ -52,6 +52,7 @@ var rob = function (root) {
       Math.max(robLeft, notRobLeft) + Math.max(robRight, notRobRight)
     );
   };
+  return Math.max(robOrNot(root));
 };
 
 // class Solution:
