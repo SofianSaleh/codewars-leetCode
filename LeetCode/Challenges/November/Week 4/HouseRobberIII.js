@@ -56,8 +56,3 @@ const rob = (root) => {
 
   return Math.max(val + root.val, rob(root.left) + rob(root.right));
 };
-
-// class Solution:
-//     def rob(self, root: TreeNode) -> int:
-//         def robOrNot(root: TreeNode) -> tuple:
-//             if not root:
