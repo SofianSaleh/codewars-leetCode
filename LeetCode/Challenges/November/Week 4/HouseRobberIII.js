@@ -39,7 +39,9 @@
  * @param {TreeNode} root
  * @return {number}
  */
-var rob = function (root) {};
+var rob = function (root) {
+  var robOrNot = function (root) {};
+};
 
 // class Solution:
 //     def rob(self, root: TreeNode) -> int:
