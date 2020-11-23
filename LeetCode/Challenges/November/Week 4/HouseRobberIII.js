@@ -46,6 +46,11 @@ var rob = function (root) {
       notRobLeft = robOrNot(root.left);
     let robRight,
       notRobRight = robOrNot(root.right);
+
+    return (
+      root.val + notRobLeft + notRobRight,
+      Math.max(robLeft, notRobLeft) + Math.max(robRight, notRobRight)
+    );
   };
 };
 
