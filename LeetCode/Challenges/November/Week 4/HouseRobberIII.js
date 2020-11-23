@@ -44,6 +44,8 @@ var rob = function (root) {
     if (!root) return [0, 0];
     let robLeft,
       notRobLeft = robOrNot(root.left);
+    let robRight,
+      notRobRight = robOrNot(root.right);
   };
 };
 
