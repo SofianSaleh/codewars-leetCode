@@ -46,6 +46,7 @@ var calculate = function (s) {
       currNum = 0;
     }
   }
+  return ans + prevNum;
 };
 console.log(calculate('3+2*2'));
 //         for i, c in enumerate(s):
