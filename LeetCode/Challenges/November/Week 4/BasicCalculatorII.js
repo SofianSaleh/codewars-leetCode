@@ -24,8 +24,22 @@
  * @return {number}
  */
 var calculate = function (s) {
-  let old, nwe, sign, ans;
+  let old = -1;
+  let nwe = -1;
+  let sign, ans;
   s = s.trim();
 
-  for (let i = 0; i < s.length; i++) {}
+  for (let i = 0; i < s.length; i++) {
+    if (!!parseInt(s[i])) {
+      if ((old = -1)) {
+        old = parseInt(s[i]);
+      } else if ((nwe = -1)) {
+        nwe = parseInt(s[i]);
+
+        ans = old;
+      }
+    } else if (!!obj[s[i]]) {
+      sign = obj[s[i]];
+    }
+  }
 };
