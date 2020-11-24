@@ -42,6 +42,8 @@ var calculate = function (s) {
         if (prevNum < 0) prevNum = math.ceil(prevNum / currNum);
         else prevNum = Math.floor(prevNum / currNum);
       }
+      op = c;
+      currNum = 0;
     }
   }
 };
