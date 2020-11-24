@@ -26,4 +26,6 @@
 var calculate = function (s) {
   let old, nwe, sign, ans;
   s = s.trim();
+
+  for (let i = 0; i < s.length; i++) {}
 };
