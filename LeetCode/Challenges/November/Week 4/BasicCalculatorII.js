@@ -39,7 +39,7 @@ var calculate = function (s) {
         prevNum = op == '+' ? currNum : -currNum;
       } else if (op == '*') prevNum = prevNum * currNum;
       else if (op == '/') {
-        if (prevNum < 0) prevNum = math.ceil(prevNum / currNum);
+        if (prevNum < 0) prevNum = Math.ceil(prevNum / currNum);
         else prevNum = Math.floor(prevNum / currNum);
       }
       op = c;
