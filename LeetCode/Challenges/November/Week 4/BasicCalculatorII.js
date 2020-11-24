@@ -33,17 +33,18 @@ var calculate = function (s) {
     if (/^\d+$/.test(c)) {
       currNum = currNum * 10 + parseInt(c);
     }
-    if (! /^\d+$/.test(c) && c != ' ' || i == s.length - 1){
-        if op == '+' or op == '-':
-//                     ans += prevNum
-//                     prevNum = currNum if op == '+' else -currNum
-//                 elif op == '*':
-//                     prevNum = prevNum * currNum
-//                 elif op == '/':
-//                     if prevNum < 0:
-//                         prevNum = math.ceil(prevNum / currNum)
-//                     else:
-//                         prevNum = prevNum // currNum
+    if ((!/^\d+$/.test(c) && c != ' ') || i == s.length - 1) {
+      if (op == '+' || op == '-') {
+        ans += prevNum;
+        prevNum = op == '+' ? currNum : -currNum;
+      }
+      //                 elif op == '*':
+      //                     prevNum = prevNum * currNum
+      //                 elif op == '/':
+      //                     if prevNum < 0:
+      //                         prevNum = math.ceil(prevNum / currNum)
+      //                     else:
+      //                         prevNum = prevNum // currNum
     }
   }
 };
