@@ -33,7 +33,7 @@ var calculate = function (s) {
     console.log(i, c);
   }
 };
-
+console.log(calculate('3+2*2'));
 //         for i, c in enumerate(s):
 //             if c.isdigit():
 //                 currNum = currNum * 10 + int(c)
