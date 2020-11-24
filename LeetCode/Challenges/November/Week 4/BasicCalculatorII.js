@@ -24,32 +24,15 @@
  * @return {number}
  */
 var calculate = function (s) {
-  let old = -1;
-  let nwe = -1;
-  let sign, ans;
-  s = s.trim();
+  let ans = 0;
+  let prevNum = 0;
+  let currNum = 0;
+  let op = '+';
 
-  for (let i = 0; i < s.length; i++) {
-    if (!!parseInt(s[i])) {
-      if ((old = -1)) {
-        old = parseInt(s[i]);
-      } else if ((nwe = -1)) {
-        nwe = parseInt(s[i]);
-
-        ans = old;
-      }
-    } else if (!!obj[s[i]]) {
-      sign = obj[s[i]];
-    }
+  for (const [i, c] of s.split('').entries()) {
+    console.log(i, c);
   }
 };
-
-// class Solution:
-//     def calculate(self, s: str) -> int:
-//         ans = 0
-//         prevNum = 0
-//         currNum = 0
-//         op = '+'
 
 //         for i, c in enumerate(s):
 //             if c.isdigit():
