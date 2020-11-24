@@ -49,21 +49,3 @@ var calculate = function (s) {
   return ans + prevNum;
 };
 console.log(calculate('3+2*2'));
-//         for i, c in enumerate(s):
-//             if c.isdigit():
-//                 currNum = currNum * 10 + int(c)
-//             if not c.isdigit() and c != ' ' or i == len(s) - 1:
-//                 if op == '+' or op == '-':
-//                     ans += prevNum
-//                     prevNum = currNum if op == '+' else -currNum
-//                 elif op == '*':
-//                     prevNum = prevNum * currNum
-//                 elif op == '/':
-//                     if prevNum < 0:
-//                         prevNum = math.ceil(prevNum / currNum)
-//                     else:
-//                         prevNum = prevNum // currNum
-//                 op = c
-//                 currNum = 0
-
-//         return ans + prevNum
