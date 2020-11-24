@@ -23,4 +23,7 @@
  * @param {string} s
  * @return {number}
  */
-var calculate = function (s) {};
+var calculate = function (s) {
+  let old, nwe, sign, ans;
+  s = s.trim();
+};
