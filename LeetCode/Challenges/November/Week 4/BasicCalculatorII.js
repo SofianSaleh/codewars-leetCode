@@ -37,14 +37,11 @@ var calculate = function (s) {
       if (op == '+' || op == '-') {
         ans += prevNum;
         prevNum = op == '+' ? currNum : -currNum;
+      } else if (op == '*') prevNum = prevNum * currNum;
+      else if (op == '/') {
+        if (prevNum < 0) prevNum = math.ceil(prevNum / currNum);
+        else prevNum = Math.floor(prevNum / currNum);
       }
-      //                 elif op == '*':
-      //                     prevNum = prevNum * currNum
-      //                 elif op == '/':
-      //                     if prevNum < 0:
-      //                         prevNum = math.ceil(prevNum / currNum)
-      //                     else:
-      //                         prevNum = prevNum // currNum
     }
   }
 };
