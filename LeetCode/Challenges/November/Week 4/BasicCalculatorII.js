@@ -30,7 +30,9 @@ var calculate = function (s) {
   let op = '+';
 
   for (const [i, c] of s.split('').entries()) {
-    console.log(i, c);
+    if (/^\d+$/.test(c)) {
+      currNum = currNum * 10 + parseInt(c);
+    }
   }
 };
 console.log(calculate('3+2*2'));
