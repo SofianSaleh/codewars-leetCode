@@ -28,7 +28,9 @@
  * @param {number} K
  * @return {number}
  */
-var smallestRepunitDivByK = function (K) {};
+var smallestRepunitDivByK = function (K) {
+  if (![1, 3, 7, 9].includes(K % 10)) return -1;
+};
 
 // class Solution:
 //     def smallestRepunitDivByK(self, K: int) -> int:
