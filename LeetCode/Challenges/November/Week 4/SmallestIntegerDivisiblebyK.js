@@ -24,6 +24,12 @@
 
 // 1 <= K <= 105
 
+/**
+ * @param {number} K
+ * @return {number}
+ */
+var smallestRepunitDivByK = function (K) {};
+
 // class Solution:
 //     def smallestRepunitDivByK(self, K: int) -> int:
 //         if K % 10 not in {1, 3, 7, 9}:
