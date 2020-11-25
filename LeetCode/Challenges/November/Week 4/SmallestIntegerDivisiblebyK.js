@@ -30,6 +30,9 @@
  */
 var smallestRepunitDivByK = function (K) {
   if (![1, 3, 7, 9].includes(K % 10)) return -1;
+
+  let seen = new Set();
+  let N = 0;
 };
 
 // class Solution:
