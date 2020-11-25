@@ -37,6 +37,7 @@ var smallestRepunitDivByK = function (K) {
   for (let i = 1; i < k + 1; i++) {
     N = (N * 10 + 1) % K;
     if (N == 0) return length;
+    if (seen.has(N)) return -1;
   }
 };
 
