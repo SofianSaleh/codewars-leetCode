@@ -33,6 +33,10 @@ var smallestRepunitDivByK = function (K) {
 
   let seen = new Set();
   let N = 0;
+
+  for (let i = 1; i < k + 1; i++) {
+    N = (N * 10 + 1) % K;
+  }
 };
 
 //         for length in range(1, K + 1):
