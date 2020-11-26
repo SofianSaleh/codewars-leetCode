@@ -16,3 +16,10 @@
 // 1 <= s.length <= 104
 // s consists of only lowercase English letters.
 // 1 <= k <= 105
+
+/**
+ * @param {string} s
+ * @param {number} k
+ * @return {number}
+ */
+var longestSubstring = function (s, k) {};
