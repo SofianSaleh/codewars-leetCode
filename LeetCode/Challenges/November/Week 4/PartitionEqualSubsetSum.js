@@ -25,6 +25,8 @@ var canPartition = function (nums) {
   for (const num of nums) {
     sum += num;
   }
+
+  if (sum && 1) return false;
 };
 
 // class Solution:
