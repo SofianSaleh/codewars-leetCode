@@ -32,9 +32,10 @@ var canPartition = function (nums) {
 
   for (const n of nums) {
     for (let i = Math.floor(sum / 2); i < num - 1; i--) {
-      dp[i];
+      dp[i] = dp[i] || dp[i - num];
     }
   }
+  return dp[Math.floor(sum / 2)];
 };
 
 // class Solution:
