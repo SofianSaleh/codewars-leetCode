@@ -26,7 +26,9 @@ var canPartition = function (nums) {
     sum += num;
   }
 
-  if (sum && 1) return false;
+  if (sum % 2 == 1) return false;
+
+  let dp = [true] * [false] * Math.floor(sum / 2);
 };
 
 // class Solution:
