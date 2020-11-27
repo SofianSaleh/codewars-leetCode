@@ -20,23 +20,48 @@
  * @param {number[]} nums
  * @return {boolean}
  */
-var canPartition = function (nums) {
+// var canPartition = function (nums) {
+//   let sum = 0;
+//   for (const num of nums) {
+//     sum += num;
+//   }
+
+//   if (sum % 2 == 1) return false;
+
+//   let dp = [true] * [false] * Math.floor(sum / 2);
+//   console.log(dp);
+//   for (const n of nums) {
+//     for (let i = Math.floor(sum / 2); i < n - 1; i--) {
+//       dp[i] = dp[i] || dp[i - n];
+//     }
+//   }
+//   console.log(dp);
+//   return dp[Math.floor(sum / 2)];
+// };
+
+let canPartition = function (num) {
   let sum = 0;
-  for (const num of nums) {
-    sum += num;
-  }
+  for (let i = 0; i < num.length; i++) sum += num[i];
 
-  if (sum % 2 == 1) return false;
+  if (sum % 2 !== 0) return false;
 
-  let dp = [true] * [false] * Math.floor(sum / 2);
-
-  for (const n of nums) {
-    for (let i = Math.floor(sum / 2); i < num - 1; i--) {
-      dp[i] = dp[i] || dp[i - num];
-    }
-  }
-  return dp[Math.floor(sum / 2)];
+  return canPartitionRecursive(num, sum / 2, 0);
 };
+
+function canPartitionRecursive(num, sum, currentIndex) {
+  if (sum === 0) return true;
+
+  if (num.length === 0 || currentIndex >= num.length) return false;
+
+  if (num[currentIndex] <= sum) {
+    if (canPartitionRecursive(num, sum - num[currentIndex], currentIndex + 1))
+      return true;
+  }
+
+  return canPartitionRecursive(num, sum, currentIndex + 1);
+}
+
+console.log(canPartition([1, 5, 11, 5]));
 
 // class Solution:
 //     def canPartition(self, nums: List[int]) -> bool:
