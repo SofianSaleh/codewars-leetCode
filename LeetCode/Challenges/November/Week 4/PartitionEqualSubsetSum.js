@@ -62,7 +62,3 @@ function canPartitionRecursive(num, sum, currentIndex) {
 }
 
 console.log(canPartition([1, 5, 11, 5]));
-
-// class Solution:
-//     def canPartition(self, nums: List[int]) -> bool:
-//         summ = sum(nums)
