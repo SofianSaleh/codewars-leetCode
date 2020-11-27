@@ -29,6 +29,12 @@ var canPartition = function (nums) {
   if (sum % 2 == 1) return false;
 
   let dp = [true] * [false] * Math.floor(sum / 2);
+
+  for (const n of nums) {
+    for (let i = Math.floor(sum / 2); i < num - 1; i--) {
+      dp[i];
+    }
+  }
 };
 
 // class Solution:
