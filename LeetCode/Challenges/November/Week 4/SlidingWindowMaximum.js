@@ -43,7 +43,10 @@
  * @param {number} k
  * @return {number[]}
  */
-var maxSlidingWindow = function (nums, k) {};
+var maxSlidingWindow = function (nums, k) {
+  let ans = [];
+  let q = [];
+};
 
 // class Solution:
 //     def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
