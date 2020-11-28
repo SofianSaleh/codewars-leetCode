@@ -48,6 +48,7 @@ var maxSlidingWindow = function (nums, k) {
   let q = [];
 
   for (const [i, num] of nums.entries()) {
+    console.log(i, num);
   }
 };
 
