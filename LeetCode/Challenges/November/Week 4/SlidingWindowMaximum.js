@@ -46,6 +46,9 @@
 var maxSlidingWindow = function (nums, k) {
   let ans = [];
   let q = [];
+
+  for (const [i, num] of nums.entries()) {
+  }
 };
 
 // class Solution:
