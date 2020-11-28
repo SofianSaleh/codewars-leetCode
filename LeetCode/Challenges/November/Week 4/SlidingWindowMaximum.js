@@ -51,6 +51,7 @@ var maxSlidingWindow = function (nums, k) {
     while (q && q[q.length - 1] < num) {
       q.pop();
     }
+    q.push(num);
   }
 };
 
