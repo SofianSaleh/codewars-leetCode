@@ -52,6 +52,8 @@ var maxSlidingWindow = function (nums, k) {
       q.pop();
     }
     q.push(num);
+    if (i >= k && nums[i - k] == q[0]) {
+    }
   }
 };
 
