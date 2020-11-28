@@ -58,30 +58,6 @@ var maxSlidingWindow = function (nums, k) {
   }
 };
 
-console.log(maxSlidingWindow([1, 3, -1, -3, 5, 3, 6, 7], 3));
-
-// class Solution:
-//     def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
-//         ans = []
-//         q = deque()  # max queue
-
-//         for i, num in enumerate(nums):
-//             while q and q[-1] < num:
-//                 q.pop()
-//             q.append(num)
-//             if i >= k and nums[i - k] == q[0]:  # out of bound
-//                 q.popleft()
-//             if i >= k - 1:
-//                 ans.append(q[0])
-
-//         return ans
-
-var arr = [1, 3, -1, -3, 5, 3, 6, 7];
-
-var k = 3;
-
-var maximumArr = [];
-
 class dequeue {
   constructor() {
     this.items = [];
@@ -113,23 +89,24 @@ class dequeue {
     this.items.push(i);
   }
 }
+var maxSlidingWindow = function (nums, k) {
+  var obj = new dequeue();
+  var maximumArr = [];
+  for (var i = 0; i < nums.length; i++) {
+    if (!obj.isEmpty() && obj.getfront() === nums[i - k]) {
+      obj.pop_frontElement();
+    }
 
-var obj = new dequeue();
+    while (!obj.isEmpty() && obj.getlastElement() < nums[i]) {
+      obj.pop_lastElement();
+    }
 
-for (var i = 0; i < arr.length; i++) {
-  if (!obj.isEmpty() && obj.getfront() === arr[i - k]) {
-    console.log('Test', i, k);
+    obj.push_backElement(nums[i]);
 
-    obj.pop_frontElement();
+    if (i >= k - 1) {
+      maximumArr.push(obj.getfront());
+    }
   }
-
-  while (!obj.isEmpty() && obj.getlastElement() < arr[i]) {
-    obj.pop_lastElement();
-  }
-
-  obj.push_backElement(arr[i]);
-
-  if (i >= k - 1) {
-    maximumArr.push(obj.getfront());
-  }
-}
+  return maximumArr;
+};
+console.log(maxSlidingWindow([1, 3, -1, -3, 5, 3, 6, 7], 3));
