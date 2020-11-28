@@ -48,9 +48,11 @@ var maxSlidingWindow = function (nums, k) {
   let q = [];
 
   for (const [i, num] of nums.entries()) {
-    console.log(i, num);
+    while (q && q[q.length - 1] < num) {}
   }
 };
+
+console.log(maxSlidingWindow([1, 3, -1, -3, 5, 3, 6, 7], 3));
 
 // class Solution:
 //     def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
