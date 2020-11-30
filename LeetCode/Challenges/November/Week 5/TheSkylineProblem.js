@@ -22,7 +22,7 @@
  */
 var getSkyline = function (buildings) {
   let result = [];
-  let house = findFirstHouse();
+  let house = findFirstHouse(buildings);
   let hStart = house[0];
   let hHeight = house[1];
 
@@ -31,7 +31,7 @@ var getSkyline = function (buildings) {
   tempHigh = 0;
 
   for (x = hStart + 1; x <= 30; x++) {
-    tempHigh = findMaxHeight(x);
+    tempHigh = findMaxHeight(x, houses);
     if (tempHigh != hHeight) {
       console.log(x, tempHigh);
       result.push(x, tempHigh);
@@ -39,49 +39,23 @@ var getSkyline = function (buildings) {
     }
   }
 
-  console.log(result);
+  return result;
 };
-
-// function start() {
-
-house = findFirstHouse();
-hStart = house[0];
-hHeight = house[1];
-
-result.push(hStart, hHeight);
-
-tempHigh = 0;
-
-for (x = hStart + 1; x <= 30; x++) {
-  tempHigh = findMaxHeight(x);
-  if (tempHigh != hHeight) {
-    console.log(x, tempHigh);
-    result.push(x, tempHigh);
-    hHeight = tempHigh;
+function findFirstHouse(houses) {
+  for (i = 0; i < houses.length; i++) {
+    return houses[i];
   }
 }
 
-console.log(result);
-// }
-
-// function findFirstHouse() {
-// 	for (i = 0; i < houses.length; i++) {
-// 		return houses[i];
-// 	};
-// }
-
-// function findMaxHeight(x) {
-// 	var maxHeight = 0;
-// 	console.log('x = ' + x);
-// 	for (i = 0; i < houses.length; i++) {
-// 		if(x >= houses[i][0] && x <= houses[i][2]) {
-// 			console.log(houses[i]);
-// 			if(houses[i][2] == x) continue;
-// 			if(houses[i][1] > maxHeight)
-// 				maxHeight = houses[i][1];
-// 		}
-// 	}
-// 	return maxHeight;
-// }
-
-// start();
+function findMaxHeight(x, houses) {
+  var maxHeight = 0;
+  console.log('x = ' + x);
+  for (i = 0; i < houses.length; i++) {
+    if (x >= houses[i][0] && x <= houses[i][2]) {
+      console.log(houses[i]);
+      if (houses[i][2] == x) continue;
+      if (houses[i][1] > maxHeight) maxHeight = houses[i][1];
+    }
+  }
+  return maxHeight;
+}
