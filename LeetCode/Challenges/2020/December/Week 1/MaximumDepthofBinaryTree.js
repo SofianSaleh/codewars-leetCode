@@ -45,7 +45,9 @@ class TreeNode {
  * @param {TreeNode} root
  * @return {number}
  */
-var maxDepth = function (root) {};
+var maxDepth = function (root) {
+  if (!root) return 0;
+};
 
 // class Solution:
 //     def maxDepth(self, root: TreeNode) -> int:
