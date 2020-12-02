@@ -30,9 +30,8 @@ class Solution {
     let ans = -1;
     let i = 1;
 
-    for (ListNode curr = head; curr != null; curr = curr.next, ++i)
-      if (rand.nextInt(i) == i - 1)
-        ans = curr.val;
+    for (let curr = head; curr != null; curr = curr.next, ++i)
+      if (rand.nextInt(i) == i - 1) ans = curr.val;
 
     return ans;
   }
