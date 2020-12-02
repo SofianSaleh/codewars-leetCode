@@ -18,13 +18,16 @@ class ListNode {
         Note that the head is guaranteed to be not null, so it contains at least one node.
  * @param {ListNode} head
  */
-var Solution = function (head) {};
-
-/**
- * Returns a random node's value.
- * @return {number}
- */
-Solution.prototype.getRandom = function () {};
+class Solution {
+  constructor(head) {
+    this.head = head;
+  }
+  /**
+   * Returns a random node's value.
+   * @return {number}
+   */
+  getRandom() {}
+}
 
 /**
  * Your Solution object will be instantiated and called as such:
