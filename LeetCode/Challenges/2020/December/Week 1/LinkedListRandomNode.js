@@ -47,7 +47,7 @@ class Solution {
     let i = 1;
 
     for (let curr = head; curr != null; curr = curr.next, ++i)
-      if (rand.nextInt(i) == i - 1) ans = curr.val;
+      if (Math.random() == i - 1) ans = curr.val;
 
     return ans;
   }
