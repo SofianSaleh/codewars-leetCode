@@ -26,7 +26,16 @@ class Solution {
    * Returns a random node's value.
    * @return {number}
    */
-  getRandom() {}
+  getRandom() {
+    let ans = -1;
+    let i = 1;
+
+    for (ListNode curr = head; curr != null; curr = curr.next, ++i)
+      if (rand.nextInt(i) == i - 1)
+        ans = curr.val;
+
+    return ans;
+  }
 }
 
 /**
