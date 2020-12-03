@@ -46,5 +46,3 @@ var increasingBST = function (root) {
   };
   return recurse(root, null);
 };
-
-//         return res
