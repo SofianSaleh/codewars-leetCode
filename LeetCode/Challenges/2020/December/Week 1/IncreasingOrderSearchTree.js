@@ -38,6 +38,8 @@ class TreeNode {
 var increasingBST = function (root) {
   var recurse = function (root, tail) {
     if (!root) return tail;
+
+    let res = recurse(root.left, root);
   };
   return recurse(root, null);
 };
