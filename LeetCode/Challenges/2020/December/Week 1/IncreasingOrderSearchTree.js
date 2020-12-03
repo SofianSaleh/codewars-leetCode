@@ -35,7 +35,12 @@ class TreeNode {
  * @param {TreeNode} root
  * @return {TreeNode}
  */
-var increasingBST = function (root) {};
+var increasingBST = function (root) {
+  var recurse = function (root, tail) {
+    if (!root) return tail;
+  };
+  return recurse(root, null);
+};
 
 // class Solution:
 //     def increasingBST(self, root: TreeNode, tail: TreeNode = None) -> TreeNode:
