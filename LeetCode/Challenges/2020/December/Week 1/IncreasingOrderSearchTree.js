@@ -41,7 +41,7 @@ var increasingBST = function (root) {
 
     let res = recurse(root.left, root);
     root.left = null;
-    root.right = recurse(root.right, root);
+    root.right = recurse(root.right, tail);
     return res;
   };
   return recurse(root, null);
