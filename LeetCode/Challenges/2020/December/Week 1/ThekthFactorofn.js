@@ -43,12 +43,13 @@ var kthFactor = function (n, k) {
   let arr = [];
   let ans;
 
-  for (let i = 0; i < n; i++) {
+  for (let i = 0; i < n + 1; i++) {
     if (n % i === 0) {
       arr.push(i);
       if (arr.length === k) return arr[arr.length - 1];
     }
   }
+  return -1;
 };
 console.log(kthFactor(12, 3));
 console.log(kthFactor(7, 2));
