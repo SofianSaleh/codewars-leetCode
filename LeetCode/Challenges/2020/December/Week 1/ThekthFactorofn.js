@@ -52,7 +52,7 @@ var kthFactor = function (n, k) {
   return -1;
 };
 console.log(kthFactor(12, 3));
-console.log(kthFactor(7, 2));
+// console.log(kthFactor(7, 2));
 // console.log(kthFactor(4, 4));
 // console.log(kthFactor(1, 1));
 // console.log(kthFactor(1000, 3));
