@@ -50,11 +50,8 @@ var kthFactor = function (n, k) {
     }
   }
 };
-console.log(kthFactor((n = 12), (k = 3)));
-console.log(kthFactor((n = 7), (k = 2)));
-console.log(kthFactor((n = 4), (k = 4)));
-console.log(kthFactor((n = 1), (k = 1)));
-console.log(kthFactor((n = 1000), (k = 3)));
-console.log(kthFactor());
-console.log(kthFactor());
-console.log(kthFactor());
+console.log(kthFactor(12, 3));
+console.log(kthFactor(7, 2));
+console.log(kthFactor(4, 4));
+console.log(kthFactor(1, 1));
+console.log(kthFactor(1000, 3));
