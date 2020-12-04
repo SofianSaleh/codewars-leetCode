@@ -33,3 +33,20 @@
 // Constraints:
 
 // 1 <= k <= n <= 1000
+
+/**
+ * @param {number} n
+ * @param {number} k
+ * @return {number}
+ */
+var kthFactor = function (n, k) {
+  let arr = [];
+  let ans;
+
+  for (let i = 0; i < n; i++) {
+    if (n % i === 0) {
+      arr.push(i);
+      if (arr.length === k) return arr[arr.length - 1];
+    }
+  }
+};
