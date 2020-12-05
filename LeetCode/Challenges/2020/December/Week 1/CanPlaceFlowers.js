@@ -34,18 +34,19 @@ var canPlaceFlowers = function (flowerbed, n) {
     for (let j = 0; j < flowerbed.length; j++) {
       if (
         flowerbed[j] !== 1 &&
-        flowerbed[j - 1] !== 0 &&
-        flowerbed[j + 1] !== 0
+        flowerbed[j - 1] !== 1 &&
+        flowerbed[j + 1] !== 1
       ) {
         flowerbed[j] = 1;
         count += 1;
       }
     }
   }
-  return count === n ? true : flase;
+  return count === n ? true : false;
 };
 
-// class Solution:
+console.log(canPlaceFlowers([1, 0, 0, 0, 1], 1));
+
 //     def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
 //         for i, flower in enumerate(flowerbed):
 //             if flower == 0 and (i == 0 or flowerbed[i - 1] == 0) and (i == len(flowerbed) - 1 or flowerbed[i + 1] == 0):
