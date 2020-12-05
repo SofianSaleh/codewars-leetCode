@@ -45,7 +45,7 @@ var canPlaceFlowers = function (flowerbed, n) {
   return count === n ? true : false;
 };
 
-console.log(canPlaceFlowers([1, 0, 0, 0, 1], 1));
+// console.log(canPlaceFlowers([1, 0, 0, 0, 1], 1));
 // console.log(canPlaceFlowers([1, 0, 0, 0, 1], 2));
 
 //     def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
