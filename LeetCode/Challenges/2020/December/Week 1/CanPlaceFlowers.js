@@ -46,7 +46,7 @@ var canPlaceFlowers = function (flowerbed, n) {
 };
 
 console.log(canPlaceFlowers([1, 0, 0, 0, 1], 1));
-console.log(canPlaceFlowers([1, 0, 0, 0, 1], 2));
+// console.log(canPlaceFlowers([1, 0, 0, 0, 1], 2));
 
 //     def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
 //         for i, flower in enumerate(flowerbed):
