@@ -27,7 +27,7 @@ var generateMatrix = function (n) {
     }
   }
 
-  for (const min of Math.floor(n / 2)) {
+  for (let min = 0; min < Math.floor(n / 2); min++) {
     let max = n - min - 1;
   }
 
