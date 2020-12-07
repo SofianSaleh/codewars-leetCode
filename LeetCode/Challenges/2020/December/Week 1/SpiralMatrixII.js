@@ -18,7 +18,16 @@
  * @param {number} n
  * @return {number[][]}
  */
-var generateMatrix = function (n) {};
+var generateMatrix = function (n) {
+  let ans = [[]];
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n; j++) {
+      ans[i][j] = 0;
+    }
+  }
+};
+
+console.log(generateMatrix(3));
 
 // class Solution:
 //     def generateMatrix(self, n: int) -> List[List[int]]:
