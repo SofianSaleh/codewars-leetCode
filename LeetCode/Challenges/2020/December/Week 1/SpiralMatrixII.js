@@ -19,12 +19,14 @@
  * @return {number[][]}
  */
 var generateMatrix = function (n) {
-  let ans = [[]];
+  let ans = [];
   for (let i = 0; i < n; i++) {
+    ans.push([]);
     for (let j = 0; j < n; j++) {
-      ans[i][j] = 0;
+      ans[i].push(0);
     }
   }
+  return ans;
 };
 
 console.log(generateMatrix(3));
