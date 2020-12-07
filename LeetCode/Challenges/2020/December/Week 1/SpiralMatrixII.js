@@ -20,6 +20,8 @@
  */
 var generateMatrix = function (n) {
   let ans = [];
+  let count = 1;
+
   for (let i = 0; i < n; i++) {
     ans.push([]);
     for (let j = 0; j < n; j++) {
