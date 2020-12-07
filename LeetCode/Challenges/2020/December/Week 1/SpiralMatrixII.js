@@ -26,6 +26,11 @@ var generateMatrix = function (n) {
       ans[i].push(0);
     }
   }
+
+  for (const min of Math.floor(n / 2)) {
+    let max = n - min - 1;
+  }
+
   return ans;
 };
 
