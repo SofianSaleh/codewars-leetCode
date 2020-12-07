@@ -55,4 +55,4 @@ var generateMatrix = function (n) {
 };
 
 // console.log(generateMatrix(3));
-console.log(generateMatrix(1));
+// console.log(generateMatrix(1));
