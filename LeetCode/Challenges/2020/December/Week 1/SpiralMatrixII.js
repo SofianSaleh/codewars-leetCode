@@ -39,11 +39,11 @@ var generateMatrix = function (n) {
       ans[i][max] = count;
       count += 1;
     }
-    for (let i = max; i < min; i--) {
+    for (let i = max; i > min; i--) {
       ans[max][i] = count;
       count += 1;
     }
-    for (let i = max; i < min; i--) {
+    for (let i = max; i > min; i--) {
       ans[i][min] = count;
       count += 1;
     }
@@ -55,16 +55,3 @@ var generateMatrix = function (n) {
 };
 
 console.log(generateMatrix(3));
-
-//         for min in range(n // 2):
-//             for i in range(max, min, -1):
-//                 ans[max][i] = count
-//                 count += 1
-//             for i in range(max, min, -1):
-//                 ans[i][min] = count
-//                 count += 1
-
-//         if n & 1:
-//             ans[n // 2][n // 2] = count
-
-//         return ans
