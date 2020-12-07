@@ -35,8 +35,22 @@ var generateMatrix = function (n) {
       ans[min][i] = count;
       count += 1;
     }
+    for (let i = min; i < max; i++) {
+      ans[i][max] = count;
+      count += 1;
+    }
+    for (let i = max; i <= min; i--) {
+      ans[max][i] = count;
+      count += 1;
+    }
+    for (let i = max; i < min; i--) {
+      ans[i][min] = count;
+      count += 1;
+    }
   }
-
+  if (n && 1) {
+    ans[Math.floor(n / 2)][Math.floor(n / 2)] = count;
+  }
   return ans;
 };
 
