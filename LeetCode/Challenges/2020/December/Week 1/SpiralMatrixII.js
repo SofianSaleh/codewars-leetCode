@@ -56,16 +56,8 @@ var generateMatrix = function (n) {
 
 console.log(generateMatrix(3));
 
-// class Solution:
-//     def generateMatrix(self, n: int) -> List[List[int]]:
-//         ans = [[0 for j in range(n)] for i in range(n)]
-//         count = 1
-
 //         for min in range(n // 2):
 //             max = n - min - 1
-//             for i in range(min, max):
-//                 ans[min][i] = count
-//                 count += 1
 //             for i in range(min, max):
 //                 ans[i][max] = count
 //                 count += 1
