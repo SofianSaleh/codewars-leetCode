@@ -29,6 +29,10 @@ var generateMatrix = function (n) {
 
   for (let min = 0; min < Math.floor(n / 2); min++) {
     let max = n - min - 1;
+    for (let i = min; i < max; i++) {
+      ans[min][i] = count;
+      count += 1;
+    }
   }
 
   return ans;
