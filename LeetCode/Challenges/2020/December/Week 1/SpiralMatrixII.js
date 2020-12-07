@@ -54,4 +54,4 @@ var generateMatrix = function (n) {
   return ans;
 };
 
-console.log(generateMatrix(3));
+// console.log(generateMatrix(3));
