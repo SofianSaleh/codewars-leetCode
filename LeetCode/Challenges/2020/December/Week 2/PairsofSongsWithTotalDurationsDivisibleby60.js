@@ -39,8 +39,3 @@ var numPairsDivisibleBy60 = function (time) {
   }
   return ans;
 };
-
-// class Solution:
-//     def numPairsDivisibleBy60(self, time: List[int]) -> int:
-//         ans = 0
-//         count = [0] * 60
