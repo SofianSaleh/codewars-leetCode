@@ -35,6 +35,7 @@ var numPairsDivisibleBy60 = function (time) {
   for (const t of time) {
     t %= 60;
     ans += count[(60 - t) % 60];
+    count[t] += 1;
   }
 };
 
