@@ -27,6 +27,10 @@
  */
 var numPairsDivisibleBy60 = function (time) {
   let ans = 0;
+  let count = [];
+  for (let i = 0; i < 60; i++) {
+    count.push(0);
+  }
 };
 
 // class Solution:
