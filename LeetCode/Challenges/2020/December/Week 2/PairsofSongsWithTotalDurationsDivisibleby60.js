@@ -20,3 +20,9 @@
 
 // 1 <= time.length <= 6 * 104
 // 1 <= time[i] <= 500
+
+/**
+ * @param {number[]} time
+ * @return {number}
+ */
+var numPairsDivisibleBy60 = function (time) {};
