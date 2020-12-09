@@ -87,8 +87,3 @@ class BSTIterator {
  * var param_1 = obj.next()
  * var param_2 = obj.hasNext()
  */
-
-//     def next(self) -> int:
-// root = self.stack.pop()
-// self.pushLeftsUntilNone(root.right)
-// return root.val
