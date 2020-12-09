@@ -54,17 +54,32 @@
 /**
  * @param {TreeNode} root
  */
-var BSTIterator = function (root) {};
-
-/**
- * @return {number}
- */
-BSTIterator.prototype.next = function () {};
-
-/**
- * @return {boolean}
- */
-BSTIterator.prototype.hasNext = function () {};
+class BSTIterator {
+  constructor(root) {
+    this.stack = [];
+    this.pushLeftsUntilNone(root);
+  }
+  /**
+   * @return {number}
+   */
+  next() {
+    let root = this.stack.pop();
+    this.pushLeftsUntilNone(root.right);
+    return root.val;
+  }
+  /**
+   * @return {boolean}
+   */
+  hasNext() {
+    return this.stack;
+  }
+  pushLeftsUntilNone(root) {
+    while (root) {
+      this.stack.push(root);
+      root = root.left;
+    }
+  }
+}
 
 /**
  * Your BSTIterator object will be instantiated and called as such:
@@ -73,15 +88,10 @@ BSTIterator.prototype.hasNext = function () {};
  * var param_2 = obj.hasNext()
  */
 
-// class BSTIterator:
-//     def __init__(self, root: TreeNode):
-//         self.stack = []
-//         self.pushLeftsUntilNone(root)
-
 //     def next(self) -> int:
-//         root = self.stack.pop()
-//         self.pushLeftsUntilNone(root.right)
-//         return root.val
+// root = self.stack.pop()
+// self.pushLeftsUntilNone(root.right)
+// return root.val
 
 //     def hasNext(self) -> bool:
 //         return self.stack
