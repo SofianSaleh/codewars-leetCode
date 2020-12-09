@@ -92,6 +92,3 @@ class BSTIterator {
 // root = self.stack.pop()
 // self.pushLeftsUntilNone(root.right)
 // return root.val
-
-//     def hasNext(self) -> bool:
-//         return self.stack
