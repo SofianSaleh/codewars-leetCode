@@ -35,7 +35,14 @@ var validMountainArray = function (arr) {
   let l = 0;
   let r = arr.length - 1;
 
-  while (l + 1 < arr.length && arr[l] < arr[l + 1]) {}
+  while (l + 1 < arr.length && arr[l] < arr[l + 1]) {
+    l += 1;
+  }
+  while (r > 0 && arr[r] < arr[r - 1]) {
+    r -= 1;
+  }
+
+  return l > 0 && r < arr.length - 1 && l == r;
 };
 
 // def validMountainArray(self, A: List[int]) -> bool:
