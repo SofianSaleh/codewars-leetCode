@@ -30,7 +30,10 @@
  * @return {boolean}
  */
 var validMountainArray = function (arr) {
-    if(arr.length < 3)
+  if (arr.length < 3) return false;
+
+  let l = 0;
+  let r = arr.length - 1;
 };
 
 // def validMountainArray(self, A: List[int]) -> bool:
