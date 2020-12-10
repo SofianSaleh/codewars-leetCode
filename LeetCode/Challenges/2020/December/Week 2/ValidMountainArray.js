@@ -51,5 +51,3 @@ var validMountainArray = function (arr) {
 //     l += 1
 // while r > 0 and A[r] < A[r - 1]:
 //     r -= 1
-
-// return l > 0 and r < len(A) - 1 and l == r
