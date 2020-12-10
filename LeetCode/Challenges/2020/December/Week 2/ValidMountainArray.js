@@ -29,7 +29,9 @@
  * @param {number[]} arr
  * @return {boolean}
  */
-var validMountainArray = function (arr) {};
+var validMountainArray = function (arr) {
+    if(arr.length < 3)
+};
 
 // def validMountainArray(self, A: List[int]) -> bool:
 // if len(A) < 3:
