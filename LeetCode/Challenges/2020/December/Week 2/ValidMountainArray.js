@@ -44,5 +44,3 @@ var validMountainArray = function (arr) {
 
   return l > 0 && r < arr.length - 1 && l == r;
 };
-
-// def validMountainArray(self, A: List[int]) -> bool:
