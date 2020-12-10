@@ -24,3 +24,9 @@
 
 // 1 <= arr.length <= 104
 // 0 <= arr[i] <= 104
+
+/**
+ * @param {number[]} arr
+ * @return {boolean}
+ */
+var validMountainArray = function (arr) {};
