@@ -46,6 +46,3 @@ var validMountainArray = function (arr) {
 };
 
 // def validMountainArray(self, A: List[int]) -> bool:
-
-// while l + 1 < len(A) and A[l] < A[l + 1]:
-//     l += 1
