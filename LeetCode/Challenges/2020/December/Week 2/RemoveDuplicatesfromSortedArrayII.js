@@ -48,6 +48,7 @@ var removeDuplicates = function (nums) {
       i += 1;
     }
   }
+  return i;
 };
 
 // class Solution:
