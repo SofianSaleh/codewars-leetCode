@@ -40,7 +40,9 @@
  * @param {number[]} nums
  * @return {number}
  */
-var removeDuplicates = function (nums) {};
+var removeDuplicates = function (nums) {
+  let i = 0;
+};
 
 // class Solution:
 // def removeDuplicates(self, nums: List[int]) -> int:
