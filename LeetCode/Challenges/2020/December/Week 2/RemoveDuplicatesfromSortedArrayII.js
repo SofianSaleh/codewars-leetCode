@@ -42,6 +42,8 @@
  */
 var removeDuplicates = function (nums) {
   let i = 0;
+  for (const num of nums) {
+  }
 };
 
 // class Solution:
