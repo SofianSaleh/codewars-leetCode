@@ -50,7 +50,3 @@ var removeDuplicates = function (nums) {
   }
   return i;
 };
-
-// class Solution:
-// def removeDuplicates(self, nums: List[int]) -> int:
-//     i = 0
