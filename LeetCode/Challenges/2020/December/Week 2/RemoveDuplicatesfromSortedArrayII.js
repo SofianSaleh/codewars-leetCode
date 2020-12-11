@@ -36,6 +36,12 @@
 // -104 <= nums[i] <= 104
 // nums is sorted in ascending order.
 
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var removeDuplicates = function (nums) {};
+
 // class Solution:
 // def removeDuplicates(self, nums: List[int]) -> int:
 //     i = 0
