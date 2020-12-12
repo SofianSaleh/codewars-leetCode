@@ -53,9 +53,9 @@ class TreeNode {
  * @param {TreeNode} root
  * @return {TreeNode}
  */
-// const subtreeWithAllDeepest = (root) => {
-//   return helper(root).node;
-// };
+const subtreeWithAllDeepest = (root) => {
+  //   return helper(root).node;
+};
 
 const helper = (root) => {
   if (!root) {
