@@ -61,8 +61,8 @@ const helper = (root) => {
   if (!root) {
     return { node: null, dist: 0 };
   }
-  //   const left = helper(root.left);
-  //   const right = helper(root.right);
+  const left = helper(root.left);
+  const right = helper(root.right);
   //   if (left.dist > right.dist) {
   //     return { node: left.node, dist: left.dist + 1 };
   //   }
