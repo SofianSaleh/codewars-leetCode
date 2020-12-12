@@ -58,9 +58,9 @@ const subtreeWithAllDeepest = (root) => {
 };
 
 const helper = (root) => {
-  //   if (!root) {
-  //     return { node: null, dist: 0 };
-  //   }
+  if (!root) {
+    return { node: null, dist: 0 };
+  }
   //   const left = helper(root.left);
   //   const right = helper(root.right);
   //   if (left.dist > right.dist) {
