@@ -31,3 +31,17 @@
 // The number of nodes in the tree will be in the range [1, 500].
 // 0 <= Node.val <= 500
 // The values of the nodes in the tree are unique.
+
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {TreeNode}
+ */
+var subtreeWithAllDeepest = function (root) {};
