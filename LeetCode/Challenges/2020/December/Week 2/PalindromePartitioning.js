@@ -21,23 +21,20 @@
  * @return {string[][]}
  */
 var partition = function (s) {
-    let ans = [];
-  
-          dfs(s, 0, [], ans);
-      
-          return ans;
+  let ans = [];
+
+  dfs(s, 0, [], ans);
+
+  return ans;
 };
 
-var dfs = function(s, start, path,  ans){
+var dfs = function (s, start, path, ans) {
+  if (start == s.length()) {
+    ans.push(path);
+    return;
+  }
+};
 
-          if (start == s.length()) {
-            ans.add(new ArrayList<>(path));
-            return;
-          }
-}
-
-  
-  
 //       for (int i = start; i < s.length(); ++i)
 //         if (isPalindrome(s, start, i)) {
 //           path.add(s.substring(start, i + 1));
@@ -45,7 +42,7 @@ var dfs = function(s, start, path,  ans){
 //           path.remove(path.size() - 1);
 //         }
 //     }
-  
+
 //     private boolean isPalindrome(final String s, int l, int r) {
 //       while (l < r)
 //         if (s.charAt(l++) != s.charAt(r--))
