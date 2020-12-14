@@ -33,11 +33,11 @@ var partition = function (s) {
                   							arrPal[idx].unshift(this.substring(beginAt,endAt));
                   							retVal.push(arrPal[idx]);
                   						}
+                                          					} else {
+                                          						retVal.push([this.substring(beginAt,endAt)]);
+                                          					}
 };
 
-// 					} else {
-// 						retVal.push([this.substring(beginAt,endAt)]);
-// 					}
 // 				}
 // 			}
 // 		}
