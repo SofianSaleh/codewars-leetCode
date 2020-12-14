@@ -23,11 +23,11 @@
 var partition = function (beginAt) {
   var retVal = [];
   beginAt = typeof beginAt !== 'undefined' ? beginAt : 0;
+  		if(beginAt < this.length) {
+  			for(var endAt=this.length;endAt>beginAt;endAt--) {
+  				halfLen = Math.floor((endAt-beginAt)/2);
 };
 
-// 		if(beginAt < this.length) {
-// 			for(var endAt=this.length;endAt>beginAt;endAt--) {
-// 				halfLen = Math.floor((endAt-beginAt)/2);
 // 				if(this.substr(beginAt,halfLen) === this.substr(endAt-halfLen,halfLen).split('').reverse().join('')) {
 // 					if(endAt<this.length) {
 // 						arrPal = this.splitByPalindrome(endAt);
