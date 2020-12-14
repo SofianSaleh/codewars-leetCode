@@ -42,11 +42,13 @@ var dfs = function (s, start, path, ans) {
   }
 };
 var isPalindrome = function (s, l, r) {
-    while (l < r)
-//         if (s.charAt(l++) != s.charAt(r--))
-//           return false;
-//       return true;
-//     }
+    while (l < r){
+
+                if (s.charAt(l++) != s.charAt(r--))
+                  return false;
+              return true;
+            }
+    }
 };
 
 
