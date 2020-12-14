@@ -41,6 +41,14 @@ var dfs = function (s, start, path, ans) {
     }
   }
 };
+var isPalindrome = function (s, l, r) {
+    while (l < r)
+//         if (s.charAt(l++) != s.charAt(r--))
+//           return false;
+//       return true;
+//     }
+};
+
 
 //     private boolean isPalindrome(final String s, int l, int r) {
 //       while (l < r)
