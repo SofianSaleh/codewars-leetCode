@@ -33,15 +33,14 @@ var dfs = function (s, start, path, ans) {
     ans.push(path);
     return;
   }
-        for (int i = start; i < s.length(); ++i)
-          if (isPalindrome(s, start, i)) {
-            path.add(s.substring(start, i + 1));
-            dfs(s, i + 1, path, ans);
-            path.remove(path.size() - 1);
-          }
-      }
+  for (let i = start; i < s.length; ++i) {
+    if (isPalindrome(s, start, i)) {
+      path.add(s.substring(start, i + 1));
+      dfs(s, i + 1, path, ans);
+      path.remove(path.size() - 1);
+    }
+  }
 };
-
 
 //     private boolean isPalindrome(final String s, int l, int r) {
 //       while (l < r)
