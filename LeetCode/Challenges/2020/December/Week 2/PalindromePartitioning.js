@@ -24,23 +24,24 @@ var partition = function (s) {
   var retVal = [];
   let beginAt = typeof beginAt !== 'undefined' ? beginAt : 0;
   if (beginAt < s.length) {
-    for (var endAt = this.length; endAt > beginAt; endAt--) {
+    for (var endAt = s.length; endAt > beginAt; endAt--) {
       halfLen = Math.floor((endAt - beginAt) / 2);
       if (
-        this.substr(beginAt, halfLen) ===
-        this.substr(endAt - halfLen, halfLen)
+        s.substr(beginAt, halfLen) ===
+        s
+          .substr(endAt - halfLen, halfLen)
           .split('')
           .reverse()
           .join('')
       ) {
-        if (endAt < this.length) {
-          arrPal = this.splitByPalindrome(endAt);
+        if (endAt < s.length) {
+          arrPal = s.splitByPalindrome(endAt);
           for (idx in arrPal) {
-            arrPal[idx].unshift(this.substring(beginAt, endAt));
+            arrPal[idx].unshift(s.substring(beginAt, endAt));
             retVal.push(arrPal[idx]);
           }
         } else {
-          retVal.push([this.substring(beginAt, endAt)]);
+          retVal.push([s.substring(beginAt, endAt)]);
         }
       }
     }
