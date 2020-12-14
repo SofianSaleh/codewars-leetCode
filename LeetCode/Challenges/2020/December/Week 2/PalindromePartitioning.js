@@ -20,7 +20,7 @@
  * @param {string} s
  * @return {string[][]}
  */
-var partition = function (s) {
+var partition = function (beginAt) {
   var retVal = [];
   beginAt = typeof beginAt !== 'undefined' ? beginAt : 0;
 };
