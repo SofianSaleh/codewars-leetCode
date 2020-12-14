@@ -20,4 +20,25 @@
  * @param {string} s
  * @return {string[][]}
  */
-var partition = function (s) {};
+var partition = function (s) {
+  var retVal = [];
+  beginAt = typeof beginAt !== 'undefined' ? beginAt : 0;
+};
+
+// 		if(beginAt < this.length) {
+// 			for(var endAt=this.length;endAt>beginAt;endAt--) {
+// 				halfLen = Math.floor((endAt-beginAt)/2);
+// 				if(this.substr(beginAt,halfLen) === this.substr(endAt-halfLen,halfLen).split('').reverse().join('')) {
+// 					if(endAt<this.length) {
+// 						arrPal = this.splitByPalindrome(endAt);
+// 						for(idx in arrPal) {
+// 							arrPal[idx].unshift(this.substring(beginAt,endAt));
+// 							retVal.push(arrPal[idx]);
+// 						}
+// 					} else {
+// 						retVal.push([this.substring(beginAt,endAt)]);
+// 					}
+// 				}
+// 			}
+// 		}
+// 		return retVal;
