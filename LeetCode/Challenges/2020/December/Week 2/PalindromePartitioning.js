@@ -21,30 +21,35 @@
  * @return {string[][]}
  */
 var partition = function (s) {
-  var retVal = [];
-  let beginAt = typeof beginAt !== 'undefined' ? beginAt : 0;
-  if (beginAt < s.length) {
-    for (var endAt = s.length; endAt > beginAt; endAt--) {
-      halfLen = Math.floor((endAt - beginAt) / 2);
-      if (
-        s.substr(beginAt, halfLen) ===
-        s
-          .substr(endAt - halfLen, halfLen)
-          .split('')
-          .reverse()
-          .join('')
-      ) {
-        if (endAt < s.length) {
-          arrPal = s.splitByPalindrome(endAt);
-          for (idx in arrPal) {
-            arrPal[idx].unshift(s.substring(beginAt, endAt));
-            retVal.push(arrPal[idx]);
-          }
-        } else {
-          retVal.push([s.substring(beginAt, endAt)]);
-        }
-      }
-    }
-  }
-  return retVal;
+    let ans = [];
+  
+          dfs(s, 0, [], ans);
+      
+          return ans;
 };
+
+var dfs = function(s, start, path,  ans){
+
+          if (start == s.length()) {
+            ans.add(new ArrayList<>(path));
+            return;
+          }
+}
+
+  
+  
+//       for (int i = start; i < s.length(); ++i)
+//         if (isPalindrome(s, start, i)) {
+//           path.add(s.substring(start, i + 1));
+//           dfs(s, i + 1, path, ans);
+//           path.remove(path.size() - 1);
+//         }
+//     }
+  
+//     private boolean isPalindrome(final String s, int l, int r) {
+//       while (l < r)
+//         if (s.charAt(l++) != s.charAt(r--))
+//           return false;
+//       return true;
+//     }
+//   }
