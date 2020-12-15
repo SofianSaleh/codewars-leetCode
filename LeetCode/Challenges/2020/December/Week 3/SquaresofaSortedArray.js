@@ -28,7 +28,7 @@ var sortedSquares = function (nums) {
   let ans = [];
 
   for (let i = 0; i < n; i++) {
-    ans[i].push(0);
+    ans.push(0);
   }
 
   while (n) {
