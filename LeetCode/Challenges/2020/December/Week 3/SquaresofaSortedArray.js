@@ -37,8 +37,12 @@ var sortedSquares = function (nums) {
     if (Math.abs(nums[l]) > Math.abs(nums[r])) {
       ans[n] = nums[l] * nums[l];
       l += 1;
+    } else {
+      ans[n] = A[r] * A[r];
+      r -= 1;
     }
   }
+  return ans;
 };
 
 //         while n:
@@ -47,7 +51,5 @@ var sortedSquares = function (nums) {
 //                 ans[n] = A[l] * A[l]
 //                 l += 1
 //             else:
-//                 ans[n] = A[r] * A[r]
-//                 r -= 1
 
 //         return ans
