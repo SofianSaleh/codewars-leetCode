@@ -23,6 +23,8 @@
  */
 var sortedSquares = function (nums) {
   let n = nums.length;
+  let l = 0;
+  let r = n - 1;
 };
 
 // class Solution:
