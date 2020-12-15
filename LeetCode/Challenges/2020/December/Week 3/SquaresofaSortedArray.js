@@ -30,6 +30,13 @@ var sortedSquares = function (nums) {
   for (let i = 0; i < n; i++) {
     ans[i].push(0);
   }
+
+  while (n) {
+    n -= 1;
+
+    if (Math.abs(nums[l]) > Math.abs(nums[r])) {
+    }
+  }
 };
 
 //         while n:
