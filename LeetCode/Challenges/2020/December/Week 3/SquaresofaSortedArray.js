@@ -35,6 +35,8 @@ var sortedSquares = function (nums) {
     n -= 1;
 
     if (Math.abs(nums[l]) > Math.abs(nums[r])) {
+      ans[n] = nums[l] * nums[l];
+      l += 1;
     }
   }
 };
