@@ -25,14 +25,12 @@ var sortedSquares = function (nums) {
   let n = nums.length;
   let l = 0;
   let r = n - 1;
-};
+  let ans = [];
 
-// class Solution:
-//     def sortedSquares(self, A: List[int]) -> List[int]:
-//         n = len(A)
-//         l = 0
-//         r = n - 1
-//         ans = [0] * n
+  for (let i = 0; i < n; i++) {
+    ans[i].push(0);
+  }
+};
 
 //         while n:
 //             n -= 1
