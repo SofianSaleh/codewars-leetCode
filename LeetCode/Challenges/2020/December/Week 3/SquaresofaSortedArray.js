@@ -47,9 +47,5 @@ var sortedSquares = function (nums) {
 
 //         while n:
 //             n -= 1
-//             if abs(A[l]) > abs(A[r]):
-//                 ans[n] = A[l] * A[l]
-//                 l += 1
-//             else:
 
 //         return ans
