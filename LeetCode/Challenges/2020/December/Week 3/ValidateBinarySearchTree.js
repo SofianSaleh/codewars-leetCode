@@ -47,9 +47,9 @@ var isValidBST = function (root) {
     if (!root) {
       return true;
     }
-    //     if (minNode && root.val <= minNode.val) {
-    //       return false;
-    //     }
+    if (minNode && root.val <= minNode.val) {
+      return false;
+    }
     //     if (maxNode && root.val >= maxNode.val) {
     //       return false;
     //     }
