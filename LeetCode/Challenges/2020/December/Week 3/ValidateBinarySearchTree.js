@@ -49,5 +49,5 @@ var isValidBST = function (root) {
       isValidBST(root.right, root, maxNode)
     );
   };
-  return BST(root, null, None);
+  return BST(root, null, null);
 };
