@@ -43,20 +43,20 @@ class TreeNode {
  * @return {boolean}
  */
 var isValidBST = function (root) {
-  //   var BST = function (root, minNode, maxNode) {
-  //     if (!root) {
-  //       return true;
-  //     }
-  //     if (minNode && root.val <= minNode.val) {
-  //       return false;
-  //     }
-  //     if (maxNode && root.val >= maxNode.val) {
-  //       return false;
-  //     }
-  //     return (
-  //       isValidBST(root.left, minNode, root) &&
-  //       isValidBST(root.right, root, maxNode)
-  //     );
-  //   };
+  var BST = function (root, minNode, maxNode) {
+    //     if (!root) {
+    //       return true;
+    //     }
+    //     if (minNode && root.val <= minNode.val) {
+    //       return false;
+    //     }
+    //     if (maxNode && root.val >= maxNode.val) {
+    //       return false;
+    //     }
+    //     return (
+    //       isValidBST(root.left, minNode, root) &&
+    //       isValidBST(root.right, root, maxNode)
+    //     );
+  };
   //   return BST(root, null, null);
 };
