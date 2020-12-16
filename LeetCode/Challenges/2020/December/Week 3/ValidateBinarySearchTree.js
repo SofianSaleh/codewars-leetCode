@@ -53,10 +53,10 @@ var isValidBST = function (root) {
     if (maxNode && root.val >= maxNode.val) {
       return false;
     }
-    //     return (
-    //       isValidBST(root.left, minNode, root) &&
-    //       isValidBST(root.right, root, maxNode)
-    //     );
+    return (
+      isValidBST(root.left, minNode, root) &&
+      isValidBST(root.right, root, maxNode)
+    );
   };
   //   return BST(root, null, null);
 };
