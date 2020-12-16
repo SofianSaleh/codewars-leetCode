@@ -44,9 +44,9 @@ class TreeNode {
  */
 var isValidBST = function (root) {
   var BST = function (root, minNode, maxNode) {
-    //     if (!root) {
-    //       return true;
-    //     }
+    if (!root) {
+      return true;
+    }
     //     if (minNode && root.val <= minNode.val) {
     //       return false;
     //     }
