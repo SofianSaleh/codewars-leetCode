@@ -54,8 +54,8 @@ var isValidBST = function (root) {
       return false;
     }
     return (
-      isValidBST(root.left, minNode, root) &&
-      isValidBST(root.right, root, maxNode)
+      BST(root.left, minNode, root) &&
+      BST(root.right, root, maxNode)
     );
   };
   return BST(root, null, null);
