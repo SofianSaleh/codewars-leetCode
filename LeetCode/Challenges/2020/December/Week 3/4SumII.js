@@ -30,6 +30,9 @@ var fourSumCount = function (A, B, C, D) {
   let count = [];
 
   for (const a of A) {
+    for (const b of B) {
+      count.push(a + b);
+    }
   }
 };
 
