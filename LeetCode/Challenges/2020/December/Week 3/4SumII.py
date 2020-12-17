@@ -17,3 +17,9 @@
 #  The two tuples are:
 #  1. (0, 0, 0, 1) -> A[0] + B[0] + C[0] + D[1] = 1 + (-2) + (-1) + 2 = 0
 #  2. (1, 1, 0, 0) -> A[1] + B[1] + C[0] + D[0] = 2 + (-1) + (-1) + 0 = 0
+
+class Solution:
+    def fourSumCount(self, A: List[int], B: List[int], C: List[int], D: List[int]) -> int:
+        count = Counter(a + b for a in A for b in B)
+
+        return sum(count[-c - d] for c in C for d in D)
