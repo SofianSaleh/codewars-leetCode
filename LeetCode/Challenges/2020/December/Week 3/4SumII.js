@@ -25,7 +25,13 @@
  * @param {number[]} D
  * @return {number}
  */
-var fourSumCount = function (A, B, C, D) {};
+var fourSumCount = function (A, B, C, D) {
+  let ans = 0;
+  let count = [];
+
+  for (const a of A) {
+  }
+};
 
 // class Solution {
 //     public int fourSumCount(int[] A, int[] B, int[] C, int[] D) {
