@@ -28,20 +28,18 @@
  * @return {boolean}
  */
 var increasingTriplet = function (nums) {
-  
-      let first = 0;
-      let second = 0;
-  
-      for (const num of nums)
-        if (num <= first)
-          first = num;
-        else if (num <= second) // first < num <= second
-          second = num;
-        else // first < second < num (third)
-          return true;
-  
-      return false;
-    }
+  let first = 0;
+  let second = 0;
+
+  for (const num of nums) {
+    if (num <= first) first = num;
+    else if (num <= second)
+      // first < num <= second
+      second = num;
+    // first < second < num (third)
+    else return true;
+
+    return false;
   }
 };
 
