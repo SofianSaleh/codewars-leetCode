@@ -28,8 +28,8 @@
  * @return {boolean}
  */
 var increasingTriplet = function (nums) {
-  let first = 0;
-  let second = 0;
+  let first = Number.MAX_VALUE;
+  let second = Number.MIN_VALUE;
 
   for (const num of nums) {
     if (num <= first) first = num;
@@ -43,7 +43,7 @@ var increasingTriplet = function (nums) {
   }
 };
 
-// console.log(increasingTriplet([1, 2, 3, 4, 5]));
-// console.log(increasingTriplet([5, 4, 3, 2, 1]));
-// console.log(increasingTriplet([2, 1, 5, 0, 4, 6]));
+console.log(increasingTriplet([1, 2, 3, 4, 5]));
+console.log(increasingTriplet([5, 4, 3, 2, 1]));
+console.log(increasingTriplet([2, 1, 5, 0, 4, 6]));
 console.log(increasingTriplet([5, 1, 5, 5, 2, 5, 4]));
