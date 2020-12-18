@@ -22,3 +22,16 @@
 // -231 <= nums[i] <= 231 - 1
 
 // Follow up: Could you implement a solution that runs in O(n) time complexity and O(1) space complexity?
+
+/**
+ * @param {number[]} nums
+ * @return {boolean}
+ */
+var increasingTriplet = function (nums) {
+  for (let i = 1; i < nums.length; i++) {
+    if (nums[i] < nums[i - 1] && nums[i] > nums[i + 1]) {
+      return true;
+    }
+  }
+  return false;
+};
