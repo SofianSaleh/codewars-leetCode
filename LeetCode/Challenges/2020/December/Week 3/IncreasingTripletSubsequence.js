@@ -29,6 +29,7 @@
  */
 var increasingTriplet = function (nums) {
   for (let i = 1; i < nums.length; i++) {
+    console.log(nums[i], nums[i - 1], nums[i], nums[i + 1]);
     if (nums[i] < nums[i - 1] && nums[i] > nums[i + 1]) {
       return true;
     }
@@ -36,6 +37,6 @@ var increasingTriplet = function (nums) {
   return false;
 };
 
-console.log(increasingTriplet());
-console.log(increasingTriplet());
-console.log(increasingTriplet());
+console.log(increasingTriplet([1, 2, 3, 4, 5]));
+console.log(increasingTriplet([5, 4, 3, 2, 1]));
+console.log(increasingTriplet([2, 1, 5, 0, 4, 6]));
