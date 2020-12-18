@@ -28,14 +28,24 @@
  * @return {boolean}
  */
 var increasingTriplet = function (nums) {
-  for (let i = 1; i < nums.length; i++) {
-    if (nums[i] > nums[i - 1] && nums[i] < nums[i + 1]) {
-      return true;
+  
+      let first = 0;
+      let second = 0;
+  
+      for (const num of nums)
+        if (num <= first)
+          first = num;
+        else if (num <= second) // first < num <= second
+          second = num;
+        else // first < second < num (third)
+          return true;
+  
+      return false;
     }
   }
-  return false;
 };
 
-console.log(increasingTriplet([1, 2, 3, 4, 5]));
-console.log(increasingTriplet([5, 4, 3, 2, 1]));
-console.log(increasingTriplet([2, 1, 5, 0, 4, 6]));
+// console.log(increasingTriplet([1, 2, 3, 4, 5]));
+// console.log(increasingTriplet([5, 4, 3, 2, 1]));
+// console.log(increasingTriplet([2, 1, 5, 0, 4, 6]));
+console.log(increasingTriplet([5, 1, 5, 5, 2, 5, 4]));
