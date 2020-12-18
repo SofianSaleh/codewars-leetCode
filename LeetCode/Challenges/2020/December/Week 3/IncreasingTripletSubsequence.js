@@ -35,3 +35,5 @@ var increasingTriplet = function (nums) {
   }
   return false;
 };
+
+console.log(increasingTriplet);
