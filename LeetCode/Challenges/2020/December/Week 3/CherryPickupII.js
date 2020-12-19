@@ -49,14 +49,10 @@
 var cherryPickup = function (grid) {
   let m = grid.length;
   let n = grid[0].length;
+
+  var dp = function (row, col1, col2) {};
 };
 
-// class Solution:
-//     def cherryPickup(self, grid: List[List[int]]) -> int:
-//         m = len(grid)
-//         n = len(grid[0])
-
-//         @lru_cache(None)
 //         def dp(row, col1, col2):
 //             if col1 < 0 or col1 >= n or col2 < 0 or col2 >= n:
 //                 return -inf
