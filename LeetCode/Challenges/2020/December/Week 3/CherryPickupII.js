@@ -52,7 +52,10 @@ var cherryPickup = function (grid) {
 
   var dp = function (row, col1, col2) {
     if (col1 < 0 || col1 >= n || col2 < 0 || col2 >= n) {
+      return -inf;
     }
+    let result = 0;
+    result += grid[row][col1];
   };
 };
 
