@@ -56,6 +56,9 @@ var cherryPickup = function (grid) {
     }
     let result = 0;
     result += grid[row][col1];
+    if (col1 != col2) {
+      result += grid[row][col2];
+    }
   };
 };
 
