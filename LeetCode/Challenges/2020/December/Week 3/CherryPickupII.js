@@ -42,6 +42,12 @@
 // 2 <= rows, cols <= 70
 // 0 <= grid[i][j] <= 100
 
+/**
+ * @param {number[][]} grid
+ * @return {number}
+ */
+var cherryPickup = function (grid) {};
+
 // class Solution:
 //     def cherryPickup(self, grid: List[List[int]]) -> int:
 //         m = len(grid)
