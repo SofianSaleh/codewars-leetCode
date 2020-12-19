@@ -50,7 +50,10 @@ var cherryPickup = function (grid) {
   let m = grid.length;
   let n = grid[0].length;
 
-  var dp = function (row, col1, col2) {};
+  var dp = function (row, col1, col2) {
+    if (col1 < 0 || col1 >= n || col2 < 0 || col2 >= n) {
+    }
+  };
 };
 
 //         def dp(row, col1, col2):
