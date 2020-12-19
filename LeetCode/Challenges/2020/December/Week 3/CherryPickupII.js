@@ -46,7 +46,10 @@
  * @param {number[][]} grid
  * @return {number}
  */
-var cherryPickup = function (grid) {};
+var cherryPickup = function (grid) {
+  let m = grid.length;
+  let n = grid[0].length;
+};
 
 // class Solution:
 //     def cherryPickup(self, grid: List[List[int]]) -> int:
