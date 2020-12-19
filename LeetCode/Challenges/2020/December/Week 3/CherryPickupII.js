@@ -49,6 +49,7 @@
 var cherryPickup = function (grid) {
   let m = grid.length;
   let n = grid[0].length;
+  let dp = grid[0].length;
 
   var dp = function (row, col1, col2) {
     if (col1 < 0 || col1 >= n || col2 < 0 || col2 >= n) {
@@ -59,22 +60,53 @@ var cherryPickup = function (grid) {
     if (col1 != col2) {
       result += grid[row][col2];
     }
+    if (row != m - 1) {
+      result += Math.max(dp(row + 1, new_col1, new_col2));
+      for (const new_col1 of [col1, col1 + 1, col1 - 1]) {
+      }
+      for (const new_col2 in [col2, col2 + 1, col2 - 1]) {
+      }
+    }
   };
 };
 
-//         def dp(row, col1, col2):
-//             if col1 < 0 or col1 >= n or col2 < 0 or col2 >= n:
-//                 return -inf
-//             # current cell
-//             result = 0
-//             result += grid[row][col1]
-//             if col1 != col2:
-//                 result += grid[row][col2]
-//             # transition
-//             if row != m-1:
-//                 result += max(dp(row+1, new_col1, new_col2)
-//                               for new_col1 in [col1, col1+1, col1-1]
-//                               for new_col2 in [col2, col2+1, col2-1])
-//             return result
+//         int[][][] dpCache = new int[m][n][n];
+//         for (int i = 0; i < m; i++) {
+//             for (int j = 0; j < n; j++) {
+//                 for (int k = 0; k < n; k++) {
+//                     dpCache[i][j][k] = -1;
+//                 }
+//             }
+//         }
+//         return dp(0, 0, n - 1, grid, dpCache);
+//     }
 
-//         return dp(0, 0, n-1)
+//     private int dp(int row, int col1, int col2, int[][] grid, int[][][] dpCache) {
+//         if (col1 < 0 || col1 >= grid[0].length || col2 < 0 || col2 >= grid[0].length) {
+//             return 0;
+//         }
+//         // check cache
+//         if (dpCache[row][col1][col2] != -1) {
+//             return dpCache[row][col1][col2];
+//         }
+//         // current cell
+//         int result = 0;
+//         result += grid[row][col1];
+//         if (col1 != col2) {
+//             result += grid[row][col2];
+//         }
+//         // transition
+//         if (row != grid.length - 1) {
+//             int max = 0;
+//             for (int newCol1 = col1 - 1; newCol1 <= col1 + 1; newCol1++) {
+//                 for (int newCol2 = col2 - 1; newCol2 <= col2 + 1; newCol2++) {
+//                     max = Math.max(max, dp(row + 1, newCol1, newCol2, grid, dpCache));
+//                 }
+//             }
+//             result += max;
+//         }
+
+//         dpCache[row][col1][col2] = result;
+//         return result;
+//     }
+// }
