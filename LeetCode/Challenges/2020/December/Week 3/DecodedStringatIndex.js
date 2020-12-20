@@ -75,4 +75,4 @@ var decodeAtIndex = function (S, K) {
 console.log(decodeAtIndex('leet2code3', 10));
 console.log(decodeAtIndex('ha22', 5));
 console.log(decodeAtIndex('a2345678999999999999999', 1));
-console.log(decodeAtIndex('a2b3c4d5e6f7g8h9', 9));
+// console.log(decodeAtIndex('a2b3c4d5e6f7g8h9', 9));
