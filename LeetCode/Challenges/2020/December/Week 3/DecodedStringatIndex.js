@@ -1,7 +1,10 @@
-// An encoded string S is given.  To find and write the decoded string to a tape, the encoded string is read one character at a time and the following steps are taken:
+// An encoded string S is given.
+// To find and write the decoded string to a tape,
+// the encoded string is read one character at a time and the following steps are taken:
 
 // If the character read is a letter, that letter is written onto the tape.
-// If the character read is a digit (say d), the entire current tape is repeatedly written d-1 more times in total.
+// If the character read is a digit (say d),
+// the entire current tape is repeatedly written d-1 more times in total.
 // Now for some encoded string S, and an index K, find and return the K-th letter (1 indexed) in the decoded string.
 
 // Example 1:
@@ -38,4 +41,36 @@
  * @param {number} K
  * @return {string}
  */
-var decodeAtIndex = function (S, K) {};
+var decodeAtIndex = function (S, K) {
+  let currNum = 0;
+  let currStr = '';
+  let stack = [];
+
+  for (const c of S) {
+    if (/^\d+$/.test(c)) {
+      if (c === S[S.length - 1]) {
+        stack.push(currStr);
+        let x = stack.join('');
+
+        stack = [];
+        for (let i = 0; i < c; i++) {
+          stack.push(x);
+        }
+        let y = stack.join('');
+        console.log(y);
+        return y[K - 1];
+      }
+      for (let i = 0; i < c; i++) {
+        stack.push(currStr);
+      }
+      currStr = '';
+    } else {
+      currStr += c;
+    }
+  }
+  console.log(currNum);
+  return stack;
+};
+
+console.log(decodeAtIndex('leet2code3', 10));
+console.log(decodeAtIndex('ha22', 5));
