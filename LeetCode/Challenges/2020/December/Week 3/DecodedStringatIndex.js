@@ -46,6 +46,7 @@ var decodeAtIndex = function (S, K) {
   let currStr = '';
   let stack = [];
 
+  if (K === 1) return S[0];
   for (const [i, c] of S.split('').entries()) {
     if (/^\d+$/.test(c)) {
       if (i === S.length - 1) {
@@ -71,4 +72,5 @@ var decodeAtIndex = function (S, K) {
 };
 
 // console.log(decodeAtIndex('leet2code3', 10));
-console.log(decodeAtIndex('ha22', 5));
+// console.log(decodeAtIndex('ha22', 5));
+console.log(decodeAtIndex('a2345678999999999999999', 1));
