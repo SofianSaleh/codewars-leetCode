@@ -49,18 +49,18 @@ var decodeAtIndex = function (S, K) {
   if (K === 1) return S[0];
   for (const [i, c] of S.split('').entries()) {
     if (/^\d+$/.test(c)) {
-      if (i === S.length - 1) {
-        stack.push(currStr);
-        let x = stack.join('');
+      //   if (i === S.length - 1) {
+      //     stack.push(currStr);
+      //     let x = stack.join('');
 
-        stack = [];
-        for (let i = 0; i < c; i++) {
-          stack.push(x);
-        }
-        let y = stack.join('');
+      //     stack = [];
+      //     for (let i = 0; i < c; i++) {
+      //       stack.push(x);
+      //     }
+      //     let y = stack.join('');
 
-        return y[K - 1];
-      }
+      //     return y[K - 1];
+      //   }
       for (let i = 0; i < c; i++) {
         stack.push(currStr);
       }
