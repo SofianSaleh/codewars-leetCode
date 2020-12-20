@@ -61,13 +61,13 @@ var decodeAtIndex = function (S, K) {
 
       //     return y[K - 1];
       //   }
-    //   for (let i = 0; i < c; i++) {
-    //     stack.push(currStr);
-    //   }
-    //   currStr = '';
-    // } else {
-    //   currStr += c;
-    // }
+      for (let i = 0; i < c; i++) {
+        stack.push(currStr);
+      }
+      currStr = '';
+    } else {
+      currStr += c;
+    }
   }
   return S[K - 1];
 };
