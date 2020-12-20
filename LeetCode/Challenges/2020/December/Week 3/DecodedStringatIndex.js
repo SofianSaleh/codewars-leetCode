@@ -32,3 +32,10 @@
 // 1 <= K <= 10^9
 // It's guaranteed that K is less than or equal to the length of the decoded string.
 // The decoded string is guaranteed to have less than 2^63 letters.
+
+/**
+ * @param {string} S
+ * @param {number} K
+ * @return {string}
+ */
+var decodeAtIndex = function (S, K) {};
