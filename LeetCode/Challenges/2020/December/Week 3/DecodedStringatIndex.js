@@ -46,9 +46,9 @@ var decodeAtIndex = function (S, K) {
   let currStr = '';
   let stack = [];
 
-  for (const c of S) {
+  for (const [i, c] of S.split('').entries()) {
     if (/^\d+$/.test(c)) {
-      if (c === S[S.length - 1]) {
+      if (i === S.length - 1) {
         stack.push(currStr);
         let x = stack.join('');
 
@@ -57,7 +57,6 @@ var decodeAtIndex = function (S, K) {
           stack.push(x);
         }
         let y = stack.join('');
-        console.log(y);
         return y[K - 1];
       }
       for (let i = 0; i < c; i++) {
@@ -68,9 +67,8 @@ var decodeAtIndex = function (S, K) {
       currStr += c;
     }
   }
-  console.log(currNum);
   return stack;
 };
 
-console.log(decodeAtIndex('leet2code3', 10));
+// console.log(decodeAtIndex('leet2code3', 10));
 console.log(decodeAtIndex('ha22', 5));
