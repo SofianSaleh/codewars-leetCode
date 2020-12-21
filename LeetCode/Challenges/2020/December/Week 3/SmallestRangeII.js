@@ -32,11 +32,11 @@
  * @return {number}
  */
 var smallestRangeII = function (A, K) {
-    A.sort()
+  A.sort();
 
-    let ans = A[A.length -1] - A[0]
-    let left = A[0] + K
-    let right =
+  let ans = A[A.length - 1] - A[0];
+  let left = A[0] + K;
+  let right = A[A.length - 1] - K;
 };
 
 // class Solution {
