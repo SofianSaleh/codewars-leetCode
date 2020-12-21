@@ -31,7 +31,13 @@
  * @param {number} K
  * @return {number}
  */
-var smallestRangeII = function (A, K) {};
+var smallestRangeII = function (A, K) {
+    A.sort()
+
+    let ans = A[A.length -1] - A[0]
+    let left =
+    let right =
+};
 
 // class Solution {
 //     public int smallestRangeII(int[] A, int K) {
