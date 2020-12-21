@@ -37,6 +37,7 @@ var smallestRangeII = function (A, K) {
   let ans = A[A.length - 1] - A[0];
   let left = A[0] + K;
   let right = A[A.length - 1] - K;
+  console.log(ans, right, left);
 
   for (let i = 0; i < A.length; i++) {
     let min = Math.min(left, A[i + 1] - K);
@@ -46,5 +47,5 @@ var smallestRangeII = function (A, K) {
   return ans;
 };
 console.log(smallestRangeII([1], 0));
-console.log(smallestRangeII([0, 10], 2));
-console.log(smallestRangeII([1, 3, 6], 3));
+// console.log(smallestRangeII([0, 10], 2));
+// console.log(smallestRangeII([1, 3, 6], 3));
