@@ -45,6 +45,6 @@ var smallestRangeII = function (A, K) {
   }
   return ans;
 };
-console.log(smallestRangeII());
-console.log(smallestRangeII());
-console.log(smallestRangeII());
+console.log(smallestRangeII([1], 0));
+console.log(smallestRangeII([0, 10], 2));
+console.log(smallestRangeII([1, 3, 6], 3));
