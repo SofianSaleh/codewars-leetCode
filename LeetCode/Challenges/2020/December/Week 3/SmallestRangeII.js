@@ -35,7 +35,7 @@ var smallestRangeII = function (A, K) {
     A.sort()
 
     let ans = A[A.length -1] - A[0]
-    let left =
+    let left = A[0] + K
     let right =
 };
 
