@@ -43,6 +43,7 @@ var smallestRangeII = function (A, K) {
     let max = Math.max(right, A[i] + K);
     ans = Math.min(ans, max - min);
   }
+  return ans;
 };
 
 //       for (int i = 0; i + 1 < A.length; ++i) {
