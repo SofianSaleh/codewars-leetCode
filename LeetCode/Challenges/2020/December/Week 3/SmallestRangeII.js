@@ -45,7 +45,3 @@ var smallestRangeII = function (A, K) {
   }
   return ans;
 };
-
-//       return ans;
-//     }
-//   }
