@@ -26,6 +26,13 @@
 // 0 <= A[i] <= 10000
 // 0 <= K <= 10000
 
+/**
+ * @param {number[]} A
+ * @param {number} K
+ * @return {number}
+ */
+var smallestRangeII = function (A, K) {};
+
 // class Solution {
 //     public int smallestRangeII(int[] A, int K) {
 //       Arrays.sort(A);
