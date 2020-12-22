@@ -26,6 +26,15 @@ var nextGreaterElement = function (n) {
       if (s[i] < s[i + 1]) {
         break;
       }
+      i -= 1
+    }
+    if(i>=0){
+        for (let j = 0; j >= s.length - 1; j--) {
+            if s[j] > s[i]:
+                        break
+                s[i], s[j] = s[j], s[i]
+            
+        }
     }
   };
 };
