@@ -49,12 +49,6 @@ var nextGreaterElement = function (n) {
   return ans > 2 ** 31 - 1 || ans <= n ? -1 : ans;
 };
 
-//         def reverse(s: List[chr], l: int, r: int):
-// while l < r:
-//     s[l], s[r] = s[r], s[l]
-//     l += 1
-//     r -= 1
-
 //         s = nextPermutation(list(str(n)))
 //         ans = int(s)
 
