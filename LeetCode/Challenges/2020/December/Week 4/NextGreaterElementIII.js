@@ -22,6 +22,11 @@
 var nextGreaterElement = function (n) {
   var nextPermutation = function (s) {
     let i = s.length - 2;
+    while (i >= 0) {
+      if (s[i] < s[i + 1]) {
+        break;
+      }
+    }
   };
 };
 
