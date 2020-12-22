@@ -19,7 +19,11 @@
  * @param {number} n
  * @return {number}
  */
-var nextGreaterElement = function (n) {};
+var nextGreaterElement = function (n) {
+  var nextPermutation = function (s) {
+    let i = s.length - 2;
+  };
+};
 
 // class Solution:
 //     def nextGreaterElement(self, n: int) -> int:
