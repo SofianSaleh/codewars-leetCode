@@ -51,5 +51,3 @@ var nextGreaterElement = function (n) {
 
 //         s = nextPermutation(list(str(n)))
 //         ans = int(s)
-
-//         return -1 if ans > 2**31 - 1 or ans <= n else ans
