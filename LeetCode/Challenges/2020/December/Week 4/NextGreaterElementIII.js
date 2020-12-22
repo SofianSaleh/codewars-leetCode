@@ -38,18 +38,19 @@ var nextGreaterElement = function (n) {
     return s.join('');
   };
   var reverse = function (s, l, r) {
-    while l < r:
-    s[l], s[r] = s[r], s[l]
-    l += 1
-    r -= 1
+    while (l < r) {
+      s[l], (s[r] = s[r]), s[l];
+      l += 1;
+      r -= 1;
+    }
   };
 };
 
 //         def reverse(s: List[chr], l: int, r: int):
-            // while l < r:
-            //     s[l], s[r] = s[r], s[l]
-            //     l += 1
-            //     r -= 1
+// while l < r:
+//     s[l], s[r] = s[r], s[l]
+//     l += 1
+//     r -= 1
 
 //         s = nextPermutation(list(str(n)))
 //         ans = int(s)
