@@ -26,37 +26,19 @@ var nextGreaterElement = function (n) {
       if (s[i] < s[i + 1]) {
         break;
       }
-      i -= 1
+      i -= 1;
     }
-    if(i>=0){
-        for (let j = 0; j >= s.length - 1; j--) {
-            if s[j] > s[i]:
-                        break
-                s[i], s[j] = s[j], s[i]
-            
-        }
+    if (i >= 0) {
+      for (let j = 0; j >= s.length - 1; j--) {
+        if (s[j] > s[i]) break;
+        s[i], (s[j] = s[j]), s[i];
+      }
     }
+    reverse(s, i + 1, s.length - 1);
+    return s.join('');
   };
+  var reverse = function (s, l, r) {};
 };
-
-// class Solution:
-//     def nextGreaterElement(self, n: int) -> int:
-//         def nextPermutation(s: List[chr]) -> str:
-//             i = len(s) - 2
-//             while i >= 0:
-//                 if s[i] < s[i + 1]:
-//                     break
-//                 i -= 1
-
-//             if i >= 0:
-//                 for j in range(len(s) - 1, i, -1):
-//                     if s[j] > s[i]:
-//                         break
-//                 s[i], s[j] = s[j], s[i]
-
-//             reverse(s, i + 1, len(s) - 1)
-
-//             return ''.join(s)
 
 //         def reverse(s: List[chr], l: int, r: int):
 //             while l < r:
