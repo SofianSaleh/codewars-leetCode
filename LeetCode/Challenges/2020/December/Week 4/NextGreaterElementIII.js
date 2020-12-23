@@ -48,3 +48,4 @@ var nextGreaterElement = function (n) {
   let ans = parseInt(s);
   return ans > 2 ** 31 - 1 || ans <= n ? -1 : ans;
 };
+console.log(nextGreaterElement(12));
