@@ -45,6 +45,6 @@ var nextGreaterElement = function (n) {
     }
   };
   let s = nextPermutation(`${n}`.split(''));
-  let ans = int(s);
+  let ans = parseInt(s);
   return ans > 2 ** 31 - 1 || ans <= n ? -1 : ans;
 };
