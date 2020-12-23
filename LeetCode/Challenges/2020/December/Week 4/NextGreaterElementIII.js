@@ -48,4 +48,3 @@ var nextGreaterElement = function (n) {
   let ans = int(s);
   return ans > 2 ** 31 - 1 || ans <= n ? -1 : ans;
 };
-console;
