@@ -20,6 +20,7 @@
  * @return {number}
  */
 var nextGreaterElement = function (n) {
+  console.timeLog(n);
   var nextPermutation = function (s) {
     let i = s.length - 2;
     while (i >= 0) {
@@ -45,7 +46,7 @@ var nextGreaterElement = function (n) {
     }
   };
   let s = nextPermutation(`${n}`.split(''));
-  let ans = parseInt(s);
+  let ans = s;
   return ans > 2 ** 31 - 1 || ans <= n ? -1 : ans;
 };
 console.log(nextGreaterElement(12));
