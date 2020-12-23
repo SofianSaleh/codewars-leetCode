@@ -44,7 +44,7 @@ var nextGreaterElement = function (n) {
       r -= 1;
     }
   };
-  let s = nextPermutation(`${n}`);
+  let s = nextPermutation(`${n}`.split(''));
   let ans = int(s);
   return ans > 2 ** 31 - 1 || ans <= n ? -1 : ans;
 };
