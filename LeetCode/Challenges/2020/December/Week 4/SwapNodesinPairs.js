@@ -59,6 +59,7 @@ var swapPairs = function (head) {
     prev.next = nxt;
     curr = curr.next;
   }
+  return dummy.next;
 };
 
 //         for i in range(length // 2):
