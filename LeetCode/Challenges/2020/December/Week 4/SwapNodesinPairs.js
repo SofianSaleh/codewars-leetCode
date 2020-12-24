@@ -53,7 +53,11 @@ var swapPairs = function (head) {
   curr = head;
 
   for (let i = 0; i < Math.floor(len / 2); i++) {
-    const element = array[i];
+    let nxt = curr.next;
+    curr.next = nxt.next;
+    nxt.next = prev.next;
+    prev.next = nxt;
+    curr = curr.next;
   }
 };
 
