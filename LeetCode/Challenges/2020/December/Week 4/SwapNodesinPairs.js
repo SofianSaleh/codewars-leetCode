@@ -20,8 +20,6 @@
 // The number of nodes in the list is in the range [0, 100].
 // 0 <= Node.val <= 100
 
-
-
 /**
  * Definition for singly-linked list.
  * function ListNode(val, next) {
@@ -30,15 +28,15 @@
  * }
  */
 
-  function ListNode(val, next) {
-      this.val = (val===undefined ? 0 : val)
-      this.next = (next===undefined ? null : next)
+class ListNode {
+  constructor(val, next) {
+    this.val = val === undefined ? 0 : val;
+    this.next = next === undefined ? null : next;
   }
+}
 
-/** */
+/**
  * @param {ListNode} head
  * @return {ListNode}
  */
-var swapPairs = function(head) {
-    
-};
+var swapPairs = function (head) {};
