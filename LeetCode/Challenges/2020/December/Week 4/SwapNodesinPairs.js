@@ -67,7 +67,3 @@ var swapPairs = function (head) {
 //             curr.next = next.next
 //             next.next = prev.next
 //             prev.next = next
-//             prev = curr
-//             curr = curr.next
-
-//         return dummy.next
