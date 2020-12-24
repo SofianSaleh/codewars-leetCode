@@ -39,7 +39,12 @@ class ListNode {
  * @param {ListNode} head
  * @return {ListNode}
  */
-var swapPairs = function (head) {};
+var swapPairs = function (head) {
+  let dummy = new ListNode(0);
+  dummy.next = head;
+  let length = 0;
+  let curr = head;
+};
 
 // class Solution:
 //     def swapPairs(self, head: ListNode) -> ListNode:
