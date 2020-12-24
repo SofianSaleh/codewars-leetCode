@@ -42,16 +42,15 @@ class ListNode {
 var swapPairs = function (head) {
   let dummy = new ListNode(0);
   dummy.next = head;
-  let length = 0;
+  let len = 0;
   let curr = head;
+
+  while (curr) {
+    len += 1;
+    curr = curr.next;
+  }
 };
 
-// class Solution:
-//     def swapPairs(self, head: ListNode) -> ListNode:
-//         dummy = ListNode(0)
-//         dummy.next = head
-//         length = 0
-//         curr = head
 //         while curr:
 //             length += 1
 //             curr = curr.next
