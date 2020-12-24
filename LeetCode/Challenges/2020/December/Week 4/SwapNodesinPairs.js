@@ -49,14 +49,13 @@ var swapPairs = function (head) {
     len += 1;
     curr = curr.next;
   }
+  let prev = dummy;
+  curr = head;
+
+  for (let i = 0; i < Math.floor(len / 2); i++) {
+    const element = array[i];
+  }
 };
-
-//         while curr:
-//             length += 1
-//             curr = curr.next
-
-//         prev = dummy
-//         curr = head
 
 //         for i in range(length // 2):
 //             next = curr.next
