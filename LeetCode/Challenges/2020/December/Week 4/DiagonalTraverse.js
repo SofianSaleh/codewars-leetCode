@@ -26,6 +26,9 @@ var findDiagonalOrder = function (matrix) {
 
   let m = matrix.length;
   let n = matrix[0].length;
+  let ans = [];
+  let row = 0;
+  let col = 0;
 };
 
 //       int[] ans = new int[m * n];
