@@ -28,14 +28,6 @@ var findDiagonalOrder = function (matrix) {
   let n = matrix[0].length;
 };
 
-// class Solution {
-//     public int[] findDiagonalOrder(int[][] matrix) {
-//       if (matrix.length == 0)
-//         return new int[] {};
-
-//       final int m = matrix.length;
-//       final int n = matrix[0].length;
-
 //       int[] ans = new int[m * n];
 //       int d = 1; // left-bottom -> right-top
 //       int row = 0;
