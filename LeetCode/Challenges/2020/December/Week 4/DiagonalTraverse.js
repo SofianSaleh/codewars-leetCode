@@ -32,7 +32,6 @@ var findDiagonalOrder = function (matrix) {
   let d = 1;
 
   for (let i = 0; i < m * n; ++i) {
-    console.log((ans[i] = matrix[row][col]));
     ans[i] = matrix[row][col];
     row -= d;
     col += d;
@@ -40,6 +39,11 @@ var findDiagonalOrder = function (matrix) {
     if (row == m) {
       row = m - 1;
       col += 2;
+      d = -d;
+    }
+    if (col == n) {
+      col = n - 1;
+      row += 2;
       d = -d;
     }
     if (row < 0) {
@@ -53,3 +57,10 @@ var findDiagonalOrder = function (matrix) {
   }
   return ans;
 };
+console.log(
+  findDiagonalOrder([
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+  ])
+);
