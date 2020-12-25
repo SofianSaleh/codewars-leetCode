@@ -50,6 +50,7 @@ var findDiagonalOrder = function (matrix) {
       d = -d;
     }
   }
+  return ans;
 };
 
 //       for (int i = 0; i < m * n; ++i) {
