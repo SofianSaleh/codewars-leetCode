@@ -36,7 +36,11 @@ var findDiagonalOrder = function (matrix) {
     row -= d;
     col += d;
 
-    if(row ==m)
+    if (row == m) {
+      row = m - 1;
+      col += 2;
+      d = -d;
+    }
   }
 };
 
