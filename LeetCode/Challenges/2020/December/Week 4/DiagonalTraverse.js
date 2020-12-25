@@ -52,7 +52,3 @@ var findDiagonalOrder = function (matrix) {
   }
   return ans;
 };
-
-//       return ans;
-//     }
-//   }
