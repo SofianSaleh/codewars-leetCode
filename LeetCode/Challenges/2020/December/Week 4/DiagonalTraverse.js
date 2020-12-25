@@ -35,6 +35,8 @@ var findDiagonalOrder = function (matrix) {
     ans[i] = matrix[row][col];
     row -= d;
     col += d;
+
+    if(row ==m)
   }
 };
 
