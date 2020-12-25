@@ -53,14 +53,6 @@ var findDiagonalOrder = function (matrix) {
   return ans;
 };
 
-//       for (int i = 0; i < m * n; ++i) {
-
-//         if (col < 0) {
-//           col = 0;
-//           d = -d;
-//         }
-//       }
-
 //       return ans;
 //     }
 //   }
