@@ -38,6 +38,14 @@
  * @return {number}
  */
 var numDecodings = function (s) {
+  var isValid = function (c) {
+    return '1' <= c && c <= '9';
+  };
+
+  var isValid1 = function (c1, c2) {
+    return c1 == '1' || (c1 == '2' && c2 <= '6');
+  };
+
   let n = s.length;
   let dp = [];
   dp[n] = 1;
