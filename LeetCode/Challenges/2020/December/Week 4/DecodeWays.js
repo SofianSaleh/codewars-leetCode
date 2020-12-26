@@ -45,10 +45,6 @@ var numDecodings = function (s) {
     return '1' <= c1 && c1 <= '9';
   };
 
-  //   var isValid1 = function (c1, c2) {
-  //     return c1 == '1' || (c1 == '2' && c2 <= '6');
-  //   };
-
   let n = s.length;
   let dp = [];
   for (let i = 0; i < n; i++) {
