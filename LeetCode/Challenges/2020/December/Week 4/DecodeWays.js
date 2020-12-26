@@ -50,6 +50,14 @@ var numDecodings = function (s) {
   let dp = [];
   dp[n] = 1;
   dp[n - 1] = isValid(s.charAt(n - 1) ? 1 : 0);
+
+  var isValid = function (c) {
+    return '1' <= c && c <= '9';
+  };
+
+  var isValid = function (c1, c2) {
+    return c1 == '1' || (c1 == '2' && c2 <= '6');
+  };
 };
 console.log(numDecodings('123'));
 
@@ -72,11 +80,4 @@ console.log(numDecodings('123'));
 //       return dp[0];
 //     }
 
-//     private boolean isValid(char c) {
-//       return '1' <= c && c <= '9';
-//     }
-
-//     private boolean isValid(char c1, char c2) {
-//       return c1 == '1' || (c1 == '2' && c2 <= '6');
-//     }
 //   }
