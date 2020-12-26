@@ -38,24 +38,29 @@
  * @return {number}
  */
 var numDecodings = function (s) {
-  var isValid = function (c) {
-    return '1' <= c && c <= '9';
+  var isValid = function (c1, c2 = null) {
+    if (c2) {
+      return c1 == '1' || (c1 == '2' && c2 <= '6');
+    }
+    return '1' <= c1 && c1 <= '9';
   };
 
-  var isValid1 = function (c1, c2) {
-    return c1 == '1' || (c1 == '2' && c2 <= '6');
-  };
+  //   var isValid1 = function (c1, c2) {
+  //     return c1 == '1' || (c1 == '2' && c2 <= '6');
+  //   };
+
   let n = s.length;
   let dp = [];
+  for (let i = 0; i < n; i++) {
+    dp[i] = 0;
+  }
   dp[n] = 1; // ""
   dp[n - 1] = isValid(s.charAt(n - 1)) ? 1 : 0;
 
   for (let i = n - 2; i >= 0; --i) {
-    console.log(dp[i]);
     if (isValid(s.charAt(i))) dp[i] += dp[i + 1];
-    if (isValid1(s.charAt(i), s.charAt(i + 1))) dp[i] += dp[i + 2];
+    if (isValid(s.charAt(i), s.charAt(i + 1))) dp[i] += dp[i + 2];
   }
 
   return dp[0];
 };
-console.log(numDecodings('12'));
