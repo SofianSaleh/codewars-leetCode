@@ -46,6 +46,10 @@ var numDecodings = function (s) {
   //   var decode = function (num,i) {
   //       if()
   //   }
+  let n = s.length;
+  let dp = [];
+  dp[n] = 1;
+  dp[n - 1] = isValid(s.charAt(n - 1) ? 1 : 0);
 };
 console.log(numDecodings('123'));
 
