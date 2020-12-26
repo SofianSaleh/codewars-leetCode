@@ -51,7 +51,7 @@ var numDecodings = function (s) {
   dp[n - 1] = isValid(s.charAt(n - 1)) ? 1 : 0;
 
   for (let i = n - 2; i >= 0; --i) {
-    console.log(s.charAt(i));
+    console.log(dp[i]);
     if (isValid(s.charAt(i))) dp[i] += dp[i + 1];
     if (isValid1(s.charAt(i), s.charAt(i + 1))) dp[i] += dp[i + 2];
   }
