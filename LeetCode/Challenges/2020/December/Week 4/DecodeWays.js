@@ -50,7 +50,7 @@ var numDecodings = function (s) {
   for (let i = 0; i < n; i++) {
     dp[i] = 0;
   }
-  dp[n] = 1; // ""
+  dp[n] = 1;
   dp[n - 1] = isValid(s.charAt(n - 1)) ? 1 : 0;
 
   for (let i = n - 2; i >= 0; --i) {
