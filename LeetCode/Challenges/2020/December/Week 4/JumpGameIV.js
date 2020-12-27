@@ -54,6 +54,7 @@ var minJumps = function (arr) {
     }
   }
   let visited = [];
+  visited[0] = true;
 };
 
 //         for (int i=0; i<length; i++)
