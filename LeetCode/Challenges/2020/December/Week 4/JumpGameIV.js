@@ -46,16 +46,5 @@ var minJumps = function (arr) {
   if (arr.length == 1) return 0;
 };
 
-//                 for (Integer j:next) {
-//                     if (j >= 0 && j<length && !visited[j]) {
-//                         visited[j] = true;
-//                         queue.offer(j);
-//                     }
-//                 }
-//                 next.clear();
-//             }
-//             count += 1;
-//         }
-//         return 0;
 //     }
 // }
