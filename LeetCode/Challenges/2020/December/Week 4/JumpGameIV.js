@@ -60,15 +60,12 @@ var minJumps = function (arr) {
     let size = queue.length;
     for (let i=size; i>0; i--) {
         let current = queue.poll();
-                // if we reach the last index
                 if (current == len - 1)
                     return count;
-                // get the possible next values
-                List<Integer> next = graph.get(arr[current]);
-                // now lets add the previous, ie current-1, next ies, current + 1 into the list
+                let next = graph[arr[current]];
                 next.add(current-1);
                 next.add(current+1);
-                for(){
+                for(const j of next){
                     if (j >= 0 && j<len && !visited[j]) {
                         visited[j] = true;
                         queue.offer(j);
