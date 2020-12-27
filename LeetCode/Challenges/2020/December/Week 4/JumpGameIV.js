@@ -45,17 +45,17 @@
 var minJumps = function (arr) {
   if (arr.length == 1) return 0;
   let count = 0;
-  let length = arr.length;
+  let len = arr.length;
   let graph = {};
+
+  for (let i = 0; i < len; i++) {
+    if (!graph[arr[i]]) {
+      graph[arr[i]] = i;
+    }
+  }
+  let visited = [];
 };
-// class Solution {
-//     public int minJumps(int[] arr) {
-//         if (arr.length == 1)
-//             return 0;
-// int count = 0;
-// int length = arr.length;
-// Map<Integer, List<Integer>> graph = new HashMap<>();
-//         // populate the graph with index
+
 //         for (int i=0; i<length; i++)
 //             graph.computeIfAbsent(arr[i], x->new LinkedList<>()).add(i);
 //         // create the boolean array visited
