@@ -45,6 +45,3 @@
 var minJumps = function (arr) {
   if (arr.length == 1) return 0;
 };
-
-//     }
-// }
