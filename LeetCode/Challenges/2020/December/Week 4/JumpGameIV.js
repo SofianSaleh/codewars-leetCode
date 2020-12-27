@@ -58,7 +58,28 @@ var minJumps = function (arr) {
   let queue = [];
   while (!queue.length == 0) {
     let size = queue.length;
-  }
+    for (let i=size; i>0; i--) {
+        let current = queue.poll();
+                // if we reach the last index
+                if (current == len - 1)
+                    return count;
+                // get the possible next values
+                List<Integer> next = graph.get(arr[current]);
+                // now lets add the previous, ie current-1, next ies, current + 1 into the list
+                next.add(current-1);
+                next.add(current+1);
+                for(){
+                    if (j >= 0 && j<len && !visited[j]) {
+                        visited[j] = true;
+                        queue.offer(j);
+                    }
+                }
+                next.clear();
+            }
+            count += 1;
+        }
+        return 0;
+    }
 };
 
 //         for (int i=0; i<length; i++)
