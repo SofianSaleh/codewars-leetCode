@@ -42,8 +42,4 @@ var reachNumber = function (target) {
 };
 
 // class Solution:
-//     def reachNumber(self, target: int) -> int:
-
-//         while (pos - target) & 1:
-//             ans += 1
-//
+/
