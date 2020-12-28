@@ -38,6 +38,7 @@ while (pos - target && 1) {
   ans += 1;
   pos += ans;
 }
+return ans;
 
 // class Solution:
 //     def reachNumber(self, target: int) -> int:
