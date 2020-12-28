@@ -34,12 +34,13 @@ while (pos < target) {
   pos += ans;
 }
 
+while (pos - target && 1) {
+  ans += 1;
+  pos += ans;
+}
+
 // class Solution:
 //     def reachNumber(self, target: int) -> int:
-
-//         while pos < target:
-//             ans += 1
-//             pos += ans
 
 //         while (pos - target) & 1:
 //             ans += 1
