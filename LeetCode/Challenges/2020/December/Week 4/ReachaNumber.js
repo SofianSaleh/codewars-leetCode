@@ -25,20 +25,6 @@
  * @return {number}
  */
 var reachNumber = function (target) {};
-let ans = 0;
-let pos = 0;
-target = Math.abs(target);
-
-while (pos < target) {
-  ans += 1;
-  pos += ans;
-}
-
-while (pos - target && 1) {
-  ans += 1;
-  pos += ans;
-}
-return ans;
 
 // class Solution:
 //     def reachNumber(self, target: int) -> int:
