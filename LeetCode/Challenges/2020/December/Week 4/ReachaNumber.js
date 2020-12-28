@@ -46,6 +46,4 @@ var reachNumber = function (target) {
 
 //         while (pos - target) & 1:
 //             ans += 1
-//             pos += ans
-
-//         return ans
+//
