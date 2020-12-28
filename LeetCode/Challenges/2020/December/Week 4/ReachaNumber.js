@@ -40,6 +40,3 @@ var reachNumber = function (target) {
   }
   return ans;
 };
-
-// class Solution:
-/
