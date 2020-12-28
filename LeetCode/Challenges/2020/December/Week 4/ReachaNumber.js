@@ -27,16 +27,13 @@
 var reachNumber = function (target) {
   let ans = 0;
   let pos = 0;
-  target = Math.abs(target);
+  let newTarget = Math.abs(target);
 
-  while (pos < target) {
-    ans += 1;
-    pos += ans;
+  while (pos < newTarget) {
+    ans += ++ans;
   }
-
-  while (pos - target && 1) {
-    ans += 1;
-    pos += ans;
+  while ((pos - newTarget) % 2 == 1) {
+    ans += ++ans;
   }
   return ans;
 };
