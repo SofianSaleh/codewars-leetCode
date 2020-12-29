@@ -75,9 +75,6 @@ var pseudoPalindromicPaths = function (root) {
   return ans;
 };
 
-//         def dfs(root: TreeNode, path: int) -> None:
-//             if not root:
-//                 return
 //             if not root.left and not root.right:
 //                 path ^= 1 << root.val
 //                 if path & (path - 1) == 0:
