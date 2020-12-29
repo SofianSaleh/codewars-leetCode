@@ -46,20 +46,31 @@ class TreeNode {
 var pseudoPalindromicPaths = function (root) {
   let ans = 0;
 
+  //   var dfs = function (root, path) {
+  //     if (!root) return;
+  //     if (!root.left && !root.right) {
+  //       path ^= 1 << root.val;
+  //       if (path && path - 1 == 0) {
+  //         ans += 1;
+  //         return;
+  //       }
+  //       dfs(root.left, path ^ (1 << root.val));
+  //       dfs(root.right, path ^ (1 << root.val));
+  //     }
+  //   };
+  //   dfs(root, 0);
+  //   return ans;
   var dfs = function (root, path) {
-    if (!root) return;
-    if (!root.left && !root.right) {
+    if (root == null) return;
+    if (root.left == null && root.right == null) {
       path ^= 1 << root.val;
-      if (path && path - 1 == 0) {
-        ans += 1;
-        return;
-      }
-      dfs(root.left, path ^ (1 << root.val));
-      dfs(root.right, path ^ (1 << root.val));
+      if ((path & (path - 1)) == 0) ++ans;
+      return;
     }
+
+    dfs(root.left, path ^ (1 << root.val));
+    dfs(root.right, path ^ (1 << root.val));
   };
-  dfs(root, 0);
-  return ans;
 };
 
 // class Solution:
