@@ -45,14 +45,6 @@ class TreeNode {
  */
 var pseudoPalindromicPaths = function (root) {
   let ans = 0;
-
-  //   var dfs = function (root, path) {
-  //     if (!root) return;
-  //     if (!root.left && !root.right) {
-  //       path ^= 1 << root.val;
-  //       if (path && path - 1 == 0) {
-  //         ans += 1;
-
   var dfs = function (root, path) {
     if (root == null) return;
     if (root.left == null && root.right == null) {
