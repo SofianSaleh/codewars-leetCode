@@ -50,6 +50,10 @@ var pseudoPalindromicPaths = function (root) {
     if (!root) return;
     if (!root.left && !root.right) {
       path ^= 1 << root.val;
+      if (path && path - 1 == 0) {
+        ans += 1;
+      }
+      return;
     }
   };
 };
