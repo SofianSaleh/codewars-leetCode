@@ -58,6 +58,8 @@ var pseudoPalindromicPaths = function (root) {
       dfs(root.right, path ^ (1 << root.val));
     }
   };
+  dfs(root, 0);
+  return ans;
 };
 
 // class Solution:
