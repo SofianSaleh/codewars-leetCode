@@ -52,14 +52,7 @@ var pseudoPalindromicPaths = function (root) {
   //       path ^= 1 << root.val;
   //       if (path && path - 1 == 0) {
   //         ans += 1;
-  //         return;
-  //       }
-  //       dfs(root.left, path ^ (1 << root.val));
-  //       dfs(root.right, path ^ (1 << root.val));
-  //     }
-  //   };
-  //   dfs(root, 0);
-  //   return ans;
+
   var dfs = function (root, path) {
     if (root == null) return;
     if (root.left == null && root.right == null) {
