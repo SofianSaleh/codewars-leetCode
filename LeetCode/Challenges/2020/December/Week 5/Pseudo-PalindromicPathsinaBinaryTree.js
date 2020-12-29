@@ -45,6 +45,8 @@ class TreeNode {
  */
 var pseudoPalindromicPaths = function (root) {
   let ans = 0;
+
+  var dfs = function (root, path) {};
 };
 
 // class Solution:
