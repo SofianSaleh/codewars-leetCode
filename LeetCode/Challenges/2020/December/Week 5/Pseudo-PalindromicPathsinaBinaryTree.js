@@ -75,10 +75,6 @@ var pseudoPalindromicPaths = function (root) {
   return ans;
 };
 
-// class Solution:
-//     def pseudoPalindromicPaths(self, root: TreeNode) -> int:
-//         self.ans = 0
-
 //         def dfs(root: TreeNode, path: int) -> None:
 //             if not root:
 //                 return
