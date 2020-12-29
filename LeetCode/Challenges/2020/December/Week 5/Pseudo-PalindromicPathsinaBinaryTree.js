@@ -74,7 +74,3 @@ var pseudoPalindromicPaths = function (root) {
   dfs(root, 0);
   return ans;
 };
-
-//         dfs(root, 0)
-
-//         return self.ans
