@@ -48,6 +48,9 @@ var pseudoPalindromicPaths = function (root) {
 
   var dfs = function (root, path) {
     if (!root) return;
+    if (!root.left && !root.right) {
+      path ^= 1 << root.val;
+    }
   };
 };
 
