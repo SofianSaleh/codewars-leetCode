@@ -40,6 +40,10 @@ var gameOfLife = function (board) {
   for (let i = 0; i < m; i++) {
     for (let j = 0; j < n; i++) {
       let ones = 0;
+      y in range(max(0, i - 1), min(m, i + 2));
+      for (let y = Math.max(0, i - 1); y < Math.min(m, i + 2); y++) {
+        for (let x = Math.max(0, j - 1); x < Math.min(n, j + 2); i++) {}
+      }
     }
   }
 };
