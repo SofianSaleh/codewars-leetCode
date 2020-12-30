@@ -42,9 +42,13 @@ var gameOfLife = function (board) {
       let ones = 0;
       y in range(max(0, i - 1), min(m, i + 2));
       for (let y = Math.max(0, i - 1); y < Math.min(m, i + 2); y++) {
-        for (let x = Math.max(0, j - 1); x < Math.min(n, j + 2); i++) {}
+        for (let x = Math.max(0, j - 1); x < Math.min(n, j + 2); i++) {
+            ones += board[y][x] && 1
+        }
       }
     }
+    if (board[i][j] == 1 and (ones == 3 or ones == 4)):
+                    board[i][j] |= 0b10
   }
 };
 
