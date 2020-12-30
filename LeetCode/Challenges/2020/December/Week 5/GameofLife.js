@@ -59,5 +59,4 @@ var gameOfLife = function (board) {
       board[i][j] >>= 1;
     }
   }
-  return board;
 };
