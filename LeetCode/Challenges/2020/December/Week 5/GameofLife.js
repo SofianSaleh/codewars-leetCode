@@ -62,11 +62,6 @@ var gameOfLife = function (board) {
   return board;
 };
 
-// class Solution:
-//     def gameOfLife(self, board: List[List[int]]) -> None:
-//         m = len(board)
-//         n = len(board[0])
-
 //         for i in range(m):
 //             for j in range(n):
 //                 ones = 0
