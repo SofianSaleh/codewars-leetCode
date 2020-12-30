@@ -40,16 +40,26 @@ var gameOfLife = function (board) {
   for (let i = 0; i < m; i++) {
     for (let j = 0; j < n; i++) {
       let ones = 0;
-      y in range(max(0, i - 1), min(m, i + 2));
+
       for (let y = Math.max(0, i - 1); y < Math.min(m, i + 2); y++) {
         for (let x = Math.max(0, j - 1); x < Math.min(n, j + 2); i++) {
-            ones += board[y][x] && 1
+          ones += board[y][x] && 1;
         }
       }
     }
-    if (board[i][j] == 1 and (ones == 3 or ones == 4)):
-                    board[i][j] |= 0b10
+    if (board[i][j] == 1 && (ones == 3 || ones == 4)) {
+      board[i][j] |= 0b10;
+    }
+    if (board[i][j] == 0 && ones == 3) {
+      board[i][j] |= 0b10;
+    }
   }
+  for (let i = 0; i < m; i++) {
+    for (let j = 0; j < n; j++) {
+      board[i][j] >>= 1;
+    }
+  }
+  return board;
 };
 
 // class Solution:
