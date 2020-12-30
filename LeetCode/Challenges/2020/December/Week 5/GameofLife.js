@@ -62,14 +62,6 @@ var gameOfLife = function (board) {
   return board;
 };
 
-//                 # lives on to the next generation
-//                 if (board[i][j] == 1 and (ones == 3 or ones == 4)):
-//                     board[i][j] |= 0b10
-//                 # any dead cell with exactly 3 live neighbors
-//                 # becomes a live cell, as if by reproduction
-//                 if (board[i][j] == 0 and ones == 3):
-//                     board[i][j] |= 0b10
-
 //         for i in range(m):
 //             for j in range(n):
 //                 board[i][j] >>= 1
