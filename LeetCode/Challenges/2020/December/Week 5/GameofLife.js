@@ -61,7 +61,3 @@ var gameOfLife = function (board) {
   }
   return board;
 };
-
-//         for i in range(m):
-//             for j in range(n):
-//                 board[i][j] >>= 1
