@@ -36,6 +36,12 @@
 var gameOfLife = function (board) {
   let m = board.length;
   let n = board[0].length;
+
+  for (let i = 0; i < m; i++) {
+    for (let j = 0; j < n; i++) {
+      let ones = 0;
+    }
+  }
 };
 
 // class Solution:
