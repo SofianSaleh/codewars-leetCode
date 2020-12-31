@@ -24,8 +24,10 @@ var largestRectangleArea = function (heights) {
     ) {
       let h = heights[stack.pop()];
       let w = stack == [] ? i : i - stack[stack.length - 1] - 1;
+      console.log(h, w);
       ans = Math.max(ans, h * w);
     }
+    stack.push(i);
   }
   return ans;
 };
