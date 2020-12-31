@@ -8,3 +8,9 @@
 
 // Input: [2,1,5,6,2,3]
 // Output: 10
+
+/**
+ * @param {number[]} heights
+ * @return {number}
+ */
+var largestRectangleArea = function (heights) {};
