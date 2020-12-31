@@ -20,7 +20,7 @@ var largestRectangleArea = function (heights) {
   for (let i = 0; i < heights.length + 1; i++) {
     while (
       stack != [] &&
-      (i == heights.length || heights[i] < heights[stack[-1]])
+      (i == heights.length || heights[i] < heights[stack[stack.length - 1]])
     ) {
       let h = heights[stack.pop()];
       let w = stack == [] ? i : i - stack[stack.length - 1] - 1;
