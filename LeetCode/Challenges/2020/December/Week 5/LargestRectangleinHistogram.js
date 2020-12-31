@@ -14,9 +14,10 @@
  * @return {number}
  */
 var largestRectangleArea = function (heights) {
-  let ans = -Infinity;
+  let ans = 0;
+  let stack = [];
 
-  for (let i = 0; i < heights.length; i++) {
+  for (let i = 0; i < heights.length + 1; i++) {
     for (let j = i + 1; j < heights.length; j++) {
       let div = Math.abs(heights[i] - heights[j]) * Math.abs(i - j);
       console.log(i, j);
