@@ -34,10 +34,6 @@ var largestRectangleArea = function (heights) {
 
 console.log(largestRectangleArea([2, 1, 5, 6, 2, 3]));
 
-//     def largestRectangleArea(self, heights: List[int]) -> int:
-//         ans = 0
-//         stack = []
-
 //         for i in range(len(heights) + 1):
 //             while stack != [] and (i == len(heights) or heights[i] < heights[stack[-1]]):
 //                 h = heights[stack.pop()]
