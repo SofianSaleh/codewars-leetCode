@@ -18,13 +18,13 @@ var largestRectangleArea = function (heights) {
   let stack = [];
 
   for (let i = 0; i < heights.length + 1; i++) {
-    for (let j = i + 1; j < heights.length; j++) {
-      let div = Math.abs(heights[i] - heights[j]) * Math.abs(i - j);
-      console.log(i, j);
-      if (div > ans) {
-        ans = div;
-      }
-      break;
+    while (
+      stack != [] &&
+      (i == len(heights) || heights[i] < heights[stack[-1]])
+    ) {
+      let h = heights[stack.pop()];
+      let w = stack == [] ? i : i - stack[stack.length - 1] - 1;
+      ans = Math.max(ans, h * w);
     }
   }
   return ans;
