@@ -13,4 +13,16 @@
  * @param {number[]} heights
  * @return {number}
  */
-var largestRectangleArea = function (heights) {};
+var largestRectangleArea = function (heights) {
+  let ans = -Infinity;
+
+  for (let i = 0; i < heights.length; i++) {
+    for (let j = i + 1; j < heights.length; j++) {
+      let div = Math.abs(heights[i] - heights[j]);
+      if (div > ans) {
+        ans = div;
+      }
+    }
+  }
+  return ans;
+};
