@@ -41,3 +41,80 @@
  * @return {boolean}
  */
 var canFormArray = function (arr, pieces) {};
+
+// # Python3 program for the above approach
+// from array import *
+
+// # Function to check if it is possible
+// # to obtain array by concatenating
+// # the arrays in list pieces[]
+// def check(arr, pieces):
+
+//     # Stores the index of element in
+//     # the given array arr[]
+//     m = {}
+
+//     for i in range(0, len(arr)):
+//         m[arr[i]] = i + 1
+
+//     # Traverse over the list pieces
+//     for i in range(0, len(pieces)):
+
+//         # If item size is 1 and
+//         # exists in map
+//         if (len(pieces[i]) == 1 and
+//               m[pieces[i][0]] != 0):
+//             continue
+
+//         # If item contains > 1 element
+//         # then check order of element
+//         elif (len(pieces[i]) > 1 and
+//                 m[pieces[i][0]] != 0):
+//             idx = m[pieces[i][0]] - 1
+//             idx = idx+1
+
+//             # If end of the array
+//             if idx >= len(arr):
+//                 return False
+
+//             # Check the order of elements
+//             for j in range(1, len(pieces[i])):
+
+//                 # If order is same as
+//                 # the array elements
+//                 if arr[idx] == pieces[i][j]:
+//                     # Increment idx
+//                     idx = idx+1
+
+//                     # If order breaks
+//                     if (idx >= len(arr) and
+//                            j < len(pieces[i]) - 1):
+//                         return False
+
+//                 # Otherwise
+//                 else:
+//                     return False
+
+//         # Return false if the first
+//         # element doesn't exist in m
+//         else:
+//             return False
+
+//     # Return true
+//     return True
+
+// # Driver Code
+// if __name__ == "__main__":
+
+//     arr = [ 1, 2, 4, 3 ]
+
+//     # Given array of list
+//     pieces = [ [ 1 ], [ 4, 3 ], [ 2 ] ]
+
+//     # Function call
+//     if check(arr, pieces) == True:
+//         print("Yes")
+//     else:
+//         print("No")
+
+// # This code is contributed by akhilsaini
