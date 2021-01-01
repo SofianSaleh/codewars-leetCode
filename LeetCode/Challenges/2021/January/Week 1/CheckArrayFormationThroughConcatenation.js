@@ -52,6 +52,9 @@ var canFormArray = function (arr, pieces) {
       let idx = m[pieces[i][0]] - 1;
       idx += 1;
     }
+    if (idx >= arr.length) {
+      return false;
+    }
   }
 };
 
@@ -59,11 +62,6 @@ var canFormArray = function (arr, pieces) {
 
 //     # Traverse over the list pieces
 //     for i in range(0, len(pieces)):
-
-//         elif (len(pieces[i]) > 1 and
-//                 m[pieces[i][0]] != 0):
-//             idx = m[pieces[i][0]] - 1
-//             idx = idx+1
 
 //             # If end of the array
 //             if idx >= len(arr):
