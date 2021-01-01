@@ -45,6 +45,11 @@ var canFormArray = function (arr, pieces) {
   for (let i = 0; i < arr.length; i++) {
     m[arr[i]] = i + 1;
   }
+  for (let i = 0; i < pieces.length; i++) {
+    if (pieces[i].length === 1 && m[pieces[i][0]] !== 0) {
+      continue;
+    }
+  }
 };
 
 // def check(arr, pieces):
