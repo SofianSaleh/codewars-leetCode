@@ -48,6 +48,7 @@ var canFormArray = function (arr, pieces) {
   for (let i = 0; i < pieces.length; i++) {
     if (pieces[i].length === 1 && m[pieces[i][0]] !== 0) {
       continue;
+    } else if (pieces[i].length > 1 && m[pieces[i][0]] !== 0) {
     }
   }
 };
@@ -57,14 +58,6 @@ var canFormArray = function (arr, pieces) {
 //     # Traverse over the list pieces
 //     for i in range(0, len(pieces)):
 
-//         # If item size is 1 and
-//         # exists in map
-//         if (len(pieces[i]) == 1 and
-//               m[pieces[i][0]] != 0):
-//             continue
-
-//         # If item contains > 1 element
-//         # then check order of element
 //         elif (len(pieces[i]) > 1 and
 //                 m[pieces[i][0]] != 0):
 //             idx = m[pieces[i][0]] - 1
