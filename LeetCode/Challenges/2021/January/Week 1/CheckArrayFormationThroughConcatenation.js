@@ -51,17 +51,22 @@ var canFormArray = function (arr, pieces) {
     } else if (pieces[i].length > 1 && m[pieces[i][0]] !== 0) {
       let idx = m[pieces[i][0]] - 1;
       idx += 1;
-    }
-    if (idx >= arr.length) {
-      return false;
-    }
-    for (let j = 1; j < pieces[i].length; j++) {
-      if (arr[idx] == pieces[i][j]) {
-        idx += 1;
-      }
-      if (idx >= len(arr) && j < pieces[i].length - 1) {
+
+      if (idx >= arr.length) {
         return false;
       }
+      for (let j = 1; j < pieces[i].length; j++) {
+        if (arr[idx] == pieces[i][j]) {
+          idx += 1;
+          if (idx >= len(arr) && j < pieces[i].length - 1) {
+            return false;
+          }
+        } else {
+          return false;
+        }
+      }
+    } else {
+      return false;
     }
   }
 };
@@ -70,18 +75,6 @@ var canFormArray = function (arr, pieces) {
 
 //     # Traverse over the list pieces
 //     for i in range(0, len(pieces)):
-
-//             # Check the order of elements
-//             for j in range(1, len(pieces[i])):
-
-//                     # If order breaks
-//                     if (idx >= len(arr) and
-//                            j < len(pieces[i]) - 1):
-//                         return False
-
-//                 # Otherwise
-//                 else:
-//                     return False
 
 //         # Return false if the first
 //         # element doesn't exist in m
