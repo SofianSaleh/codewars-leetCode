@@ -40,22 +40,14 @@
  * @param {number[][]} pieces
  * @return {boolean}
  */
-var canFormArray = function (arr, pieces) {};
+var canFormArray = function (arr, pieces) {
+  let m = {};
+  for (let i = 0; i < arr.length; i++) {
+    m[arr[i]] = i + 1;
+  }
+};
 
-// # Python3 program for the above approach
-// from array import *
-
-// # Function to check if it is possible
-// # to obtain array by concatenating
-// # the arrays in list pieces[]
 // def check(arr, pieces):
-
-//     # Stores the index of element in
-//     # the given array arr[]
-//     m = {}
-
-//     for i in range(0, len(arr)):
-//         m[arr[i]] = i + 1
 
 //     # Traverse over the list pieces
 //     for i in range(0, len(pieces)):
