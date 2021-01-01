@@ -49,6 +49,8 @@ var canFormArray = function (arr, pieces) {
     if (pieces[i].length === 1 && m[pieces[i][0]] !== 0) {
       continue;
     } else if (pieces[i].length > 1 && m[pieces[i][0]] !== 0) {
+      let idx = m[pieces[i][0]] - 1;
+      idx += 1;
     }
   }
 };
