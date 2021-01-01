@@ -75,27 +75,3 @@ var canFormArray = function (arr, pieces) {
 
 //     # Traverse over the list pieces
 //     for i in range(0, len(pieces)):
-
-//         # Return false if the first
-//         # element doesn't exist in m
-//         else:
-//             return False
-
-//     # Return true
-//     return True
-
-// # Driver Code
-// if __name__ == "__main__":
-
-//     arr = [ 1, 2, 4, 3 ]
-
-//     # Given array of list
-//     pieces = [ [ 1 ], [ 4, 3 ], [ 2 ] ]
-
-//     # Function call
-//     if check(arr, pieces) == True:
-//         print("Yes")
-//     else:
-//         print("No")
-
-// # This code is contributed by akhilsaini
