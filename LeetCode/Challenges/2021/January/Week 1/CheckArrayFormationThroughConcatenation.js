@@ -69,4 +69,5 @@ var canFormArray = function (arr, pieces) {
       return false;
     }
   }
+  return true;
 };
