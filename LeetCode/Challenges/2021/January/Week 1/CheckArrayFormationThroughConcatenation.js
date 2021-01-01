@@ -34,3 +34,10 @@
 // 1 <= arr[i], pieces[i][j] <= 100
 // The integers in arr are distinct.
 // The integers in pieces are distinct (i.e., If we flatten pieces in a 1D array, all the integers in this array are distinct).
+
+/**
+ * @param {number[]} arr
+ * @param {number[][]} pieces
+ * @return {boolean}
+ */
+var canFormArray = function (arr, pieces) {};
