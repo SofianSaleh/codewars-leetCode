@@ -55,6 +55,14 @@ var canFormArray = function (arr, pieces) {
     if (idx >= arr.length) {
       return false;
     }
+    for (let j = 1; j < pieces[i].length; j++) {
+      if (arr[idx] == pieces[i][j]) {
+        idx += 1;
+      }
+      if (idx >= len(arr) && j < pieces[i].length - 1) {
+        return false;
+      }
+    }
   }
 };
 
@@ -63,18 +71,8 @@ var canFormArray = function (arr, pieces) {
 //     # Traverse over the list pieces
 //     for i in range(0, len(pieces)):
 
-//             # If end of the array
-//             if idx >= len(arr):
-//                 return False
-
 //             # Check the order of elements
 //             for j in range(1, len(pieces[i])):
-
-//                 # If order is same as
-//                 # the array elements
-//                 if arr[idx] == pieces[i][j]:
-//                     # Increment idx
-//                     idx = idx+1
 
 //                     # If order breaks
 //                     if (idx >= len(arr) and
