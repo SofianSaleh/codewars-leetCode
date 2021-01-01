@@ -58,7 +58,7 @@ var canFormArray = function (arr, pieces) {
       for (let j = 1; j < pieces[i].length; j++) {
         if (arr[idx] == pieces[i][j]) {
           idx += 1;
-          if (idx >= len(arr) && j < pieces[i].length - 1) {
+          if (idx >= arr.length && j < pieces[i].length - 1) {
             return false;
           }
         } else {
