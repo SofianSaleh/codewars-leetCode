@@ -70,8 +70,3 @@ var canFormArray = function (arr, pieces) {
     }
   }
 };
-
-// def check(arr, pieces):
-
-//     # Traverse over the list pieces
-//     for i in range(0, len(pieces)):
