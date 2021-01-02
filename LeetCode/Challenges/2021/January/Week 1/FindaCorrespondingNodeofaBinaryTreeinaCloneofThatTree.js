@@ -43,6 +43,12 @@
  *     this.left = this.right = null;
  * }
  */
+
+function TreeNode(val) {
+  this.val = val;
+  this.left = this.right = null;
+}
+
 /**
  * @param {TreeNode} original
  * @param {TreeNode} cloned
