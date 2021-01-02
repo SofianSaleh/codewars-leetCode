@@ -58,7 +58,12 @@ class TreeNode {
  * @return {TreeNode}
  */
 
-var getTargetCopy = function (original, cloned, target) {};
+var getTargetCopy = function (original, cloned, target) {
+  if (original === null || original === target) {
+    return cloned;
+  }
+  let res = getTargetCopy(original.left, cloned.left, target);
+};
 
 // class Solution {
 //     public final TreeNode getTargetCopy(final TreeNode original, final TreeNode cloned, final TreeNode target) {
