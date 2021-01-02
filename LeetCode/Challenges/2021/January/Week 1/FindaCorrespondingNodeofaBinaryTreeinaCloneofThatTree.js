@@ -63,6 +63,7 @@ var getTargetCopy = function (original, cloned, target) {
     return cloned;
   }
   let res = getTargetCopy(original.left, cloned.left, target);
+  if (res !== null) return res;
 };
 
 // class Solution {
