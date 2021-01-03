@@ -54,7 +54,3 @@ var countArrangement = function (n) {
 
 // class Solution {
 //     public int countArrangement(int N) {
-
-//     }
-
-//   }
