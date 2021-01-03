@@ -29,7 +29,12 @@
  * @return {number}
  */
 var countArrangement = function (n) {
-  var dfs = function (N, num, sb, memo) {};
+  var dfs = function (N, num, sb, memo) {
+    if (num === N + 1) return 1;
+    let filled = sb.toString();
+    if (filled in memo) return memo[filled];
+    let count = 0;
+  };
 };
 
 // class Solution {
