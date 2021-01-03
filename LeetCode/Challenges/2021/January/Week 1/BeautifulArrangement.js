@@ -51,6 +51,3 @@ var countArrangement = function (n) {
 
   return dfs(N, 1, sb, memo);
 };
-
-// class Solution {
-//     public int countArrangement(int N) {
