@@ -23,3 +23,9 @@
 // Constraints:
 
 // 1 <= n <= 15
+
+/**
+ * @param {number} n
+ * @return {number}
+ */
+var countArrangement = function (n) {};
