@@ -33,9 +33,17 @@ class ListNode {
     this.next = next === undefined ? null : next;
   }
 }
+
+let l1 = new ListNode(1, new ListNode(2, new ListNode(4)));
+let l2 = new ListNode(1, new ListNode(3, new ListNode(4)));
 /**
  * @param {ListNode} l1
  * @param {ListNode} l2
  * @return {ListNode}
  */
-var mergeTwoLists = function (l1, l2) {};
+var mergeTwoLists = function (l1, l2) {
+  let l3 = new ListNode();
+  let curr1 = l1.next;
+  let curr2 = l2.next;
+  while (l1) {}
+};
