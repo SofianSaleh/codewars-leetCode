@@ -34,8 +34,8 @@ class ListNode {
   }
 }
 
-let l1 = new ListNode(1, new ListNode(2, new ListNode(4)));
-let l2 = new ListNode(1, new ListNode(3, new ListNode(4)));
+// let l1 = new ListNode(1, new ListNode(2, new ListNode(4)));
+// let l2 = new ListNode(1, new ListNode(3, new ListNode(4)));
 /**
  * @param {ListNode} l1
  * @param {ListNode} l2
