@@ -60,4 +60,5 @@ var deleteDuplicates = function (head) {
     }
     head = head.next;
   }
+  return newList.next;
 };
