@@ -56,6 +56,7 @@ var deleteDuplicates = function (head) {
     if (prev.next === head) {
       prev = prev.next;
     } else {
+      prev.next = head.next;
     }
   }
 };
