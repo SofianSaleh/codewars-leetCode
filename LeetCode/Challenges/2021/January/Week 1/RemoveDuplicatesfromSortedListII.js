@@ -46,19 +46,20 @@ let x = new ListNode(
  * @return {ListNode}
  */
 var deleteDuplicates = function (head) {
-  let newList = new ListNode(0);
-  newList.next = head;
-  let prev = head;
-  while (head) {
-    while (head.next != null && head.val == head.next.val) {
+    let dummy = new ListNode(0);
+    dummy.next = head;
+    let prev = dummy;
+
+    while (head != null) {
+      while (head.next != null && head.val == head.next.val)
+        head = head.next;
+      if (prev.next == head)
+        prev = prev.next;
+      else
+        prev.next = head.next;
       head = head.next;
     }
-    if (prev.next === head) {
-      prev = prev.next;
-    } else {
-      prev.next = head.next;
-    }
-    head = head.next;
+
+    return dummy.next;
   }
-  return newList.next;
 };
