@@ -58,5 +58,6 @@ var deleteDuplicates = function (head) {
     } else {
       prev.next = head.next;
     }
+    head = head.next;
   }
 };
