@@ -50,7 +50,7 @@ var deleteDuplicates = function (head) {
   newList.next = head;
   let prev = head;
   while (head) {
-    while ((head.next && head.val) === head.next.val) {
+    while (head.next != null && head.val == head.next.val) {
       head = head.next;
     }
     if (prev.next === head) {
