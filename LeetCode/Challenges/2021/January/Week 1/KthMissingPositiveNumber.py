@@ -43,11 +43,6 @@ print(x.findKthPositive([2, 3, 4, 7, 11], 5))
 #         l = m + 1;
 #     }
 
-#     // the k-th missing positive
-#     // = A[l - 1] + k - nMissing(l - 1)
-#     // = A[l - 1] + k - (A[l - 1] - (l - 1) - 1)
-#     // = A[l - 1] + k - (A[l - 1] - l)
-#     // = l + k
 #     return l + k;
 #   }
 # }
