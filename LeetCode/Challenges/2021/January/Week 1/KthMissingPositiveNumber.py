@@ -28,8 +28,8 @@ class Solution:
         l = 0
         r = len(arr)
         while (l < r):
-            m = l + (r - l) / 2
-            if(arr[m] - m - 1 >= k):
+            m = l + (r - l) // 2
+            if((arr[m] - m - 1) >= k):
                 r = m
             else:
                 l = m + 1
