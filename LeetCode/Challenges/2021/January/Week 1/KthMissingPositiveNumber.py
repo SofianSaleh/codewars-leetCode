@@ -2,7 +2,6 @@
 
 # Find the kth positive integer that is missing from this array.
 
- 
 
 # Example 1:
 
@@ -14,7 +13,7 @@
 # Input: arr = [1,2,3,4], k = 2
 # Output: 6
 # Explanation: The missing positive integers are [5,6,7,...]. The 2nd missing positive integer is 6.
- 
+
 
 # Constraints:
 
@@ -25,5 +24,43 @@
 
 
 class Solution:
-    def findKthPositive(self, arr: List[int], k: int) -> int:
-        
+    def findKthPositive(self, arr, k):
+        l = 0
+        r = len(arr)
+        for j in range(0, arr[len(arr) - 1]):
+            print(arr[j])
+            if(arr[j] != i):
+                missings.append(i)
+                i += 1
+                print(missings)
+                if(len(missings) == k):
+                    return missings[k-1]
+            i += 1
+        return missings
+
+
+x = Solution()
+print(x.findKthPositive([2, 3, 4, 7, 11], 5))
+
+# class Solution {
+#   public int findKthPositive(int[] arr, int k) {
+#     int l = 0;
+#     int r = arr.length;
+
+#     // find first index l s.t. nMissing(l) = A[l] - l - 1 >= k
+#     while (l < r) {
+#       final int m = l + (r - l) / 2;
+#       if (arr[m] - m - 1 >= k)
+#         r = m;
+#       else
+#         l = m + 1;
+#     }
+
+#     // the k-th missing positive
+#     // = A[l - 1] + k - nMissing(l - 1)
+#     // = A[l - 1] + k - (A[l - 1] - (l - 1) - 1)
+#     // = A[l - 1] + k - (A[l - 1] - l)
+#     // = l + k
+#     return l + k;
+#   }
+# }
