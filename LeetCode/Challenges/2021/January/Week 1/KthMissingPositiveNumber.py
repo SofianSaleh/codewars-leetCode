@@ -27,16 +27,6 @@ class Solution:
     def findKthPositive(self, arr, k):
         l = 0
         r = len(arr)
-        for j in range(0, arr[len(arr) - 1]):
-            print(arr[j])
-            if(arr[j] != i):
-                missings.append(i)
-                i += 1
-                print(missings)
-                if(len(missings) == k):
-                    return missings[k-1]
-            i += 1
-        return missings
 
 
 x = Solution()
