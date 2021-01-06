@@ -38,11 +38,3 @@ class Solution:
 
 x = Solution()
 print(x.findKthPositive([2, 3, 4, 7, 11], 5))
-
-
-#         l = m + 1;
-#     }
-
-#     return l + k;
-#   }
-# }
