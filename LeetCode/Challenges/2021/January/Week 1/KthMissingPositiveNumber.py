@@ -27,7 +27,8 @@ class Solution:
     def findKthPositive(self, arr, k):
         l = 0
         r = len(arr)
-        while (l < r)
+        while (l < r):
+            m = l + (r - l) / 2
 
 
 x = Solution()
