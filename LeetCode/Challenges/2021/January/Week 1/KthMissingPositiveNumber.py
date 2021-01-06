@@ -36,6 +36,6 @@ class Solution:
         return l + k
 
 
-x = Solution()
-print(x.findKthPositive([2, 3, 4, 7, 11], 5))
-print(x.findKthPositive([1, 2, 3, 4], k=2))
+# x = Solution()
+# print(x.findKthPositive([2, 3, 4, 7, 11], 5))
+# print(x.findKthPositive([1, 2, 3, 4], k=2))
