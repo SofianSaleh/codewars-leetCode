@@ -29,22 +29,17 @@ class Solution:
         r = len(arr)
         while (l < r):
             m = l + (r - l) / 2
+            if(arr[m] - m - 1 >= k):
+                r = m
+            else:
+                l = m + 1
+        return l + k
 
 
 x = Solution()
 print(x.findKthPositive([2, 3, 4, 7, 11], 5))
 
-# class Solution {
-#   public int findKthPositive(int[] arr, int k) {
-#     int l = 0;
-#     int r = arr.length;
 
-#     // find first index l s.t. nMissing(l) = A[l] - l - 1 >= k
-#     while (l < r) {
-#       final int m = l + (r - l) / 2;
-#       if (arr[m] - m - 1 >= k)
-#         r = m;
-#       else
 #         l = m + 1;
 #     }
 
