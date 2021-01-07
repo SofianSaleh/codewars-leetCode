@@ -34,11 +34,12 @@ class Solution:
                 if len(str) > count:
                     count = len(str)
                 str = ''
+                str += string
 
         return count
 
 
-
-
 x = Solution()
 print(x.lengthOfLongestSubstring("abcabcbb"))
+print(x.lengthOfLongestSubstring("bbbbb"))
+print(x.lengthOfLongestSubstring("pwwkew"))
