@@ -24,7 +24,20 @@
 
 class Solution:
     def lengthOfLongestSubstring(self, s):
-        pass
+        count = 0
+        str = ''
+
+        for string in s:
+            if string not in str:
+                str += string
+            else:
+                if len(str) > count:
+                    count = len(str)
+                str = ''
+
+        return count
+
+
 
 
 x = Solution()
