@@ -20,3 +20,12 @@
 #
 # Input: s = ""
 # Output: 0
+
+
+class Solution:
+    def lengthOfLongestSubstring(self, s):
+        pass
+
+
+x = Solution()
+print(x.lengthOfLongestSubstring("abcabcbb"))
