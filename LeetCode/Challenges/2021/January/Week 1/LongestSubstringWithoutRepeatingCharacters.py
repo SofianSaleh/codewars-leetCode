@@ -30,20 +30,35 @@ class Solution:
         for string in s:
             if string not in str:
                 str += string
-                print(len(str))
+
             else:
                 if len(str) > count:
                     count = len(str)
                 str = ''
                 str += string
+                print(str)
         if len(str) > count:
             count = len(str)
         return count
 
 
+# class Solution:
+#     def lengthOfLongestSubstring(self, s: str) -> int:
+#         ans = 0
+#         count = Counter()
+
+#         l = 0
+#         for r, c in enumerate(s):
+#             count[c] += 1
+#             while count[c] > 1:
+#                 count[s[l]] -= 1
+#                 l += 1
+#             ans = max(ans, r - l + 1)
+
+#         return ans
 x = Solution()
 # print(x.lengthOfLongestSubstring("abcabcbb"))
 # print(x.lengthOfLongestSubstring("bbbbb"))
 # print(x.lengthOfLongestSubstring("pwwkew"))
-print(x.lengthOfLongestSubstring(" "))
+# print(x.lengthOfLongestSubstring(" "))
 print(x.lengthOfLongestSubstring("dvdf"))
