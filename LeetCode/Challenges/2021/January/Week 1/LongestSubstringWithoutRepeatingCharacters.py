@@ -30,16 +30,20 @@ class Solution:
         for string in s:
             if string not in str:
                 str += string
+                print(len(str))
             else:
                 if len(str) > count:
                     count = len(str)
                 str = ''
                 str += string
-
+        if len(str) > count:
+            count = len(str)
         return count
 
 
-# x = Solution()
+x = Solution()
 # print(x.lengthOfLongestSubstring("abcabcbb"))
 # print(x.lengthOfLongestSubstring("bbbbb"))
 # print(x.lengthOfLongestSubstring("pwwkew"))
+print(x.lengthOfLongestSubstring(" "))
+print(x.lengthOfLongestSubstring("dvdf"))
