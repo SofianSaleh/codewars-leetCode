@@ -37,5 +37,5 @@ class Solution:
 
 x = Solution()
 print(x.arrayStringsAreEqual(word1=["ab", "c"], word2=["a", "bc"]))
-print(x.arrayStringsAreEqual(word1=["abc", "d", "defg"], word2=["abcddefg"]))
 print(x.arrayStringsAreEqual(word1=["a", "cb"], word2=["ab", "c"]))
+print(x.arrayStringsAreEqual(word1=["abc", "d", "defg"], word2=["abcddefg"]))
