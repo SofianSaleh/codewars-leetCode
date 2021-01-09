@@ -34,8 +34,8 @@ class Solution:
         count = 0
         for i in range(2):
             length = len(tempArr[i])
-            print(count)
             for j in range(0, len(wordList)):
+                print(count)
                 if(tempArr[i] == wordList[j]):
                     count += 1
                     break
