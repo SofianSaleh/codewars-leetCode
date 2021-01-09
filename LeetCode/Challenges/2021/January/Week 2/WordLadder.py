@@ -53,4 +53,5 @@ x = Solution()
 print(x.ladderLength(beginWord="hit", endWord="cog", wordList=[
       "hot", "dot", "dog", "lot", "log", "cog"]))  # 5
 
-print(x.ladderLength(beginWord="hit", endWord="cog", wordList=["hot", "dot", "dog", "lot", "log"])  # 0
+print(x.ladderLength(beginWord="hit", endWord="cog",
+                     wordList=["hot", "dot", "dog", "lot", "log"]))  # 0
