@@ -29,7 +29,7 @@
 
 
 class Solution:
-    def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
+    def ladderLength(self, beginWord, endWord, wordList):
         tempArr = [beginWord, endWord]
         count = 0
         for i in range(2):
