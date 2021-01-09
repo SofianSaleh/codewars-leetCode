@@ -27,26 +27,32 @@
 # beginWord != endWord
 # All the strings in wordList are unique.
 
-
 class Solution:
-    def ladderLength(self, beginWord, endWord, wordList):
-        tempArr = [beginWord, endWord]
-        count = 0
-        for i in range(2):
-            length = len(tempArr[i])
-            for j in range(0, len(wordList)):
-                print(count)
-                if(tempArr[i] == wordList[j]):
-                    count += 1
-                    break
-                else:
-                    c = 0
-                    for k in range(len(wordList[j])):
-                        if tempArr[i][k] in wordList[j]:
-                            c += 1
-                    if c == length or c == length - 1:
-                        count += 1
-        return count
+    def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
+        wordSet = set(wordList)
+        if endWord not in wordSet:
+            return 0
+
+        ans = 0
+        q = deque([beginWord])
+        beginWordList = list(beginWord)
+
+        while q:
+            ans += 1
+            for _ in range(len(q)):
+                wordList = list(q.popleft())
+                for i, cache in enumerate(wordList):
+                    for c in string.ascii_lowercase:
+                        wordList[i] = c
+                        word = ''.join(wordList)
+                        if ''.join(word) == endWord:
+                            return ans + 1
+                        if word in wordSet:
+                            wordSet.remove(word)
+                            q.append(word)
+                    wordList[i] = cache
+
+        return 0
 
 
 x = Solution()
