@@ -35,8 +35,14 @@ class Solution:
         for i in range(2):
             length = len(tempArr[i])
             for j in range(0, len(wordList)):
-                lengthBefore = len(wordList[j])-1
-                lengthAfter = len(wordList[j]) + 1
-                if(length >= lengthBefore and length <= lengthAfter):
-                    if(tempArr[i] == wordList[j]):
+                if(tempArr[i] == wordList[j]):
+                    count += 1
+                    break
+                else:
+                    c = 0
+                    for k in range(len(wordList[j])):
+                        if tempArr[i][k] in wordList[j]:
+                            c += 1
+                    if c == length or c == length - 1:
                         count += 1
+        return count
