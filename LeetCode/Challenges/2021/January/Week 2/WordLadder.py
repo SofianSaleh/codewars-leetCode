@@ -46,3 +46,9 @@ class Solution:
                     if c == length or c == length - 1:
                         count += 1
         return count
+
+
+x = Solution()
+
+print(x.ladderLength(beginWord="hit", endWord="cog", wordList=[
+      "hot", "dot", "dog", "lot", "log", "cog"]))  # 5
