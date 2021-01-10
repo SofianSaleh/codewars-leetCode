@@ -76,4 +76,4 @@ class Solution:
                         pos = start
                         nums.insert(max(0, pos), instructions[j])
                         break
-            return nums
+        return nums
