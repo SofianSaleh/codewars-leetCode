@@ -50,3 +50,8 @@
 
 # 1 <= instructions.length <= 105
 # 1 <= instructions[i] <= 105
+
+
+class Solution:
+    def createSortedArray(self, instructions):
+        pass
