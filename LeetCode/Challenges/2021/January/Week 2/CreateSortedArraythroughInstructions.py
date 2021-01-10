@@ -58,21 +58,22 @@ class Solution:
         n = len(instructions)
         for j in range(n):
             if len(nums) == 0:
-                nums.append(a[j])
+                nums.append(instructions[j])
             else:
                 start = 0
                 end = len(nums) - 1
                 pos = 0
                 while start <= end:
                     mid = start + (end - start) // 2
-                    if nums[mid] == a[j]:
-                        nums.insert(max(0, mid + 1), a[j])
+                    if nums[mid] == instructions[j]:
+                        nums.insert(max(0, mid + 1), instructions[j])
                         break
-                    elif nums[mid] > a[j]:
+                    elif nums[mid] > instructions[j]:
                         pos = end = mid - 1
                     else:
                         pos = start = mid + 1
                     if start > end:
                         pos = start
-                        nums.insert(max(0, pos), a[j])
+                        nums.insert(max(0, pos), instructions[j])
                         break
+            return nums
