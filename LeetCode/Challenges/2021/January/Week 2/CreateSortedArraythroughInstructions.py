@@ -57,15 +57,22 @@ class Solution:
         nums = []
         n = len(instructions)
         for j in range(n):
-            if len(b) == 0:
-                b.append(a[j])
+            if len(nums) == 0:
+                nums.append(a[j])
             else:
                 start = 0
-                end = len(b) - 1
+                end = len(nums) - 1
                 pos = 0
                 while start <= end:
                     mid = start + (end - start) // 2
-                    if b[mid] == a[j]:
-                        b.insert(max(0, mid + 1), a[j])
+                    if nums[mid] == a[j]:
+                        nums.insert(max(0, mid + 1), a[j])
                         break
-                    elif b[mid] > a[j]:
+                    elif nums[mid] > a[j]:
+                        pos = end = mid - 1
+                    else:
+                        pos = start = mid + 1
+                    if start > end:
+                        pos = start
+                        nums.insert(max(0, pos), a[j])
+                        break
