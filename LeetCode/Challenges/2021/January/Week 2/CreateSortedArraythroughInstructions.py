@@ -68,3 +68,4 @@ class Solution:
                     if b[mid] == a[j]:
                         b.insert(max(0, mid + 1), a[j])
                         break
+                    elif b[mid] > a[j]:
