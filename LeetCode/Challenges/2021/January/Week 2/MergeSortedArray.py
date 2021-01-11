@@ -29,7 +29,10 @@ class Solution:
         """
         nums1 = nums1[:m]
         nums2 = nums2[:n]
-        print(nums1, nums2)
+
+        nums1 += nums2
+        nums1.sort()
+        return nums1
 
 
 x = Solution()
