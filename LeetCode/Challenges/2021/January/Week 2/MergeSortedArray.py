@@ -37,8 +37,8 @@ class Solution:
 
 
 x = Solution()
-print(x.merge([1, 2, 3, 0, 0, 0]
-            #   3,
-            #   [2, 5, 6],
-            #   3))  # [1,2,2,3,5,6]
+# print(x.merge([1, 2, 3, 0, 0, 0]
+#   3,
+#   [2, 5, 6],
+#   3))  # [1,2,2,3,5,6]
 # print(x.merge(nums1=[1], m=1, nums2=[], n=0))  # [1]
