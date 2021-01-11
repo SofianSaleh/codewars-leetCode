@@ -20,3 +20,17 @@
 # nums1.length == m + n
 # nums2.length == n
 # -109 <= nums1[i], nums2[i] <= 109
+
+
+class Solution:
+    def merge(self, nums1, m, nums2, n) -> None:
+        """
+        Do not return anything, modify nums1 in-place instead.
+        """
+        nums1 = nums1[:m]
+        nums2 = nums2[:n]
+        print(nums1, nums2)
+
+
+x = Solution()
+print(x.merge(nums1=[1, 2, 3, 0, 0, 0], m=3, nums2=[2, 5, 6], n=3))
