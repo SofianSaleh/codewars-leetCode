@@ -54,3 +54,4 @@ class Solution:
             curr.next = ListNode(carry % 10)
             carry //= 10
             curr = curr.next
+        return dummy.next
