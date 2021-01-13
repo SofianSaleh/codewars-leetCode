@@ -33,15 +33,18 @@ class Solution:
         people.sort()
 
         for i in range(len(people)):
-            # print(count)
+            print(i, 'ffffffff')
             if people[i] < limit:
                 curr = people[i]
                 for j in range(i + 1, len(people)):
                     curr += people[j]
-                    print(count, curr)
+                    # print(count, curr, people[j])
                     if curr == limit:
                         count += 1
+                        print(i, j)
                         i = j + 1
+                        print(i, 'sadfsdf')
+                        break
 
                     elif curr > limit:
                         count += 1
@@ -49,6 +52,7 @@ class Solution:
                         break
             else:
                 count += 1
+            i += 1
         return count
 
 
