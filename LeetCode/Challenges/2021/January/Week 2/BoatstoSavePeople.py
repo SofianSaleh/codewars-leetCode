@@ -38,7 +38,7 @@ class Solution:
                     if curr == limit:
                         count += 1
 
-                    if curr > linit:
+                    if curr > limit:
                         count += 1
                         break
             else:
