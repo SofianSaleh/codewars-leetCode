@@ -53,5 +53,5 @@ class Solution:
                 l2 = l2.next
             curr.next = ListNode(carry % 10)
             carry //= 10
-            # curr = curr.next
+            curr = curr.next
         return dummy.next
