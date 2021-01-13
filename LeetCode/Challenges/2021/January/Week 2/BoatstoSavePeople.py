@@ -32,7 +32,7 @@ class Solution:
         people = people.sort()
         for i in range(len(people)):
             if people[i] < limit:
-                for j in range(i += 1, len(people)):
+                for j in range(i + 1, len(people)):
                 if()
             else:
                 count += 1
