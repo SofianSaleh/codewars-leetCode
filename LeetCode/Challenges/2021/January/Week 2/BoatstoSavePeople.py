@@ -46,3 +46,4 @@ class Solution:
                         break
             else:
                 count += 1
+        return count
