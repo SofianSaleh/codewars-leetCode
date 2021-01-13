@@ -6,7 +6,8 @@
 
 
 # Example 1:
-
+# [1,2,2,2,2,4,5,5,7] 5
+# 1->2->2| 2->2->?3
 # Input: people = [1,2], limit = 3
 # Output: 1
 # Explanation: 1 boat (1, 2)
@@ -37,9 +38,11 @@ class Solution:
                     curr += people[j]
                     if curr == limit:
                         count += 1
+                        i = j + 1
 
                     if curr > limit:
                         count += 1
+                        i = j
                         break
             else:
                 count += 1
