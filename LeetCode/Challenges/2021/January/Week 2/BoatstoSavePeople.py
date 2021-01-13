@@ -32,7 +32,14 @@ class Solution:
         people = people.sort()
         for i in range(len(people)):
             if people[i] < limit:
+                curr = people[i]
                 for j in range(i + 1, len(people)):
-                if()
+                    curr += people[j]
+                    if curr == limit:
+                        count += 1
+
+                    if curr > linit:
+                        count += 1
+                        break
             else:
                 count += 1
