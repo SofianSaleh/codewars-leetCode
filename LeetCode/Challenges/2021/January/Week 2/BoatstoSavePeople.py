@@ -46,5 +46,5 @@ class Solution:
 
 x = Solution()
 print(x.numRescueBoats([1, 2], limit=3))
-print(x.numRescueBoats([3, 2, 2, 1], limit=3))
+# print(x.numRescueBoats([3, 2, 2, 1], limit=3))
 # print(x.numRescueBoats([3, 5, 3, 4], limit=5))
