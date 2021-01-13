@@ -30,6 +30,8 @@
 class Solution:
     def numRescueBoats(self, people, limit):
         count = 0
+        i = 0
+        j = len(people) - 1
         people.sort()
 
         for i in range(len(people)):
@@ -53,10 +55,8 @@ class Solution:
             else:
                 count += 1
 
-    def numRescueBoats(self, people: List[int], limit: int) -> int:
+    def numRescueBoats(self, people, limit):
         ans = 0
-        i = 0
-        j = len(people) - 1
 
         people.sort()
 
