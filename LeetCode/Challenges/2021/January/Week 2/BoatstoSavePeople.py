@@ -30,20 +30,29 @@
 class Solution:
     def numRescueBoats(self, people, limit):
         count = 0
-        people = people.sort()
+        people.sort()
+
         for i in range(len(people)):
+            # print(count)
             if people[i] < limit:
                 curr = people[i]
                 for j in range(i + 1, len(people)):
                     curr += people[j]
+                    print(count, curr)
                     if curr == limit:
                         count += 1
                         i = j + 1
 
-                    if curr > limit:
+                    elif curr > limit:
                         count += 1
                         i = j
                         break
             else:
                 count += 1
         return count
+
+
+x = Solution()
+# print(x.numRescueBoats([1, 2], limit=3))
+print(x.numRescueBoats([3, 2, 2, 1], limit=3))
+# print(x.numRescueBoats([3, 5, 3, 4], limit=5))
