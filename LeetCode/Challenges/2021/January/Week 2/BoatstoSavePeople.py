@@ -34,45 +34,17 @@ class Solution:
         j = len(people) - 1
         people.sort()
 
-        for i in range(len(people)):
-            print(i, 'ffffffff')
-            if people[i] < limit:
-                curr = people[i]
-                for j in range(i + 1, len(people)):
-                    curr += people[j]
-                    # print(count, curr, people[j])
-                    if curr == limit:
-                        count += 1
-                        print(i, j)
-                        i = j + 1
-                        print(i, 'sadfsdf')
-                        break
-
-                    elif curr > limit:
-                        count += 1
-                        i = j
-                        break
-            else:
-                count += 1
-
-    def numRescueBoats(self, people, limit):
-        ans = 0
-
-        people.sort()
-
         while i <= j:
             remain = limit - people[j]
             j -= 1
             if people[i] <= remain:
                 i += 1
-            ans += 1
-
-        return ans
+            count += 1
 
         return count
 
 
 x = Solution()
-# print(x.numRescueBoats([1, 2], limit=3))
+print(x.numRescueBoats([1, 2], limit=3))
 print(x.numRescueBoats([3, 2, 2, 1], limit=3))
-# print(x.numRescueBoats([3, 5, 3, 4], limit=5))
+print(x.numRescueBoats([3, 5, 3, 4], limit=5))
