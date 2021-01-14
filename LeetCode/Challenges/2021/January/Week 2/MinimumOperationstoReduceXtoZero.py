@@ -46,5 +46,5 @@ class Solution:
                 if cur_sum == target:
                     n_target = max(n_target, i-left + 1)
                 cur_sum -= nums[left]
-        #         left += 1
+                left += 1
         return n-n_target if n_target != -1 else -1
