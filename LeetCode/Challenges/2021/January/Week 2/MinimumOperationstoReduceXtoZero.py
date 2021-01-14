@@ -34,7 +34,7 @@ class Solution:
         if target < 0:
             return - 1
         if target == 0:
-            return - n
+            return n
         left = 0
         cur_sum = 0
         n_target = -1
