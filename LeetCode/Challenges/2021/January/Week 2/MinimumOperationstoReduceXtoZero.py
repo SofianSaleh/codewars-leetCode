@@ -39,12 +39,12 @@ class Solution:
         cur_sum = 0
         n_target = -1
 
-        for i in range(n):
-            if cur_sum < target:
-                cur_sum += nums[i]
-            while cur_sum >= target:
-                if cur_sum == target:
-                    n_target = max(n_target, i-left + 1)
-                cur_sum -= nums[left]
-                left += 1
+        # for i in range(n):
+        #     if cur_sum < target:
+        #         cur_sum += nums[i]
+        #     while cur_sum >= target:
+        #         if cur_sum == target:
+        #             n_target = max(n_target, i-left + 1)
+        #         cur_sum -= nums[left]
+        #         left += 1
         return n-n_target if n_target != -1 else -1
