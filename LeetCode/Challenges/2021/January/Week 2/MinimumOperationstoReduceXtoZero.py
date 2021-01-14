@@ -27,4 +27,22 @@
 
 
 class Solution:
-    def minOperations(self, nums: List[int], x: int) -> int:
+    def minOperations(self, nums, x):
+        # Initialise dp[] to steps
+        dp = [1e9 for i in range(N + 1)]
+
+        dp[0] = 0
+
+    # Iterate for all elements
+        for i in range(N + 1):
+
+            # For each digit in number i
+            for c in str(i):
+
+                # Either select the number
+                # or do not select it
+                dp[i] = min(dp[i], dp[i - (ord(c) - 48)] + 1)
+
+        # dp[N] will give minimum
+        # step for N
+        return dp[N]
