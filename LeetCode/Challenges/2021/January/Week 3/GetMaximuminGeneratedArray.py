@@ -53,5 +53,5 @@ class Solution(object):
                     nums.append(nums[i//2])
                 else:
                     nums.append(nums[i//2] + nums[i//2+1])
-                    #         dp.append(max(dp[-1], nums[-1]))
-                    # return dp[n]
+                    dp.append(max(dp[-1], nums[-1]))
+                    return dp[n]
