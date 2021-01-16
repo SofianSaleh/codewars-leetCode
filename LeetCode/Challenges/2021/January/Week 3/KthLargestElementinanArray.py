@@ -13,6 +13,6 @@
 
 
 class Solution:
-    def findKthLargest(self, nums, k) -> int:
+    def findKthLargest(self, nums, k)  int:
         nums.sort()
         return nums[len(nums) - k]
