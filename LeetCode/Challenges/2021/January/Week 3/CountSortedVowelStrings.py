@@ -27,3 +27,8 @@
 class Solution:
     def countVowelStrings(self, n):
         def rec(n, r):
+            if n - r < r:
+                return rec(n, n - r)
+            c = 1
+            for k in range(1, r+1):
+                c *= n-k+1
