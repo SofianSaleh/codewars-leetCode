@@ -34,4 +34,4 @@ class Solution:
                 c *= n-k+1
                 c //= k
             return c
-    return rec(n+4, 4)
+        return rec(n+4, 4)
