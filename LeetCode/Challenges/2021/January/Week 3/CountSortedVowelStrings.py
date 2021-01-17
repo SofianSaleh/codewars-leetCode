@@ -25,4 +25,5 @@
 
 # 1 <= n <= 50
 class Solution:
-    def countVowelStrings(self, n: int) -> int:
+    def countVowelStrings(self, n):
+        def rec(n, r):
