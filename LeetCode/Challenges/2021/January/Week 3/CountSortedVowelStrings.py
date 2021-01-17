@@ -33,3 +33,4 @@ class Solution:
             for k in range(1, r+1):
                 c *= n-k+1
                 c //= k
+            return c
