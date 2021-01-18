@@ -28,9 +28,10 @@
 # 1 <= nums[i] <= 109
 # 1 <= k <= 109
 
-import collection
+import collections
 
 
 class Solution:
     def maxOperations(self, nums, k):
-        count = collection.Counter()
+        count = collections.Counter()
+        result = 0
