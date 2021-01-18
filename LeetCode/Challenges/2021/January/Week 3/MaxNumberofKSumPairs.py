@@ -35,3 +35,5 @@ class Solution:
     def maxOperations(self, nums, k):
         count = collections.Counter()
         result = 0
+        for x in nums:
+            if k - x in count and count[k-x]:
