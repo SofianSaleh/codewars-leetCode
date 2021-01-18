@@ -38,3 +38,5 @@ class Solution:
         for x in nums:
             if k - x in count and count[k-x]:
                 count[k-x] -= result += 1
+            else:
+                count[x] += 1
