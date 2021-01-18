@@ -37,3 +37,4 @@ class Solution:
         result = 0
         for x in nums:
             if k - x in count and count[k-x]:
+                count[k-x] -= result += 1
