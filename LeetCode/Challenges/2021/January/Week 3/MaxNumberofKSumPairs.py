@@ -27,3 +27,7 @@
 # 1 <= nums.length <= 105
 # 1 <= nums[i] <= 109
 # 1 <= k <= 109
+
+
+class Solution:
+    def maxOperations(self, nums: List[int], k: int) -> int:
