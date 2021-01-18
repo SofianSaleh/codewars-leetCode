@@ -40,3 +40,4 @@ class Solution:
                 count[k-x] -= result += 1
             else:
                 count[x] += 1
+        return result
