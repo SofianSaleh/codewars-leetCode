@@ -63,7 +63,8 @@ class Solution:
 
         for i in range(len(s)):
             l = max(expand(s, i, i), expand(s, i, i + 1))
-            if l > right - left + 1
+            if l > right - left + 1:
+                right = i + l // 2
 # def longestPalindrome(self, s):
 #         left, right = -1, -2
 #         for i in xrange(len(s)):
