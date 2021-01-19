@@ -60,6 +60,9 @@ class Solution:
                 right += 1
             return (right - left + 1) - 2
         left, right = -1, -2
+
+        for i in range(len(s)):
+            l = max(expand(s, i, i), expand(s, i, i + 1))
 # def longestPalindrome(self, s):
 #         left, right = -1, -2
 #         for i in xrange(len(s)):
