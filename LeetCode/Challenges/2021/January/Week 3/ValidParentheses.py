@@ -43,7 +43,7 @@ class Solution:
                     stack.append(')')
                 elif c == '{':
                     stack.append('}')
-            #     elif c == '[':
+                elif c == '[':
             #         stack.append(']')
             #     elif not stack or stack.pop() != c:
             #         return False
