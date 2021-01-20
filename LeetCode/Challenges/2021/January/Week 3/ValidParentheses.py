@@ -46,6 +46,6 @@ class Solution:
                 elif c == '[':
                     stack.append(']')
                 elif not stack or stack.pop() != c:
-            #         return False
+                    return False
 
             return not stack
