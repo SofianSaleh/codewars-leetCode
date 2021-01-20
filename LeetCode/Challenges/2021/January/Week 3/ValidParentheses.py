@@ -42,7 +42,7 @@ class Solution:
                 if c == '(':
                     stack.append(')')
                 elif c == '{':
-            #         stack.append('}')
+                    stack.append('}')
             #     elif c == '[':
             #         stack.append(']')
             #     elif not stack or stack.pop() != c:
