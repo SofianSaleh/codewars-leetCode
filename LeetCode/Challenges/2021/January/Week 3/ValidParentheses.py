@@ -39,7 +39,7 @@ class Solution:
         stack = []
 
         for c in s:
-            #     if c == '(':
+                if c == '(':
             #         stack.append(')')
             #     elif c == '{':
             #         stack.append('}')
