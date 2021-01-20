@@ -40,8 +40,8 @@ class Solution:
 
         for c in s:
                 if c == '(':
-            #         stack.append(')')
-            #     elif c == '{':
+                    stack.append(')')
+                elif c == '{':
             #         stack.append('}')
             #     elif c == '[':
             #         stack.append(']')
