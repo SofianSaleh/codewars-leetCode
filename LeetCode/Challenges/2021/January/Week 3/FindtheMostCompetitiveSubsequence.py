@@ -21,3 +21,7 @@
 # 1 <= nums.length <= 105
 # 0 <= nums[i] <= 109
 # 1 <= k <= nums.length
+
+
+class Solution:
+    def mostCompetitive(self, nums, k):
