@@ -31,4 +31,4 @@ class Solution:
                 stk.pop()
             if len(stk) < k:
                 stk.append(x)
-                # return stk
+                return stk
