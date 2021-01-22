@@ -41,6 +41,8 @@
 # 1 <= word1.length, word2.length <= 105
 # word1 and word2 contain only lowercase English letters.
 
+import collections
+
 
 class Solution:
     def closeStrings(self, word1: str, word2: str) -> bool:
