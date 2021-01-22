@@ -44,3 +44,8 @@
 
 class Solution:
     def closeStrings(self, word1: str, word2: str) -> bool:
+        if len(word1) != = len(word2):
+            return False
+
+        cnt1, cnt2 = collection.Counter(word1), collection.Counter(word2)
+        return set(cnt1.iterkeys()) == set(cnt2.iterkeys()) and collection.Counter(cnt1.itervalues()) == collection.Counter(cnt2.itervalues())
