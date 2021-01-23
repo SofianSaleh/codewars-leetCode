@@ -17,3 +17,9 @@
 # n == mat[i].length
 # 1 <= m, n <= 100
 # 1 <= mat[i][j] <= 100
+
+
+class Solution:
+    def diagonalSort(self, mat: List[List[int]]) -> List[List[int]]:
+        m = len(mat)
+        n = len(mat[0])
