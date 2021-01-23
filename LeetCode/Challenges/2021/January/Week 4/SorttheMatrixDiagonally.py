@@ -23,3 +23,4 @@ class Solution:
     def diagonalSort(self, mat: List[List[int]]) -> List[List[int]]:
         m = len(mat)
         n = len(mat[0])
+        count = defaultdict(list)
