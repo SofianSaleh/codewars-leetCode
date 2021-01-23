@@ -34,4 +34,6 @@ class Solution:
 
         for i in range(len(m)):
             for j in range(len(n)):
-                mat[i][j] = value count[i - j].pop()
+                mat[i][j] = value.count[i - j].pop()
+
+        return mat
