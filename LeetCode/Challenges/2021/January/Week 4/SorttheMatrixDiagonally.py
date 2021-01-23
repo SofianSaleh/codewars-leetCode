@@ -28,3 +28,6 @@ class Solution:
         for i in range(m):
             for j in range(n):
                 count[i - j].append(mat[i][j])
+
+        for value in count.values():
+            value.sort(reverse=1)
