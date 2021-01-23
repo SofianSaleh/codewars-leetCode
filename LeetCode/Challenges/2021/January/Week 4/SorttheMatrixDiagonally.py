@@ -31,3 +31,7 @@ class Solution:
 
         for value in count.values():
             value.sort(reverse=1)
+
+        for i in range(len(m)):
+            for j in range(len(n)):
+                mat[i][j] = value count[i - j].pop()
