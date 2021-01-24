@@ -60,3 +60,8 @@ class Solution:
 
         def mergeTwoLists(l1, l2):
             curr = dummy = ListNode(0)
+
+            while l1 and l2:
+                if l1.val < l2.val:
+                    curr.net = l1
+                    l1 = l1.next
