@@ -56,12 +56,13 @@ class Solution:
 
             if right <= left:
                 left = 0
-        return lists[0]
 
         def mergeTwoLists(l1, l2):
             curr = dummy = ListNode(0)
 
             while l1 and l2:
                 if l1.val < l2.val:
-                    curr.net = l1
+                    curr.next = l1
                     l1 = l1.next
+
+        return lists[0]
