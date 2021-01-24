@@ -49,6 +49,12 @@ class Solution:
 
         while right > 0:
             lists[left] = mergeTwoLists(lists[left], lists[right])
+            left += 1
+            right -= 1
+
+            if right <= left:
+                left = 0
+        return lists[0]
 
         def mergeTwoLists(l1, l2):
-            pass
+            curr = dummy = ListNode(0)
