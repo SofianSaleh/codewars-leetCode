@@ -33,3 +33,12 @@
 # -10^4 <= lists[i][j] <= 10^4
 # lists[i] is sorted in ascending order.
 # The sum of lists[i].length won't exceed 10^4.
+
+
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def mergeKLists(self, lists: List[ListNode]) -> ListNode:
