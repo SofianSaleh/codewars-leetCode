@@ -44,19 +44,6 @@ class ListNode:
 
 class Solution:
     def mergeKLists(self, lists):
-        if not lists:
-            return None
-
-        left, right = 0, len(lists) - 1
-
-        while right > 0:
-            lists[left] = mergeTwoLists(lists[left], lists[right])
-            left += 1
-            right -= 1
-
-            if right <= left:
-                left = 0
-
         def mergeTwoLists(l1, l2):
             curr = dummy = ListNode(0)
 
@@ -70,5 +57,17 @@ class Solution:
                 curr = curr.next
             curr.next = l1 or l2
             return dummy.next
+        if not lists:
+            return None
+
+        left, right = 0, len(lists) - 1
+
+        while right > 0:
+            lists[left] = mergeTwoLists(lists[left], lists[right])
+            left += 1
+            right -= 1
+
+            if right <= left:
+                left = 0
 
         return lists[0]
