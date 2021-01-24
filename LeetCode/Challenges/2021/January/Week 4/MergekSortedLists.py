@@ -41,7 +41,7 @@
 #         self.val = val
 #         self.next = next
 class Solution:
-    def mergeKLists(self, lists: List[ListNode]) -> ListNode:
+    def mergeKLists(self, lists):
         if not lists:
             return None
 
@@ -49,3 +49,6 @@ class Solution:
 
         while right > 0:
             lists[left] = mergeTwoLists(lists[left], lists[right])
+
+        def mergeTwoLists(l1, l2):
+            pass
