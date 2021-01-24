@@ -42,3 +42,10 @@
 #         self.next = next
 class Solution:
     def mergeKLists(self, lists: List[ListNode]) -> ListNode:
+        if not lists:
+            return None
+
+        left, right = 0, len(lists) - 1
+
+        while right > 0:
+            lists[left] = mergeTwoLists(lists[left], lists[right])
