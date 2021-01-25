@@ -39,3 +39,4 @@ class Solution:
                 if last != -1:
                     if i - last - 1 < k:
                         return False
+                last = i
