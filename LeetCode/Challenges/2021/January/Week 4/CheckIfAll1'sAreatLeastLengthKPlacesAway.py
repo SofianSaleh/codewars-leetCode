@@ -28,3 +28,7 @@
 # 1 <= nums.length <= 105
 # 0 <= k <= nums.length
 # nums[i] is 0 or 1
+
+
+class Solution:
+    def kLengthApart(self, nums: List[int], k: int) -> bool:
