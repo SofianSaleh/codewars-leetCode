@@ -40,3 +40,5 @@ class Solution:
                     if i - last - 1 < k:
                         return False
                 last = i
+
+        return true
