@@ -40,4 +40,4 @@ class Solution:
                     return False
                 last = i
 
-        return true
+        return True
