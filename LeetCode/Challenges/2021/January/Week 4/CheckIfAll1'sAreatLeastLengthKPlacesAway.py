@@ -32,7 +32,7 @@
 
 class Solution:
     def kLengthApart(self, nums, k):
-        last = - 1
+        last = - k - 1
 
         for i in range(len(nums)):
             if nums[i] == 1:
