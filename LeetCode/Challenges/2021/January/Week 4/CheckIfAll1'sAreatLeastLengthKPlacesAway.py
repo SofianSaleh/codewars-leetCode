@@ -31,4 +31,5 @@
 
 
 class Solution:
-    def kLengthApart(self, nums: List[int], k: int) -> bool:
+    def kLengthApart(self, nums, k):
+        last = - 1
