@@ -44,3 +44,5 @@ class Solution:
 
         q.append((0, 0))
         distances = [[float("inf")]*n for _ in range(m)]
+
+        distances[0][0] = 0
