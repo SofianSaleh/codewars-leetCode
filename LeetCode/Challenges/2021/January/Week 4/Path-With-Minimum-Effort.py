@@ -33,9 +33,11 @@
 # 1 <= rows, columns <= 100
 # 1 <= heights[i][j] <= 106
 
+import collections
+
 
 class Solution:
     def minimumEffortPath(self, heights):
         m = len(heights)
         n = len(heights[0])
-        q = collectuons.deque()
+        q = collections.deque()
