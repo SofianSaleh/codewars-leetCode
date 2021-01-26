@@ -52,3 +52,8 @@ class Solution:
             i, j = q.popleft()
 
             for d in dirs:
+                x = i + d[0]
+                y = j + d[1]
+
+                if 0 <= x < m and 0 <= y < n and distances[x][y] > max(distances[i][j], abs(heights[x][y] - heights[i][j])):
+                    q.append((x, y))
