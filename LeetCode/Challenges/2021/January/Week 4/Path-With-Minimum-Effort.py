@@ -59,4 +59,4 @@ class Solution:
                     q.append((x, y))
                     distances[x][y] = max(distances[i][j], abs(
                         heights[x][y] - heights[i][j]))
-        return
+        return distances[-1][-1] if distances[-1][-1] != float('inf') else -1
