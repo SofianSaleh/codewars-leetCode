@@ -43,4 +43,4 @@ class Solution:
         q = collections.deque()
 
         q.append((0, 0))
-        distances = [[float("inf")]]*n
+        distances = [[float("inf")]*n for _ in range(m)]
