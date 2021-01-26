@@ -41,3 +41,6 @@ class Solution:
         m = len(heights)
         n = len(heights[0])
         q = collections.deque()
+
+        q.append((0, 0))
+        distances = [[float("inf")]]*n
