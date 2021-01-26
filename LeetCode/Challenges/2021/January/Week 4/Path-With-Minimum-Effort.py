@@ -47,3 +47,8 @@ class Solution:
 
         distances[0][0] = 0
         dirs = [[0, 1], [1, 0], [0, -1], [-1, 0]]
+
+        while q:
+            i, j = q.popleft()
+
+            for d in dirs:
