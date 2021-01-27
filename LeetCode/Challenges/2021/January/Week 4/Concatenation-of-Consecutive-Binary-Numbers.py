@@ -8,3 +8,5 @@ class Solution(object):
                 l += 0
 
             result = ((result << l) % MOD + i) % MOD
+
+        return result
