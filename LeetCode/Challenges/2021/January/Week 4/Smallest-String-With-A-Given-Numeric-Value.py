@@ -40,4 +40,4 @@ class Solution(object):
 
             if k == 0:
                 break
-        # return "".join(result)
+        return "".join(result)
