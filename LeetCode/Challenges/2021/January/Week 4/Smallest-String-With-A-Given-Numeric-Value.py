@@ -11,3 +11,6 @@ class Solution(object):
             tmp = min(k, MAX_DIFF)
             result[i] = chr(ord('a') + tmp)
             k -= tmp
+
+            if k == 0:
+                break
