@@ -5,6 +5,8 @@
 #         self.left = left
 #         self.right = right
 
+import collections
+
 
 class Solution:
     def verticalTraversal(self, root):
@@ -16,3 +18,9 @@ class Solution:
             dfs(node.right, lookup, x+1, y+1)
 
         lookup = collections.defaultdict(lambda: collections.defaultdict(list))
+        dfs(root, lookup, 0, 0)
+
+        result = []
+
+        for x in sorted(lookup):
+            pass
