@@ -7,7 +7,10 @@
 
 
 class Solution:
-    def verticalTraversal(self, root: TreeNode) -> List[List[int]]:
+    def verticalTraversal(self, root):
         def dfs(node, lookup, x, y):
             if not node:
                 return
+            lookup[x][y].append(node)
+            dfs(node.left, lookup, x-1, y+1)
+            dfs(node.right, lookup, x+1, y+1)
