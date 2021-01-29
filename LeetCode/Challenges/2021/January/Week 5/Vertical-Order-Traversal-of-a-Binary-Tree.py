@@ -8,3 +8,6 @@
 
 class Solution:
     def verticalTraversal(self, root: TreeNode) -> List[List[int]]:
+        def dfs(node, lookup, x, y):
+            if not node:
+                return
