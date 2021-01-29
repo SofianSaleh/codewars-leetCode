@@ -14,3 +14,5 @@ class Solution:
             lookup[x][y].append(node)
             dfs(node.left, lookup, x-1, y+1)
             dfs(node.right, lookup, x+1, y+1)
+
+        lookup = collections.defaultdict(lambda: collections.defaultdict(list))
