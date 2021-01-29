@@ -27,3 +27,5 @@ class Solution:
 
             for y in sorted(lookup[x]):
                 report.extend(sorted(node.val for node in lookup[x][y]))
+            result.append(report)
+        return result
