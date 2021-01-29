@@ -23,4 +23,7 @@ class Solution:
         result = []
 
         for x in sorted(lookup):
-            pass
+            report = []
+
+            for y in sorted(lookup[x]):
+                report.extend(sorted(node.val for node in lookup[x][y]))
