@@ -6,3 +6,5 @@ class Solution:
         result = float("inf")
         while len(max_heap) == len(nums):
             num = -heapq.heappop(max_heap)
+            result = min(result, num-min_elem)
+            if not num % 2:
