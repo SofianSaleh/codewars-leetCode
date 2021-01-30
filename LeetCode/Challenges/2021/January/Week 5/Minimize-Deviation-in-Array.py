@@ -8,3 +8,5 @@ class Solution:
             num = -heapq.heappop(max_heap)
             result = min(result, num-min_elem)
             if not num % 2:
+                min_elem = min(min_elem, num//2)
+                heapq.heappush(max_heap, -num//2)
