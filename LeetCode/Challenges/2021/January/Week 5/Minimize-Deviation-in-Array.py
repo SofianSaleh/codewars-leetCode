@@ -10,3 +10,4 @@ class Solution:
             if not num % 2:
                 min_elem = min(min_elem, num//2)
                 heapq.heappush(max_heap, -num//2)
+        return result
