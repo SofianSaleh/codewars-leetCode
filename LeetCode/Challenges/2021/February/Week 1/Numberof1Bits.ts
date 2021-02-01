@@ -25,3 +25,5 @@
 // Constraints:
 
 // The input must be a binary string of length 32
+
+function hammingWeight(n: number): number {}
