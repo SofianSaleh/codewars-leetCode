@@ -29,7 +29,7 @@
 function hammingWeight(n: number): number {
   let ans: number = 0;
 
-  for (let index = 0; index < array.length; index++) {
-    const element = array[index];
+  for (let i = 0; i < 32; i++) {
+    const element = array[i];
   }
 }
