@@ -32,4 +32,5 @@ function hammingWeight(n: number): number {
   for (let i = 0; i < 32; i++) {
     if ((n >> i) & 1) ++ans;
   }
+  return ans;
 }
