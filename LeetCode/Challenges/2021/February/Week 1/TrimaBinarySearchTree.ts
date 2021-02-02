@@ -69,5 +69,5 @@ function trimBST(
   if (root.val > high) return trimBST(root.left, low, high);
   root.left = trimBST(root.left, low, high);
   root.right = trimBST(root.right, low, high);
-  // return root;
+  return root;
 }
