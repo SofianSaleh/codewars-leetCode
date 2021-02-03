@@ -57,5 +57,5 @@ function hasCycle(head: ListNode | null): boolean {
     //     tortoise = tortoise.next;
     //     if (hare === tortoise) return true;
   }
-  //   return false;
+  return false;
 }
