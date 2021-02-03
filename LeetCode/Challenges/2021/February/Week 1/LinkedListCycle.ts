@@ -49,15 +49,13 @@ class ListNode {
 }
 
 function hasCycle(head: ListNode | null): boolean {
-    let hare = head
-    let tortoise = head
-    
-    while(head.next){
-        hare = hare.next.next
-        tortoise = tortoise.next
-        if(hare === tortoise ) return true
-        
-    }
-    return false
-    
-};}
+  let hare = head;
+  let tortoise = head;
+
+  while (head.next) {
+    hare = hare.next.next;
+    tortoise = tortoise.next;
+    if (hare === tortoise) return true;
+  }
+  return false;
+}
