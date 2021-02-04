@@ -29,7 +29,7 @@ function findLHS(nums: number[]): number {
     let arr = [];
     arr.push(nums[i]);
     for (let j = 0; j < nums.length; j++) {
-      if (Math.max(...arr) - nums[j] === 1) {
+      if (Math.abs(Math.max(...arr) - nums[j]) === 1) {
         arr.push(arr[j]);
       }
     }
@@ -37,3 +37,6 @@ function findLHS(nums: number[]): number {
   }
   return range;
 }
+let nums = [1, 3, 2, 2, 5, 2, 3, 7];
+
+findLHS(nums);
