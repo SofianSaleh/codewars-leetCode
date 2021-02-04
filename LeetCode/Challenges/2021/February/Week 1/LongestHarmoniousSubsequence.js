@@ -45,15 +45,15 @@
 //   return range;
 // }
 
-function findLHS(arr: any[]) {
+function findLHS(arr) {
   // Count the number of occurrences of each value in the array...
   let count = new Map();
-  arr.forEach((v: any) => {
+  arr.forEach((v:) => {
     count.set(v, (count.get(v) || 0) + 1);
   });
 
   // Now, find the largest count of two consecutive numbers.
-  let maxKey: number;
+  let maxKey;
   let maxCount = -1;
   count.forEach((val, key) => {
     if (count.get(key + 1)) {
@@ -70,7 +70,7 @@ function findLHS(arr: any[]) {
     return [];
   }
 
-  return arr.reduce((acc: any[], val: any) => {
+  return arr.reduce((acc:, val) => {
     if (val == maxKey || val == maxKey + 1) {
       acc.push(val);
     }
