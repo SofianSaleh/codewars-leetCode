@@ -26,24 +26,6 @@
 // function findLHS(nums: number[]): number {
 //   let range = 0;
 //   for (let i = 0; i < nums.length; i++) {
-//     let nums = [];
-//     nums.push(nums[i]);
-//     console.log('new');
-//     for (let j = 0; j < nums.length; j++) {
-//       //   console.log(
-//       //     Math.abs(Math.max(...nums) - nums[j]) === 1,
-//       //     Math.max(...nums),
-//       //     nums[j]
-//       //   );
-//       if (Math.abs(Math.max(...nums) - nums[j]) === 1) {
-//         nums.push(nums[j]);
-//       }
-//     }
-//     console.log(range, nums);
-//     if (range < nums.length) range = nums.length;
-//   }
-//   return range;
-// }
 
 function findLHS(nums) {
   // Count the number of occurrences of each value in the numsay...
