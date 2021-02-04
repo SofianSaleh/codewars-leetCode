@@ -1,8 +1,8 @@
-// We define a harmonious array as an array where the difference between its maximum value and its minimum value is exactly 1.
+// We define a harmonious numsay as an numsay where the difference between its maximum value and its minimum value is exactly 1.
 
-// Given an integer array nums, return the length of its longest harmonious subsequence among all its possible subsequences.
+// Given an integer numsay nums, return the length of its longest harmonious subsequence among all its possible subsequences.
 
-// A subsequence of array is a sequence that can be derived from the array by deleting some or no elements without changing the order of the remaining elements.
+// A subsequence of numsay is a sequence that can be derived from the numsay by deleting some or no elements without changing the order of the remaining elements.
 
 // Example 1:
 
@@ -26,29 +26,29 @@
 // function findLHS(nums: number[]): number {
 //   let range = 0;
 //   for (let i = 0; i < nums.length; i++) {
-//     let arr = [];
-//     arr.push(nums[i]);
+//     let nums = [];
+//     nums.push(nums[i]);
 //     console.log('new');
 //     for (let j = 0; j < nums.length; j++) {
 //       //   console.log(
-//       //     Math.abs(Math.max(...arr) - nums[j]) === 1,
-//       //     Math.max(...arr),
+//       //     Math.abs(Math.max(...nums) - nums[j]) === 1,
+//       //     Math.max(...nums),
 //       //     nums[j]
 //       //   );
-//       if (Math.abs(Math.max(...arr) - nums[j]) === 1) {
-//         arr.push(nums[j]);
+//       if (Math.abs(Math.max(...nums) - nums[j]) === 1) {
+//         nums.push(nums[j]);
 //       }
 //     }
-//     console.log(range, arr);
-//     if (range < arr.length) range = arr.length;
+//     console.log(range, nums);
+//     if (range < nums.length) range = nums.length;
 //   }
 //   return range;
 // }
 
-function findLHS(arr) {
-  // Count the number of occurrences of each value in the array...
+function findLHS(nums) {
+  // Count the number of occurrences of each value in the numsay...
   let count = new Map();
-  arr.forEach((v:) => {
+  nums.forEach((v) => {
     count.set(v, (count.get(v) || 0) + 1);
   });
 
@@ -70,7 +70,7 @@ function findLHS(arr) {
     return [];
   }
 
-  return arr.reduce((acc:, val) => {
+  return nums.reduce((acc, val) => {
     if (val == maxKey || val == maxKey + 1) {
       acc.push(val);
     }
