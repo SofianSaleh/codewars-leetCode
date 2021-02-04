@@ -22,6 +22,7 @@
 
 // 1 <= nums.length <= 2 * 104
 // -109 <= nums[i] <= 109
+
 function findLHS(nums: number[]): number {
   let range = 0;
   for (let i = 0; i < nums.length; i++) {
