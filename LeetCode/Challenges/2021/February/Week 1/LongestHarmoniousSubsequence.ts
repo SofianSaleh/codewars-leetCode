@@ -28,9 +28,15 @@ function findLHS(nums: number[]): number {
   for (let i = 0; i < nums.length; i++) {
     let arr = [];
     arr.push(nums[i]);
+    console.log('new');
     for (let j = 0; j < nums.length; j++) {
+      console.log(
+        Math.abs(Math.max(...arr) - nums[j]) === 1,
+        Math.max(...arr),
+        nums[j]
+      );
       if (Math.abs(Math.max(...arr) - nums[j]) === 1) {
-        arr.push(arr[j]);
+        arr.push(nums[j]);
       }
     }
     if (range < arr.length) range = arr.length;
@@ -39,4 +45,4 @@ function findLHS(nums: number[]): number {
 }
 let nums = [1, 3, 2, 2, 5, 2, 3, 7];
 
-findLHS(nums);
+console.log(findLHS(nums));
