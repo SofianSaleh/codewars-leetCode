@@ -46,6 +46,7 @@ function simplifyPath(path: string): string {
       }
     } else stack.push(str);
   }
+  return '/' + '/'.join(stack);
 }
 //  class Solution:
 //   def simplifyPath(self, path: str) -> str:
