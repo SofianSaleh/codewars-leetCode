@@ -57,9 +57,3 @@ function simplifyPath(path: string): string {
 
 //         continue
 //       if str == '..':
-//         if stack:
-//           stack.pop()
-//       else:
-//         stack.append(str)
-
-//     return '/' + '/'.join(stack)
