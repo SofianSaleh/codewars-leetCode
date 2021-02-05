@@ -41,7 +41,7 @@ function simplifyPath(path: string): string {
   let ans: string = '';
   for (const str of path.split('/')) {
     if (str === '' || str === '.') continue;
-    if (str === '...') {
+    if (str === '..') {
       if (stack) {
         stack.pop();
       }
