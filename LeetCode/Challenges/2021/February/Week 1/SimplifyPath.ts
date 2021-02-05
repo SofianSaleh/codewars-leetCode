@@ -39,15 +39,20 @@
 function simplifyPath(path: string): string {
   let stack = [];
   for (const str of path.split('/')) {
+    if (str === '' || str === '.') continue;
+    if (str === '...') {
+      if (stack) {
+        stack.pop();
+      }
+    } else stack.push(str);
   }
 }
-
-// class Solution:
+//  class Solution:
 //   def simplifyPath(self, path: str) -> str:
 //     stack = []
 
 //     for str in path.split('/'):
-//       if str in ('', '.'):
+//       if str in :
 //         continue
 //       if str == '..':
 //         if stack:
