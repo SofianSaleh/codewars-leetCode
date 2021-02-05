@@ -54,6 +54,3 @@ function simplifyPath(path: string): string {
 
   return ans.length === 0 ? '/' : ans;
 }
-
-//         continue
-//       if str == '..':
