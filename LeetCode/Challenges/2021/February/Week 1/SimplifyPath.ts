@@ -54,12 +54,7 @@ function simplifyPath(path: string): string {
 
   return ans.length === 0 ? '/' : ans;
 }
-//  class Solution:
-//   def simplifyPath(self, path: str) -> str:
-//     stack = []
 
-//     for str in path.split('/'):
-//       if str in :
 //         continue
 //       if str == '..':
 //         if stack:
