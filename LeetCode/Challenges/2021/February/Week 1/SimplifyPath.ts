@@ -38,6 +38,8 @@
 
 function simplifyPath(path: string): string {
   let stack = [];
+  for (const str of path.split('/')) {
+  }
 }
 
 // class Solution:
