@@ -37,8 +37,8 @@
 // path is a valid absolute Unix path.
 
 function simplifyPath(path: string): string {
-  let stack = [];
-  let ans;
+  let stack: string[] = [];
+  let ans: string = '';
   for (const str of path.split('/')) {
     if (str === '' || str === '.') continue;
     if (str === '...') {
