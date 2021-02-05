@@ -38,6 +38,7 @@
 
 function simplifyPath(path: string): string {
   let stack = [];
+  let ans;
   for (const str of path.split('/')) {
     if (str === '' || str === '.') continue;
     if (str === '...') {
@@ -46,7 +47,12 @@ function simplifyPath(path: string): string {
       }
     } else stack.push(str);
   }
-  return '/' + '/'.join(stack);
+
+  for (const str of stack) {
+    ans += '/' + str;
+  }
+
+  return ans.length === 0 ? '/' : ans;
 }
 //  class Solution:
 //   def simplifyPath(self, path: str) -> str:
