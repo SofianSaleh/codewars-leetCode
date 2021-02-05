@@ -36,4 +36,21 @@
 // path consists of English letters, digits, period '.', slash '/' or '_'.
 // path is a valid absolute Unix path.
 
-function simplifyPath(path: string): string {}
+function simplifyPath(path: string): string {
+  let stack = [];
+}
+
+// class Solution:
+//   def simplifyPath(self, path: str) -> str:
+//     stack = []
+
+//     for str in path.split('/'):
+//       if str in ('', '.'):
+//         continue
+//       if str == '..':
+//         if stack:
+//           stack.pop()
+//       else:
+//         stack.append(str)
+
+//     return '/' + '/'.join(stack)
