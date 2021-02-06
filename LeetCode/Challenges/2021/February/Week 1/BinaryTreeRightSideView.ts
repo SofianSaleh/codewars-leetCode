@@ -35,11 +35,11 @@ class TreeNode {
   }
 }
 
-// let x = new TreeNode(
-//   1,
-//   new TreeNode(2, null, new TreeNode(5)),
-//   new TreeNode(3, null, new TreeNode(4))
-// );
+let x = new TreeNode(
+  1,
+  new TreeNode(2, null, new TreeNode(5)),
+  new TreeNode(3, null, new TreeNode(4))
+);
 
 function rightSideView(root: TreeNode | null): number[] {
   let ans = [];
@@ -57,4 +57,4 @@ function rightSideView(root: TreeNode | null): number[] {
   return ans;
 }
 
-// console.log(rightSideView(x));
+console.log(rightSideView(x));
