@@ -35,16 +35,23 @@ class TreeNode {
   }
 }
 
+let x = new TreeNode(
+  1,
+  new TreeNode(2, null, new TreeNode(5)),
+  new TreeNode(3, null, new TreeNode(4))
+);
+
 function rightSideView(root: TreeNode | null): number[] {
-  let tr: any = new TreeNode();
-  if (root) {
-    return tr;
+  let ans = [];
+
+  function dfs(root: TreeNode, depth: number) {
+    if (!root) return;
+    console.log(root.val, depth);
+    dfs(root.right, depth + 1);
+    dfs(root.left, depth + 1);
   }
-  function dfs(root: TreeNode | null): any {
-    if (root) {
-      return;
-    }
-    tr.right = root.right;
-  }
-  return dfs(root);
+  dfs(root, 0);
+  return [];
 }
+
+console.log(rightSideView(x));
