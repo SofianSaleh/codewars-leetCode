@@ -47,11 +47,14 @@ function rightSideView(root: TreeNode | null): number[] {
   function dfs(root: TreeNode, depth: number) {
     if (!root) return;
     console.log(root.val, depth, ans.length);
+    if (depth === ans.length) {
+      ans.push(root.val);
+    }
     dfs(root.right, depth + 1);
     dfs(root.left, depth + 1);
   }
   dfs(root, 0);
-  return [];
+  return ans;
 }
 
 console.log(rightSideView(x));
