@@ -1,7 +1,7 @@
 function shortestToChar(s: string, c: string): number[] {
-  var results: number[] = [];
+  //   var results: number[] = [];
 
-  let str: string[] = s.split('');
+  //   let str: string[] = s.split('');
 
   str.forEach((element: string, index: number) => {
     // if the element is e
