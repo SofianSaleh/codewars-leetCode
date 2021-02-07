@@ -9,7 +9,12 @@ function shortestToChar(s: string, c: string): number[] {
     else {
       if (str.lastIndexOf(c, index) === -1) {
         // if its on the right
-        results[index] = str.indexOf(c, index);
+        results[index] = str.indexOf(c, index) - index;
+      }else if (str.indexOf(c, index) === -1){
+        //   if its not on the right
+        results[index] = index - str.lastIndexOf(c, index)
+      }else{
+          if(str.indexOf(c,index))
       }
     }
   });
