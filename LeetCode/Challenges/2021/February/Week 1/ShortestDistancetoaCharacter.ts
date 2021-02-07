@@ -22,10 +22,10 @@ function shortestToChar(s: string, c: string): number[] {
           results[index] = index - str.lastIndexOf(c, index);
         } else {
           //   char from the right side
-//           results[index] = str.indexOf(c, index) - index;
-//         }
-//       }
-//     }
-//   });
+          results[index] = str.indexOf(c, index) - index;
+        }
+      }
+    }
+  });
   return results;
 }
