@@ -24,18 +24,18 @@ var PeekingIterator = function (iterator) {
 /**
  * @return {number}
  */
-PeekingIterator.prototype.peek = function () {
-  return this.next();
-};
+// PeekingIterator.prototype.peek = function () {
+//   return this.next();
+// };
 
 /**
  * @return {number}
  */
-// PeekingIterator.prototype.next = function () {
-//   let next = this.next;
-//   this.next = this.iterator.hasNext() ? this.iterator.next() : null;
-//   return next;
-// };
+PeekingIterator.prototype.next = function () {
+  let next = this.next;
+  this.next = this.iterator.hasNext() ? this.iterator.next() : null;
+  return next;
+};
 
 /**
  * @return {boolean}
