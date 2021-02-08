@@ -8,18 +8,18 @@
  * }
  */
 
-// class Iterator {
-//   hasNext(): boolean {}
+class Iterator {
+  hasNext() {}
 
-//   next(): number {}
-// }
-// var PeekingIterator = function (iterator) {
-//   let it = iterator;
-//   let next;
-//   if (it.hasNext()) {
-//     next = it.next();
-//   }
-// };
+  next() {}
+}
+var PeekingIterator = function (iterator) {
+  let it = iterator;
+  let next;
+  if (it.hasNext()) {
+    next = it.next();
+  }
+};
 
 /**
  * @return {number}
