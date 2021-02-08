@@ -40,9 +40,9 @@ PeekingIterator.prototype.next = function () {
 /**
  * @return {boolean}
  */
-PeekingIterator.prototype.hasNext = function () {
-  return this.next != null;
-};
+// PeekingIterator.prototype.hasNext = function () {
+//   return this.next != null;
+// };
 
 /**
  * Your PeekingIterator object will be instantiated and called as such:
