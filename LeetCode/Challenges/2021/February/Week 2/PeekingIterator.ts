@@ -17,9 +17,14 @@
 class PeekingIterator {
   constructor(iterator: Iterator) {
     this.iterator = iterator;
+    if (iterator.hasNext()) {
+      let next = iterator.next();
+    }
   }
 
-  peek(): number {}
+  peek(): number {
+    return next;
+  }
 
   next(): number {}
 
