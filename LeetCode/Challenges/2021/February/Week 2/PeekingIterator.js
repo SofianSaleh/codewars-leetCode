@@ -31,11 +31,11 @@ PeekingIterator.prototype.peek = function () {
 /**
  * @return {number}
  */
-PeekingIterator.prototype.next = function () {
-  let next = this.next;
-  this.next = this.iterator.hasNext() ? this.iterator.next() : null;
-  return next;
-};
+// PeekingIterator.prototype.next = function () {
+//   let next = this.next;
+//   this.next = this.iterator.hasNext() ? this.iterator.next() : null;
+//   return next;
+// };
 
 /**
  * @return {boolean}
