@@ -13,20 +13,20 @@
 
 //   next(): number {}
 // }
-var PeekingIterator = function (iterator) {
-  let it = iterator;
-  let next;
-  if (it.hasNext()) {
-    next = it.next();
-  }
-};
+// var PeekingIterator = function (iterator) {
+//   let it = iterator;
+//   let next;
+//   if (it.hasNext()) {
+//     next = it.next();
+//   }
+// };
 
 /**
  * @return {number}
  */
-// PeekingIterator.prototype.peek = function () {
-//   return this.next();
-// };
+PeekingIterator.prototype.peek = function () {
+  return this.next();
+};
 
 /**
  * @return {number}
