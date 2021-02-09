@@ -51,5 +51,8 @@ class TreeNode {
  * @return {TreeNode}
  */
 var convertBST = function (root) {
+  if (root === null) {
+    return;
+  }
   return root;
 };
