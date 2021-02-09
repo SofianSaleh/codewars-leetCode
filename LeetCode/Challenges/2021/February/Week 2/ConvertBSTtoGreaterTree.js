@@ -62,5 +62,6 @@ var convertBST = function (root) {
     root.val = prefix;
     reversedInorder(root.left);
   };
+  reversedInorder(root);
   return root;
 };
