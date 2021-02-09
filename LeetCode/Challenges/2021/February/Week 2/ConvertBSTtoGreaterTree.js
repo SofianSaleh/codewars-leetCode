@@ -50,4 +50,6 @@ class TreeNode {
  * @param {TreeNode} root
  * @return {TreeNode}
  */
-var convertBST = function (root) {};
+var convertBST = function (root) {
+  return root;
+};
