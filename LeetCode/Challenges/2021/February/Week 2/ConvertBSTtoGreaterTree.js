@@ -60,6 +60,7 @@ var convertBST = function (root) {
     reversedInorder(root.right);
     prefix += root.val;
     root.val = prefix;
+    reversedInorder(root.left);
   };
   return root;
 };
