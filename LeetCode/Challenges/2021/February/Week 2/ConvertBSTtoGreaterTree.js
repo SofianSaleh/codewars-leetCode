@@ -51,8 +51,13 @@ class TreeNode {
  * @return {TreeNode}
  */
 var convertBST = function (root) {
-  if (root === null) {
-    return;
-  }
+  var reversedInorder = (root) => {
+    if (root === null) {
+      return;
+    }
+
+    reversedInorder(root.right)
+    let prefix += root.val
+  };
   return root;
 };
