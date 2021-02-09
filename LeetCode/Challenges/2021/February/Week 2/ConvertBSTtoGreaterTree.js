@@ -7,10 +7,7 @@
 // Both the left and right subtrees must also be binary search trees.
 // Note: This question is the same as 1038: https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree/
 
- 
-
 // Example 1:
-
 
 // Input: root = [4,1,6,0,2,5,7,null,null,null,3,null,null,null,8]
 // Output: [30,36,21,36,35,26,15,null,null,null,33,null,null,null,8]
@@ -26,7 +23,6 @@
 
 // Input: root = [3,2,4,1]
 // Output: [7,9,4,10]
- 
 
 // Constraints:
 
@@ -34,3 +30,22 @@
 // -104 <= Node.val <= 104
 // All the values in the tree are unique.
 // root is guaranteed to be a valid binary search tree.
+
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+function TreeNode(val, left, right) {
+  this.val = val === undefined ? 0 : val;
+  this.left = left === undefined ? null : left;
+  this.right = right === undefined ? null : right;
+}
+/**
+ * @param {TreeNode} root
+ * @return {TreeNode}
+ */
+var convertBST = function (root) {};
