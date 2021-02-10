@@ -70,5 +70,6 @@ var copyRandomList = function (head) {
 
     dict[head] = new Node(head.val);
     dict[head].next = copyRandom(head.next);
+    dict[head].random = copyRandom(head.random);
   };
 };
