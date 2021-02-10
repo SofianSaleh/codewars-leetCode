@@ -59,5 +59,9 @@ class Node {
 var copyRandomList = function (head) {
   let dict = {};
 
-  var copyRandom = (head) => {};
+  var copyRandom = (head) => {
+    if (head === null) {
+      return null;
+    }
+  };
 };
