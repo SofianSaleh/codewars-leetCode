@@ -63,5 +63,9 @@ var copyRandomList = function (head) {
     if (head === null) {
       return null;
     }
+
+    if (head in dict) {
+      return dict[head];
+    }
   };
 };
