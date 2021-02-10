@@ -56,4 +56,8 @@ class Node {
  * @param {Node} head
  * @return {Node}
  */
-var copyRandomList = function (head) {};
+var copyRandomList = function (head) {
+  let dict = {};
+
+  var copyRandom = (head) => {};
+};
