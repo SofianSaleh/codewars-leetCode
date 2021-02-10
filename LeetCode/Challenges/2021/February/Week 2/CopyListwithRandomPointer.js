@@ -35,3 +35,18 @@
 // 0 <= n <= 1000
 // -10000 <= Node.val <= 10000
 // Node.random is null or is pointing to some node in the linked list.
+
+/**
+ * // Definition for a Node.
+ * function Node(val, next, random) {
+ *    this.val = val;
+ *    this.next = next;
+ *    this.random = random;
+ * };
+ */
+
+/**
+ * @param {Node} head
+ * @return {Node}
+ */
+var copyRandomList = function (head) {};
