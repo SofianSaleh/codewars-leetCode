@@ -44,10 +44,12 @@
  *    this.random = random;
  * };
  */
-function Node(val, next, random) {
-  this.val = val;
-  this.next = next;
-  this.random = random;
+class Node {
+  constructor(val, next, random) {
+    this.val = val;
+    this.next = next;
+    this.random = random;
+  }
 }
 
 /**
