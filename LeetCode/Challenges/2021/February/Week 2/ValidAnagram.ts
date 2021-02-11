@@ -26,5 +26,5 @@ function isAnagram(s: string, t: string): boolean {
       return false;
     }
   }
-  return true;
+  //   return true;
 }
