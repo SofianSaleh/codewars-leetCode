@@ -28,13 +28,3 @@ function isAnagram(s: string, t: string): boolean {
   }
   return true;
 }
-
-function isAnagram2(s: string, t: string): boolean {
-  if (s.length !== t.length) return false;
-  let count: number[] = [];
-  for (const c of s.split(' ')) {
-    ++count[c];
-  }
-
-  return true;
-}
