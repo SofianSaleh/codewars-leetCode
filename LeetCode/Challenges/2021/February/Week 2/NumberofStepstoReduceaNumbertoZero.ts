@@ -5,8 +5,8 @@ function numberOfSteps(num: number): number {
       num /= 2;
       ++steps;
     } else {
-      //       num -= 1;
-      //       ++steps;
+      num -= 1;
+      ++steps;
     }
   }
   return steps;
