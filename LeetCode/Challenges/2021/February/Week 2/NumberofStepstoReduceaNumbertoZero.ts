@@ -10,5 +10,5 @@ function numberOfSteps(num: number): number {
       ++steps;
     }
   }
-  re;
+  return steps;
 }
