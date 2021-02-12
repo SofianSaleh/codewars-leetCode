@@ -1,5 +1,5 @@
 function numberOfSteps(num: number): number {
-  //   let steps = 0;
+  let steps = 0;
   //   while (num !== 0) {
   //     if (num % 2 === 0) {
   //       num /= 2;
@@ -9,5 +9,5 @@ function numberOfSteps(num: number): number {
   //       ++steps;
   //     }
   //   }
-  //   return steps;
+  return steps;
 }
