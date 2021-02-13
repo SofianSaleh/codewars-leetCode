@@ -4,6 +4,10 @@ class Solution(object):
     def shortestPathBinaryMatrix(self, grid):
         result = 0
 
+        directions = [(-1, -1), (-1, 0), (-1, 1), \
+                      ( 0, -1), ( 0, 1), \
+                      ( 1, -1), ( 1, 0), ( 1, 1)]
+
         q = collections.deque([(0,0)])
 
         while q:
