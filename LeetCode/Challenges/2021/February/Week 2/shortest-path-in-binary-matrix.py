@@ -22,6 +22,6 @@ class Solution(object):
                     for d in directions:
                         
                         next_depth.append((i+d[0], j+d[1]))
-            q = next_depth
+            # q = next_depth
 
         return -1
