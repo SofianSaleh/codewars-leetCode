@@ -14,6 +14,7 @@ class Solution(object):
             result += 1
             next_depth = collections.deque()
             while q:
+                i, j = q.popleft()
                 if 0 <= j < len(grid) and 0 <= j < len(grid[0]) and not grid[i][j]:
                     grid[i][j] = 1
                     if i == len(grid)-1 and j == len(grid)-1:
