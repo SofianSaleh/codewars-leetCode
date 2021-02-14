@@ -12,3 +12,5 @@ function isBipartite(graph: number[][]): boolean {
   console.log(obj);
   return false;
 }
+
+console.log(isBipartite());
