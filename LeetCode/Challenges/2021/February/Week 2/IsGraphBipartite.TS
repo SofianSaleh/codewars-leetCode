@@ -14,14 +14,14 @@ function isBipartite(graph) {
   return v.length === 2 ? true : false;
 }
 
-console.log(
-  isBipartite([
-    [1, 2, 3],
-    [0, 2],
-    [0, 1, 3],
-    [0, 2],
-  ])
-);
+// console.log(
+//   isBipartite([
+//     [1, 2, 3],
+//     [0, 2],
+//     [0, 1, 3],
+//     [0, 2],
+//   ])
+// );
 // console.log(
 //   isBipartite([
 //     [1, 3],
