@@ -1,6 +1,6 @@
 function isBipartite(graph) {
   let obj = {};
-  console.log('hi');
+
   graph.forEach((g) => {
     let k = JSON.stringify(g);
     if (k in obj) {
@@ -10,7 +10,7 @@ function isBipartite(graph) {
     }
   });
   let v = Object.keys(obj);
-  console.log(obj);
+
   return v.length === 2 ? true : false;
 }
 
