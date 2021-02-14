@@ -13,4 +13,11 @@ function isBipartite(graph: number[][]): boolean {
   return false;
 }
 
-console.log(isBipartite());
+console.log(
+  isBipartite([
+    [1, 3],
+    [0, 2],
+    [1, 3],
+    [0, 2],
+  ])
+);
