@@ -3,9 +3,13 @@ function kWeakestRows(mat: number[][], k: number): number[] {
   let temp = [];
 
   for (let i = 0; i < mat.length; i++) {
+    let soldiers = 0;
     for (let j = 0; j < mat[i].length; j++) {
-      const element = mat[i][j];
+      if (mat[i][j] === 1) {
+        soldiers += 1;
+      }
     }
+    temp.push([i, soldiers]);
   }
 
   return ans;
