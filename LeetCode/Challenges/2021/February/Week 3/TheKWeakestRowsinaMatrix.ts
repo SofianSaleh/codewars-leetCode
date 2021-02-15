@@ -1,5 +1,10 @@
 function kWeakestRows(mat: number[][], k: number): number[] {
   let ans = [];
+  let temp = [];
+
+  for (let i = 0; i < mat.length; i++) {
+    const element = mat[i];
+  }
 
   return ans;
 }
