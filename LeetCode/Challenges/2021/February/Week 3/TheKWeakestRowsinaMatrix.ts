@@ -1,5 +1,6 @@
 function kWeakestRows(mat: number[][], k: number): number[] {
   let ans = [];
+  let temp = [];
 
   for (let i = 0; i < mat.length; i++) {
     let soldiers = 0;
@@ -8,9 +9,13 @@ function kWeakestRows(mat: number[][], k: number): number[] {
         soldiers += 1;
       }
     }
-    ans.push([i, soldiers]);
+    temp.push([i, soldiers]);
   }
-  ans = ans.sort((a, b) => a[1] - b[1]);
+  temp = temp.sort((a, b) => a[1] - b[1]);
+
+  for (let i = 0; i < k; i++) {
+    ans.push(temp[i][0]);
+  }
 
   return ans;
 }
