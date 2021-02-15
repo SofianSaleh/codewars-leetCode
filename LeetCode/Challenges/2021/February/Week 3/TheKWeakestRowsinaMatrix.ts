@@ -11,6 +11,7 @@ function kWeakestRows(mat: number[][], k: number): number[] {
     }
     temp.push([i, soldiers]);
   }
+  temp = temp.sort((a, b) => a[1] - b[1]);
   console.log(temp);
   return ans;
 }
