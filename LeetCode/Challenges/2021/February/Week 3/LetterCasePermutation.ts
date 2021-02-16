@@ -26,5 +26,10 @@
 function letterCasePermutation(S: string): string[] {
   let ans = [];
 
+
+  function dfs(str: string, i: number, ans: string[]) {
+    if ( i === str.length)
+  }
+
   return ans;
 }
