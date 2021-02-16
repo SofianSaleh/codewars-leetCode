@@ -23,6 +23,11 @@
 
 // S will be a string with length between 1 and 12.
 // S will consist only of letters or digits.
+
+String.prototype.setCharAt = function (index, chr) {
+  if (index > this.length - 1) return str;
+  return this.substr(0, index) + chr + this.substr(index + 1);
+};
 function letterCasePermutation(S: string): string[] {
   let ans = [];
 
@@ -32,10 +37,14 @@ function letterCasePermutation(S: string): string[] {
       return;
     }
 
-    if(Number.isInteger(str.charAt(i)){
-        dfs(str, i+1, ans)
-        return
+    if (Number.isInteger(str.charAt(i))) {
+      dfs(str, i + 1, ans);
+      return;
     }
+    str.setCharAt(i, str.charAt(i).toLowerCase());
+    dfs(str, i + 1, ans);
+    str.setCharAt(i, str.charAt(i).toUpperCase());
+    dfs(str, i + 1, ans);
   }
 
   return ans;
