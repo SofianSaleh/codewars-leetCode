@@ -31,6 +31,11 @@ function letterCasePermutation(S: string): string[] {
       ans.push(str.toString());
       return;
     }
+
+    if(Number.isInteger(str.charAt(i)){
+        dfs(str, i+1, ans)
+        return
+    }
   }
 
   return ans;
