@@ -23,3 +23,4 @@
 
 // S will be a string with length between 1 and 12.
 // S will consist only of letters or digits.
+function letterCasePermutation(S: string): string[] {}
