@@ -5,7 +5,7 @@ function maxArea(height: number[]): number {
     let area = 0;
 
     for (let j = i + 1; j < height.length; j++) {
-      area = Math.max(height[i], height[j]);
+      area = Math.min(height[i], height[j]) * Math.abs(i - j);
       console.log(area);
       if (area > ans) area = ans;
     }
