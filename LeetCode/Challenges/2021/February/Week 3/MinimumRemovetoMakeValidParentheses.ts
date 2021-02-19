@@ -10,6 +10,11 @@ function minRemoveToMakeValid(s: string): string {
       // mark unpaired ')' as '#'
       else stack.pop(); // find a pair!
     }
+}
+    while (stack.length != 0)
+      sb.setCharAt(stack.pop(), '#');
+
+    return sb.toString().replaceAll("#", "");
   }
 }
 // class Solution {
@@ -18,9 +23,4 @@ function minRemoveToMakeValid(s: string): string {
 //     for (int i = 0; i < s.length(); ++i)
 
 //     // mark unpaired '(' as '#'
-//     while (!stack.isEmpty())
-//       sb.setCharAt(stack.pop(), '#');
-
-//     return sb.toString().replaceAll("#", "");
-//   }
 // }
