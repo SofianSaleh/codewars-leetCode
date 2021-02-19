@@ -14,7 +14,7 @@ function minRemoveToMakeValid(s: string): string {
     while (stack.length != 0)
       sb.setCharAt(stack.pop(), '#');
 
-    return sb.toString().replaceAll("#", "");
+    return sb.replaceAll("#", "");
   }
 }
 // class Solution {
