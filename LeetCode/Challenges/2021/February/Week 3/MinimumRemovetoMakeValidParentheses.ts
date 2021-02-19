@@ -17,10 +17,3 @@ function minRemoveToMakeValid(s: string): string {
     return sb.replaceAll("#", "");
   }
 }
-// class Solution {
-//   public String minRemoveToMakeValid(String s) {
-
-//     for (int i = 0; i < s.length(); ++i)
-
-//     // mark unpaired '(' as '#'
-// }
