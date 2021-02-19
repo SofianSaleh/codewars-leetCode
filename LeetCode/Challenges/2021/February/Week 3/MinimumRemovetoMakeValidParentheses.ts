@@ -1,4 +1,7 @@
-function minRemoveToMakeValid(s: string): string {}
+function minRemoveToMakeValid(s: string): string {
+  let sb = '';
+  let stack = [];
+}
 // class Solution {
 //   public String minRemoveToMakeValid(String s) {
 //     Stack<Integer> stack = new Stack<>(); // unpaired '(' indicies
