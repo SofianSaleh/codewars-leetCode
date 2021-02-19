@@ -1,21 +1,21 @@
 function minRemoveToMakeValid(s: string): string {
   let sb = '';
   let stack = [];
+
+  for (let i = 0; i < s.length; i++) {
+    if (sb.charAt(i) == '(') {
+      stack.push(i); // record unpaired '(' index
+    } else if (sb.charAt(i) == ')') {
+      if (stack.length === 0) sb.setCharAt(i, '#');
+      // mark unpaired ')' as '#'
+      else stack.pop(); // find a pair!
+    }
+  }
 }
 // class Solution {
 //   public String minRemoveToMakeValid(String s) {
-//     Stack<Integer> stack = new Stack<>(); // unpaired '(' indicies
-//     StringBuilder sb = new StringBuilder(s);
 
 //     for (int i = 0; i < s.length(); ++i)
-//       if (sb.charAt(i) == '(') {
-//         stack.push(i); // record unpaired '(' index
-//       } else if (sb.charAt(i) == ')') {
-//         if (stack.isEmpty())
-//           sb.setCharAt(i, '#'); // mark unpaired ')' as '#'
-//         else
-//           stack.pop(); // find a pair!
-//       }
 
 //     // mark unpaired '(' as '#'
 //     while (!stack.isEmpty())
