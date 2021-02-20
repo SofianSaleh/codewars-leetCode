@@ -14,6 +14,7 @@ function romanToInt(s: string): number {
     if (roman[s.charAt(i)] < roman[s.charAt(i + 1)]) {
       ans -= roman[s.charAt(i)];
     } else {
+      ans += roman[s.charAt(i)];
     }
   }
 
