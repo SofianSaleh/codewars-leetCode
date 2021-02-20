@@ -10,5 +10,12 @@ function romanToInt(s: string): number {
     M: 1000,
   };
 
+  for (let i = 0; i < s.length; i++) {
+    if (roman[s.charAt(i)] < roman[s.charAt(i + 1)]) {
+      ans -= roman[s.charAt(i)];
+    } else {
+    }
+  }
+
   return ans;
 }
