@@ -18,5 +18,5 @@ function romanToInt(s: string): number {
     }
   }
 
-  return ans;
+  return ans + roman[s.charAt(s.length - 1)];
 }
