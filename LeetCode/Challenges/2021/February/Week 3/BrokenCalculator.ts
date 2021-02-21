@@ -8,4 +8,5 @@ function brokenCalc(X: number, Y: number): number {
       ops += 1;
     }
   }
+  return;
 }
