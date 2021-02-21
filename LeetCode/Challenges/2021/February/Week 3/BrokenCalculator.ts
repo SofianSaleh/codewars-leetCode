@@ -3,6 +3,9 @@ function brokenCalc(X: number, Y: number): number {
   while (X < Y) {
     if (Y % 2 === 0) {
       Y = Math.floor(Y / 2);
+    } else {
+      Y += 1;
+      ops += 1;
     }
   }
 }
