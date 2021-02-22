@@ -6,7 +6,11 @@ function findLongestWord(s: string, d: string[]): string {
 
     for (const c in s) {
       if (i < word.length && c === word[i]) {
+          i += 1
       }
+    }
+    if(i === word.length){
+        if(word.length > ans.length || word.length)
     }
   }
 }
