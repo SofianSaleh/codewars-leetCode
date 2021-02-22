@@ -10,7 +10,9 @@ function findLongestWord(s: string, d: string[]): string {
       }
     }
     if(i === word.length){
-        if(word.length > ans.length || word.length ans.length && word < ans){}
+        if(word.length > ans.length || word.length ans.length && word < ans){
+            ans = word
+        }
     }
   }
 }
