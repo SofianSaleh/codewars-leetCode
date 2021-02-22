@@ -4,7 +4,7 @@ function findLongestWord(s: string, d: string[]): string {
   for (const word of d) {
     let i = 0;
 
-    for (const c in s) {
+    for (const c of s) {
       if (i < word.length && c === word[i]) {
         i += 1;
       }
