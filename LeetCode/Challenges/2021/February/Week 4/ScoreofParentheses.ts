@@ -9,6 +9,7 @@ function scoreOfParentheses(S: string): number {
     if (a === '(' && b === ')') {
       ans += 1 << layer;
     }
+    layer += a === '(' ? 1 : -1;
   }
 
   return ans;
