@@ -6,7 +6,9 @@ function scoreOfParentheses(S: string): number {
     let a: string = S.charAt(i);
     let b: string = S.charAt(i + 1);
 
-    if( a === '('  && b === ')')
+    if (a === '(' && b === ')') {
+      ans += 1 << layer;
+    }
   }
 
   return ans;
