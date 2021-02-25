@@ -16,6 +16,17 @@ function findUnsortedSubarray(nums: number[]): number {
     if (flagIncrease) mini = Math.max(nums[i], maxi);
   }
 
+  let l = 0;
+
+  for (l = 0; l < n; l++) {
+    if (nums[l] > mini) break;
+  }
+
+  let r;
+  for (r = n - 1; r >= 0; r--) {
+    if (nums[l] < maxi) break;
+  }
+
   return 1;
 }
 // public int findUnsortedSubarray(int[] nums) {
