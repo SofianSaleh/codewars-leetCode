@@ -27,5 +27,5 @@ function findUnsortedSubarray(nums: number[]): number {
     if (nums[l] < maxi) break;
   }
 
-  return l > r ? 0 : r - l + 1;
+  return l >= r ? 0 : r - l + 1;
 }
