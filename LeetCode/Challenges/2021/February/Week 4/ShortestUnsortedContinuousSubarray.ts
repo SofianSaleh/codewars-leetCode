@@ -1,4 +1,5 @@
 function findUnsortedSubarray(nums: number[]): number {
+  let n = nums.length;
   let mini = Infinity;
   let max = -Infinity;
   let flagDecrease = false;
@@ -6,11 +7,6 @@ function findUnsortedSubarray(nums: number[]): number {
 }
 // public int findUnsortedSubarray(int[] nums) {
 //     final int n = nums.length;
-
-//     int min = Integer.MAX_VALUE;
-//     int max = Integer.MIN_VALUE;
-//     boolean meetDecrease = false;
-//     boolean meetIncrease = false;
 
 //     for (int i = 1; i < n; ++i) {
 //       if (nums[i] < nums[i - 1])
