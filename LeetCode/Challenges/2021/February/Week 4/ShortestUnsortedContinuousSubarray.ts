@@ -4,10 +4,10 @@ function findUnsortedSubarray(nums: number[]): number {
   let max = -Infinity;
   let flagDecrease = false;
   let flagIncrease = false;
+
+  return 1;
 }
 // public int findUnsortedSubarray(int[] nums) {
-//     final int n = nums.length;
-
 //     for (int i = 1; i < n; ++i) {
 //       if (nums[i] < nums[i - 1])
 //         meetDecrease = true;
