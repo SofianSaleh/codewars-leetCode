@@ -29,13 +29,6 @@ function findUnsortedSubarray(nums: number[]): number {
 
   return l > r ? 0 : r - l + 1;
 }
-// public int findUnsortedSubarray(int[] nums) {
-//     for (int i = 1; i < n; ++i) {
-//       if (nums[i] < nums[i - 1])
-//         meetDecrease = true;
-//       if (meetDecrease)
-//         min = Math.min(min, nums[i]);
-//     }
 
 //     for (int i = n - 2; i >= 0; --i) {
 //       if (nums[i] > nums[i + 1])
