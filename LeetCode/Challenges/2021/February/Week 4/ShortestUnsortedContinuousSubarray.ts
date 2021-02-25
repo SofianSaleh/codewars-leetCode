@@ -1,9 +1,14 @@
 function findUnsortedSubarray(nums: number[]): number {
-  let n = nums.length;
-  let mini = Infinity;
-  let max = -Infinity;
-  let flagDecrease = false;
-  let flagIncrease = false;
+  let n: number = nums.length;
+  let mini: number = Infinity;
+  let max: number = -Infinity;
+  let flagDecrease: boolean = false;
+  let flagIncrease: boolean = false;
+
+  for (let i = 1; i < n; i++) {
+    if (nums[i] < nums[i - 1]) flagDecrease = true;
+    if (flagDecrease) mini = Math.min(nums[i], mini);
+  }
 
   return 1;
 }
