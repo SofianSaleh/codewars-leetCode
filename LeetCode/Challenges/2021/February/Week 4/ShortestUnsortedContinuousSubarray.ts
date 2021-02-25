@@ -30,11 +30,6 @@ function findUnsortedSubarray(nums: number[]): number {
   return l > r ? 0 : r - l + 1;
 }
 
-//     int l = 0;
-//     for (l = 0; l < n; ++l)
-//       if (nums[l] > min)
-//         break;
-
 //     int r = 0;
 //     for (r = n - 1; r >= 0; --r)
 //       if (nums[r] < max)
