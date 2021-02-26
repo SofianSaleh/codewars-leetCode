@@ -9,6 +9,9 @@ function validateStackSequences(pushed: number[], popped: number[]): boolean {
       stack &&
       j < popped.length &&
       stack[stack.length - 1] === popped[j]
-    ) {}
+    ) {
+      stack.pop();
+      j++;
+    }
   }
 }
