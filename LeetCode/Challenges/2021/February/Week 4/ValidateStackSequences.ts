@@ -14,4 +14,6 @@ function validateStackSequences(pushed: number[], popped: number[]): boolean {
       j++;
     }
   }
+
+  return j === 
 }
