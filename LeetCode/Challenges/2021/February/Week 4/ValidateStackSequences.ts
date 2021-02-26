@@ -15,5 +15,5 @@ function validateStackSequences(pushed: number[], popped: number[]): boolean {
     }
   }
 
-  return j === 
+  return j === pushed.length;
 }
