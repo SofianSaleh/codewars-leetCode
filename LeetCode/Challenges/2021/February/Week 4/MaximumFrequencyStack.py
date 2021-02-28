@@ -11,7 +11,7 @@ class FreqStack(object):
         :rtype: None
         """
         self.count[x] += 1
-        # self.maxFreq = max(self.maxFreq, self.count[x])
+        self.maxFreq = max(self.maxFreq, self.count[x])
         self.countToStack[self.count[x]].append(x)
         
 
