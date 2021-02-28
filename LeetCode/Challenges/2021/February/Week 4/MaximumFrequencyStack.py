@@ -21,6 +21,6 @@ class FreqStack(object):
         """
          value = self.countToStack[self.maxFreq].pop()
         self.count[value] -= 1
-        # if not self.countToStack[self.maxFreq]:
+        if not self.countToStack[self.maxFreq]:
         #     self.maxFreq -= 1
         return value
