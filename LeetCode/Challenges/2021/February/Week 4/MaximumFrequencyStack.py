@@ -12,7 +12,7 @@ class FreqStack(object):
         """
         self.count[x] += 1
         # self.maxFreq = max(self.maxFreq, self.count[x])
-        # self.countToStack[self.count[x]].append(x)
+        self.countToStack[self.count[x]].append(x)
         
 
     def pop(self):
