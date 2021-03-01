@@ -1,3 +1,6 @@
 function distributeCandies(candyType: number[]): number {
-  return candyType.length / 2;
+  let allowed = candyType.length / 2;
+  let candySet = new Set(candyType);
+
+  return Math.min(allowed, candySet.size;
 }
