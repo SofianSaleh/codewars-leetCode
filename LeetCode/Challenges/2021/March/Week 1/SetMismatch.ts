@@ -4,6 +4,7 @@ function findErrorNums(nums: number[]): number[] {
     if (nums[Math.abs(num) - 1] < 0) {
       duplicate = Math.abs(num);
     } else {
+      nums[Math.abs(num) - 1] *= -1;
     }
   }
 }
