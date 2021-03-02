@@ -9,5 +9,8 @@ function findErrorNums(nums: number[]): number[] {
   }
 
   for (const [i, num] of nums.entries()) {
+    if (num > 0) {
+      return [duplicate, i + 1];
+    }
   }
 }
