@@ -25,10 +25,10 @@ function getIntersectionNode(
   let a = headA;
   let b = headB;
 
-  while (a != b) {
-    a = a.next ? a : headB;
-    b = b.next ? b : headA;
-  }
+  //   while (a != b) {
+  //     a = a.next ? a : headB;
+  //     b = b.next ? b : headA;
+  //   }
 
   return a;
 }
