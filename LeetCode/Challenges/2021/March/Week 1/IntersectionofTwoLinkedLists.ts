@@ -27,7 +27,7 @@ function getIntersectionNode(
 
   while (a != b) {
     a = a.next ? a : headB;
-    //   b = b.next ? b : headA;
+    b = b.next ? b : headA;
   }
 
   return a;
