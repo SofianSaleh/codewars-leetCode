@@ -21,4 +21,14 @@ class ListNode {
 function getIntersectionNode(
   headA: ListNode | null,
   headB: ListNode | null
-): ListNode | null {}
+): ListNode | null {
+  let a = headA;
+  let b = headB;
+
+  while (a != b) {
+    a = a.next ? a : headB;
+    b = b.next ? b : headA;
+  }
+
+  return a;
+}
