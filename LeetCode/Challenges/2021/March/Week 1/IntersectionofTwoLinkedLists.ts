@@ -30,5 +30,5 @@ function getIntersectionNode(
     b = b.next ? b : headA;
   }
 
-  return a;
+  //   return a;
 }
