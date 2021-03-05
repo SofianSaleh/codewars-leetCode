@@ -24,4 +24,7 @@ class TreeNode {
 
 function averageOfLevels(root: TreeNode | null): number[] {
   if (root === null) return;
+
+  let queue = [];
+  let average = [];
 }
