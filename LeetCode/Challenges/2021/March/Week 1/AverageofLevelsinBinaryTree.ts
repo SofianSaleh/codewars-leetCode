@@ -31,4 +31,8 @@ function averageOfLevels(root: TreeNode | null): number[] {
   queue.push(root);
   let nodes_count_per_levels = 0;
   let sum_per_level = 0;
+
+  queue.push(null);
+
+  while (queue.length > 0) {}
 }
