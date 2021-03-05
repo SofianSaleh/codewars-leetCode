@@ -22,4 +22,6 @@ class TreeNode {
   }
 }
 
-function averageOfLevels(root: TreeNode | null): number[] {}
+function averageOfLevels(root: TreeNode | null): number[] {
+  if (root === null) return;
+}
