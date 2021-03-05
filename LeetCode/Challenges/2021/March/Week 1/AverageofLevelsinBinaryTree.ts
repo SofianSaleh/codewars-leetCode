@@ -39,6 +39,9 @@ function averageOfLevels(root: TreeNode | null): number[] {
 
     if (node === null) {
       averages.push(sum_per_level / nodes_count_per_levels);
+      sum_per_level = 0;
+      nodes_count_per_levels = 0;
+      queue.push(null);
     }
   }
 }
