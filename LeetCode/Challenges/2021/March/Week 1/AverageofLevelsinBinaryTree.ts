@@ -50,14 +50,14 @@ function averageOfLevels(root: TreeNode | null): number[] {
     }
     sum_per_level += node.val;
     nodes_count_per_levels += 1;
-if (node.left !== null):
+if (node.left !== null)
             queue.push(node.left)
 
        
-        if node.right is not None:
+        if (node.right !== null):
             queue.push(node.right)
-    return averages  
-
-}
+            
+        }
+        return averages  
 
 }
