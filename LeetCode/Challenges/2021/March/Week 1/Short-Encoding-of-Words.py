@@ -1,5 +1,5 @@
-# import collections
-# import functools
+import collections
+import functools
 
 
 class Solution(object):
@@ -8,7 +8,7 @@ class Solution(object):
     #     :type words: List[str]
     #     :rtype: int
     #     """
-    #     words = list(set(words))
+        words = list(set(words))
     #     _trie = lambda: collections.defaultdict(_trie)
     #     trie = _trie()
 
