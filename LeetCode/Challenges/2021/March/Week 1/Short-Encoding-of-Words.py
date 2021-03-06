@@ -16,5 +16,5 @@ class Solution(object):
                  for word in words]
 
         return sum(len(word) + 1
-    #                for i, word in enumerate(words)
+                   for i, word in enumerate(words)
     #                if len(nodes[i]) == 0)
