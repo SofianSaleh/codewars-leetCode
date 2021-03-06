@@ -12,8 +12,8 @@ class Solution(object):
         _trie = lambda: collections.defaultdict(_trie)
         trie = _trie()
 
-    #     nodes = [functools.reduce(dict.__getitem__, word[::-1], trie)
-    #              for word in words]
+        nodes = [functools.reduce(dict.__getitem__, word[::-1], trie)
+                 for word in words]
 
     #     return sum(len(word) + 1
     #                for i, word in enumerate(words)
