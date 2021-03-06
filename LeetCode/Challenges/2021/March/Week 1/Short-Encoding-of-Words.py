@@ -15,6 +15,6 @@ class Solution(object):
         nodes = [functools.reduce(dict.__getitem__, word[::-1], trie)
                  for word in words]
 
-    #     return sum(len(word) + 1
+        return sum(len(word) + 1
     #                for i, word in enumerate(words)
     #                if len(nodes[i]) == 0)
