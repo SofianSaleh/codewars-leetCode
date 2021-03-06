@@ -9,8 +9,8 @@ class Solution(object):
     #     :rtype: int
     #     """
         words = list(set(words))
-    #     _trie = lambda: collections.defaultdict(_trie)
-    #     trie = _trie()
+        _trie = lambda: collections.defaultdict(_trie)
+        trie = _trie()
 
     #     nodes = [functools.reduce(dict.__getitem__, word[::-1], trie)
     #              for word in words]
