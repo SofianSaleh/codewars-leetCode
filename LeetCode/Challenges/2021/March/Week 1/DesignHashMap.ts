@@ -36,9 +36,9 @@ class MyHashMap {
    * @param {number} key
    * @return {void}
    */
-  // remove(key: string | number): void {
-  //   delete this.hashMap[key];
-  // }
+  remove(key: string | number): void {
+    delete this.hashMap[key];
+  }
 
   /**
    * instantiate
