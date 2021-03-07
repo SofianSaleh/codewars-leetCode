@@ -43,7 +43,7 @@ class MyHashMap {
   /**
    * instantiate
    */
-  // static createNew() {
-  //   return new MyHashMap();
-  // }
+  static createNew() {
+    return new MyHashMap();
+  }
 }
