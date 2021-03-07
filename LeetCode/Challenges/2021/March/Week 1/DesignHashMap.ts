@@ -23,12 +23,12 @@ class MyHashMap {
    * @param {number} key
    * @return {number}
    */
-  // get(key: string | number): number {
-  //   if (typeof this.hashMap[key] === 'undefined') {
-  //     return -1;
-  //   }
-  //   return this.hashMap[key];
-  // }
+  get(key: string | number): number {
+    if (typeof this.hashMap[key] === 'undefined') {
+      return -1;
+    }
+    return this.hashMap[key];
+  }
 
   /**
    * Removes the mapping of the specified value key
