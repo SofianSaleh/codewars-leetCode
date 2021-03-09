@@ -48,6 +48,8 @@ function addOneRow(
       if (node.right) {
         q.push(node.right);
       }
+      if (depth === d - 1) {
+      }
     }
   }
 }
