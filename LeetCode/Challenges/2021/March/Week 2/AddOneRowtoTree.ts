@@ -29,5 +29,13 @@ function addOneRow(
 ): TreeNode | null {
   if (d === 1) {
     let newRoot: TreeNode = new TreeNode(v);
+    newRoot.left = root;
+    return newRoot;
   }
+
+  let depth: number = 0;
+
+  let q = [];
+
+  while (q.length !== 0) {}
 }
