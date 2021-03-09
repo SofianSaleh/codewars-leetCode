@@ -37,5 +37,17 @@ function addOneRow(
 
   let q = [];
 
-  while (q.length !== 0) {}
+  while (q.length !== 0) {
+    ++depth;
+    for (let size = 0; size >= 0; --size) {
+      let node = q[0];
+      q.pop();
+      if (node.left) {
+        q.push(node.left);
+      }
+      if (node.right) {
+        q.push(node.right);
+      }
+    }
+  }
 }
