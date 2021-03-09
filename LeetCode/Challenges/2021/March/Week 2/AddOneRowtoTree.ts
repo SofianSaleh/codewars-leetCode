@@ -22,34 +22,14 @@ class TreeNode {
   }
 }
 
-function addOneRow(
-  root: TreeNode | null,
-  v: number,
-  d: number
-): TreeNode | null {
-  if (d === 1) {
-    let newRoot: TreeNode = new TreeNode(v);
-    newRoot.left = root;
-    return newRoot;
+var addOneRow = function (root: TreeNode, v: number, d: number) {
+  if (d === 1) return new TreeNode(v, root, null);
+  if (d === 2) {
+    root.left = new TreeNode(v, root.left, null);
+    root.right = new TreeNode(v, null, root.right);
+  } else {
+    if (root.left) addOneRow(root.left, v, d - 1);
+    if (root.right) addOneRow(root.right, v, d - 1);
   }
-
-  let depth: number = 0;
-
-  let q = [];
-
-  while (q.length !== 0) {
-    ++depth;
-    for (let size = 0; size >= 0; --size) {
-      let node = q[0];
-      q.pop();
-      if (node.left) {
-        q.push(node.left);
-      }
-      if (node.right) {
-        q.push(node.right);
-      }
-      if (depth === d - 1) {
-      }
-    }
-  }
-}
+  return root;
+};
