@@ -2,7 +2,9 @@ function coinChange(coins, amount) {
   let dp = [];
   dp.fill(1, dp.length, amount + 1);
   console.log(dp);
-  return 1;
+  for (const coin of coins) {
+    for (let i = coin; i <= amount; ++i) return 1;
+  }
 }
 
 // class Solution {
