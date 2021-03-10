@@ -3,7 +3,11 @@ function coinChange(coins, amount) {
   dp.fill(1, dp.length, amount + 1);
   console.log(dp);
   for (const coin of coins) {
-    for (let i = coin; i <= amount; ++i) return 1;
+    for (let i = coin; i <= amount; ++i) {
+      dp[i] = Math.min(dp[i], dp[i - coin] + 1);
+    }
+
+    return 1;
   }
 }
 
