@@ -14,7 +14,8 @@ function coinChange(coins: number[], amount: number): number {
     moves = 0;
     sum = amount;
   }
-  return sum === 0 ? Math.max(arrOfMoves) : -1;
+  console.log(arrOfMoves);
+  return sum === 0 ? Math.max(...arrOfMoves) : -1;
 }
 // console.log(coinChange([1, 2, 5], 11));
 console.log(coinChange([1, 2, 5, 10], 18));
