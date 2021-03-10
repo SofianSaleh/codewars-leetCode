@@ -3,14 +3,12 @@ function coinChange(coins: number[], amount: number): number {
   let moves = 0;
 
   for (let i = coins.length - 1; i >= 0; --i) {
-    console.log(sum, coins[i]);
     while (sum - coins[i] >= 0) {
-      console.log('hi');
       moves += 1;
       sum = sum - coins[i];
     }
   }
-  return moves;
+  return sum === 0 ? moves : -1;
 }
 console.log(coinChange([1, 2, 5], 11));
 console.log(coinChange([2], 3));
