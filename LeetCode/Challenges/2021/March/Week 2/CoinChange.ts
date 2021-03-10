@@ -13,3 +13,4 @@ function coinChange(coins: number[], amount: number): number {
   return moves;
 }
 console.log(coinChange([1, 2, 5], 11));
+console.log(coinChange([2], 3));
