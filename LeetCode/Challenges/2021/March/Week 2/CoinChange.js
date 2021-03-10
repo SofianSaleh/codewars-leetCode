@@ -1,4 +1,4 @@
-function coinChange(coins: number[], amount: number): number {
+function coinChange(coins, amount) {
   let dp = [];
   dp.fill(1, dp.length, amount + 1);
   console.log(dp);
