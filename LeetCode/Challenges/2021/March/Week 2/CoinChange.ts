@@ -1,7 +1,7 @@
 function coinChange(coins: number[], amount: number): number {
   let sum = amount;
   let moves = 0;
-  coins = coins.sort();
+  coins = coins.sort((a, b) => a - b);
   for (let i = coins.length - 1; i >= 0; --i) {
     while (sum - coins[i] >= 0) {
       moves += 1;
@@ -10,5 +10,6 @@ function coinChange(coins: number[], amount: number): number {
   }
   return sum === 0 ? moves : -1;
 }
-console.log(coinChange([1, 2, 5], 11));
-console.log(coinChange([2], 3));
+// console.log(coinChange([1, 2, 5], 11));
+console.log(coinChange([1, 2, 5, 10], 18));
+// console.log(coinChange([2], 3));
