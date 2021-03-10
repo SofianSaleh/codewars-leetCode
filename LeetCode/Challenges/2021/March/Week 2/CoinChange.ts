@@ -1,6 +1,8 @@
 function coinChange(coins: number[], amount: number): number {
   let dp = [];
   dp.fill(1, dp.length, amount + 1);
+  console.log(dp);
+  return 1;
 }
 
 // class Solution {
