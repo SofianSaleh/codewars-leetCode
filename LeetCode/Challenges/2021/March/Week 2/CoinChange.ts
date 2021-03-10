@@ -4,10 +4,10 @@ function coinChange(coins: number[], amount: number): number {
   let arrOfMoves = [];
   coins = coins.sort((a, b) => a - b);
   for (let i = coins.length - 1; i >= 0; --i) {
-    for (let i = coins.length - 1; i >= 0; --i) {
-      while (sum - coins[i] >= 0) {
+    for (let j = i; i >= 0; --j) {
+      while (sum - coins[j] >= 0) {
         moves += 1;
-        sum = sum - coins[i];
+        sum = sum - coins[j];
       }
     }
     arrOfMoves.push(moves);
