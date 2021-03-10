@@ -3,9 +3,11 @@ function coinChange(coins: number[], amount: number): number {
   let moves = 0;
   coins = coins.sort((a, b) => a - b);
   for (let i = coins.length - 1; i >= 0; --i) {
-    while (sum - coins[i] >= 0) {
-      moves += 1;
-      sum = sum - coins[i];
+    for (let i = coins.length - 1; i >= 0; --i) {
+      while (sum - coins[i] >= 0) {
+        moves += 1;
+        sum = sum - coins[i];
+      }
     }
   }
   return sum === 0 ? moves : -1;
