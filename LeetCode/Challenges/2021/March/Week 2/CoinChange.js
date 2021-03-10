@@ -1,9 +1,8 @@
 function coinChange(coins, amount) {
   let dp = [];
-
   dp.fill(amount + 1, 1, amount + 1);
-  dp[0] = 0;
   console.log(dp);
+  dp[0] = 0;
   for (const coin of coins) {
     for (let i = coin; i <= amount; ++i) {
       dp[i] = Math.min(dp[i], dp[i - coin] + 1);
