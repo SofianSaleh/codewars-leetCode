@@ -11,7 +11,7 @@ function coinChange(coins, amount) {
     }
   }
 
-  // return dp[amount] == amount + 1 ? -1 : dp[amount];
+  return dp[amount] == amount + 1 ? -1 : dp[amount];
 }
 
 console.log(coinChange([1, 2, 5], 11));
