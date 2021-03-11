@@ -1,9 +1,9 @@
 function coinChange(coins, amount) {
   let dp = [];
   dp[0] = 0;
-  // for (let i = 1; i < amount + 1; i++) {
-  //   dp.push(amount + 1);
-  // }
+  for (let i = 1; i < amount + 1; i++) {
+    dp.push(amount + 1);
+  }
 
   // for (const coin of coins) {
   //   for (let i = coin; i <= amount; ++i) {
