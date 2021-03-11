@@ -1,6 +1,6 @@
 function coinChange(coins, amount) {
   let dp = [];
-  // dp[0] = 0;
+  dp[0] = 0;
   // for (let i = 1; i < amount + 1; i++) {
   //   dp.push(amount + 1);
   // }
