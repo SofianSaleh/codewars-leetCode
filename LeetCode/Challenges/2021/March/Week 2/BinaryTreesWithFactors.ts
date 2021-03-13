@@ -5,8 +5,9 @@ function numFactoredBinaryTrees(arr: number[]): number {
   for (const [i, a] of arr.entries()) {
     dp[a] = 1;
     for (let j = 0; j < i; j++) {
-      
-        if( a % arr[j] === 0 && (a / A[j]) in dp)
+      if (a % arr[j] === 0 && a / arr[j] in dp) {
+        dp[a] += dp[arr[j]] * dp[a / arr[j]];
+      }
     }
   }
 }
