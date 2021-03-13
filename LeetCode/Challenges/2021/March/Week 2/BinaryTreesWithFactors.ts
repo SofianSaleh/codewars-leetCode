@@ -1,15 +1,18 @@
-function numFactoredBinaryTrees(arr: number[]): number {
-  arr.sort((a, b) => a - b);
-  let dp = {};
-
-  for (const [i, a] of arr.entries()) {
-    dp[a] = 1;
-    for (let j = 0; j < i; j++) {
-      if (a % arr[j] === 0 && a / arr[j] in dp) {
-        dp[a] += dp[arr[j]] * dp[a / arr[j]];
-      }
+function numFactoredBinaryTrees(A: number[]): number {
+  A.sort((a, b) => a - b);
+  let len = A.length,
+    fmap = new Map(),
+    ans = 0;
+  for (let i = 0; i < len; i++) {
+    let num = A[i],
+      ways = 1,
+      lim = Math.sqrt(num);
+    for (let j = 0, fA = A[0]; fA <= lim; fA = A[++j]) {
+      let fB = num / fA;
+      if (fmap.has(fB))
+        ways += fmap.get(fA) * fmap.get(fB) * (fA === fB ? 1 : 2);
     }
+    fmap.set(num, ways), (ans += ways);
   }
-
-  return Math.sum(Object.values(dp)) % (10 ** 9 + 7);
+  return ans % 1000000007;
 }
