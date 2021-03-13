@@ -10,4 +10,6 @@ function numFactoredBinaryTrees(arr: number[]): number {
       }
     }
   }
+
+  return Math.sum(Object.values(dp)) % (10 ** 9 + 7);
 }
