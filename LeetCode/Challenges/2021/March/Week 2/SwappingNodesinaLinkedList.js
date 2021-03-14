@@ -29,29 +29,29 @@ let x = new ListNode(
  */
 var swapNodes = function (head, k) {
 
-    if (x == y)
-        return 
+    let l = 0;
+    let cur = head;    
+    while (cur) {
+         cur = cur  > next; ++l; 
+        }    
+    
+    cur = head;
+    let n1 = null;
+    let n2 = null;
+    for (let i = 1; i <= l; ++i, cur = cur->next) {
+      if (i == k) n1 = cur;
+      if (i == l - k + 1) n2 = cur;
+    }
+    swap(n1->val, n2->val);
+    return head;
+  }
+};}
 };
 
 console.log(swapNodes(x, 2));
 
 
 def swapNodes(self, x, y): 
-  
-  
-        # Search for x (keep track of prevX and CurrX) 
-        prevX = None
-        currX = self.head 
-        while currX != None and currX.data != x: 
-            prevX = currX 
-            currX = currX.next
-  
-        # Search for y (keep track of prevY and currY) 
-        prevY = None
-        currY = self.head 
-        while currY != None and currY.data != y: 
-            prevY = currY 
-            currY = currY.next
   
         # If either x or y is not present, nothing to do 
         if currX == None or currY == None: 
