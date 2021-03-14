@@ -30,7 +30,11 @@ let x = new ListNode(
 var swapNodes = function (head, k) {
   let start = head;
   let first;
+
   let i = 0;
+  let j = 0;
+  let l = 0;
+
   while (start) {
     i++;
     if (i === k) {
@@ -40,7 +44,6 @@ var swapNodes = function (head, k) {
   }
   start = head;
   console.log(i);
-  let j = 0;
   i = i - k + 1;
   while (start) {
     j++;
@@ -49,7 +52,10 @@ var swapNodes = function (head, k) {
     }
     start = start.next;
   }
-  while
+  start = head;
+  while (start) {
+    start.next;
+  }
   console.log(i, first, second);
 };
 
