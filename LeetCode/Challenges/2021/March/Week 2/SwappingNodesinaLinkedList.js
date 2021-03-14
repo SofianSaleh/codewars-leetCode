@@ -16,4 +16,6 @@ class ListNode {
  * @param {number} k
  * @return {ListNode}
  */
-var swapNodes = function (head, k) {};
+var swapNodes = function (head, k) {
+  console.log(head.length);
+};
