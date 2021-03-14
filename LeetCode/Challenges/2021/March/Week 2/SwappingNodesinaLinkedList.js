@@ -38,15 +38,14 @@ var swapNodes = function (head, k) {
     cur = head;
     let n1 = null;
     let n2 = null;
-    for (let i = 1; i <= l; ++i, cur = cur->next) {
+    for (let i = 1; i <= l; ++i, cur = cur>next) {
       if (i == k) n1 = cur;
       if (i == l - k + 1) n2 = cur;
     }
-    swap(n1->val, n2->val);
+    swap(n1>val, n2>val);
     return head;
   }
-};}
-};
+
 
 console.log(swapNodes(x, 2));
 
