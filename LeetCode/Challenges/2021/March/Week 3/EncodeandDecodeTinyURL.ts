@@ -9,6 +9,11 @@ const prefix: string = 'http://tinyurl.com/';
 
 function encode(longUrl: string): string {
     // ? generate Id
+    let id:string = createdIdSize(6)
+    while(url[id]){
+        id = createdIdSize(6)
+    }
+    return prefix + id
 }
 
 
