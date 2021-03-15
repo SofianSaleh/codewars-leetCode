@@ -13,6 +13,7 @@ function encode(longUrl: string): string {
     while(url[id]){
         id = createdIdSize(6)
     }
+    url[id] = longUrl;
     return prefix + id
 }
 
