@@ -5,7 +5,8 @@
 const url = {};
 const ALPHANUMERIC =
   'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-const url = {};
+const prefix = 'http://tinyurl.com/';
+
 function encode(longUrl: string): string {}
 
 /**
