@@ -8,35 +8,34 @@ const ALPHANUMERIC: string =
 const prefix: string = 'http://tinyurl.com/';
 
 function encode(longUrl: string): string {
-    // ? generate Id
-    let id:string = createdIdSize(6)
-    while(url[id]){
-        id = createdIdSize(6)
-    }
-    url[id] = longUrl;
-    return prefix + id
+  // ? generate Id
+  let id: string = createdIdSize(6);
+  while (url[id]) {
+    id = createdIdSize(6);
+  }
+  url[id] = longUrl;
+  return prefix + id;
 }
 
-
 /**
- * 
+ *
  * @param n number
  */
 
-const createdIdSize( n: number) : string {
-    let i: number = n
-    let id : string = ''
+function createdIdSize(n: number): string {
+  let i: number = n;
+  let id: string = '';
 
-    while(i-- > 0){
-        id += ALPHANUMERIC[(Math.random() * ALPHANUMERIC.length) | 0]
-    }
-    return id
+  while (i-- > 0) {
+    id += ALPHANUMERIC[(Math.random() * ALPHANUMERIC.length) | 0];
+  }
+  return id;
 }
 /**
  * Decodes a shortened URL to its original URL.
  */
 function decode(shortUrl: string): string {
-    return url[shortUrl.split(prefix)[1]]
+  return url[shortUrl.split(prefix)[1]];
 }
 
 /**
