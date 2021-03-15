@@ -3,9 +3,9 @@
  */
 
 const url = {};
-const ALPHANUMERIC =
+const ALPHANUMERIC: string =
   'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-const prefix = 'http://tinyurl.com/';
+const prefix: string = 'http://tinyurl.com/';
 
 function encode(longUrl: string): string {}
 
