@@ -34,7 +34,9 @@ const createdIdSize( n: number) : string {
 /**
  * Decodes a shortened URL to its original URL.
  */
-function decode(shortUrl: string): string {}
+function decode(shortUrl: string): string {
+    return url[shortUrl.split(prefix)[1]]
+}
 
 /**
  * Your functions will be called as such:
