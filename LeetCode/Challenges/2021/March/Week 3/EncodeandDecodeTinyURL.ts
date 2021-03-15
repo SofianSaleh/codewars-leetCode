@@ -8,7 +8,7 @@ const ALPHANUMERIC: string =
 const prefix: string = 'http://tinyurl.com/';
 
 function encode(longUrl: string): string {
-    // ! generate Id
+    // ? generate Id
 }
 
 
@@ -24,6 +24,7 @@ const createdIdSize( n: number) : string {
     while(i-- > 0){
         id += ALPHANUMERIC[(Math.random() * ALPHANUMERIC.length) | 0]
     }
+    return id
 }
 /**
  * Decodes a shortened URL to its original URL.
