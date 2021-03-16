@@ -7,4 +7,5 @@ function maxProfit(prices: number[], fee: number): number {
     sell = Math.max(sell, hold + price1);
     hold = Math.max(hold, sell - price1 - fee);
   }
+  return sell;
 }
