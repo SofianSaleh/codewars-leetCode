@@ -7,6 +7,7 @@ function wiggleMaxLength(nums: number[]): number {
   for (let i = 1; i < nums.length; i++) {
     if (nums[i] > nums[i - 1]) {
       increasing = decreasing + 1;
+    } else if (nums[i] < nums[i - 1]) {
     }
   }
 }
