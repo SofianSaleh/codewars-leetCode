@@ -1,7 +1,8 @@
 class UndergroundSystem {
   obj: {};
   constructor() {
-    this.obj = {};
+   this.checkIns = {}
+    this.checkOuts = defaultdict(lambda: [0, 0]);
   }
 
   checkIn(id: number, stationName: string, t: number): void {}
@@ -10,7 +11,12 @@ class UndergroundSystem {
 
   getAverageTime(startStation: string, endStation: string): number {}
 }
-
+{
+  stationdep: {
+    time: 0;
+    stationEnd: [id, time];
+  }
+}
 /**
  * Your UndergroundSystem object will be instantiated and called as such:
  * var obj = new UndergroundSystem()
