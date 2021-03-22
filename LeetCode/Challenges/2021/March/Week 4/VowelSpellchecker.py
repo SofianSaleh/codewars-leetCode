@@ -20,7 +20,7 @@ class Solution:
       elif lowerKey(query) in dict:
         ans.append(dict[lowerKey(query)])
       elif vowelKey(query) in dict:
-    #     ans.append(dict[vowelKey(query)])
+        ans.append(dict[vowelKey(query)])
     #   else:
     #     ans.append('')
 
