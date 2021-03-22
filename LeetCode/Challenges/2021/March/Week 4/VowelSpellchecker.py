@@ -18,7 +18,7 @@ class Solution:
       if query in dict:
         ans.append(dict[query])
       elif lowerKey(query) in dict:
-    #     ans.append(dict[lowerKey(query)])
+        ans.append(dict[lowerKey(query)])
     #   elif vowelKey(query) in dict:
     #     ans.append(dict[vowelKey(query)])
     #   else:
