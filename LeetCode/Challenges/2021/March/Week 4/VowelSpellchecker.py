@@ -15,8 +15,8 @@ class Solution:
       dict.setdefault(vowelKey(word), word)
 
     for query in queries:
-    #   if query in dict:
-    #     ans.append(dict[query])
+      if query in dict:
+        ans.append(dict[query])
     #   elif lowerKey(query) in dict:
     #     ans.append(dict[lowerKey(query)])
     #   elif vowelKey(query) in dict:
