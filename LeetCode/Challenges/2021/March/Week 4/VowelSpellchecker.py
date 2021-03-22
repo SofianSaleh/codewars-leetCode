@@ -22,6 +22,6 @@ class Solution:
       elif vowelKey(query) in dict:
         ans.append(dict[vowelKey(query)])
       else:
-    #     ans.append('')
+        ans.append('')
 
     return ans
