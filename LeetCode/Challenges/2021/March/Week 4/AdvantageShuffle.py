@@ -7,7 +7,7 @@ class Solution:
 
     for i, b in enumerate(B):
       index = 0 if sl[-1] <= b else sl.bisect_right(b)
-    #   A[i] = sl[index]
+      A[i] = sl[index]
     #   del sl[index]
 
     return A
