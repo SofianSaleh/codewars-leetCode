@@ -13,7 +13,8 @@ var wordSubsets = function (A, B) {
         count++;
       }
     }
-    if (count == B.length - 1) {
+    console.log(count);
+    if (count == B.length) {
       ans.push(word);
     }
     count = 0;
