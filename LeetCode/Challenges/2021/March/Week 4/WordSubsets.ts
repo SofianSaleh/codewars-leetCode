@@ -9,7 +9,7 @@ var wordSubsets = function (A, B) {
   for (const word of A) {
     for (let i = 0; i < B.length; i++) {
       console.log(word, B[i]);
-      if (word.split('').includes(B[i])) {
+      if (word.includes(B[i])) {
         count++;
       }
     }
