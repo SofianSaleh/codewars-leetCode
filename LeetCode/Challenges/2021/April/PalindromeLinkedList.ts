@@ -42,4 +42,11 @@ function isPalindrome(head: ListNode | null): boolean {
   if (fast) {
     slow = slow.next;
   }
+  slow = reverseLinkedList(slow);
+
+  while (slow) {
+    if (slow.val != head.val) return False;
+    slow = slow.next;
+    head = head.next;
+  }
 }
