@@ -23,18 +23,32 @@
 
 class Solution:
     def sumSubarrayMins(self, arr):
-        m=0
-        ans=0
-        s = 0
-        MOD = 10**9 + 7
 
-        for num in arr:
-            s += num
+        kMod = 1_000_000_007
+        n = len(arr)
+        ans = 0
+        # prevMin[i] := index k s.t. arr[k] is the previous minimum in arr[:i]
+        prevMin = [-1] * n
+        # nextMin[i] := index k s.t. arr[k] is the next minimum in arr[i + 1:]
+        nextMin = [n] * n
+        stack = []
 
-            m = min(s, m)
-            ans = max(ans, s - m)
+        for i, a in enumerate(arr):
+            while stack and arr[stack[-1]] > a:
+                index = stack.pop()
+                nextMin[index] = i
+            if stack:
+                prevMin[i] = stack[-1]
+            stack.append(i)
 
-        return ans % MOD
+        for i, a in enumerate(arr):
+            ans += a * (i - prevMin[i]) * (nextMin[i] - i)
+            ans %= kMod
+
+        return ans
+
+
+
         # stack = []
         # ans = 0
 
