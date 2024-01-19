@@ -43,3 +43,4 @@ arr2 = [3, 5, -2, -3, -6, -6]
 c = Solution()
 un = c.uniqueOccurrences(arr2)
 print(un)
+print(un)
