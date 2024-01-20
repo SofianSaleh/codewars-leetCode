@@ -71,6 +71,7 @@ class Solution:
 
 arr = [3, 1, 2, 4]
 arr2 = [11, 81, 94, 43, 3]
+arr2 = [11, 81, 94, 43, 3]
 c = Solution()
 print([c.sumSubarrayMins(arr),
        c.sumSubarrayMins(arr2)])
