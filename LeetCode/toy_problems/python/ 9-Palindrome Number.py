@@ -29,17 +29,25 @@
 
 class Solution:
     def isPalindrome(self, x):
-        string_int = str(x)
-        print(string_int[::-1])
-        i = 0
-        j = len(string_int) - 1
+        # Normal Solution:
+        # string_int = str(x)
+        # print(string_int[::-1])
+        # i = 0
+        # j = len(string_int) - 1
 
-        while i < j:
-            if string_int[i] != string_int[j]:
-                return False
-            i += 1
-            j -= 1
-        return True
+        # while i < j:
+        #     if string_int[i] != string_int[j]:
+        #         return False
+        #     i += 1
+        #     j -= 1
+        # return True
+        # New Solution:
+
+        string = str(x)
+
+        if string == string[::-1]:
+            return True
+        return False
 
 
 c = Solution()
