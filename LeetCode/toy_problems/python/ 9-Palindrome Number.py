@@ -50,5 +50,5 @@ class Solution:
         return False
 
 
-c = Solution()
-print([c.isPalindrome(121), c.isPalindrome(-121)])
+# c = Solution()
+# print([c.isPalindrome(121), c.isPalindrome(-121)])
