@@ -43,7 +43,6 @@ class MyQueue:
     def __init__(self):
         self.input = []
         self.output = []
-        self.length = 0
 
     def push(self, x: int) -> None:
         self.input.append(x)
@@ -54,11 +53,10 @@ class MyQueue:
         return self.output.pop()
 
     def peek(self) -> int:
-        # if not self.output:
-        #     while self.input:
-        #         self.output.append(self.input.pop())
-        # return self.output[-1]
-        return self.input[self.length - 1]
+        if not self.output:
+            while self.input:
+                self.output.append(self.input.pop())
+        return self.output[-1]
 
     def empty(self) -> bool:
-        return not self.input and not self.output
+        return not self.input and not self.outputi
