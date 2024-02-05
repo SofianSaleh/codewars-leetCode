@@ -20,15 +20,23 @@
 # 1 <= s.length <= 105
 # s consists of only lowercase English letters.
 
+import collections
+
+
 class Solution:
     def firstUniqChar(self, s: str) -> int:
-        my_set = {}
-        count = 0
+        count = collections.Counter(s)
         for k, v in enumerate(s):
-            print(v, s[k:])
-            if v not in s[k:]:
+            if count[v] == 1:
                 return k
         return -1
+        # my_set = {}
+        # count = 0
+        # for k, v in enumerate(s):
+        #     print(v, s[k+1:])
+        #     if v not in s[k+1:]:
+        #         return k
+        # return -1
 
 
 c = Solution()
