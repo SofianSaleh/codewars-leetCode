@@ -26,6 +26,10 @@ class Solution(object):
         :type words: List[str]
         :rtype: str
         """
+        for word in words:
+            if word == word[::-1]:
+                return word
+        return ''
 
         pass
 
