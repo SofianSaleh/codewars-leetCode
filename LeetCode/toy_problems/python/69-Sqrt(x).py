@@ -26,4 +26,4 @@ class Solution(object):
         :type x: int
         :rtype: int
         """
-        pass
+        return int(x**0.5)
