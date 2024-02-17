@@ -70,6 +70,6 @@ class Solution(object):
         # return result
 
 
-# c = Solution()
+c = Solution()
 
-# print([c.convert('PAYPALISHIRING', 3), c.convert('PAYPALISHIRING', 4)])
+print([c.convert('PAYPALISHIRING', 3), c.convert('PAYPALISHIRING', 4)])
