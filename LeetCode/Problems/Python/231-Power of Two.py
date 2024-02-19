@@ -32,15 +32,29 @@ class Solution(object):
         :type n: int
         :rtype: bool
         """
-        # Solution 1
-        if n == 1:
-            return True
-        i = float(n)/float(2)
-        while i > 1:
-            print(i)
-            i = float(i)/float(2)
+        #! Solution 1
+        # if n == 1:
+        #     return True
+        # i = float(n)/float(2)
+        # while i > 1:
+        #     print(i)
+        #     i = float(i)/float(2)
 
-        return True if i == 1 else False
+        # return True if i == 1 else False
+
+        #! Solution 2
+
+        # result = 0
+        # pow = 0
+
+        # while True:
+        #     result = 2**pow
+
+        #     if result == n:
+        #         return True
+        #     elif result > n:
+        #         return False
+        #     pow += 1
 
 
 c = Solution()
