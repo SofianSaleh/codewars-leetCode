@@ -56,6 +56,10 @@ class Solution(object):
         #         return False
         #     pow += 1
 
+        # ! Solution 3 (Not My Solution)
+
+        return False if n < 0 else bin(n).count('1') == 1
+
 
 c = Solution()
 print(c.isPowerOfTwo(16))
