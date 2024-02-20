@@ -44,4 +44,4 @@ class Solution(object):
 
 c = Solution()
 
-print(c.missingNumber([3, 0, 2, 1]))
+# print(c.missingNumber([3, 0, 2, 1]))
