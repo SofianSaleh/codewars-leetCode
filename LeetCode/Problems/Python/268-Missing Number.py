@@ -40,6 +40,14 @@ class Solution(object):
         # for i in range(len(nums)):
         #     if i != nums[i]:
         #         return i
+        # ! Solution 2
+
+        ans = len(nums)
+
+        for i, v in enumerate(nums):
+            a = i ^ v
+            ans = ans ^ a
+        return ans
 
 
 c = Solution()
